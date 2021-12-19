@@ -1,0 +1,73 @@
+defaults:  
+  - override hydra/launcher: submitit_slurm
+
+upload_artifact: false
+checkpoint: ~
+cuda: ???
+checkpoint_path: checkpoints
+name: ???
+link: false
+
+task: ???
+
+train_dataset: ???
+dev_dataset: ???
+test_dataset: ???
+
+# Default training parameters
+
+output_file : "models"
+random_seed: 42
+label_all_tokens: false
+
+# Hugging Face training parameters
+base_model_checkpoint : deepset/gbert-base
+batch_size: 32
+num_train_epochs: 100
+fp16: true
+lr_scheduler_type: "linear"
+warmup_ratio: 0.0
+
+weight_decay: ??? 
+learning_rate: ???
+label_smoothing_factor: ???
+
+# Checkpointing
+save_steps: 10000
+keep_all_checkpoints: false
+
+# Hydra settings
+version: 1
+
+handlers:
+  console:
+    class: rich.logging.RichHandler
+    
+disable_existing_loggers: false
+
+output_base_path: ./outputs/${name}
+
+date_run: ${name}/${now:%Y-%m-%d_%H-%M-%S}
+
+hydra:
+  run:
+    dir: ${output_base_path}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ./multirun/${name}/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.num}_${hydra.job.override_dirname}
+  launcher:
+    submitit_folder: ${hydra.sweep.dir}/.submitit/
+    timeout_min: 600
+    name: ${name}
+    gpus_per_task: 1
+    additional_parameters: {"mail-user": "florian.borchert@hpi.de", "mail-type": "END,FAIL"}
+    _target_: hydra_plugins.hydra_submitit_launcher.submitit_launcher.SlurmLauncher
+    partition: gpu
+    #comment: null
+    #constraint: null
+    #exclude: null
+    #max_num_timeout: 0
+    array_parallelism: 2
+    #setup: null
+
+# @package hydra.launcher

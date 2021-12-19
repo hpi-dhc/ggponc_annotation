@@ -1,0 +1,33 @@
+#FORMAT=WebAnno TSV 3.3
+
+
+#Text=Der Wunsch der Patientin, das Gespräch oder auch weitere Gespräche gemeinsam mit einer Vertrauensperson (Partner, Angehörige, Patientenvertreterinnen) zu führen, sollte erfragt werden.
+1-1	0-3	Der	
+1-2	4-10	Wunsch	
+1-3	11-14	der	
+1-4	15-24	Patientin	
+1-5	24-25	,	
+1-6	26-29	das	
+1-7	30-38	Gespräch	
+1-8	39-43	oder	
+1-9	44-48	auch	
+1-10	49-56	weitere	
+1-11	57-66	Gespräche	
+1-12	67-76	gemeinsam	
+1-13	77-80	mit	
+1-14	81-86	einer	
+1-15	87-103	Vertrauensperson	
+1-16	104-105	(	
+1-17	105-112	Partner	
+1-18	112-113	,	
+1-19	114-124	Angehörige	
+1-20	124-125	,	
+1-21	126-149	Patientenvertreterinnen	
+1-22	149-150	)	
+1-23	151-153	zu	
+1-24	154-160	führen	
+1-25	160-161	,	
+1-26	162-168	sollte	
+1-27	169-176	erfragt	
+1-28	177-183	werden	
+1-29	183-184	.	

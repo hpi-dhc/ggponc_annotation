@@ -1,0 +1,14 @@
+matplotlib
+pytest
+tqdm
+torch==1.10.0
+torchvision
+torchaudio
+transformers
+datasets==1.12.1
+hydra-core
+hydra-submitit-launcher
+rich[jupyter]
+wandb
+spacy>=3.0.0
+seqeval

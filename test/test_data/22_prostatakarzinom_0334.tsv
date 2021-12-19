@@ -1,0 +1,506 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Zur Empfehlung 9.5
+1-1	0-3	Zur	_	_	_	_	_	_	_	
+1-2	4-14	Empfehlung	_	_	_	_	_	_	_	
+1-3	15-18	9.5	_	_	_	_	_	_	_	
+
+#Text=Die Symptome des Testosteronmangels sind im Rahmen der verschiedenen Erkrankungen des Formenkreises des Hypogonadismus wohl bekannt.
+2-1	19-22	Die	_	_	_	_	_	_	_	
+2-2	23-31	Symptome	*	Diagnosis or Pathology	_	*	*	Finding	2-3[1_0]	
+2-3	32-35	des	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+2-4	36-54	Testosteronmangels	*[1]|*[2]	*[1]|Diagnosis or Pathology[2]	_[1]|_[2]	*|*	*[1]|*[2]	Specification[1]|Finding[2]	_	
+2-5	55-59	sind	_	_	_	_	_	_	_	
+2-6	60-62	im	_	_	_	_	_	_	_	
+2-7	63-69	Rahmen	_	_	_	_	_	_	_	
+2-8	70-73	der	_	_	_	_	_	_	_	
+2-9	74-87	verschiedenen	_	_	_	_	_	_	_	
+2-10	88-100	Erkrankungen	*	Diagnosis or Pathology	_	*	*	Finding	2-11[3_0]	
+2-11	101-104	des	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-12	105-118	Formenkreises	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-13	119-122	des	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-14	123-137	Hypogonadismus	*[3]|*[4]	*[3]|Diagnosis or Pathology[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Finding[4]	_	
+2-15	138-142	wohl	_	_	_	_	_	_	_	
+2-16	143-150	bekannt	_	_	_	_	_	_	_	
+2-17	150-151	.	_	_	_	_	_	_	_	
+
+#Text=Urologen kennen auch die Effekte des Testosteronmangels als iatrogene Erkrankung im Rahmen der Androgenentzugstherapie zur Behandlung des PCa.
+3-1	152-160	Urologen	_	_	_	_	_	_	_	
+3-2	161-167	kennen	_	_	_	_	_	_	_	
+3-3	168-172	auch	_	_	_	_	_	_	_	
+3-4	173-176	die	_	_	_	_	_	_	_	
+3-5	177-184	Effekte	*	Other Finding	_	*	*	Finding	3-6[5_0]	
+3-6	185-188	des	*[5]	*[5]	_[5]	*	*[5]	Specification[5]	_	
+3-7	189-207	Testosteronmangels	*[5]|*[6]	*[5]|Diagnosis or Pathology[6]	_[5]|_[6]	*|*	*[5]|*[6]	Specification[5]|Finding[6]	_	
+3-8	208-211	als	_	_	_	_	_	_	_	
+3-9	212-221	iatrogene	*	*	_	*	*	Specification	_	
+3-10	222-232	Erkrankung	*	Diagnosis or Pathology	_	*	*	Finding	3-9	
+3-11	233-235	im	_	_	_	_	_	_	_	
+3-12	236-242	Rahmen	_	_	_	_	_	_	_	
+3-13	243-246	der	_	_	_	_	_	_	_	
+3-14	247-270	Androgenentzugstherapie	*	Therapeutic	_	*	*	Procedure	3-15[7_0]	
+3-15	271-274	zur	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+3-16	275-285	Behandlung	*[7]|*[8]	*[7]|Therapeutic[8]	_[7]|_[8]	*|*	*[7]|*[8]	Specification[7]|Procedure[8]	3-17[9_8]	
+3-17	286-289	des	*[7]|*[9]	*[7]|*[9]	_[7]|_[9]	*|*	*[7]|*[9]	Specification[7]|Specification[9]	_	
+3-18	290-293	PCa	*[7]|*[9]|*[10]	*[7]|*[9]|Diagnosis or Pathology[10]	_[7]|_[9]|_[10]	*|*|*	*[7]|*[9]|*[10]	Specification[7]|Specification[9]|Finding[10]	_	
+3-19	293-294	.	_	_	_	_	_	_	_	
+
+#Text=So wurde festgestellt, dass die im Rahmen einer Therapie mit GnRH-Agonisten erreichten Testosteronwerte im Kastrationsbereich zu schwerer Osteoporose und erhöhtem Frakturrisiko [REF], zu einer erhöhten Inzidenz von Diabetes und kardiovaskulären Erkrankungen [REF] und zu einer erhöhten Mortalität durch Herzinfarkte [REF] führt.
+4-1	295-297	So	_	_	_	_	_	_	_	
+4-2	298-303	wurde	_	_	_	_	_	_	_	
+4-3	304-316	festgestellt	_	_	_	_	_	_	_	
+4-4	316-317	,	_	_	_	_	_	_	_	
+4-5	318-322	dass	_	_	_	_	_	_	_	
+4-6	323-326	die	_	_	_	_	_	_	_	
+4-7	327-329	im	_	_	_	_	_	_	_	
+4-8	330-336	Rahmen	_	_	_	_	_	_	_	
+4-9	337-342	einer	_	_	_	_	_	_	_	
+4-10	343-351	Therapie	*	Therapeutic	_	*	*	Procedure	4-11[11_0]	
+4-11	352-355	mit	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+4-12	356-370	GnRH-Agonisten	*[11]|*[12]	*[11]|Clinical Drug[12]	_[11]|_[12]	*|*	*[11]|*[12]	Specification[11]|Substance[12]	_	
+4-13	371-381	erreichten	_	_	_	_	_	_	_	
+4-14	382-398	Testosteronwerte	*	Diagnosis or Pathology	_	*	*	Finding	4-15[13_0]	
+4-15	399-401	im	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+4-16	402-420	Kastrationsbereich	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+4-17	421-423	zu	_	_	_	_	_	_	_	
+4-18	424-432	schwerer	*	*	_	*	*	Specification	_	
+4-19	433-444	Osteoporose	*	Diagnosis or Pathology	_	*	*	Finding	4-18	
+4-20	445-448	und	_	_	_	_	_	_	_	
+4-21	449-457	erhöhtem	*	*	_	*	*	Specification	_	
+4-22	458-471	Frakturrisiko	*	Other Finding	_	*	*	Finding	4-21	
+4-23	472-473	[	_	_	_	_	_	_	_	
+4-24	473-476	REF	_	_	_	_	_	_	_	
+4-25	476-477	]	_	_	_	_	_	_	_	
+4-26	477-478	,	_	_	_	_	_	_	_	
+4-27	479-481	zu	_	_	_	_	_	_	_	
+4-28	482-487	einer	_	_	_	_	_	_	_	
+4-29	488-496	erhöhten	_	_	_	_	_	_	_	
+4-30	497-505	Inzidenz	_	_	_	_	_	_	_	
+4-31	506-509	von	_	_	_	_	_	_	_	
+4-32	510-518	Diabetes	*	Diagnosis or Pathology	_	*	*	Finding	_	
+4-33	519-522	und	_	_	_	_	_	_	_	
+4-34	523-539	kardiovaskulären	*	*	_	*	*	Specification	_	
+4-35	540-552	Erkrankungen	*	Diagnosis or Pathology	_	*	*	Finding	4-34	
+4-36	553-554	[	_	_	_	_	_	_	_	
+4-37	554-557	REF	_	_	_	_	_	_	_	
+4-38	557-558	]	_	_	_	_	_	_	_	
+4-39	559-562	und	_	_	_	_	_	_	_	
+4-40	563-565	zu	_	_	_	_	_	_	_	
+4-41	566-571	einer	_	_	_	_	_	_	_	
+4-42	572-580	erhöhten	*	*	_	*	*	Specification	_	
+4-43	581-591	Mortalität	*	Other Finding	_	*	*	Finding	4-42|4-44[14_0]	
+4-44	592-597	durch	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+4-45	598-610	Herzinfarkte	*[14]|*[15]	*[14]|Diagnosis or Pathology[15]	_[14]|_[15]	*|*	*[14]|*[15]	Specification[14]|Finding[15]	_	
+4-46	611-612	[	_	_	_	_	_	_	_	
+4-47	612-615	REF	_	_	_	_	_	_	_	
+4-48	615-616	]	_	_	_	_	_	_	_	
+4-49	617-622	führt	_	_	_	_	_	_	_	
+4-50	622-623	.	_	_	_	_	_	_	_	
+
+#Text=In einer Übersichtsarbeit kommen Pinthus et al. (2006) [REF] zu folgendem Schluss:
+5-1	624-626	In	_	_	_	_	_	_	_	
+5-2	627-632	einer	_	_	_	_	_	_	_	
+5-3	633-649	Übersichtsarbeit	_	_	_	_	_	_	_	
+5-4	650-656	kommen	_	_	_	_	_	_	_	
+5-5	657-664	Pinthus	_	_	_	_	_	_	_	
+5-6	665-667	et	_	_	_	_	_	_	_	
+5-7	668-670	al	_	_	_	_	_	_	_	
+5-8	670-671	.	_	_	_	_	_	_	_	
+5-9	672-673	(	_	_	_	_	_	_	_	
+5-10	673-677	2006	_	_	_	_	_	_	_	
+5-11	677-678	)	_	_	_	_	_	_	_	
+5-12	679-680	[	_	_	_	_	_	_	_	
+5-13	680-683	REF	_	_	_	_	_	_	_	
+5-14	683-684	]	_	_	_	_	_	_	_	
+5-15	685-687	zu	_	_	_	_	_	_	_	
+5-16	688-697	folgendem	_	_	_	_	_	_	_	
+5-17	698-705	Schluss	_	_	_	_	_	_	_	
+5-18	705-706	:	_	_	_	_	_	_	_	
+
+#Text=„Cardiovascular disease is the most common cause of death in men with prostate carcinoma, more often than the malignancy itself”.
+6-1	707-708	„	_	_	_	_	_	_	_	
+6-2	708-722	Cardiovascular	*	*	_	*	*	Specification	_	
+6-3	723-730	disease	*	Diagnosis or Pathology	_	*	*	Finding	6-2	
+6-4	731-733	is	_	_	_	_	_	_	_	
+6-5	734-737	the	_	_	_	_	_	_	_	
+6-6	738-742	most	_	_	_	_	_	_	_	
+6-7	743-749	common	_	_	_	_	_	_	_	
+6-8	750-755	cause	_	_	_	_	_	_	_	
+6-9	756-758	of	_	_	_	_	_	_	_	
+6-10	759-764	death	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-11	765-767	in	_	_	_	_	_	_	_	
+6-12	768-771	men	*	Other Finding	_	*	*	Finding	6-13[16_0]	
+6-13	772-776	with	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+6-14	777-785	prostate	*[16]|*[17]	*[16]|Diagnosis or Pathology[17]	_[16]|_[17]	*|*	*[16]|*[17]	Specification[16]|Finding[17]	_	
+6-15	786-795	carcinoma	*[16]|*[17]	*[16]|Diagnosis or Pathology[17]	_[16]|_[17]	*|*	*[16]|*[17]	Specification[16]|Finding[17]	_	
+6-16	795-796	,	_	_	_	_	_	_	_	
+6-17	797-801	more	_	_	_	_	_	_	_	
+6-18	802-807	often	_	_	_	_	_	_	_	
+6-19	808-812	than	_	_	_	_	_	_	_	
+6-20	813-816	the	_	_	_	_	_	_	_	
+6-21	817-827	malignancy	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-22	828-834	itself	_	_	_	_	_	_	_	
+6-23	834-835	”	_	_	_	_	_	_	_	
+6-24	835-836	.	_	_	_	_	_	_	_	
+
+#Text=Epidemiologische Untersuchungen an Patienten mit Klinefelter-Syndrom, die ab Beginn der dritten Lebensdekade meist einen Testosteronmangel aufweisen, zeigen eine erhöhte generelle Morbidität und Mortalität dieser Männer gegenüber der Normalbevölkerung [REF], [REF].
+7-1	837-853	Epidemiologische	_	_	_	_	_	_	_	
+7-2	854-868	Untersuchungen	_	_	_	_	_	_	_	
+7-3	869-871	an	_	_	_	_	_	_	_	
+7-4	872-881	Patienten	_	_	_	_	_	_	_	
+7-5	882-885	mit	_	_	_	_	_	_	_	
+7-6	886-905	Klinefelter-Syndrom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-7	905-906	,	_	_	_	_	_	_	_	
+7-8	907-910	die	_	_	_	_	_	_	_	
+7-9	911-913	ab	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+7-10	914-920	Beginn	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+7-11	921-924	der	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+7-12	925-932	dritten	*	*	_	*	*	Specification	_	
+7-13	933-945	Lebensdekade	*	Other Finding	_	*	*	Finding	7-12|7-9[18_0]	
+7-14	946-951	meist	_	_	_	_	_	_	_	
+7-15	952-957	einen	_	_	_	_	_	_	_	
+7-16	958-975	Testosteronmangel	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-17	976-985	aufweisen	_	_	_	_	_	_	_	
+7-18	985-986	,	_	_	_	_	_	_	_	
+7-19	987-993	zeigen	_	_	_	_	_	_	_	
+7-20	994-998	eine	_	_	_	_	_	_	_	
+7-21	999-1006	erhöhte	*	*	_	*	*	Specification	_	
+7-22	1007-1016	generelle	*	*	_	*	*	Specification	_	
+7-23	1017-1027	Morbidität	*	Other Finding	_	*	*	Finding	7-22|7-21	
+7-24	1028-1031	und	_	_	_	_	_	_	_	
+7-25	1032-1042	Mortalität	*	Other Finding	_	*	*	Finding	_	
+7-26	1043-1049	dieser	_	_	_	_	_	_	_	
+7-27	1050-1056	Männer	*	Other Finding	_	*	*	Finding	_	
+7-28	1057-1066	gegenüber	_	_	_	_	_	_	_	
+7-29	1067-1070	der	_	_	_	_	_	_	_	
+7-30	1071-1088	Normalbevölkerung	_	_	_	_	_	_	_	
+7-31	1089-1090	[	_	_	_	_	_	_	_	
+7-32	1090-1093	REF	_	_	_	_	_	_	_	
+7-33	1093-1094	]	_	_	_	_	_	_	_	
+7-34	1094-1095	,	_	_	_	_	_	_	_	
+7-35	1096-1097	[	_	_	_	_	_	_	_	
+7-36	1097-1100	REF	_	_	_	_	_	_	_	
+7-37	1100-1101	]	_	_	_	_	_	_	_	
+7-38	1101-1102	.	_	_	_	_	_	_	_	
+
+#Text=Diese objektivierbaren Befunde und der Leidensdruck der vielen unter dem Testosteronmangel leidenden Patienten, die wegen eines Prostatakarzinoms behandelt werden, werfen die Frage auf, ob PCa-Patienten nach erfolgreicher Therapie des Karzinoms mit kurativer Intention mit Testosteron substituiert werden können.
+8-1	1103-1108	Diese	_	_	_	_	_	_	_	
+8-2	1109-1125	objektivierbaren	*	*	_	*	*	Specification	_	
+8-3	1126-1133	Befunde	*	Other Finding	_	*	*	Finding	8-2	
+8-4	1134-1137	und	_	_	_	_	_	_	_	
+8-5	1138-1141	der	_	_	_	_	_	_	_	
+8-6	1142-1154	Leidensdruck	*	Diagnosis or Pathology	_	*	*	Finding	_	
+8-7	1155-1158	der	_	_	_	_	_	_	_	
+8-8	1159-1165	vielen	_	_	_	_	_	_	_	
+8-9	1166-1171	unter	_	_	_	_	_	_	_	
+8-10	1172-1175	dem	_	_	_	_	_	_	_	
+8-11	1176-1193	Testosteronmangel	*	Diagnosis or Pathology	_	*	*	Finding	_	
+8-12	1194-1203	leidenden	_	_	_	_	_	_	_	
+8-13	1204-1213	Patienten	_	_	_	_	_	_	_	
+8-14	1213-1214	,	_	_	_	_	_	_	_	
+8-15	1215-1218	die	_	_	_	_	_	_	_	
+8-16	1219-1224	wegen	_	_	_	_	_	_	_	
+8-17	1225-1230	eines	_	_	_	_	_	_	_	
+8-18	1231-1248	Prostatakarzinoms	*	Diagnosis or Pathology	_	*	*	Finding	_	
+8-19	1249-1258	behandelt	_	_	_	_	_	_	_	
+8-20	1259-1265	werden	_	_	_	_	_	_	_	
+8-21	1265-1266	,	_	_	_	_	_	_	_	
+8-22	1267-1273	werfen	_	_	_	_	_	_	_	
+8-23	1274-1277	die	_	_	_	_	_	_	_	
+8-24	1278-1283	Frage	_	_	_	_	_	_	_	
+8-25	1284-1287	auf	_	_	_	_	_	_	_	
+8-26	1287-1288	,	_	_	_	_	_	_	_	
+8-27	1289-1291	ob	_	_	_	_	_	_	_	
+8-28	1292-1305	PCa-Patienten	*	Diagnosis or Pathology	_	*	*	Finding	_	
+8-29	1306-1310	nach	_	_	_	_	_	_	_	
+8-30	1311-1324	erfolgreicher	*	*	_	*	*	Specification	_	
+8-31	1325-1333	Therapie	*	Therapeutic	_	*	*	Procedure	8-30|8-32[19_0]	
+8-32	1334-1337	des	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+8-33	1338-1347	Karzinoms	*[19]|*[20]	*[19]|Diagnosis or Pathology[20]	_[19]|_[20]	*|*	*[19]|*[20]	Specification[19]|Finding[20]	_	
+8-34	1348-1351	mit	_	_	_	_	_	_	_	
+8-35	1352-1361	kurativer	_	_	_	_	_	_	_	
+8-36	1362-1371	Intention	_	_	_	_	_	_	_	
+8-37	1372-1375	mit	_	_	_	_	_	_	_	
+8-38	1376-1387	Testosteron	*	Clinical Drug	_	*	*	Substance	_	
+8-39	1388-1400	substituiert	_	_	_	_	_	_	_	
+8-40	1401-1407	werden	_	_	_	_	_	_	_	
+8-41	1408-1414	können	_	_	_	_	_	_	_	
+8-42	1414-1415	.	_	_	_	_	_	_	_	
+
+#Text=Vor diesem Hintergrund haben Therapeuten in Einzelfällen nach erfolgreicher Therapie eines PCa (z. B. durch Kastration) und einem angemessenen rezidivfreien Intervall mit einer Behandlung mit Testosteron begonnen.
+9-1	1416-1419	Vor	_	_	_	_	_	_	_	
+9-2	1420-1426	diesem	_	_	_	_	_	_	_	
+9-3	1427-1438	Hintergrund	_	_	_	_	_	_	_	
+9-4	1439-1444	haben	_	_	_	_	_	_	_	
+9-5	1445-1456	Therapeuten	_	_	_	_	_	_	_	
+9-6	1457-1459	in	_	_	_	_	_	_	_	
+9-7	1460-1472	Einzelfällen	_	_	_	_	_	_	_	
+9-8	1473-1477	nach	_	_	_	_	_	_	_	
+9-9	1478-1491	erfolgreicher	*	*	_	*	*	Specification	_	
+9-10	1492-1500	Therapie	*	Therapeutic	_	*	*	Procedure	9-9|9-11[21_0]	
+9-11	1501-1506	eines	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+9-12	1507-1510	PCa	*[21]|*[22]	*[21]|Diagnosis or Pathology[22]	_[21]|_[22]	*|*	*[21]|*[22]	Specification[21]|Finding[22]	_	
+9-13	1511-1512	(	_	_	_	_	_	_	_	
+9-14	1512-1513	z	_	_	_	_	_	_	_	
+9-15	1513-1514	.	_	_	_	_	_	_	_	
+9-16	1515-1516	B	_	_	_	_	_	_	_	
+9-17	1516-1517	.	_	_	_	_	_	_	_	
+9-18	1518-1523	durch	_	_	_	_	_	_	_	
+9-19	1524-1534	Kastration	*	Therapeutic	_	*	*	Procedure	_	
+9-20	1534-1535	)	_	_	_	_	_	_	_	
+9-21	1536-1539	und	_	_	_	_	_	_	_	
+9-22	1540-1545	einem	_	_	_	_	_	_	_	
+9-23	1546-1558	angemessenen	_	_	_	_	_	_	_	
+9-24	1559-1572	rezidivfreien	*	*	_	*	*	Specification	_	
+9-25	1573-1582	Intervall	*	Other Finding	_	*	*	Finding	9-24	
+9-26	1583-1586	mit	_	_	_	_	_	_	_	
+9-27	1587-1592	einer	_	_	_	_	_	_	_	
+9-28	1593-1603	Behandlung	*	Therapeutic	_	*	*	Procedure	9-29[23_0]	
+9-29	1604-1607	mit	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+9-30	1608-1619	Testosteron	*[23]|*[24]	*[23]|Clinical Drug[24]	_[23]|_[24]	*|*	*[23]|*[24]	Specification[23]|Substance[24]	_	
+9-31	1620-1628	begonnen	_	_	_	_	_	_	_	
+9-32	1628-1629	.	_	_	_	_	_	_	_	
+
+#Text=Es liegen dazu drei publizierte Fallserien vor:
+10-1	1630-1632	Es	_	_	_	_	_	_	_	
+10-2	1633-1639	liegen	_	_	_	_	_	_	_	
+10-3	1640-1644	dazu	_	_	_	_	_	_	_	
+10-4	1645-1649	drei	_	_	_	_	_	_	_	
+10-5	1650-1661	publizierte	_	_	_	_	_	_	_	
+10-6	1662-1672	Fallserien	_	_	_	_	_	_	_	
+10-7	1673-1676	vor	_	_	_	_	_	_	_	
+10-8	1676-1677	:	_	_	_	_	_	_	_	
+
+#Text=Kaufman und Graydon (2004) [REF] berichten über sieben hypogonadale Patienten nach kurativer radikaler Prostatektomie, bei denen es unter Testosterontherapie nicht zu einem Rezidiv des PCa kam.
+11-1	1678-1685	Kaufman	_	_	_	_	_	_	_	
+11-2	1686-1689	und	_	_	_	_	_	_	_	
+11-3	1690-1697	Graydon	_	_	_	_	_	_	_	
+11-4	1698-1699	(	_	_	_	_	_	_	_	
+11-5	1699-1703	2004	_	_	_	_	_	_	_	
+11-6	1703-1704	)	_	_	_	_	_	_	_	
+11-7	1705-1706	[	_	_	_	_	_	_	_	
+11-8	1706-1709	REF	_	_	_	_	_	_	_	
+11-9	1709-1710	]	_	_	_	_	_	_	_	
+11-10	1711-1720	berichten	_	_	_	_	_	_	_	
+11-11	1721-1725	über	_	_	_	_	_	_	_	
+11-12	1726-1732	sieben	_	_	_	_	_	_	_	
+11-13	1733-1745	hypogonadale	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-14	1746-1755	Patienten	_	_	_	_	_	_	_	
+11-15	1756-1760	nach	_	_	_	_	_	_	_	
+11-16	1761-1770	kurativer	*	*	_	*	*	Specification	_	
+11-17	1771-1780	radikaler	*	*	_	*	*	Specification	_	
+11-18	1781-1795	Prostatektomie	*	Therapeutic	_	*	*	Procedure	11-16|11-17	
+11-19	1795-1796	,	_	_	_	_	_	_	_	
+11-20	1797-1800	bei	_	_	_	_	_	_	_	
+11-21	1801-1806	denen	_	_	_	_	_	_	_	
+11-22	1807-1809	es	_	_	_	_	_	_	_	
+11-23	1810-1815	unter	_	_	_	_	_	_	_	
+11-24	1816-1835	Testosterontherapie	*	Therapeutic	_	*	*	Procedure	_	
+11-25	1836-1841	nicht	_	_	_	_	_	_	_	
+11-26	1842-1844	zu	_	_	_	_	_	_	_	
+11-27	1845-1850	einem	_	_	_	_	_	_	_	
+11-28	1851-1858	Rezidiv	*	Diagnosis or Pathology	_	*	*	Finding	11-29[25_0]	
+11-29	1859-1862	des	*[25]	*[25]	_[25]	*	*[25]	Specification[25]	_	
+11-30	1863-1866	PCa	*[25]|*[26]	*[25]|Diagnosis or Pathology[26]	_[25]|_[26]	*|*	*[25]|*[26]	Specification[25]|Finding[26]	_	
+11-31	1867-1870	kam	_	_	_	_	_	_	_	
+11-32	1870-1871	.	_	_	_	_	_	_	_	
+
+#Text=Agarwal und Oefelein (2005) [REF] beschreiben zehn weitere derartige Patienten und Sarosdy (2007) [REF] berichtet von 31 PCa-Patienten, die 4,5 (0,5-8,5) Jahre nach Brachytherapie ohne Rückfall mit Testosteron behandelt wurden.
+12-1	1872-1879	Agarwal	_	_	_	_	_	_	_	
+12-2	1880-1883	und	_	_	_	_	_	_	_	
+12-3	1884-1892	Oefelein	_	_	_	_	_	_	_	
+12-4	1893-1894	(	_	_	_	_	_	_	_	
+12-5	1894-1898	2005	_	_	_	_	_	_	_	
+12-6	1898-1899	)	_	_	_	_	_	_	_	
+12-7	1900-1901	[	_	_	_	_	_	_	_	
+12-8	1901-1904	REF	_	_	_	_	_	_	_	
+12-9	1904-1905	]	_	_	_	_	_	_	_	
+12-10	1906-1917	beschreiben	_	_	_	_	_	_	_	
+12-11	1918-1922	zehn	_	_	_	_	_	_	_	
+12-12	1923-1930	weitere	_	_	_	_	_	_	_	
+12-13	1931-1940	derartige	_	_	_	_	_	_	_	
+12-14	1941-1950	Patienten	_	_	_	_	_	_	_	
+12-15	1951-1954	und	_	_	_	_	_	_	_	
+12-16	1955-1962	Sarosdy	_	_	_	_	_	_	_	
+12-17	1963-1964	(	_	_	_	_	_	_	_	
+12-18	1964-1968	2007	_	_	_	_	_	_	_	
+12-19	1968-1969	)	_	_	_	_	_	_	_	
+12-20	1970-1971	[	_	_	_	_	_	_	_	
+12-21	1971-1974	REF	_	_	_	_	_	_	_	
+12-22	1974-1975	]	_	_	_	_	_	_	_	
+12-23	1976-1985	berichtet	_	_	_	_	_	_	_	
+12-24	1986-1989	von	_	_	_	_	_	_	_	
+12-25	1990-1992	31	_	_	_	_	_	_	_	
+12-26	1993-2006	PCa-Patienten	*	Diagnosis or Pathology	_	*	*	Finding	_	
+12-27	2006-2007	,	_	_	_	_	_	_	_	
+12-28	2008-2011	die	_	_	_	_	_	_	_	
+12-29	2012-2015	4,5	_	_	_	_	_	_	_	
+12-30	2016-2017	(	_	_	_	_	_	_	_	
+12-31	2017-2020	0,5	_	_	_	_	_	_	_	
+12-32	2020-2021	-	_	_	_	_	_	_	_	
+12-33	2021-2024	8,5	_	_	_	_	_	_	_	
+12-34	2024-2025	)	_	_	_	_	_	_	_	
+12-35	2026-2031	Jahre	_	_	_	_	_	_	_	
+12-36	2032-2036	nach	_	_	_	_	_	_	_	
+12-37	2037-2051	Brachytherapie	*	Therapeutic	_	*	*	Procedure	_	
+12-38	2052-2056	ohne	_	_	_	_	_	_	_	
+12-39	2057-2065	Rückfall	*	Diagnosis or Pathology	_	*	*	Finding	_	
+12-40	2066-2069	mit	_	_	_	_	_	_	_	
+12-41	2070-2081	Testosteron	*	Clinical Drug	_	*	*	Substance	_	
+12-42	2082-2091	behandelt	_	_	_	_	_	_	_	
+12-43	2092-2098	wurden	_	_	_	_	_	_	_	
+12-44	2098-2099	.	_	_	_	_	_	_	_	
+
+#Text=Es wird nicht mitgeteilt, für wie lange die Testosteronsubstitution angewandt wurde.
+13-1	2100-2102	Es	_	_	_	_	_	_	_	
+13-2	2103-2107	wird	_	_	_	_	_	_	_	
+13-3	2108-2113	nicht	_	_	_	_	_	_	_	
+13-4	2114-2124	mitgeteilt	_	_	_	_	_	_	_	
+13-5	2124-2125	,	_	_	_	_	_	_	_	
+13-6	2126-2129	für	_	_	_	_	_	_	_	
+13-7	2130-2133	wie	_	_	_	_	_	_	_	
+13-8	2134-2139	lange	_	_	_	_	_	_	_	
+13-9	2140-2143	die	_	_	_	_	_	_	_	
+13-10	2144-2167	Testosteronsubstitution	*	Therapeutic	_	*	*	Procedure	_	
+13-11	2168-2177	angewandt	_	_	_	_	_	_	_	
+13-12	2178-2183	wurde	_	_	_	_	_	_	_	
+13-13	2183-2184	.	_	_	_	_	_	_	_	
+
+#Text=Die beschriebenen Fallserien können jedoch sowohl wegen ihrer Fallzahl als auch aufgrund des Fehlens einer Kontrollgruppe nicht die Evidenz liefern, dass eine Testosteronsubstitution nach kurativer Therapie unschädlich sei.
+14-1	2185-2188	Die	_	_	_	_	_	_	_	
+14-2	2189-2202	beschriebenen	_	_	_	_	_	_	_	
+14-3	2203-2213	Fallserien	_	_	_	_	_	_	_	
+14-4	2214-2220	können	_	_	_	_	_	_	_	
+14-5	2221-2227	jedoch	_	_	_	_	_	_	_	
+14-6	2228-2234	sowohl	_	_	_	_	_	_	_	
+14-7	2235-2240	wegen	_	_	_	_	_	_	_	
+14-8	2241-2246	ihrer	_	_	_	_	_	_	_	
+14-9	2247-2255	Fallzahl	_	_	_	_	_	_	_	
+14-10	2256-2259	als	_	_	_	_	_	_	_	
+14-11	2260-2264	auch	_	_	_	_	_	_	_	
+14-12	2265-2273	aufgrund	_	_	_	_	_	_	_	
+14-13	2274-2277	des	_	_	_	_	_	_	_	
+14-14	2278-2285	Fehlens	_	_	_	_	_	_	_	
+14-15	2286-2291	einer	_	_	_	_	_	_	_	
+14-16	2292-2306	Kontrollgruppe	_	_	_	_	_	_	_	
+14-17	2307-2312	nicht	_	_	_	_	_	_	_	
+14-18	2313-2316	die	_	_	_	_	_	_	_	
+14-19	2317-2324	Evidenz	_	_	_	_	_	_	_	
+14-20	2325-2332	liefern	_	_	_	_	_	_	_	
+14-21	2332-2333	,	_	_	_	_	_	_	_	
+14-22	2334-2338	dass	_	_	_	_	_	_	_	
+14-23	2339-2343	eine	_	_	_	_	_	_	_	
+14-24	2344-2367	Testosteronsubstitution	*	Therapeutic	_	*	*	Procedure	14-25[27_0]	
+14-25	2368-2372	nach	*[27]	*[27]	_[27]	*	*[27]	Specification[27]	_	
+14-26	2373-2382	kurativer	*[27]|*[28]	*[27]|*[28]	_[27]|_[28]	*|*	*[27]|*[28]	Specification[27]|Specification[28]	_	
+14-27	2383-2391	Therapie	*[27]|*[29]	*[27]|Therapeutic[29]	_[27]|_[29]	*|*	*[27]|*[29]	Specification[27]|Procedure[29]	14-26[28_29]	
+14-28	2392-2403	unschädlich	_	_	_	_	_	_	_	
+14-29	2404-2407	sei	_	_	_	_	_	_	_	
+14-30	2407-2408	.	_	_	_	_	_	_	_	
+
+#Text=Die Autoren dieser Leitlinie sehen die Notwendigkeit für eine Stellungnahme zur Testosteronsubstition bei klinisch schwer symptomatischen Patienten mit nachgewiesenem Testosteronmangel nach kurativer Therapie eines Prostatakarzinoms.
+15-1	2409-2412	Die	_	_	_	_	_	_	_	
+15-2	2413-2420	Autoren	_	_	_	_	_	_	_	
+15-3	2421-2427	dieser	_	_	_	_	_	_	_	
+15-4	2428-2437	Leitlinie	_	_	_	_	_	_	_	
+15-5	2438-2443	sehen	_	_	_	_	_	_	_	
+15-6	2444-2447	die	_	_	_	_	_	_	_	
+15-7	2448-2461	Notwendigkeit	_	_	_	_	_	_	_	
+15-8	2462-2465	für	_	_	_	_	_	_	_	
+15-9	2466-2470	eine	_	_	_	_	_	_	_	
+15-10	2471-2484	Stellungnahme	_	_	_	_	_	_	_	
+15-11	2485-2488	zur	_	_	_	_	_	_	_	
+15-12	2489-2510	Testosteronsubstition	*	Therapeutic	_	*	*	Procedure	_	
+15-13	2511-2514	bei	_	_	_	_	_	_	_	
+15-14	2515-2523	klinisch	*	*	_	*	*	Specification	_	
+15-15	2524-2530	schwer	*	*	_	*	*	Specification	_	
+15-16	2531-2546	symptomatischen	*	Diagnosis or Pathology	_	*	*	Finding	15-15|15-14	
+15-17	2547-2556	Patienten	_	_	_	_	_	_	_	
+15-18	2557-2560	mit	_	_	_	_	_	_	_	
+15-19	2561-2575	nachgewiesenem	*	*	_	*	*	Specification	_	
+15-20	2576-2593	Testosteronmangel	*	Diagnosis or Pathology	_	*	*	Finding	15-19|15-21[30_0]	
+15-21	2594-2598	nach	*[30]	*[30]	_[30]	*	*[30]	Specification[30]	_	
+15-22	2599-2608	kurativer	*[30]|*[31]	*[30]|*[31]	_[30]|_[31]	*|*	*[30]|*[31]	Specification[30]|Specification[31]	_	
+15-23	2609-2617	Therapie	*[30]|*[32]	*[30]|Therapeutic[32]	_[30]|_[32]	*|*	*[30]|*[32]	Specification[30]|Procedure[32]	15-22[31_32]|15-24[33_32]	
+15-24	2618-2623	eines	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+15-25	2624-2641	Prostatakarzinoms	*[33]|*[34]	*[33]|Diagnosis or Pathology[34]	_[33]|_[34]	*|*	*[33]|*[34]	Specification[33]|Finding[34]	_	
+15-26	2641-2642	.	_	_	_	_	_	_	_	
+
+#Text=Da die Testosteronsubstitution für diese Patienten eine Reduktion von Symptomen und Risiken des Testosteronmangels und auch eine erhebliche Steigerung der Lebensqualität ermöglichen kann, sollte ihr Einsatz bei diesem Patientenkollektiv nicht kategorisch ausgeschlossen werden.
+16-1	2643-2645	Da	_	_	_	_	_	_	_	
+16-2	2646-2649	die	_	_	_	_	_	_	_	
+16-3	2650-2673	Testosteronsubstitution	*	Therapeutic	_	*	*	Procedure	_	
+16-4	2674-2677	für	_	_	_	_	_	_	_	
+16-5	2678-2683	diese	_	_	_	_	_	_	_	
+16-6	2684-2693	Patienten	_	_	_	_	_	_	_	
+16-7	2694-2698	eine	_	_	_	_	_	_	_	
+16-8	2699-2708	Reduktion	*	Other Finding	_	*	*	Finding	16-9[35_0]|16-12[37_0]	
+16-9	2709-2712	von	*[35]	*[35]	_[35]	*	*[35]	Specification[35]	_	
+16-10	2713-2722	Symptomen	*[35]|*[36]	*[35]|Diagnosis or Pathology[36]	_[35]|_[36]	*|*	*[35]|*[36]	Specification[35]|Finding[36]	_	
+16-11	2723-2726	und	_	_	_	_	_	_	_	
+16-12	2727-2734	Risiken	\_von\_[37]|*[38]	*[37]|Other Finding[38]	_[37]|_[38]	*|*	*[37]|*[38]	Specification[37]|Finding[38]	16-13[39_38]	
+16-13	2735-2738	des	*[39]	*[39]	_[39]	*	*[39]	Specification[39]	_	
+16-14	2739-2757	Testosteronmangels	*[39]|*[40]	*[39]|Diagnosis or Pathology[40]	_[39]|_[40]	*|*	*[39]|*[40]	Specification[39]|Finding[40]	_	
+16-15	2758-2761	und	_	_	_	_	_	_	_	
+16-16	2762-2766	auch	_	_	_	_	_	_	_	
+16-17	2767-2771	eine	_	_	_	_	_	_	_	
+16-18	2772-2782	erhebliche	*	*	_	*	*	Specification	_	
+16-19	2783-2793	Steigerung	*	Other Finding	_	*	*	Finding	16-20[41_0]|16-18	
+16-20	2794-2797	der	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+16-21	2798-2812	Lebensqualität	*[41]|*[42]	*[41]|Other Finding[42]	_[41]|_[42]	*|*	*[41]|*[42]	Specification[41]|Finding[42]	_	
+16-22	2813-2824	ermöglichen	_	_	_	_	_	_	_	
+16-23	2825-2829	kann	_	_	_	_	_	_	_	
+16-24	2829-2830	,	_	_	_	_	_	_	_	
+16-25	2831-2837	sollte	_	_	_	_	_	_	_	
+16-26	2838-2841	ihr	_	_	_	_	_	_	_	
+16-27	2842-2849	Einsatz	*	Therapeutic	_	*	*	Procedure	_	
+16-28	2850-2853	bei	_	_	_	_	_	_	_	
+16-29	2854-2860	diesem	_	_	_	_	_	_	_	
+16-30	2861-2879	Patientenkollektiv	_	_	_	_	_	_	_	
+16-31	2880-2885	nicht	_	_	_	_	_	_	_	
+16-32	2886-2897	kategorisch	_	_	_	_	_	_	_	
+16-33	2898-2912	ausgeschlossen	_	_	_	_	_	_	_	
+16-34	2913-2919	werden	_	_	_	_	_	_	_	
+16-35	2919-2920	.	_	_	_	_	_	_	_	
+
+#Text=Aufgrund der unzureichenden Evidenz bezüglich des Auftretens von Rezidiven unter der Therapie sowie bei fehlender Zulassung von Testosteron bei Patienten mit einem PCa soll jedoch auf eine ausführliche Aufklärung und eine engmaschige Überwachung besonders geachtet werden.
+17-1	2921-2929	Aufgrund	_	_	_	_	_	_	_	
+17-2	2930-2933	der	_	_	_	_	_	_	_	
+17-3	2934-2948	unzureichenden	_	_	_	_	_	_	_	
+17-4	2949-2956	Evidenz	_	_	_	_	_	_	_	
+17-5	2957-2966	bezüglich	_	_	_	_	_	_	_	
+17-6	2967-2970	des	_	_	_	_	_	_	_	
+17-7	2971-2981	Auftretens	*	Diagnosis or Pathology	_	*	*	Finding	17-8[43_0]	
+17-8	2982-2985	von	*[43]	*[43]	_[43]	*	*[43]	Specification[43]	_	
+17-9	2986-2995	Rezidiven	*[43]|*[44]	*[43]|Diagnosis or Pathology[44]	_[43]|_[44]	*|*	*[43]|*[44]	Specification[43]|Finding[44]	17-10[45_44]	
+17-10	2996-3001	unter	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+17-11	3002-3005	der	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+17-12	3006-3014	Therapie	*[45]|*[46]	*[45]|Therapeutic[46]	_[45]|_[46]	*|*	*[45]|*[46]	Specification[45]|Procedure[46]	_	
+17-13	3015-3020	sowie	_	_	_	_	_	_	_	
+17-14	3021-3024	bei	_	_	_	_	_	_	_	
+17-15	3025-3034	fehlender	_	_	_	_	_	_	_	
+17-16	3035-3044	Zulassung	_	_	_	_	_	_	_	
+17-17	3045-3048	von	_	_	_	_	_	_	_	
+17-18	3049-3060	Testosteron	*	Clinical Drug	_	*	*	Substance	_	
+17-19	3061-3064	bei	_	_	_	_	_	_	_	
+17-20	3065-3074	Patienten	_	_	_	_	_	_	_	
+17-21	3075-3078	mit	_	_	_	_	_	_	_	
+17-22	3079-3084	einem	_	_	_	_	_	_	_	
+17-23	3085-3088	PCa	*	Diagnosis or Pathology	_	*	*	Finding	_	
+17-24	3089-3093	soll	_	_	_	_	_	_	_	
+17-25	3094-3100	jedoch	_	_	_	_	_	_	_	
+17-26	3101-3104	auf	_	_	_	_	_	_	_	
+17-27	3105-3109	eine	_	_	_	_	_	_	_	
+17-28	3110-3122	ausführliche	*	*	_	*	*	Specification	_	
+17-29	3123-3133	Aufklärung	*	Therapeutic	_	*	*	Procedure	17-28	
+17-30	3134-3137	und	_	_	_	_	_	_	_	
+17-31	3138-3142	eine	_	_	_	_	_	_	_	
+17-32	3143-3154	engmaschige	*	*	_	*	*	Specification	_	
+17-33	3155-3166	Überwachung	*	Diagnostic	_	*	*	Procedure	17-32	
+17-34	3167-3176	besonders	_	_	_	_	_	_	_	
+17-35	3177-3185	geachtet	_	_	_	_	_	_	_	
+17-36	3186-3192	werden	_	_	_	_	_	_	_	
+17-37	3192-3193	.	_	_	_	_	_	_	_	

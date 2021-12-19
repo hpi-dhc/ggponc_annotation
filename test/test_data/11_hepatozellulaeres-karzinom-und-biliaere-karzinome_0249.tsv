@@ -1,0 +1,454 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Aufgrund des subendothelialen Wachstums entlang der Perineuralscheiden beträgt das Rezidivrisiko nach radikaler chirurgischer Tumorentfernung für ein perihiläres Cholangiokarzinom (CCA) 40-80% (Auflistung der Studienergebnisse siehe [REF] ).
+1-1	0-8	Aufgrund	_	_	_	_	_	_	_	
+1-2	9-12	des	_	_	_	_	_	_	_	
+1-3	13-29	subendothelialen	*	*	_	*	*	Specification	_	
+1-4	30-39	Wachstums	*	Diagnosis or Pathology	_	*	*	Finding	1-3|1-5[1_0]	
+1-5	40-47	entlang	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-6	48-51	der	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-7	52-70	Perineuralscheiden	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-8	71-78	beträgt	_	_	_	_	_	_	_	
+1-9	79-82	das	_	_	_	_	_	_	_	
+1-10	83-96	Rezidivrisiko	*	Other Finding	_	*	*	Finding	1-11[2_0]	
+1-11	97-101	nach	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-12	102-111	radikaler	*[2]|*[3]	*[2]|*[3]	_[2]|_[3]	*|*	*[2]|*[3]	Specification[2]|Specification[3]	_	
+1-13	112-125	chirurgischer	*[2]|*[4]	*[2]|*[4]	_[2]|_[4]	*|*	*[2]|*[4]	Specification[2]|Specification[4]	_	
+1-14	126-141	Tumorentfernung	*[2]|*[5]	*[2]|Therapeutic[5]	_[2]|_[5]	*|*	*[2]|*[5]	Specification[2]|Procedure[5]	1-12[3_5]|1-13[4_5]	
+1-15	142-145	für	_	_	_	_	_	_	_	
+1-16	146-149	ein	_	_	_	_	_	_	_	
+1-17	150-161	perihiläres	*	*	_	*	*	Specification	_	
+1-18	162-179	Cholangiokarzinom	*	Diagnosis or Pathology	_	*	*	Finding	1-17	
+1-19	180-181	(	_	_	_	_	_	_	_	
+1-20	181-184	CCA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+1-21	184-185	)	_	_	_	_	_	_	_	
+1-22	186-188	40	_	_	_	_	_	_	_	
+1-23	188-189	-	_	_	_	_	_	_	_	
+1-24	189-192	80%	_	_	_	_	_	_	_	
+1-25	193-194	(	_	_	_	_	_	_	_	
+1-26	194-204	Auflistung	_	_	_	_	_	_	_	
+1-27	205-208	der	_	_	_	_	_	_	_	
+1-28	209-226	Studienergebnisse	_	_	_	_	_	_	_	
+1-29	227-232	siehe	_	_	_	_	_	_	_	
+1-30	233-234	[	_	_	_	_	_	_	_	
+1-31	234-237	REF	_	_	_	_	_	_	_	
+1-32	237-238	]	_	_	_	_	_	_	_	
+1-33	239-240	)	_	_	_	_	_	_	_	
+1-34	240-241	.	_	_	_	_	_	_	_	
+
+#Text=Auch für andere Lokalisationen des CCA und für Gallenblasenkarzinome (GB-CA) ist das Rezidivrisiko ähnlich hoch.
+2-1	242-246	Auch	_	_	_	_	_	_	_	
+2-2	247-250	für	_	_	_	_	_	_	_	
+2-3	251-257	andere	_	_	_	_	_	_	_	
+2-4	258-272	Lokalisationen	_	_	_	_	_	_	_	
+2-5	273-276	des	_	_	_	_	_	_	_	
+2-6	277-280	CCA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+2-7	281-284	und	_	_	_	_	_	_	_	
+2-8	285-288	für	_	_	_	_	_	_	_	
+2-9	289-310	Gallenblasenkarzinome	*	Diagnosis or Pathology	_	*	*	Finding	_	
+2-10	311-312	(	_	_	_	_	_	_	_	
+2-11	312-317	GB-CA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+2-12	317-318	)	_	_	_	_	_	_	_	
+2-13	319-322	ist	_	_	_	_	_	_	_	
+2-14	323-326	das	_	_	_	_	_	_	_	
+2-15	327-340	Rezidivrisiko	*	Other Finding	_	*	*	Finding	_	
+2-16	341-348	ähnlich	_	_	_	_	_	_	_	
+2-17	349-353	hoch	_	_	_	_	_	_	_	
+2-18	353-354	.	_	_	_	_	_	_	_	
+
+#Text=Risikofaktoren für ein frühes Rezidiv sind vor allem Lymphknotenmetastasen (N1), R1-Status und ein niedriger Differenzierungsgrad (G3).
+3-1	355-369	Risikofaktoren	*	Other Finding	_	*	*	Finding	3-2[6_0]	
+3-2	370-373	für	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+3-3	374-377	ein	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+3-4	378-384	frühes	*[6]|*[7]	*[6]|*[7]	_[6]|_[7]	*|*	*[6]|*[7]	Specification[6]|Specification[7]	_	
+3-5	385-392	Rezidiv	*[6]|*[8]	*[6]|Diagnosis or Pathology[8]	_[6]|_[8]	*|*	*[6]|*[8]	Specification[6]|Finding[8]	3-4[7_8]	
+3-6	393-397	sind	_	_	_	_	_	_	_	
+3-7	398-401	vor	_	_	_	_	_	_	_	
+3-8	402-407	allem	_	_	_	_	_	_	_	
+3-9	408-429	Lymphknotenmetastasen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-10	430-431	(	_	_	_	_	_	_	_	
+3-11	431-433	N1	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-12	433-434	)	_	_	_	_	_	_	_	
+3-13	434-435	,	_	_	_	_	_	_	_	
+3-14	436-438	R1	*[9]	Diagnosis or Pathology[9]	_[9]	*	*[9]	Finding[9]	_	
+3-15	438-439	-	*[9]	Diagnosis or Pathology[9]	_[9]	*	*[9]	Finding[9]	_	
+3-16	439-445	Status	*[9]	Diagnosis or Pathology[9]	_[9]	*	*[9]	Finding[9]	_	
+3-17	446-449	und	_	_	_	_	_	_	_	
+3-18	450-453	ein	_	_	_	_	_	_	_	
+3-19	454-463	niedriger	*	*	_	*	*	Specification	_	
+3-20	464-484	Differenzierungsgrad	*	Diagnosis or Pathology	_	*	*	Finding	3-19	
+3-21	485-486	(	_	_	_	_	_	_	_	
+3-22	486-488	G3	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-23	488-489	)	_	_	_	_	_	_	_	
+3-24	489-490	.	_	_	_	_	_	_	_	
+
+#Text=Eine Metaanalyse retrospektiver und einarmiger Studien mit mehr als 6000 Patienten mit CCA oder GB-CA ergab für Patienten mit einem dieser Risikofaktoren einen Vorteil für eine adjuvante Therapie [REF].
+4-1	491-495	Eine	_	_	_	_	_	_	_	
+4-2	496-507	Metaanalyse	_	_	_	_	_	_	_	
+4-3	508-522	retrospektiver	_	_	_	_	_	_	_	
+4-4	523-526	und	_	_	_	_	_	_	_	
+4-5	527-537	einarmiger	_	_	_	_	_	_	_	
+4-6	538-545	Studien	_	_	_	_	_	_	_	
+4-7	546-549	mit	_	_	_	_	_	_	_	
+4-8	550-554	mehr	_	_	_	_	_	_	_	
+4-9	555-558	als	_	_	_	_	_	_	_	
+4-10	559-563	6000	_	_	_	_	_	_	_	
+4-11	564-573	Patienten	_	_	_	_	_	_	_	
+4-12	574-577	mit	_	_	_	_	_	_	_	
+4-13	578-581	CCA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+4-14	582-586	oder	_	_	_	_	_	_	_	
+4-15	587-592	GB-CA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+4-16	593-598	ergab	_	_	_	_	_	_	_	
+4-17	599-602	für	_	_	_	_	_	_	_	
+4-18	603-612	Patienten	_	_	_	_	_	_	_	
+4-19	613-616	mit	_	_	_	_	_	_	_	
+4-20	617-622	einem	_	_	_	_	_	_	_	
+4-21	623-629	dieser	_	_	_	_	_	_	_	
+4-22	630-644	Risikofaktoren	*	Other Finding	_	*	*	Finding	_	
+4-23	645-650	einen	_	_	_	_	_	_	_	
+4-24	651-658	Vorteil	_	_	_	_	_	_	_	
+4-25	659-662	für	_	_	_	_	_	_	_	
+4-26	663-667	eine	_	_	_	_	_	_	_	
+4-27	668-677	adjuvante	*	*	_	*	*	Specification	_	
+4-28	678-686	Therapie	*	Therapeutic	_	*	*	Procedure	4-27	
+4-29	687-688	[	_	_	_	_	_	_	_	
+4-30	688-691	REF	_	_	_	_	_	_	_	
+4-31	691-692	]	_	_	_	_	_	_	_	
+4-32	692-693	.	_	_	_	_	_	_	_	
+
+#Text=Zusätzlich liegen mit den Ergebnissen der BILCAP-Studie jetzt auch erstmals Daten einer randomisierten Phase-III-Studie vor, die den Nutzen einer adjuvanten Chemotherapie zeigen [REF].
+5-1	694-704	Zusätzlich	_	_	_	_	_	_	_	
+5-2	705-711	liegen	_	_	_	_	_	_	_	
+5-3	712-715	mit	_	_	_	_	_	_	_	
+5-4	716-719	den	_	_	_	_	_	_	_	
+5-5	720-731	Ergebnissen	_	_	_	_	_	_	_	
+5-6	732-735	der	_	_	_	_	_	_	_	
+5-7	736-749	BILCAP-Studie	_	_	_	_	_	_	_	
+5-8	750-755	jetzt	_	_	_	_	_	_	_	
+5-9	756-760	auch	_	_	_	_	_	_	_	
+5-10	761-769	erstmals	_	_	_	_	_	_	_	
+5-11	770-775	Daten	_	_	_	_	_	_	_	
+5-12	776-781	einer	_	_	_	_	_	_	_	
+5-13	782-796	randomisierten	_	_	_	_	_	_	_	
+5-14	797-813	Phase-III-Studie	_	_	_	_	_	_	_	
+5-15	814-817	vor	_	_	_	_	_	_	_	
+5-16	817-818	,	_	_	_	_	_	_	_	
+5-17	819-822	die	_	_	_	_	_	_	_	
+5-18	823-826	den	_	_	_	_	_	_	_	
+5-19	827-833	Nutzen	_	_	_	_	_	_	_	
+5-20	834-839	einer	_	_	_	_	_	_	_	
+5-21	840-850	adjuvanten	*	*	_	*	*	Specification	_	
+5-22	851-864	Chemotherapie	*	Therapeutic	_	*	*	Procedure	5-21	
+5-23	865-871	zeigen	_	_	_	_	_	_	_	
+5-24	872-873	[	_	_	_	_	_	_	_	
+5-25	873-876	REF	_	_	_	_	_	_	_	
+5-26	876-877	]	_	_	_	_	_	_	_	
+5-27	877-878	.	_	_	_	_	_	_	_	
+
+#Text=In dieser Studie wurde bei 447 Patienten mit CCA oder muskelinvasivem GB-CA sowie vollständiger makroskopischer Tumorentfernung (R0 oder R1) die Gabe von Capecitabin (1250 mg/m2 zweimal täglich an Tag 1 bis 14 bei einer Zyklusdauer von 21 Tagen, insgesamt 8 Zyklen) mit der alleinigen Nachsorge verglichen.
+6-1	879-881	In	_	_	_	_	_	_	_	
+6-2	882-888	dieser	_	_	_	_	_	_	_	
+6-3	889-895	Studie	_	_	_	_	_	_	_	
+6-4	896-901	wurde	_	_	_	_	_	_	_	
+6-5	902-905	bei	_	_	_	_	_	_	_	
+6-6	906-909	447	_	_	_	_	_	_	_	
+6-7	910-919	Patienten	_	_	_	_	_	_	_	
+6-8	920-923	mit	_	_	_	_	_	_	_	
+6-9	924-927	CCA	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-10	928-932	oder	_	_	_	_	_	_	_	
+6-11	933-948	muskelinvasivem	*	*	_	*	*	Specification	_	
+6-12	949-954	GB-CA	*	Diagnosis or Pathology	_	*	*	Finding	6-11	
+6-13	955-960	sowie	_	_	_	_	_	_	_	
+6-14	961-974	vollständiger	*	*	_	*	*	Specification	_	
+6-15	975-990	makroskopischer	*	*	_	*	*	Specification	_	
+6-16	991-1006	Tumorentfernung	*	Therapeutic	_	*	*	Procedure	6-15|6-14	
+6-17	1007-1008	(	_	_	_	_	_	_	_	
+6-18	1008-1010	R0	*	Other Finding	_	*	*	Finding	_	
+6-19	1011-1015	oder	_	_	_	_	_	_	_	
+6-20	1016-1018	R1	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-21	1018-1019	)	_	_	_	_	_	_	_	
+6-22	1020-1023	die	_	_	_	_	_	_	_	
+6-23	1024-1028	Gabe	*	Therapeutic	_	*	*	Procedure	6-24[10_0]	
+6-24	1029-1032	von	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+6-25	1033-1044	Capecitabin	*[10]|*[11]	*[10]|Clinical Drug[11]	_[10]|_[11]	*|*	*[10]|*[11]	Specification[10]|Substance[11]	6-27[12_11]|6-31[13_11]|6-33[14_11]|6-38[15_11]|6-45[16_11]	
+6-26	1045-1046	(	_	_	_	_	_	_	_	
+6-27	1046-1050	1250	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+6-28	1051-1053	mg	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+6-29	1053-1054	/	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+6-30	1054-1056	m2	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+6-31	1057-1064	zweimal	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+6-32	1065-1072	täglich	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+6-33	1073-1075	an	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+6-34	1076-1079	Tag	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+6-35	1080-1081	1	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+6-36	1082-1085	bis	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+6-37	1086-1088	14	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+6-38	1089-1092	bei	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-39	1093-1098	einer	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-40	1099-1110	Zyklusdauer	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-41	1111-1114	von	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-42	1115-1117	21	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-43	1118-1123	Tagen	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-44	1123-1124	,	_	_	_	_	_	_	_	
+6-45	1125-1134	insgesamt	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+6-46	1135-1136	8	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+6-47	1137-1143	Zyklen	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+6-48	1143-1144	)	_	_	_	_	_	_	_	
+6-49	1145-1148	mit	_	_	_	_	_	_	_	
+6-50	1149-1152	der	_	_	_	_	_	_	_	
+6-51	1153-1163	alleinigen	*	*	_	*	*	Specification	_	
+6-52	1164-1173	Nachsorge	*	Therapeutic	_	*	*	Procedure	6-51	
+6-53	1174-1184	verglichen	_	_	_	_	_	_	_	
+6-54	1184-1185	.	_	_	_	_	_	_	_	
+
+#Text=Der Therapiebeginn sollte innerhalb von 12 Wochen postoperativ bei Patienten mit ECOG 0 – 1 erfolgen, erlaubt war eine Ausdehnung des Zeitraumes bis auf 16 Wochen.
+7-1	1186-1189	Der	_	_	_	_	_	_	_	
+7-2	1190-1204	Therapiebeginn	*	Therapeutic	_	*	*	Procedure	_	
+7-3	1205-1211	sollte	_	_	_	_	_	_	_	
+7-4	1212-1221	innerhalb	_	_	_	_	_	_	_	
+7-5	1222-1225	von	_	_	_	_	_	_	_	
+7-6	1226-1228	12	_	_	_	_	_	_	_	
+7-7	1229-1235	Wochen	_	_	_	_	_	_	_	
+7-8	1236-1248	postoperativ	_	_	_	_	_	_	_	
+7-9	1249-1252	bei	_	_	_	_	_	_	_	
+7-10	1253-1262	Patienten	_	_	_	_	_	_	_	
+7-11	1263-1266	mit	_	_	_	_	_	_	_	
+7-12	1267-1271	ECOG	*	Other Finding	_	*	*	Finding	7-13[17_0]	
+7-13	1272-1273	0	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+7-14	1274-1275	–	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+7-15	1276-1277	1	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+7-16	1278-1286	erfolgen	_	_	_	_	_	_	_	
+7-17	1286-1287	,	_	_	_	_	_	_	_	
+7-18	1288-1295	erlaubt	_	_	_	_	_	_	_	
+7-19	1296-1299	war	_	_	_	_	_	_	_	
+7-20	1300-1304	eine	_	_	_	_	_	_	_	
+7-21	1305-1315	Ausdehnung	_	_	_	_	_	_	_	
+7-22	1316-1319	des	_	_	_	_	_	_	_	
+7-23	1320-1330	Zeitraumes	_	_	_	_	_	_	_	
+7-24	1331-1334	bis	_	_	_	_	_	_	_	
+7-25	1335-1338	auf	_	_	_	_	_	_	_	
+7-26	1339-1341	16	_	_	_	_	_	_	_	
+7-27	1342-1348	Wochen	_	_	_	_	_	_	_	
+7-28	1348-1349	.	_	_	_	_	_	_	_	
+
+#Text=In der Per-Protokoll-Analyse ergab sich ein signifikanter Unterschied im medianen Gesamtüberleben von 53 versus 36 Monate (HR: 0,75; 95% CI: 0,58; 0,97, p = 0,028).
+8-1	1350-1352	In	_	_	_	_	_	_	_	
+8-2	1353-1356	der	_	_	_	_	_	_	_	
+8-3	1357-1378	Per-Protokoll-Analyse	_	_	_	_	_	_	_	
+8-4	1379-1384	ergab	_	_	_	_	_	_	_	
+8-5	1385-1389	sich	_	_	_	_	_	_	_	
+8-6	1390-1393	ein	_	_	_	_	_	_	_	
+8-7	1394-1407	signifikanter	_	_	_	_	_	_	_	
+8-8	1408-1419	Unterschied	_	_	_	_	_	_	_	
+8-9	1420-1422	im	_	_	_	_	_	_	_	
+8-10	1423-1431	medianen	_	_	_	_	_	_	_	
+8-11	1432-1447	Gesamtüberleben	*	Other Finding	_	*	*	Finding	_	
+8-12	1448-1451	von	_	_	_	_	_	_	_	
+8-13	1452-1454	53	_	_	_	_	_	_	_	
+8-14	1455-1461	versus	_	_	_	_	_	_	_	
+8-15	1462-1464	36	_	_	_	_	_	_	_	
+8-16	1465-1471	Monate	_	_	_	_	_	_	_	
+8-17	1472-1473	(	_	_	_	_	_	_	_	
+8-18	1473-1475	HR	_	_	_	_	_	_	_	
+8-19	1475-1476	:	_	_	_	_	_	_	_	
+8-20	1477-1481	0,75	_	_	_	_	_	_	_	
+8-21	1481-1482	;	_	_	_	_	_	_	_	
+8-22	1483-1486	95%	_	_	_	_	_	_	_	
+8-23	1487-1489	CI	_	_	_	_	_	_	_	
+8-24	1489-1490	:	_	_	_	_	_	_	_	
+8-25	1491-1495	0,58	_	_	_	_	_	_	_	
+8-26	1495-1496	;	_	_	_	_	_	_	_	
+8-27	1497-1501	0,97	_	_	_	_	_	_	_	
+8-28	1501-1502	,	_	_	_	_	_	_	_	
+8-29	1503-1504	p	_	_	_	_	_	_	_	
+8-30	1505-1506	=	_	_	_	_	_	_	_	
+8-31	1507-1512	0,028	_	_	_	_	_	_	_	
+8-32	1512-1513	)	_	_	_	_	_	_	_	
+8-33	1513-1514	.	_	_	_	_	_	_	_	
+
+#Text=In der Intention-to-Treat-Analyse war der Unterschied zwischen beiden Gruppen vergleichbar mit 51 versus 36 Monate (HR: 0,81; 95% CI: 0,63; 1,04, p = 0,097),
+9-1	1515-1517	In	_	_	_	_	_	_	_	
+9-2	1518-1521	der	_	_	_	_	_	_	_	
+9-3	1522-1548	Intention-to-Treat-Analyse	_	_	_	_	_	_	_	
+9-4	1549-1552	war	_	_	_	_	_	_	_	
+9-5	1553-1556	der	_	_	_	_	_	_	_	
+9-6	1557-1568	Unterschied	_	_	_	_	_	_	_	
+9-7	1569-1577	zwischen	_	_	_	_	_	_	_	
+9-8	1578-1584	beiden	_	_	_	_	_	_	_	
+9-9	1585-1592	Gruppen	_	_	_	_	_	_	_	
+9-10	1593-1605	vergleichbar	_	_	_	_	_	_	_	
+9-11	1606-1609	mit	_	_	_	_	_	_	_	
+9-12	1610-1612	51	_	_	_	_	_	_	_	
+9-13	1613-1619	versus	_	_	_	_	_	_	_	
+9-14	1620-1622	36	_	_	_	_	_	_	_	
+9-15	1623-1629	Monate	_	_	_	_	_	_	_	
+9-16	1630-1631	(	_	_	_	_	_	_	_	
+9-17	1631-1633	HR	_	_	_	_	_	_	_	
+9-18	1633-1634	:	_	_	_	_	_	_	_	
+9-19	1635-1639	0,81	_	_	_	_	_	_	_	
+9-20	1639-1640	;	_	_	_	_	_	_	_	
+9-21	1641-1644	95%	_	_	_	_	_	_	_	
+9-22	1645-1647	CI	_	_	_	_	_	_	_	
+9-23	1647-1648	:	_	_	_	_	_	_	_	
+9-24	1649-1653	0,63	_	_	_	_	_	_	_	
+9-25	1653-1654	;	_	_	_	_	_	_	_	
+9-26	1655-1659	1,04	_	_	_	_	_	_	_	
+9-27	1659-1660	,	_	_	_	_	_	_	_	
+9-28	1661-1662	p	_	_	_	_	_	_	_	
+9-29	1663-1664	=	_	_	_	_	_	_	_	
+9-30	1665-1670	0,097	_	_	_	_	_	_	_	
+9-31	1670-1671	)	_	_	_	_	_	_	_	
+9-32	1671-1672	,	_	_	_	_	_	_	_	
+
+#Text=allerdings nicht signifikant.
+10-1	1673-1683	allerdings	_	_	_	_	_	_	_	
+10-2	1684-1689	nicht	_	_	_	_	_	_	_	
+10-3	1690-1701	signifikant	_	_	_	_	_	_	_	
+10-4	1701-1702	.	_	_	_	_	_	_	_	
+
+#Text=Die mediane Zeit von der OP bis zum Therapiebeginn lag bei 10,3 Wochen.
+11-1	1703-1706	Die	_	_	_	_	_	_	_	
+11-2	1707-1714	mediane	_	_	_	_	_	_	_	
+11-3	1715-1719	Zeit	_	_	_	_	_	_	_	
+11-4	1720-1723	von	_	_	_	_	_	_	_	
+11-5	1724-1727	der	_	_	_	_	_	_	_	
+11-6	1728-1730	OP	*	Therapeutic	_	*	*	Procedure	_	
+11-7	1731-1734	bis	_	_	_	_	_	_	_	
+11-8	1735-1738	zum	_	_	_	_	_	_	_	
+11-9	1739-1753	Therapiebeginn	*	Therapeutic	_	*	*	Procedure	_	
+11-10	1754-1757	lag	_	_	_	_	_	_	_	
+11-11	1758-1761	bei	_	_	_	_	_	_	_	
+11-12	1762-1766	10,3	_	_	_	_	_	_	_	
+11-13	1767-1773	Wochen	_	_	_	_	_	_	_	
+11-14	1773-1774	.	_	_	_	_	_	_	_	
+
+#Text=Die französische PRODIGE 12-Studie konnte ebenfalls durch Gemcitabin und Oxaliplatin im Vergleich zur alleinigen Nachsorge keine signifikante Verbesserung des Gesamtüberlebens erzielen [REF].
+12-1	1775-1778	Die	_	_	_	_	_	_	_	
+12-2	1779-1791	französische	_	_	_	_	_	_	_	
+12-3	1792-1799	PRODIGE	_	_	_	_	_	_	_	
+12-4	1800-1802	12	_	_	_	_	_	_	_	
+12-5	1802-1803	-	_	_	_	_	_	_	_	
+12-6	1803-1809	Studie	_	_	_	_	_	_	_	
+12-7	1810-1816	konnte	_	_	_	_	_	_	_	
+12-8	1817-1826	ebenfalls	_	_	_	_	_	_	_	
+12-9	1827-1832	durch	_	_	_	_	_	_	_	
+12-10	1833-1843	Gemcitabin	*	Clinical Drug	_	*	*	Substance	_	
+12-11	1844-1847	und	_	_	_	_	_	_	_	
+12-12	1848-1859	Oxaliplatin	*	Clinical Drug	_	*	*	Substance	_	
+12-13	1860-1862	im	_	_	_	_	_	_	_	
+12-14	1863-1872	Vergleich	_	_	_	_	_	_	_	
+12-15	1873-1876	zur	_	_	_	_	_	_	_	
+12-16	1877-1887	alleinigen	*	*	_	*	*	Specification	_	
+12-17	1888-1897	Nachsorge	*	Therapeutic	_	*	*	Procedure	12-16	
+12-18	1898-1903	keine	_	_	_	_	_	_	_	
+12-19	1904-1916	signifikante	_	_	_	_	_	_	_	
+12-20	1917-1929	Verbesserung	*	Other Finding	_	*	*	Finding	12-21[18_0]	
+12-21	1930-1933	des	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+12-22	1934-1950	Gesamtüberlebens	*[18]|*[19]	*[18]|Other Finding[19]	_[18]|_[19]	*|*	*[18]|*[19]	Specification[18]|Finding[19]	_	
+12-23	1951-1959	erzielen	_	_	_	_	_	_	_	
+12-24	1960-1961	[	_	_	_	_	_	_	_	
+12-25	1961-1964	REF	_	_	_	_	_	_	_	
+12-26	1964-1965	]	_	_	_	_	_	_	_	
+12-27	1965-1966	.	_	_	_	_	_	_	_	
+
+#Text=Zurzeit wird in der internationalen ACTICCA-1-Studie unter Beteiligung fast aller universitären Zentren in Deutschland die Wirksamkeit einer adjuvanten Chemotherapie mit Gemcitabin und Cisplatin gegen Capecitabin getestet [REF].
+13-1	1967-1974	Zurzeit	_	_	_	_	_	_	_	
+13-2	1975-1979	wird	_	_	_	_	_	_	_	
+13-3	1980-1982	in	_	_	_	_	_	_	_	
+13-4	1983-1986	der	_	_	_	_	_	_	_	
+13-5	1987-2002	internationalen	_	_	_	_	_	_	_	
+13-6	2003-2010	ACTICCA	*[20]	Therapeutic[20]	_[20]	*	*[20]	Procedure[20]	_	
+13-7	2010-2011	-	*[20]	Therapeutic[20]	_[20]	*	*[20]	Procedure[20]	_	
+13-8	2011-2012	1	*[20]	Therapeutic[20]	_[20]	*	*[20]	Procedure[20]	_	
+13-9	2012-2013	-	*[20]	Therapeutic[20]	_[20]	*	*[20]	Procedure[20]	_	
+13-10	2013-2019	Studie	*[20]	Therapeutic[20]	_[20]	*	*[20]	Procedure[20]	_	
+13-11	2020-2025	unter	_	_	_	_	_	_	_	
+13-12	2026-2037	Beteiligung	_	_	_	_	_	_	_	
+13-13	2038-2042	fast	_	_	_	_	_	_	_	
+13-14	2043-2048	aller	_	_	_	_	_	_	_	
+13-15	2049-2062	universitären	_	_	_	_	_	_	_	
+13-16	2063-2070	Zentren	_	_	_	_	_	_	_	
+13-17	2071-2073	in	_	_	_	_	_	_	_	
+13-18	2074-2085	Deutschland	_	_	_	_	_	_	_	
+13-19	2086-2089	die	_	_	_	_	_	_	_	
+13-20	2090-2101	Wirksamkeit	_	_	_	_	_	_	_	
+13-21	2102-2107	einer	_	_	_	_	_	_	_	
+13-22	2108-2118	adjuvanten	*	*	_	*	*	Specification	_	
+13-23	2119-2132	Chemotherapie	*	Therapeutic	_	*	*	Procedure	13-24[21_0]|13-22	
+13-24	2133-2136	mit	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+13-25	2137-2147	Gemcitabin	*[21]|*[22]	*[21]|Clinical Drug[22]	_[21]|_[22]	*|*	*[21]|*[22]	Specification[21]|Substance[22]	_	
+13-26	2148-2151	und	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+13-27	2152-2161	Cisplatin	*[21]|*[23]	*[21]|Clinical Drug[23]	_[21]|_[23]	*|*	*[21]|*[23]	Specification[21]|Substance[23]	_	
+13-28	2162-2167	gegen	_	_	_	_	_	_	_	
+13-29	2168-2179	Capecitabin	*	Clinical Drug	_	*	*	Substance	_	
+13-30	2180-2188	getestet	_	_	_	_	_	_	_	
+13-31	2189-2190	[	_	_	_	_	_	_	_	
+13-32	2190-2193	REF	_	_	_	_	_	_	_	
+13-33	2193-2194	]	_	_	_	_	_	_	_	
+13-34	2194-2195	.	_	_	_	_	_	_	_	
+
+#Text=Auf Basis der zitierten Metaanalyse und der BILCAP-Daten sollte allen Patienten und insbesondere denjenigen mit einem der genannten Risikofaktoren (N1, R1 oder G3) eine adjuvante Therapie mit Capecitabin oder ein Einschluss in die ACTICCA 1-Studie angeboten werden.
+14-1	2196-2199	Auf	_	_	_	_	_	_	_	
+14-2	2200-2205	Basis	_	_	_	_	_	_	_	
+14-3	2206-2209	der	_	_	_	_	_	_	_	
+14-4	2210-2219	zitierten	_	_	_	_	_	_	_	
+14-5	2220-2231	Metaanalyse	_	_	_	_	_	_	_	
+14-6	2232-2235	und	_	_	_	_	_	_	_	
+14-7	2236-2239	der	_	_	_	_	_	_	_	
+14-8	2240-2252	BILCAP-Daten	_	_	_	_	_	_	_	
+14-9	2253-2259	sollte	_	_	_	_	_	_	_	
+14-10	2260-2265	allen	_	_	_	_	_	_	_	
+14-11	2266-2275	Patienten	_	_	_	_	_	_	_	
+14-12	2276-2279	und	_	_	_	_	_	_	_	
+14-13	2280-2292	insbesondere	_	_	_	_	_	_	_	
+14-14	2293-2303	denjenigen	_	_	_	_	_	_	_	
+14-15	2304-2307	mit	_	_	_	_	_	_	_	
+14-16	2308-2313	einem	_	_	_	_	_	_	_	
+14-17	2314-2317	der	_	_	_	_	_	_	_	
+14-18	2318-2327	genannten	_	_	_	_	_	_	_	
+14-19	2328-2342	Risikofaktoren	*	Other Finding	_	*	*	Finding	_	
+14-20	2343-2344	(	_	_	_	_	_	_	_	
+14-21	2344-2346	N1	*	Diagnosis or Pathology	_	*	*	Finding	_	
+14-22	2346-2347	,	_	_	_	_	_	_	_	
+14-23	2348-2350	R1	*	Diagnosis or Pathology	_	*	*	Finding	_	
+14-24	2351-2355	oder	_	_	_	_	_	_	_	
+14-25	2356-2358	G3	*	Diagnosis or Pathology	_	*	*	Finding	_	
+14-26	2358-2359	)	_	_	_	_	_	_	_	
+14-27	2360-2364	eine	_	_	_	_	_	_	_	
+14-28	2365-2374	adjuvante	*	*	_	*	*	Specification	_	
+14-29	2375-2383	Therapie	*	Therapeutic	_	*	*	Procedure	14-28|14-30[24_0]	
+14-30	2384-2387	mit	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+14-31	2388-2399	Capecitabin	*[24]|*[25]	*[24]|Clinical Drug[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Substance[25]	_	
+14-32	2400-2404	oder	_	_	_	_	_	_	_	
+14-33	2405-2408	ein	_	_	_	_	_	_	_	
+14-34	2409-2419	Einschluss	*	Therapeutic	_	*	*	Procedure	14-35[26_0]	
+14-35	2420-2422	in	*[26]	*[26]	_[26]	*	*[26]	Specification[26]	_	
+14-36	2423-2426	die	*[26]	*[26]	_[26]	*	*[26]	Specification[26]	_	
+14-37	2427-2434	ACTICCA	*[26]|*[27]	*[26]|Therapeutic[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Procedure[27]	_	
+14-38	2435-2436	1	*[26]|*[27]	*[26]|Therapeutic[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Procedure[27]	_	
+14-39	2436-2437	-	*[26]|*[27]	*[26]|Therapeutic[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Procedure[27]	_	
+14-40	2437-2443	Studie	*[26]|*[27]	*[26]|Therapeutic[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Procedure[27]	_	
+14-41	2444-2453	angeboten	_	_	_	_	_	_	_	
+14-42	2454-2460	werden	_	_	_	_	_	_	_	
+14-43	2460-2461	.	_	_	_	_	_	_	_	
+
+#Text=Aufgrund fehlender Evidenz besteht außerhalb von klinischen Studien zurzeit keine Indikation für eine adjuvante Strahlentherapie.
+15-1	2462-2470	Aufgrund	_	_	_	_	_	_	_	
+15-2	2471-2480	fehlender	_	_	_	_	_	_	_	
+15-3	2481-2488	Evidenz	_	_	_	_	_	_	_	
+15-4	2489-2496	besteht	_	_	_	_	_	_	_	
+15-5	2497-2506	außerhalb	_	_	_	_	_	_	_	
+15-6	2507-2510	von	_	_	_	_	_	_	_	
+15-7	2511-2521	klinischen	_	_	_	_	_	_	_	
+15-8	2522-2529	Studien	_	_	_	_	_	_	_	
+15-9	2530-2537	zurzeit	_	_	_	_	_	_	_	
+15-10	2538-2543	keine	_	_	_	_	_	_	_	
+15-11	2544-2554	Indikation	_	_	_	_	_	_	_	
+15-12	2555-2558	für	_	_	_	_	_	_	_	
+15-13	2559-2563	eine	_	_	_	_	_	_	_	
+15-14	2564-2573	adjuvante	*	*	_	*	*	Specification	_	
+15-15	2574-2590	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	15-14	
+15-16	2590-2591	.	_	_	_	_	_	_	_	

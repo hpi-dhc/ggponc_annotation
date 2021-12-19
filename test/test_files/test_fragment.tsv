@@ -1,0 +1,17 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+#Text=Insbesondere Antioxidantien können die Wirkung von Chemo- und Strahlentherapie abschwächen.
+13-1	1802-1814	Insbesondere	_	_	_	_	_	_	_	
+13-2	1815-1829	Antioxidantien	*	Nutrient or Body Substance	_	*	*	Substance	_	
+13-3	1830-1836	können	_	_	_	_	_	_	_	
+13-4	1837-1840	die	_	_	_	_	_	_	_	
+13-5	1841-1848	Wirkung	_	_	_	_	_	_	_	
+13-6	1849-1852	von	_	_	_	_	_	_	_	
+13-7	1853-1858	Chemo	*	Therapeutic		13-10	therapie	Procedure	_	
+13-8	1858-1859	-	_	_	_	_	_	_	_	
+13-9	1860-1863	und	_	_	_	_	_	_	_	
+13-10	1864-1880	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	_	
+13-11	1881-1892	abschwächen	_	_	_	_	_	_	_	
+13-12	1892-1893	.	_	_	_	_	_	_	_	

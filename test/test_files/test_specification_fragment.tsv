@@ -1,0 +1,31 @@
+#Text=Bei einer durch kolposkopisch gezielte Biopsie gesicherten CIN 1 beträgt das Risiko der Entwicklung einer CIN 2/3 innerhalb den nächsten 2 Jahren nur 13% [REF].
+5-1	517-520	Bei	_	_	_	_	_	_	_	
+5-2	521-526	einer	_	_	_	_	_	_	_	
+5-3	527-532	durch	_	_	_	_	_	_	_	
+5-4	533-546	kolposkopisch	*[11]|*[12]	*[11]|*[12]	_[11]|_[12]	*|*	*[11]|*[12]	Specification[11]|Specification[12]	_	
+5-5	547-555	gezielte	*[11]|*[12]	*[11]|*[12]	_[11]|_[12]	*|*	*[11]|*[12]	Specification[11]|Specification[12]	_	
+5-6	556-563	Biopsie	*[11]|*[13]	*[11]|Diagnostic[13]	_[11]|_[13]	*|*	*[11]|*[13]	Specification[11]|Procedure[13]	5-4[12_13]	
+5-7	564-575	gesicherten	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-8	576-579	CIN	*	Diagnosis or Pathology	_	*	*	Finding	5-9|5-4[11_0]	
+5-9	580-581	1	*	*	_	*	*	Specification	_	
+5-10	582-589	beträgt	_	_	_	_	_	_	_	
+5-11	590-593	das	_	_	_	_	_	_	_	
+5-12	594-600	Risiko	*	Other Finding	_	*	*	Finding	5-13[14_0]	
+5-13	601-604	der	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-14	605-616	Entwicklung	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-15	617-622	einer	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-16	623-626	CIN	*[14]|*[15]	*[14]|Diagnosis or Pathology[15]	_[14]|_[15]	*|*	*[14]|*[15]	Specification[14]|Finding[15]	5-17[0_15]|5-19[0_15]	
+5-17	627-628	2	*	*	_	*	*	Specification	_	
+5-18	628-629	/	_	_	_	_	_	_	_	
+5-19	629-630	3	*	*	_	*	*	Specification	_	
+5-20	631-640	innerhalb	_	_	_	_	_	_	_	
+5-21	641-644	den	_	_	_	_	_	_	_	
+5-22	645-653	nächsten	_	_	_	_	_	_	_	
+5-23	654-655	2	_	_	_	_	_	_	_	
+5-24	656-662	Jahren	_	_	_	_	_	_	_	
+5-25	663-666	nur	_	_	_	_	_	_	_	
+5-26	667-670	13%	_	_	_	_	_	_	_	
+5-27	671-672	[	_	_	_	_	_	_	_	
+5-28	672-675	REF	_	_	_	_	_	_	_	
+5-29	675-676	]	_	_	_	_	_	_	_	
+5-30	676-677	.	_	_	_	_	_	_	_	

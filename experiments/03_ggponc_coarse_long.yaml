@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - ggponc_base_config
+
+name: 03_ggponc_coarse_long
+
+train_dataset : ../data/annotations/huggingface/coarse/long/train_coarse_long.json
+dev_dataset : ../data/annotations/huggingface/coarse/long/dev_coarse_long.json
+test_dataset : ../data/annotations/huggingface/coarse/long/test_coarse_long.json
+
+task: ['Finding', 'Substance', 'Procedure']
+
+weight_decay: 0.0 
+learning_rate: 0.00005
+label_smoothing_factor: 0.05

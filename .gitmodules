@@ -1,0 +1,3 @@
+[submodule "inception-analytics"]
+	path = inception-analytics
+	url = git@github.com:zesch/inception-analytics.git

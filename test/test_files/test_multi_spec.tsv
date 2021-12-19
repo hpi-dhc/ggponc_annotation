@@ -1,0 +1,22 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+#Text=Bei oraler und enteraler Ernährung gelten für die Zufuhr von Mikronährstoffen die DACH-Empfehlungen [REF].
+4-1	542-545	Bei	_	_	_	_	_	_	_	
+4-2	546-552	oraler	*	*	_	*	*	Specification	_	
+4-3	553-556	und	_	_	_	_	_	_	_	
+4-4	557-566	enteraler	*	*	_	*	*	Specification	_	
+4-5	567-576	Ernährung	*	Therapeutic	_	*	*	Procedure	4-2|4-4	
+4-6	577-583	gelten	_	_	_	_	_	_	_	
+4-7	584-587	für	_	_	_	_	_	_	_	
+4-8	588-591	die	_	_	_	_	_	_	_	
+4-9	592-598	Zufuhr	*	Therapeutic	_	*	*	Procedure	4-10[5_0]	
+4-10	599-602	von	*[5]	*[5]	_[5]	*	*[5]	Specification[5]	_	
+4-11	603-619	Mikronährstoffen	*[5]|*[6]	*[5]|Nutrient or Body Substance[6]	_[5]|_[6]	*|*	*[5]|*[6]	Specification[5]|Substance[6]	_	
+4-12	620-623	die	_	_	_	_	_	_	_	
+4-13	624-641	DACH-Empfehlungen	_	_	_	_	_	_	_	
+4-14	642-643	[	_	_	_	_	_	_	_	
+4-15	643-646	REF	_	_	_	_	_	_	_	
+4-16	646-647	]	_	_	_	_	_	_	_	
+4-17	647-648	.	_	_	_	_	_	_	_	

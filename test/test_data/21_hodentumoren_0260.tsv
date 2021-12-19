@@ -1,0 +1,1301 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Bei 95% der Männer treten KZT im Hoden auf (gonadale KZT), bei etwa 5% sind die Tumoren primär extragonadal lokalisiert (extragonadale KZT).
+1-1	0-3	Bei	_	_	_	_	_	_	_	
+1-2	4-7	95%	_	_	_	_	_	_	_	
+1-3	8-11	der	_	_	_	_	_	_	_	
+1-4	12-18	Männer	*	Other Finding	_	*	*	Finding	_	
+1-5	19-25	treten	_	_	_	_	_	_	_	
+1-6	26-29	KZT	*	Diagnosis or Pathology	_	*	*	Finding	1-7[1_0]	
+1-7	30-32	im	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-8	33-38	Hoden	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-9	39-42	auf	_	_	_	_	_	_	_	
+1-10	43-44	(	_	_	_	_	_	_	_	
+1-11	44-52	gonadale	*	*	_	*	*	Specification	_	
+1-12	53-56	KZT	*	Diagnosis or Pathology	_	*	*	Finding	1-11	
+1-13	56-57	)	_	_	_	_	_	_	_	
+1-14	57-58	,	_	_	_	_	_	_	_	
+1-15	59-62	bei	_	_	_	_	_	_	_	
+1-16	63-67	etwa	_	_	_	_	_	_	_	
+1-17	68-70	5%	_	_	_	_	_	_	_	
+1-18	71-75	sind	_	_	_	_	_	_	_	
+1-19	76-79	die	_	_	_	_	_	_	_	
+1-20	80-87	Tumoren	*	Diagnosis or Pathology	_	*	*	Finding	1-21[2_0]	
+1-21	88-94	primär	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-22	95-107	extragonadal	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-23	108-119	lokalisiert	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-24	120-121	(	_	_	_	_	_	_	_	
+1-25	121-134	extragonadale	*	*	_	*	*	Specification	_	
+1-26	135-138	KZT	*	Diagnosis or Pathology	_	*	*	Finding	1-25	
+1-27	138-139	)	_	_	_	_	_	_	_	
+1-28	139-140	.	_	_	_	_	_	_	_	
+
+#Text=Daher sollte bei allen Männern mit unklarem Primärtumor (z.B. retroperitoneal oder mediastinal) die Differenzialdiagnose gonadaler KZT bzw. extragonadaler KZT in Betracht gezogen werden.
+2-1	141-146	Daher	_	_	_	_	_	_	_	
+2-2	147-153	sollte	_	_	_	_	_	_	_	
+2-3	154-157	bei	_	_	_	_	_	_	_	
+2-4	158-163	allen	_	_	_	_	_	_	_	
+2-5	164-171	Männern	*	Other Finding	_	*	*	Finding	2-6[3_0]	
+2-6	172-175	mit	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-7	176-184	unklarem	*[3]|*[4]	*[3]|*[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Specification[4]	_	
+2-8	185-196	Primärtumor	*[3]|*[5]	*[3]|Diagnosis or Pathology[5]	_[3]|_[5]	*|*	*[3]|*[5]	Specification[3]|Finding[5]	2-7[4_5]	
+2-9	197-198	(	_	_	_	_	_	_	_	
+2-10	198-201	z.B	_	_	_	_	_	_	_	
+2-11	201-202	.	_	_	_	_	_	_	_	
+2-12	203-218	retroperitoneal	_	_	_	_	_	_	_	
+2-13	219-223	oder	_	_	_	_	_	_	_	
+2-14	224-235	mediastinal	_	_	_	_	_	_	_	
+2-15	235-236	)	_	_	_	_	_	_	_	
+2-16	237-240	die	_	_	_	_	_	_	_	
+2-17	241-261	Differenzialdiagnose	*	Diagnostic	_	*	*	Procedure	_	
+2-18	262-271	gonadaler	*	*	_	*	*	Specification	_	
+2-19	272-275	KZT	*	Diagnosis or Pathology	_	*	*	Finding	2-18	
+2-20	276-279	bzw	_	_	_	_	_	_	_	
+2-21	279-280	.	_	_	_	_	_	_	_	
+2-22	281-295	extragonadaler	*	*	_	*	*	Specification	_	
+2-23	296-299	KZT	*	Diagnosis or Pathology	_	*	*	Finding	2-22	
+2-24	300-302	in	_	_	_	_	_	_	_	
+2-25	303-311	Betracht	_	_	_	_	_	_	_	
+2-26	312-319	gezogen	_	_	_	_	_	_	_	
+2-27	320-326	werden	_	_	_	_	_	_	_	
+2-28	326-327	.	_	_	_	_	_	_	_	
+
+#Text=Primäre extragonadale KZT (EGKZT) gelten als besondere Subgruppe der KZT.
+3-1	328-335	Primäre	*	*	_	*	*	Specification	_	
+3-2	336-349	extragonadale	*	*	_	*	*	Specification	_	
+3-3	350-353	KZT	*	Diagnosis or Pathology	_	*	*	Finding	3-1|3-2	
+3-4	354-355	(	_	_	_	_	_	_	_	
+3-5	355-360	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-6	360-361	)	_	_	_	_	_	_	_	
+3-7	362-368	gelten	_	_	_	_	_	_	_	
+3-8	369-372	als	_	_	_	_	_	_	_	
+3-9	373-382	besondere	_	_	_	_	_	_	_	
+3-10	383-392	Subgruppe	_	_	_	_	_	_	_	
+3-11	393-396	der	_	_	_	_	_	_	_	
+3-12	397-400	KZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-13	400-401	.	_	_	_	_	_	_	_	
+
+#Text=Sie entstehen durch maligne Transformation von Keimzellen, die entweder im Rahmen der Embryonalentwicklung fehlverteilt wurden, oder von Keimzellen, die natürlicherweise zwecks Steuerung von immunologischen Prozessen oder anderen Organfunktionen an extragonadalen Lokalisationen vorkommen.
+4-1	402-405	Sie	_	_	_	_	_	_	_	
+4-2	406-415	entstehen	_	_	_	_	_	_	_	
+4-3	416-421	durch	_	_	_	_	_	_	_	
+4-4	422-429	maligne	*	*	_	*	*	Specification	_	
+4-5	430-444	Transformation	*	Diagnosis or Pathology	_	*	*	Finding	4-4|4-6[6_0]	
+4-6	445-448	von	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+4-7	449-459	Keimzellen	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+4-8	459-460	,	_	_	_	_	_	_	_	
+4-9	461-464	die	_	_	_	_	_	_	_	
+4-10	465-473	entweder	_	_	_	_	_	_	_	
+4-11	474-476	im	_	_	_	_	_	_	_	
+4-12	477-483	Rahmen	_	_	_	_	_	_	_	
+4-13	484-487	der	_	_	_	_	_	_	_	
+4-14	488-508	Embryonalentwicklung	_	_	_	_	_	_	_	
+4-15	509-521	fehlverteilt	_	_	_	_	_	_	_	
+4-16	522-528	wurden	_	_	_	_	_	_	_	
+4-17	528-529	,	_	_	_	_	_	_	_	
+4-18	530-534	oder	_	_	_	_	_	_	_	
+4-19	535-538	von	_	_	_	_	_	_	_	
+4-20	539-549	Keimzellen	_	_	_	_	_	_	_	
+4-21	549-550	,	_	_	_	_	_	_	_	
+4-22	551-554	die	_	_	_	_	_	_	_	
+4-23	555-571	natürlicherweise	_	_	_	_	_	_	_	
+4-24	572-578	zwecks	_	_	_	_	_	_	_	
+4-25	579-588	Steuerung	_	_	_	_	_	_	_	
+4-26	589-592	von	_	_	_	_	_	_	_	
+4-27	593-608	immunologischen	_	_	_	_	_	_	_	
+4-28	609-618	Prozessen	_	_	_	_	_	_	_	
+4-29	619-623	oder	_	_	_	_	_	_	_	
+4-30	624-631	anderen	_	_	_	_	_	_	_	
+4-31	632-647	Organfunktionen	_	_	_	_	_	_	_	
+4-32	648-650	an	_	_	_	_	_	_	_	
+4-33	651-665	extragonadalen	*	*	_	*	*	Specification	_	
+4-34	666-680	Lokalisationen	*	Diagnosis or Pathology	_	*	*	Finding	4-33	
+4-35	681-690	vorkommen	_	_	_	_	_	_	_	
+4-36	690-691	.	_	_	_	_	_	_	_	
+
+#Text=Die EGKZT sind vor allem mediastinal oder retroperitoneal, aber auch an jeder anderen Stelle entlang der Mittelachse mit Ausnahme der Hoden lokalisiert.
+5-1	692-695	Die	_	_	_	_	_	_	_	
+5-2	696-701	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-3	702-706	sind	_	_	_	_	_	_	_	
+5-4	707-710	vor	_	_	_	_	_	_	_	
+5-5	711-716	allem	_	_	_	_	_	_	_	
+5-6	717-728	mediastinal	_	_	_	_	_	_	_	
+5-7	729-733	oder	_	_	_	_	_	_	_	
+5-8	734-749	retroperitoneal	_	_	_	_	_	_	_	
+5-9	749-750	,	_	_	_	_	_	_	_	
+5-10	751-755	aber	_	_	_	_	_	_	_	
+5-11	756-760	auch	_	_	_	_	_	_	_	
+5-12	761-763	an	_	_	_	_	_	_	_	
+5-13	764-769	jeder	_	_	_	_	_	_	_	
+5-14	770-777	anderen	_	_	_	_	_	_	_	
+5-15	778-784	Stelle	_	_	_	_	_	_	_	
+5-16	785-792	entlang	_	_	_	_	_	_	_	
+5-17	793-796	der	_	_	_	_	_	_	_	
+5-18	797-808	Mittelachse	_	_	_	_	_	_	_	
+5-19	809-812	mit	_	_	_	_	_	_	_	
+5-20	813-821	Ausnahme	_	_	_	_	_	_	_	
+5-21	822-825	der	_	_	_	_	_	_	_	
+5-22	826-831	Hoden	_	_	_	_	_	_	_	
+5-23	832-843	lokalisiert	_	_	_	_	_	_	_	
+5-24	843-844	.	_	_	_	_	_	_	_	
+
+#Text=Die häufigsten Lokalisationen von EGKZT stellen das vordere Mediastinum (50-70%) und das Retroperitoneum (30-40%) dar [REF].
+6-1	845-848	Die	_	_	_	_	_	_	_	
+6-2	849-859	häufigsten	_	_	_	_	_	_	_	
+6-3	860-874	Lokalisationen	*	Diagnosis or Pathology	_	*	*	Finding	6-4[7_0]	
+6-4	875-878	von	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-5	879-884	EGKZT	*[7]|*[8]	*[7]|Diagnosis or Pathology[8]	_[7]|_[8]	*|*	*[7]|*[8]	Specification[7]|Finding[8]	_	
+6-6	885-892	stellen	_	_	_	_	_	_	_	
+6-7	893-896	das	_	_	_	_	_	_	_	
+6-8	897-904	vordere	_	_	_	_	_	_	_	
+6-9	905-916	Mediastinum	_	_	_	_	_	_	_	
+6-10	917-918	(	_	_	_	_	_	_	_	
+6-11	918-920	50	_	_	_	_	_	_	_	
+6-12	920-921	-	_	_	_	_	_	_	_	
+6-13	921-924	70%	_	_	_	_	_	_	_	
+6-14	924-925	)	_	_	_	_	_	_	_	
+6-15	926-929	und	_	_	_	_	_	_	_	
+6-16	930-933	das	_	_	_	_	_	_	_	
+6-17	934-949	Retroperitoneum	_	_	_	_	_	_	_	
+6-18	950-951	(	_	_	_	_	_	_	_	
+6-19	951-953	30	_	_	_	_	_	_	_	
+6-20	953-954	-	_	_	_	_	_	_	_	
+6-21	954-957	40%	_	_	_	_	_	_	_	
+6-22	957-958	)	_	_	_	_	_	_	_	
+6-23	959-962	dar	_	_	_	_	_	_	_	
+6-24	963-964	[	_	_	_	_	_	_	_	
+6-25	964-967	REF	_	_	_	_	_	_	_	
+6-26	967-968	]	_	_	_	_	_	_	_	
+6-27	968-969	.	_	_	_	_	_	_	_	
+
+#Text=Seltenere Entstehungsorte für EGKZT sind die Zirbeldrüse (Glandula pienalis), Os sacrum, Prostata, Orbita, Harnblase oder Leber.
+7-1	970-979	Seltenere	_	_	_	_	_	_	_	
+7-2	980-995	Entstehungsorte	*	Diagnosis or Pathology	_	*	*	Finding	7-3[9_0]	
+7-3	996-999	für	*[9]	*[9]	_[9]	*	*[9]	Specification[9]	_	
+7-4	1000-1005	EGKZT	*[9]|*[10]	*[9]|Diagnosis or Pathology[10]	_[9]|_[10]	*|*	*[9]|*[10]	Specification[9]|Finding[10]	_	
+7-5	1006-1010	sind	_	_	_	_	_	_	_	
+7-6	1011-1014	die	_	_	_	_	_	_	_	
+7-7	1015-1026	Zirbeldrüse	_	_	_	_	_	_	_	
+7-8	1027-1028	(	_	_	_	_	_	_	_	
+7-9	1028-1036	Glandula	_	_	_	_	_	_	_	
+7-10	1037-1045	pienalis	_	_	_	_	_	_	_	
+7-11	1045-1046	)	_	_	_	_	_	_	_	
+7-12	1046-1047	,	_	_	_	_	_	_	_	
+7-13	1048-1050	Os	_	_	_	_	_	_	_	
+7-14	1051-1057	sacrum	_	_	_	_	_	_	_	
+7-15	1057-1058	,	_	_	_	_	_	_	_	
+7-16	1059-1067	Prostata	_	_	_	_	_	_	_	
+7-17	1067-1068	,	_	_	_	_	_	_	_	
+7-18	1069-1075	Orbita	_	_	_	_	_	_	_	
+7-19	1075-1076	,	_	_	_	_	_	_	_	
+7-20	1077-1086	Harnblase	_	_	_	_	_	_	_	
+7-21	1087-1091	oder	_	_	_	_	_	_	_	
+7-22	1092-1097	Leber	_	_	_	_	_	_	_	
+7-23	1097-1098	.	_	_	_	_	_	_	_	
+
+#Text=Epidemiologische Daten aus Deutschland weisen eine hohe Präferenz für Gehirn, Hypophyse und Zirbeldrüse mit rund 40% der Patienten (61 von 157 Patienten) aus [REF].
+8-1	1099-1115	Epidemiologische	_	_	_	_	_	_	_	
+8-2	1116-1121	Daten	_	_	_	_	_	_	_	
+8-3	1122-1125	aus	_	_	_	_	_	_	_	
+8-4	1126-1137	Deutschland	_	_	_	_	_	_	_	
+8-5	1138-1144	weisen	_	_	_	_	_	_	_	
+8-6	1145-1149	eine	_	_	_	_	_	_	_	
+8-7	1150-1154	hohe	_	_	_	_	_	_	_	
+8-8	1155-1164	Präferenz	_	_	_	_	_	_	_	
+8-9	1165-1168	für	_	_	_	_	_	_	_	
+8-10	1169-1175	Gehirn	_	_	_	_	_	_	_	
+8-11	1175-1176	,	_	_	_	_	_	_	_	
+8-12	1177-1186	Hypophyse	_	_	_	_	_	_	_	
+8-13	1187-1190	und	_	_	_	_	_	_	_	
+8-14	1191-1202	Zirbeldrüse	_	_	_	_	_	_	_	
+8-15	1203-1206	mit	_	_	_	_	_	_	_	
+8-16	1207-1211	rund	_	_	_	_	_	_	_	
+8-17	1212-1215	40%	_	_	_	_	_	_	_	
+8-18	1216-1219	der	_	_	_	_	_	_	_	
+8-19	1220-1229	Patienten	_	_	_	_	_	_	_	
+8-20	1230-1231	(	_	_	_	_	_	_	_	
+8-21	1231-1233	61	_	_	_	_	_	_	_	
+8-22	1234-1237	von	_	_	_	_	_	_	_	
+8-23	1238-1241	157	_	_	_	_	_	_	_	
+8-24	1242-1251	Patienten	_	_	_	_	_	_	_	
+8-25	1251-1252	)	_	_	_	_	_	_	_	
+8-26	1253-1256	aus	_	_	_	_	_	_	_	
+8-27	1257-1258	[	_	_	_	_	_	_	_	
+8-28	1258-1261	REF	_	_	_	_	_	_	_	
+8-29	1261-1262	]	_	_	_	_	_	_	_	
+8-30	1262-1263	.	_	_	_	_	_	_	_	
+
+#Text=Prinzipiell liegen bei den EGKZT die gleichen histologischen Subtypen wie bei gonadal lokalisierten KZT (Seminome und nicht seminomatöse KZT) vor.
+9-1	1264-1275	Prinzipiell	_	_	_	_	_	_	_	
+9-2	1276-1282	liegen	_	_	_	_	_	_	_	
+9-3	1283-1286	bei	_	_	_	_	_	_	_	
+9-4	1287-1290	den	_	_	_	_	_	_	_	
+9-5	1291-1296	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+9-6	1297-1300	die	_	_	_	_	_	_	_	
+9-7	1301-1309	gleichen	_	_	_	_	_	_	_	
+9-8	1310-1324	histologischen	*	*	_	*	*	Specification	_	
+9-9	1325-1333	Subtypen	*	Other Finding	_	*	*	Finding	9-8	
+9-10	1334-1337	wie	_	_	_	_	_	_	_	
+9-11	1338-1341	bei	_	_	_	_	_	_	_	
+9-12	1342-1349	gonadal	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+9-13	1350-1363	lokalisierten	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+9-14	1364-1367	KZT	*	Diagnosis or Pathology	_	*	*	Finding	9-12[11_0]	
+9-15	1368-1369	(	_	_	_	_	_	_	_	
+9-16	1369-1377	Seminome	*	Diagnosis or Pathology	_	*	*	Finding	_	
+9-17	1378-1381	und	_	_	_	_	_	_	_	
+9-18	1382-1387	nicht	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+9-19	1388-1400	seminomatöse	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+9-20	1401-1404	KZT	*	Diagnosis or Pathology	_	*	*	Finding	9-18[12_0]	
+9-21	1404-1405	)	_	_	_	_	_	_	_	
+9-22	1406-1409	vor	_	_	_	_	_	_	_	
+9-23	1409-1410	.	_	_	_	_	_	_	_	
+
+#Text=Bei den mediastinalen EGKZT sind häufig seminomatöse Tumoranteile und Teratomanteile nachweisbar [REF] [REF].
+10-1	1411-1414	Bei	_	_	_	_	_	_	_	
+10-2	1415-1418	den	_	_	_	_	_	_	_	
+10-3	1419-1432	mediastinalen	*	*	_	*	*	Specification	_	
+10-4	1433-1438	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	10-3	
+10-5	1439-1443	sind	_	_	_	_	_	_	_	
+10-6	1444-1450	häufig	_	_	_	_	_	_	_	
+10-7	1451-1463	seminomatöse	*	*	_	*	*	Specification	_	
+10-8	1464-1476	Tumoranteile	*	Diagnosis or Pathology	_	*	*	Finding	10-7	
+10-9	1477-1480	und	_	_	_	_	_	_	_	
+10-10	1481-1495	Teratomanteile	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-11	1496-1507	nachweisbar	_	_	_	_	_	_	_	
+10-12	1508-1509	[	_	_	_	_	_	_	_	
+10-13	1509-1512	REF	_	_	_	_	_	_	_	
+10-14	1512-1513	]	_	_	_	_	_	_	_	
+10-15	1514-1515	[	_	_	_	_	_	_	_	
+10-16	1515-1518	REF	_	_	_	_	_	_	_	
+10-17	1518-1519	]	_	_	_	_	_	_	_	
+10-18	1519-1520	.	_	_	_	_	_	_	_	
+
+#Text=Es besteht eine erhöhte Inzidenz bei Patienten mit Klinefelter-Syndrom und es wird eine erhöhte Rate an Dottersackanteilen, erhöhten AFP-Werten und TP53-Aberrationen im Vergleich zu gonadalen KZT beobachtet [REF].
+11-1	1521-1523	Es	_	_	_	_	_	_	_	
+11-2	1524-1531	besteht	_	_	_	_	_	_	_	
+11-3	1532-1536	eine	_	_	_	_	_	_	_	
+11-4	1537-1544	erhöhte	_	_	_	_	_	_	_	
+11-5	1545-1553	Inzidenz	_	_	_	_	_	_	_	
+11-6	1554-1557	bei	_	_	_	_	_	_	_	
+11-7	1558-1567	Patienten	_	_	_	_	_	_	_	
+11-8	1568-1571	mit	_	_	_	_	_	_	_	
+11-9	1572-1591	Klinefelter-Syndrom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-10	1592-1595	und	_	_	_	_	_	_	_	
+11-11	1596-1598	es	_	_	_	_	_	_	_	
+11-12	1599-1603	wird	_	_	_	_	_	_	_	
+11-13	1604-1608	eine	_	_	_	_	_	_	_	
+11-14	1609-1616	erhöhte	*	*	_	*	*	Specification	_	
+11-15	1617-1621	Rate	*	Other Finding	_	*	*	Finding	11-14|11-16[13_0]|11-19[15_0]|11-22[19_0]	
+11-16	1622-1624	an	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+11-17	1625-1643	Dottersackanteilen	*[13]|*[14]	*[13]|Diagnosis or Pathology[14]	_[13]|_[14]	*|*	*[13]|*[14]	Specification[13]|Finding[14]	_	
+11-18	1643-1644	,	_	_	_	_	_	_	_	
+11-19	1645-1653	erhöhten	\_an\_[15]|*[16]	*[15]|*[16]	_[15]|_[16]	*|*	*[15]|*[16]	Specification[15]|Specification[16]	_	
+11-20	1654-1664	AFP-Werten	\_an\_[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	11-19[16_17]	
+11-21	1665-1668	und	_	_	_	_	_	_	_	
+11-22	1669-1673	TP53	*[18]|\_an\_[19]	Diagnosis or Pathology[18]|*[19]	_[18]|_[19]	*|*	*[18]|*[19]	Finding[18]|Specification[19]	_	
+11-23	1673-1674	-	*[18]|\_an\_[19]	Diagnosis or Pathology[18]|*[19]	_[18]|_[19]	*|*	*[18]|*[19]	Finding[18]|Specification[19]	_	
+11-24	1674-1686	Aberrationen	*[18]|\_an\_[19]	Diagnosis or Pathology[18]|*[19]	_[18]|_[19]	*|*	*[18]|*[19]	Finding[18]|Specification[19]	_	
+11-25	1687-1689	im	_	_	_	_	_	_	_	
+11-26	1690-1699	Vergleich	_	_	_	_	_	_	_	
+11-27	1700-1702	zu	_	_	_	_	_	_	_	
+11-28	1703-1712	gonadalen	*	*	_	*	*	Specification	_	
+11-29	1713-1716	KZT	*	Diagnosis or Pathology	_	*	*	Finding	11-28	
+11-30	1717-1727	beobachtet	_	_	_	_	_	_	_	
+11-31	1728-1729	[	_	_	_	_	_	_	_	
+11-32	1729-1732	REF	_	_	_	_	_	_	_	
+11-33	1732-1733	]	_	_	_	_	_	_	_	
+11-34	1733-1734	.	_	_	_	_	_	_	_	
+
+#Text=Primär mediastinale EGKZT können mit einer Inzidenz von 5-10% Ursprung hämatologischer Neoplasien [REF] sein, die i.d.R.
+12-1	1735-1741	Primär	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+12-2	1742-1754	mediastinale	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+12-3	1755-1760	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	12-1[20_0]	
+12-4	1761-1767	können	_	_	_	_	_	_	_	
+12-5	1768-1771	mit	_	_	_	_	_	_	_	
+12-6	1772-1777	einer	_	_	_	_	_	_	_	
+12-7	1778-1786	Inzidenz	_	_	_	_	_	_	_	
+12-8	1787-1790	von	_	_	_	_	_	_	_	
+12-9	1791-1792	5	_	_	_	_	_	_	_	
+12-10	1792-1793	-	_	_	_	_	_	_	_	
+12-11	1793-1796	10%	_	_	_	_	_	_	_	
+12-12	1797-1805	Ursprung	_	_	_	_	_	_	_	
+12-13	1806-1821	hämatologischer	*	*	_	*	*	Specification	_	
+12-14	1822-1832	Neoplasien	*	Diagnosis or Pathology	_	*	*	Finding	12-13	
+12-15	1833-1834	[	_	_	_	_	_	_	_	
+12-16	1834-1837	REF	_	_	_	_	_	_	_	
+12-17	1837-1838	]	_	_	_	_	_	_	_	
+12-18	1839-1843	sein	_	_	_	_	_	_	_	
+12-19	1843-1844	,	_	_	_	_	_	_	_	
+12-20	1845-1848	die	_	_	_	_	_	_	_	
+12-21	1849-1854	i.d.R	_	_	_	_	_	_	_	
+12-22	1854-1855	.	_	_	_	_	_	_	_	
+
+#Text=ein Isochromosom 12p enthalten, welches auch bei den meisten KZT nachweisbar und mit einer schlechten Prognose assoziiert ist [REF].
+13-1	1856-1859	ein	_	_	_	_	_	_	_	
+13-2	1860-1872	Isochromosom	*	Diagnosis or Pathology	_	*	*	Finding	13-3	
+13-3	1873-1876	12p	*	*	_	*	*	Specification	_	
+13-4	1877-1886	enthalten	_	_	_	_	_	_	_	
+13-5	1886-1887	,	_	_	_	_	_	_	_	
+13-6	1888-1895	welches	_	_	_	_	_	_	_	
+13-7	1896-1900	auch	_	_	_	_	_	_	_	
+13-8	1901-1904	bei	_	_	_	_	_	_	_	
+13-9	1905-1908	den	_	_	_	_	_	_	_	
+13-10	1909-1916	meisten	_	_	_	_	_	_	_	
+13-11	1917-1920	KZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+13-12	1921-1932	nachweisbar	_	_	_	_	_	_	_	
+13-13	1933-1936	und	_	_	_	_	_	_	_	
+13-14	1937-1940	mit	_	_	_	_	_	_	_	
+13-15	1941-1946	einer	_	_	_	_	_	_	_	
+13-16	1947-1957	schlechten	*	*	_	*	*	Specification	_	
+13-17	1958-1966	Prognose	*	Other Finding	_	*	*	Finding	13-16	
+13-18	1967-1977	assoziiert	_	_	_	_	_	_	_	
+13-19	1978-1981	ist	_	_	_	_	_	_	_	
+13-20	1982-1983	[	_	_	_	_	_	_	_	
+13-21	1983-1986	REF	_	_	_	_	_	_	_	
+13-22	1986-1987	]	_	_	_	_	_	_	_	
+13-23	1987-1988	.	_	_	_	_	_	_	_	
+
+#Text=Die Genese der retroperitonealen EGKZT wird kontrovers diskutiert [REF].
+14-1	1989-1992	Die	_	_	_	_	_	_	_	
+14-2	1993-1999	Genese	_	_	_	_	_	_	_	
+14-3	2000-2003	der	_	_	_	_	_	_	_	
+14-4	2004-2021	retroperitonealen	*	*	_	*	*	Specification	_	
+14-5	2022-2027	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	14-4	
+14-6	2028-2032	wird	_	_	_	_	_	_	_	
+14-7	2033-2043	kontrovers	_	_	_	_	_	_	_	
+14-8	2044-2054	diskutiert	_	_	_	_	_	_	_	
+14-9	2055-2056	[	_	_	_	_	_	_	_	
+14-10	2056-2059	REF	_	_	_	_	_	_	_	
+14-11	2059-2060	]	_	_	_	_	_	_	_	
+14-12	2060-2061	.	_	_	_	_	_	_	_	
+
+#Text=Sicher ist wohl eine Assoziation zwischen einer prämalignen gonadalen Läsion und dem retroperitonealen EGKZT.
+15-1	2062-2068	Sicher	_	_	_	_	_	_	_	
+15-2	2069-2072	ist	_	_	_	_	_	_	_	
+15-3	2073-2077	wohl	_	_	_	_	_	_	_	
+15-4	2078-2082	eine	_	_	_	_	_	_	_	
+15-5	2083-2094	Assoziation	_	_	_	_	_	_	_	
+15-6	2095-2103	zwischen	_	_	_	_	_	_	_	
+15-7	2104-2109	einer	_	_	_	_	_	_	_	
+15-8	2110-2121	prämalignen	*	*	_	*	*	Specification	_	
+15-9	2122-2131	gonadalen	*	*	_	*	*	Specification	_	
+15-10	2132-2138	Läsion	*	Diagnosis or Pathology	_	*	*	Finding	15-8|15-9	
+15-11	2139-2142	und	_	_	_	_	_	_	_	
+15-12	2143-2146	dem	_	_	_	_	_	_	_	
+15-13	2147-2164	retroperitonealen	*	*	_	*	*	Specification	_	
+15-14	2165-2170	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	15-13	
+15-15	2170-2171	.	_	_	_	_	_	_	_	
+
+#Text=Die Differentialdiagnose zum „ausgebrannten“ KZT des Hodens mit retroperitonealer Metastasierung ist schwierig.
+16-1	2172-2175	Die	_	_	_	_	_	_	_	
+16-2	2176-2196	Differentialdiagnose	*	Diagnostic	_	*	*	Procedure	_	
+16-3	2197-2200	zum	_	_	_	_	_	_	_	
+16-4	2201-2202	„	_	_	_	_	_	_	_	
+16-5	2202-2215	ausgebrannten	*	*	_	*	*	Specification	_	
+16-6	2215-2216	“	_	_	_	_	_	_	_	
+16-7	2217-2220	KZT	*	Diagnosis or Pathology	_	*	*	Finding	16-8[21_0]|16-5	
+16-8	2221-2224	des	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+16-9	2225-2231	Hodens	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+16-10	2232-2235	mit	_	_	_	_	_	_	_	
+16-11	2236-2253	retroperitonealer	*	*	_	*	*	Specification	_	
+16-12	2254-2268	Metastasierung	*	Diagnosis or Pathology	_	*	*	Finding	16-11	
+16-13	2269-2272	ist	_	_	_	_	_	_	_	
+16-14	2273-2282	schwierig	_	_	_	_	_	_	_	
+16-15	2282-2283	.	_	_	_	_	_	_	_	
+
+#Text=Die Diagnosestellung von EGKZT erfolgt häufig erst in fortgeschrittenen Stadien durch tumorbedingte Symptome, aber sie treten auch als Zufallsbefunde bei Diagnostik oder anderen therapeutischen Eingriffen auf.
+17-1	2284-2287	Die	_	_	_	_	_	_	_	
+17-2	2288-2304	Diagnosestellung	*	Diagnostic	_	*	*	Procedure	17-3[22_0]	
+17-3	2305-2308	von	*[22]	*[22]	_[22]	*	*[22]	Specification[22]	_	
+17-4	2309-2314	EGKZT	*[22]|*[23]	*[22]|Diagnosis or Pathology[23]	_[22]|_[23]	*|*	*[22]|*[23]	Specification[22]|Finding[23]	_	
+17-5	2315-2322	erfolgt	_	_	_	_	_	_	_	
+17-6	2323-2329	häufig	_	_	_	_	_	_	_	
+17-7	2330-2334	erst	_	_	_	_	_	_	_	
+17-8	2335-2337	in	_	_	_	_	_	_	_	
+17-9	2338-2355	fortgeschrittenen	*	*	_	*	*	Specification	_	
+17-10	2356-2363	Stadien	*	Diagnosis or Pathology	_	*	*	Finding	17-9	
+17-11	2364-2369	durch	_	_	_	_	_	_	_	
+17-12	2370-2383	tumorbedingte	*	*	_	*	*	Specification	_	
+17-13	2384-2392	Symptome	*	Diagnosis or Pathology	_	*	*	Finding	17-12	
+17-14	2392-2393	,	_	_	_	_	_	_	_	
+17-15	2394-2398	aber	_	_	_	_	_	_	_	
+17-16	2399-2402	sie	_	_	_	_	_	_	_	
+17-17	2403-2409	treten	_	_	_	_	_	_	_	
+17-18	2410-2414	auch	_	_	_	_	_	_	_	
+17-19	2415-2418	als	_	_	_	_	_	_	_	
+17-20	2419-2433	Zufallsbefunde	*	Other Finding	_	*	*	Finding	17-21[24_0]|17-25[26_0]	
+17-21	2434-2437	bei	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+17-22	2438-2448	Diagnostik	*[24]|*[25]	*[24]|Diagnostic[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Procedure[25]	_	
+17-23	2449-2453	oder	_	_	_	_	_	_	_	
+17-24	2454-2461	anderen	_	_	_	_	_	_	_	
+17-25	2462-2477	therapeutischen	\_bei\_[26]|*[27]	*[26]|*[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Specification[27]	_	
+17-26	2478-2488	Eingriffen	\_bei\_[26]|*[28]	*[26]|Therapeutic[28]	_[26]|_[28]	*|*	*[26]|*[28]	Specification[26]|Procedure[28]	17-25[27_28]	
+17-27	2489-2492	auf	_	_	_	_	_	_	_	
+17-28	2492-2493	.	_	_	_	_	_	_	_	
+
+#Text=Das klinische Erscheinungsbild des EGKZT ist sehr unterschiedlich.
+18-1	2494-2497	Das	_	_	_	_	_	_	_	
+18-2	2498-2507	klinische	*	*	_	*	*	Specification	_	
+18-3	2508-2524	Erscheinungsbild	*	Other Finding	_	*	*	Finding	18-2|18-4[29_0]	
+18-4	2525-2528	des	*[29]	*[29]	_[29]	*	*[29]	Specification[29]	_	
+18-5	2529-2534	EGKZT	*[29]|*[30]	*[29]|Diagnosis or Pathology[30]	_[29]|_[30]	*|*	*[29]|*[30]	Specification[29]|Finding[30]	_	
+18-6	2535-2538	ist	_	_	_	_	_	_	_	
+18-7	2539-2543	sehr	_	_	_	_	_	_	_	
+18-8	2544-2559	unterschiedlich	_	_	_	_	_	_	_	
+18-9	2559-2560	.	_	_	_	_	_	_	_	
+
+#Text=Bei mediastinalen EGKZT kann es zu Dyspnoe, Brustschmerzen, Husten oder venösen Kompressionssyndromen (inklusive Vena cava superior-Syndrom) kommen.
+19-1	2561-2564	Bei	_	_	_	_	_	_	_	
+19-2	2565-2578	mediastinalen	*	*	_	*	*	Specification	_	
+19-3	2579-2584	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	19-2	
+19-4	2585-2589	kann	_	_	_	_	_	_	_	
+19-5	2590-2592	es	_	_	_	_	_	_	_	
+19-6	2593-2595	zu	_	_	_	_	_	_	_	
+19-7	2596-2603	Dyspnoe	*	Diagnosis or Pathology	_	*	*	Finding	_	
+19-8	2603-2604	,	_	_	_	_	_	_	_	
+19-9	2605-2619	Brustschmerzen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+19-10	2619-2620	,	_	_	_	_	_	_	_	
+19-11	2621-2627	Husten	*	Diagnosis or Pathology	_	*	*	Finding	_	
+19-12	2628-2632	oder	_	_	_	_	_	_	_	
+19-13	2633-2640	venösen	*	*	_	*	*	Specification	_	
+19-14	2641-2662	Kompressionssyndromen	*	Diagnosis or Pathology	_	*	*	Finding	19-13	
+19-15	2663-2664	(	_	_	_	_	_	_	_	
+19-16	2664-2673	inklusive	_	_	_	_	_	_	_	
+19-17	2674-2678	Vena	*[31]	Diagnosis or Pathology[31]	_[31]	*	*[31]	Finding[31]	_	
+19-18	2679-2683	cava	*[31]	Diagnosis or Pathology[31]	_[31]	*	*[31]	Finding[31]	_	
+19-19	2684-2700	superior-Syndrom	*[31]	Diagnosis or Pathology[31]	_[31]	*	*[31]	Finding[31]	_	
+19-20	2700-2701	)	_	_	_	_	_	_	_	
+19-21	2702-2708	kommen	_	_	_	_	_	_	_	
+19-22	2708-2709	.	_	_	_	_	_	_	_	
+
+#Text=Bei primärer Lokalisation des EGKZT im Retroperitoneum stehen vor allem abdominale Schmerzen, Rückenschmerzen, Gewichtsverlust, Vena-cava-inferior-Thrombose oder Harnstauungsnieren als klinisches Erscheinungsbild im Vordergrund.
+20-1	2710-2713	Bei	_	_	_	_	_	_	_	
+20-2	2714-2722	primärer	*	*	_	*	*	Specification	_	
+20-3	2723-2735	Lokalisation	*	Diagnosis or Pathology	_	*	*	Finding	20-2|20-4[32_0]|20-6[34_0]	
+20-4	2736-2739	des	*[32]	*[32]	_[32]	*	*[32]	Specification[32]	_	
+20-5	2740-2745	EGKZT	*[32]|*[33]	*[32]|Diagnosis or Pathology[33]	_[32]|_[33]	*|*	*[32]|*[33]	Specification[32]|Finding[33]	_	
+20-6	2746-2748	im	*[34]	*[34]	_[34]	*	*[34]	Specification[34]	_	
+20-7	2749-2764	Retroperitoneum	*[34]	*[34]	_[34]	*	*[34]	Specification[34]	_	
+20-8	2765-2771	stehen	_	_	_	_	_	_	_	
+20-9	2772-2775	vor	_	_	_	_	_	_	_	
+20-10	2776-2781	allem	_	_	_	_	_	_	_	
+20-11	2782-2792	abdominale	*	*	_	*	*	Specification	_	
+20-12	2793-2802	Schmerzen	*	Diagnosis or Pathology	_	*	*	Finding	20-11	
+20-13	2802-2803	,	_	_	_	_	_	_	_	
+20-14	2804-2819	Rückenschmerzen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+20-15	2819-2820	,	_	_	_	_	_	_	_	
+20-16	2821-2836	Gewichtsverlust	*	Diagnosis or Pathology	_	*	*	Finding	_	
+20-17	2836-2837	,	_	_	_	_	_	_	_	
+20-18	2838-2866	Vena-cava-inferior-Thrombose	*	Diagnosis or Pathology	_	*	*	Finding	_	
+20-19	2867-2871	oder	_	_	_	_	_	_	_	
+20-20	2872-2890	Harnstauungsnieren	*	Diagnosis or Pathology	_	*	*	Finding	_	
+20-21	2891-2894	als	_	_	_	_	_	_	_	
+20-22	2895-2905	klinisches	*	*	_	*	*	Specification	_	
+20-23	2906-2922	Erscheinungsbild	*	Other Finding	_	*	*	Finding	20-22	
+20-24	2923-2925	im	_	_	_	_	_	_	_	
+20-25	2926-2937	Vordergrund	_	_	_	_	_	_	_	
+20-26	2937-2938	.	_	_	_	_	_	_	_	
+
+#Text=Eine Diagnose des EGKZT sollte bei Verdacht mittels Sonographie, CT oder MRT erfolgen und bei Nachweis einer suspekten Raumforderung histologisch gesichert werden.
+21-1	2939-2943	Eine	_	_	_	_	_	_	_	
+21-2	2944-2952	Diagnose	*	Diagnostic	_	*	*	Procedure	21-3[35_0]	
+21-3	2953-2956	des	*[35]	*[35]	_[35]	*	*[35]	Specification[35]	_	
+21-4	2957-2962	EGKZT	*[35]|*[36]	*[35]|Diagnosis or Pathology[36]	_[35]|_[36]	*|*	*[35]|*[36]	Specification[35]|Finding[36]	_	
+21-5	2963-2969	sollte	_	_	_	_	_	_	_	
+21-6	2970-2973	bei	_	_	_	_	_	_	_	
+21-7	2974-2982	Verdacht	*	Other Finding	_	*	*	Finding	_	
+21-8	2983-2990	mittels	_	_	_	_	_	_	_	
+21-9	2991-3002	Sonographie	*	Diagnostic	_	*	*	Procedure	_	
+21-10	3002-3003	,	_	_	_	_	_	_	_	
+21-11	3004-3006	CT	*	Diagnostic	_	*	*	Procedure	_	
+21-12	3007-3011	oder	_	_	_	_	_	_	_	
+21-13	3012-3015	MRT	*	Diagnostic	_	*	*	Procedure	_	
+21-14	3016-3024	erfolgen	_	_	_	_	_	_	_	
+21-15	3025-3028	und	_	_	_	_	_	_	_	
+21-16	3029-3032	bei	_	_	_	_	_	_	_	
+21-17	3033-3041	Nachweis	*	Diagnosis or Pathology	_	*	*	Finding	21-18[37_0]	
+21-18	3042-3047	einer	*[37]	*[37]	_[37]	*	*[37]	Specification[37]	_	
+21-19	3048-3057	suspekten	*[37]|*[38]	*[37]|*[38]	_[37]|_[38]	*|*	*[37]|*[38]	Specification[37]|Specification[38]	_	
+21-20	3058-3071	Raumforderung	*[37]|*[39]	*[37]|Diagnosis or Pathology[39]	_[37]|_[39]	*|*	*[37]|*[39]	Specification[37]|Finding[39]	21-19[38_39]	
+21-21	3072-3084	histologisch	_	_	_	_	_	_	_	
+21-22	3085-3094	gesichert	_	_	_	_	_	_	_	
+21-23	3095-3101	werden	_	_	_	_	_	_	_	
+21-24	3101-3102	.	_	_	_	_	_	_	_	
+
+#Text=Dies kann durch sonographisch- oder CT-gesteuerte Feinnadelbiopsie oder mittels Medianoskopie/Laparoskopie erfolgen.
+22-1	3103-3107	Dies	_	_	_	_	_	_	_	
+22-2	3108-3112	kann	_	_	_	_	_	_	_	
+22-3	3113-3118	durch	_	_	_	_	_	_	_	
+22-4	3119-3132	sonographisch	*	*	_	*	-gesteuerte\_	Specification	_	
+22-5	3132-3133	-	_	_	_	_	_	_	_	
+22-6	3134-3138	oder	_	_	_	_	_	_	_	
+22-7	3139-3152	CT-gesteuerte	*	*	_	*	*	Specification	_	
+22-8	3153-3169	Feinnadelbiopsie	*	Diagnostic	_	*	*	Procedure	22-7|22-4	
+22-9	3170-3174	oder	_	_	_	_	_	_	_	
+22-10	3175-3182	mittels	_	_	_	_	_	_	_	
+22-11	3183-3196	Medianoskopie	*	Diagnostic	_	*	*	Procedure	_	
+22-12	3196-3197	/	_	_	_	_	_	_	_	
+22-13	3197-3209	Laparoskopie	*	Diagnostic	_	*	*	Procedure	_	
+22-14	3210-3218	erfolgen	_	_	_	_	_	_	_	
+22-15	3218-3219	.	_	_	_	_	_	_	_	
+
+#Text=Zudem ist die Bestimmung der Serumtumormarker (AFP, Beta-hCG, LDH) zur korrekten Klassifikation des EGKZT nach IGCCCG erforderlich.
+23-1	3220-3225	Zudem	_	_	_	_	_	_	_	
+23-2	3226-3229	ist	_	_	_	_	_	_	_	
+23-3	3230-3233	die	_	_	_	_	_	_	_	
+23-4	3234-3244	Bestimmung	*	Diagnostic	_	*	*	Procedure	23-5[40_0]	
+23-5	3245-3248	der	*[40]	*[40]	_[40]	*	*[40]	Specification[40]	_	
+23-6	3249-3265	Serumtumormarker	*[40]|*[41]	*[40]|Nutrient or Body Substance[41]	_[40]|_[41]	*|*	*[40]|*[41]	Specification[40]|Substance[41]	_	
+23-7	3266-3267	(	_	_	_	_	_	_	_	
+23-8	3267-3270	AFP	*	Nutrient or Body Substance	_	*	*	Substance	_	
+23-9	3270-3271	,	_	_	_	_	_	_	_	
+23-10	3272-3280	Beta-hCG	*	Nutrient or Body Substance	_	*	*	Substance	_	
+23-11	3280-3281	,	_	_	_	_	_	_	_	
+23-12	3282-3285	LDH	*	Nutrient or Body Substance	_	*	*	Substance	_	
+23-13	3285-3286	)	_	_	_	_	_	_	_	
+23-14	3287-3290	zur	_	_	_	_	_	_	_	
+23-15	3291-3300	korrekten	*	*	_	*	*	Specification	_	
+23-16	3301-3315	Klassifikation	*	Diagnostic	_	*	*	Procedure	23-15|23-17[42_0]|23-19[44_0]	
+23-17	3316-3319	des	*[42]	*[42]	_[42]	*	*[42]	Specification[42]	_	
+23-18	3320-3325	EGKZT	*[42]|*[43]	*[42]|Diagnosis or Pathology[43]	_[42]|_[43]	*|*	*[42]|*[43]	Specification[42]|Finding[43]	_	
+23-19	3326-3330	nach	*[44]	*[44]	_[44]	*	*[44]	Specification[44]	_	
+23-20	3331-3337	IGCCCG	*[44]	*[44]	_[44]	*	*[44]	Specification[44]	_	
+23-21	3338-3350	erforderlich	_	_	_	_	_	_	_	
+23-22	3350-3351	.	_	_	_	_	_	_	_	
+
+#Text=Eine Hodensonographie ist selbstverständlich.
+24-1	3352-3356	Eine	_	_	_	_	_	_	_	
+24-2	3357-3373	Hodensonographie	*	Diagnostic	_	*	*	Procedure	_	
+24-3	3374-3377	ist	_	_	_	_	_	_	_	
+24-4	3378-3396	selbstverständlich	_	_	_	_	_	_	_	
+24-5	3396-3397	.	_	_	_	_	_	_	_	
+
+#Text=Patienten mit einem retroperitonealen nichtseminomatösen EGKZT werden entsprechend der Serumtumormarkerkonstellation gemäß IGCCCG-Klassifikation eingeteilt und analog zu den metastasierten gonadalen nichtseminomatösen KZT therapiert (siehe Kapitel Metastasierte Keimzelltumoren des Hodens).
+25-1	3398-3407	Patienten	_	_	_	_	_	_	_	
+25-2	3408-3411	mit	_	_	_	_	_	_	_	
+25-3	3412-3417	einem	_	_	_	_	_	_	_	
+25-4	3418-3435	retroperitonealen	*	*	_	*	*	Specification	_	
+25-5	3436-3454	nichtseminomatösen	*	*	_	*	*	Specification	_	
+25-6	3455-3460	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	25-4|25-5	
+25-7	3461-3467	werden	_	_	_	_	_	_	_	
+25-8	3468-3480	entsprechend	_	_	_	_	_	_	_	
+25-9	3481-3484	der	_	_	_	_	_	_	_	
+25-10	3485-3514	Serumtumormarkerkonstellation	*	Other Finding	_	*	*	Finding	_	
+25-11	3515-3520	gemäß	_	_	_	_	_	_	_	
+25-12	3521-3542	IGCCCG-Klassifikation	*	Diagnostic	_	*	*	Procedure	_	
+25-13	3543-3553	eingeteilt	_	_	_	_	_	_	_	
+25-14	3554-3557	und	_	_	_	_	_	_	_	
+25-15	3558-3564	analog	_	_	_	_	_	_	_	
+25-16	3565-3567	zu	_	_	_	_	_	_	_	
+25-17	3568-3571	den	_	_	_	_	_	_	_	
+25-18	3572-3586	metastasierten	*	*	_	*	*	Specification	_	
+25-19	3587-3596	gonadalen	*	*	_	*	*	Specification	_	
+25-20	3597-3615	nichtseminomatösen	*	*	_	*	*	Specification	_	
+25-21	3616-3619	KZT	*	Diagnosis or Pathology	_	*	*	Finding	25-18|25-19|25-20	
+25-22	3620-3630	therapiert	_	_	_	_	_	_	_	
+25-23	3631-3632	(	_	_	_	_	_	_	_	
+25-24	3632-3637	siehe	_	_	_	_	_	_	_	
+25-25	3638-3645	Kapitel	_	_	_	_	_	_	_	
+25-26	3646-3659	Metastasierte	*	*	_	*	*	Specification	_	
+25-27	3660-3675	Keimzelltumoren	*	Diagnosis or Pathology	_	*	*	Finding	25-26|25-28[45_0]	
+25-28	3676-3679	des	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+25-29	3680-3686	Hodens	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+25-30	3686-3687	)	_	_	_	_	_	_	_	
+25-31	3687-3688	.	_	_	_	_	_	_	_	
+
+#Text=Retroperitoneale EGKZT sind oft mit einem „ausgebrannten“ Tumor im Hoden vergesellschaftet, mediastinale KZT hingegen äußerst selten [REF].
+26-1	3689-3705	Retroperitoneale	*	*	_	*	*	Specification	_	
+26-2	3706-3711	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	26-1	
+26-3	3712-3716	sind	_	_	_	_	_	_	_	
+26-4	3717-3720	oft	_	_	_	_	_	_	_	
+26-5	3721-3724	mit	_	_	_	_	_	_	_	
+26-6	3725-3730	einem	_	_	_	_	_	_	_	
+26-7	3731-3732	„	*[46]	*[46]	_[46]	*	*[46]	Specification[46]	_	
+26-8	3732-3745	ausgebrannten	*[46]	*[46]	_[46]	*	*[46]	Specification[46]	_	
+26-9	3745-3746	“	*[46]	*[46]	_[46]	*	*[46]	Specification[46]	_	
+26-10	3747-3752	Tumor	*	Diagnosis or Pathology	_	*	*	Finding	26-7[46_0]|26-11[47_0]	
+26-11	3753-3755	im	*[47]	*[47]	_[47]	*	*[47]	Specification[47]	_	
+26-12	3756-3761	Hoden	*[47]	*[47]	_[47]	*	*[47]	Specification[47]	_	
+26-13	3762-3779	vergesellschaftet	_	_	_	_	_	_	_	
+26-14	3779-3780	,	_	_	_	_	_	_	_	
+26-15	3781-3793	mediastinale	*	*	_	*	*	Specification	_	
+26-16	3794-3797	KZT	*	Diagnosis or Pathology	_	*	*	Finding	26-15	
+26-17	3798-3806	hingegen	_	_	_	_	_	_	_	
+26-18	3807-3814	äußerst	_	_	_	_	_	_	_	
+26-19	3815-3821	selten	_	_	_	_	_	_	_	
+26-20	3822-3823	[	_	_	_	_	_	_	_	
+26-21	3823-3826	REF	_	_	_	_	_	_	_	
+26-22	3826-3827	]	_	_	_	_	_	_	_	
+26-23	3827-3828	.	_	_	_	_	_	_	_	
+
+#Text=Die Notwendigkeit einer primären Biopsie eines solchen Befundes wird kontrovers diskutiert.
+27-1	3829-3832	Die	_	_	_	_	_	_	_	
+27-2	3833-3846	Notwendigkeit	_	_	_	_	_	_	_	
+27-3	3847-3852	einer	_	_	_	_	_	_	_	
+27-4	3853-3861	primären	*	*	_	*	*	Specification	_	
+27-5	3862-3869	Biopsie	*	Diagnostic	_	*	*	Procedure	27-4|27-6[48_0]	
+27-6	3870-3875	eines	*[48]	*[48]	_[48]	*	*[48]	Specification[48]	_	
+27-7	3876-3883	solchen	*[48]	*[48]	_[48]	*	*[48]	Specification[48]	_	
+27-8	3884-3892	Befundes	*[48]|*[49]	*[48]|Other Finding[49]	_[48]|_[49]	*|*	*[48]|*[49]	Specification[48]|Finding[49]	_	
+27-9	3893-3897	wird	_	_	_	_	_	_	_	
+27-10	3898-3908	kontrovers	_	_	_	_	_	_	_	
+27-11	3909-3919	diskutiert	_	_	_	_	_	_	_	
+27-12	3919-3920	.	_	_	_	_	_	_	_	
+
+#Text=Nach erfolgter Chemotherapie und unauffälligem sonographischen Befund des Hodens ist die Durchführung einer Biopsie oder Ablatio testis möglich, sollte aber kritisch gesehen werden.
+28-1	3921-3925	Nach	_	_	_	_	_	_	_	
+28-2	3926-3935	erfolgter	*	*	_	*	*	Specification	_	
+28-3	3936-3949	Chemotherapie	*	Therapeutic	_	*	*	Procedure	28-2	
+28-4	3950-3953	und	_	_	_	_	_	_	_	
+28-5	3954-3967	unauffälligem	*	*	_	*	*	Specification	_	
+28-6	3968-3983	sonographischen	*	*	_	*	*	Specification	_	
+28-7	3984-3990	Befund	*	Other Finding	_	*	*	Finding	28-8[50_0]|28-6|28-5	
+28-8	3991-3994	des	*[50]	*[50]	_[50]	*	*[50]	Specification[50]	_	
+28-9	3995-4001	Hodens	*[50]	*[50]	_[50]	*	*[50]	Specification[50]	_	
+28-10	4002-4005	ist	_	_	_	_	_	_	_	
+28-11	4006-4009	die	_	_	_	_	_	_	_	
+28-12	4010-4022	Durchführung	*[51]|*[52]	Diagnostic[51]|Therapeutic[52]	_[51]|_[52]	*|*	*[51]|*[52]	Procedure[51]|Procedure[52]	28-13[53_51]|28-16[56_52]	
+28-13	4023-4028	einer	*[53]	*[53]	_[53]	*	*[53]	Specification[53]	_	
+28-14	4029-4036	Biopsie	*[53]|*[54]	*[53]|Diagnostic[54]	_[53]|_[54]	*|*	*[53]|*[54]	Specification[53]|Procedure[54]	_	
+28-15	4037-4041	oder	_	_	_	_	_	_	_	
+28-16	4042-4049	Ablatio	*[55]|\_einer\_[56]	Therapeutic[55]|*[56]	_[55]|_[56]	*|*	*[55]|*[56]	Procedure[55]|Specification[56]	_	
+28-17	4050-4056	testis	*[55]|\_einer\_[56]	Therapeutic[55]|*[56]	_[55]|_[56]	*|*	*[55]|*[56]	Procedure[55]|Specification[56]	_	
+28-18	4057-4064	möglich	_	_	_	_	_	_	_	
+28-19	4064-4065	,	_	_	_	_	_	_	_	
+28-20	4066-4072	sollte	_	_	_	_	_	_	_	
+28-21	4073-4077	aber	_	_	_	_	_	_	_	
+28-22	4078-4086	kritisch	_	_	_	_	_	_	_	
+28-23	4087-4094	gesehen	_	_	_	_	_	_	_	
+28-24	4095-4101	werden	_	_	_	_	_	_	_	
+28-25	4101-4102	.	_	_	_	_	_	_	_	
+
+#Text=Als Alternative wäre im Rahmen der Nachsorge eine regelmäßige Sonographie der Hoden sinnvoll, da bei über 10% dieser Patienten spätere Hodentumoren beschrieben worden sind [REF].
+29-1	4103-4106	Als	_	_	_	_	_	_	_	
+29-2	4107-4118	Alternative	_	_	_	_	_	_	_	
+29-3	4119-4123	wäre	_	_	_	_	_	_	_	
+29-4	4124-4126	im	_	_	_	_	_	_	_	
+29-5	4127-4133	Rahmen	_	_	_	_	_	_	_	
+29-6	4134-4137	der	_	_	_	_	_	_	_	
+29-7	4138-4147	Nachsorge	*	Therapeutic	_	*	*	Procedure	_	
+29-8	4148-4152	eine	_	_	_	_	_	_	_	
+29-9	4153-4164	regelmäßige	*	*	_	*	*	Specification	_	
+29-10	4165-4176	Sonographie	*	Diagnostic	_	*	*	Procedure	29-9|29-11[57_0]	
+29-11	4177-4180	der	*[57]	*[57]	_[57]	*	*[57]	Specification[57]	_	
+29-12	4181-4186	Hoden	*[57]	*[57]	_[57]	*	*[57]	Specification[57]	_	
+29-13	4187-4195	sinnvoll	_	_	_	_	_	_	_	
+29-14	4195-4196	,	_	_	_	_	_	_	_	
+29-15	4197-4199	da	_	_	_	_	_	_	_	
+29-16	4200-4203	bei	_	_	_	_	_	_	_	
+29-17	4204-4208	über	_	_	_	_	_	_	_	
+29-18	4209-4212	10%	_	_	_	_	_	_	_	
+29-19	4213-4219	dieser	_	_	_	_	_	_	_	
+29-20	4220-4229	Patienten	_	_	_	_	_	_	_	
+29-21	4230-4237	spätere	*	*	_	*	*	Specification	_	
+29-22	4238-4250	Hodentumoren	*	Diagnosis or Pathology	_	*	*	Finding	29-21	
+29-23	4251-4262	beschrieben	_	_	_	_	_	_	_	
+29-24	4263-4269	worden	_	_	_	_	_	_	_	
+29-25	4270-4274	sind	_	_	_	_	_	_	_	
+29-26	4275-4276	[	_	_	_	_	_	_	_	
+29-27	4276-4279	REF	_	_	_	_	_	_	_	
+29-28	4279-4280	]	_	_	_	_	_	_	_	
+29-29	4280-4281	.	_	_	_	_	_	_	_	
+
+#Text=Aufgrund der unzureichenden Datenlage bei wenigen Fallzahlen in der Literatur sind keine allgemeinen Aussagen zu treffen, sondern sollten individuelle Entscheidungen über das Vorgehen in Abhängigkeit von den vorliegenden Befunden getroffen werden.
+30-1	4282-4290	Aufgrund	_	_	_	_	_	_	_	
+30-2	4291-4294	der	_	_	_	_	_	_	_	
+30-3	4295-4309	unzureichenden	_	_	_	_	_	_	_	
+30-4	4310-4319	Datenlage	_	_	_	_	_	_	_	
+30-5	4320-4323	bei	_	_	_	_	_	_	_	
+30-6	4324-4331	wenigen	_	_	_	_	_	_	_	
+30-7	4332-4342	Fallzahlen	_	_	_	_	_	_	_	
+30-8	4343-4345	in	_	_	_	_	_	_	_	
+30-9	4346-4349	der	_	_	_	_	_	_	_	
+30-10	4350-4359	Literatur	_	_	_	_	_	_	_	
+30-11	4360-4364	sind	_	_	_	_	_	_	_	
+30-12	4365-4370	keine	_	_	_	_	_	_	_	
+30-13	4371-4382	allgemeinen	_	_	_	_	_	_	_	
+30-14	4383-4391	Aussagen	_	_	_	_	_	_	_	
+30-15	4392-4394	zu	_	_	_	_	_	_	_	
+30-16	4395-4402	treffen	_	_	_	_	_	_	_	
+30-17	4402-4403	,	_	_	_	_	_	_	_	
+30-18	4404-4411	sondern	_	_	_	_	_	_	_	
+30-19	4412-4419	sollten	_	_	_	_	_	_	_	
+30-20	4420-4432	individuelle	_	_	_	_	_	_	_	
+30-21	4433-4447	Entscheidungen	_	_	_	_	_	_	_	
+30-22	4448-4452	über	_	_	_	_	_	_	_	
+30-23	4453-4456	das	_	_	_	_	_	_	_	
+30-24	4457-4465	Vorgehen	_	_	_	_	_	_	_	
+30-25	4466-4468	in	_	_	_	_	_	_	_	
+30-26	4469-4481	Abhängigkeit	_	_	_	_	_	_	_	
+30-27	4482-4485	von	_	_	_	_	_	_	_	
+30-28	4486-4489	den	_	_	_	_	_	_	_	
+30-29	4490-4502	vorliegenden	*	*	_	*	*	Specification	_	
+30-30	4503-4511	Befunden	*	Other Finding	_	*	*	Finding	30-29	
+30-31	4512-4521	getroffen	_	_	_	_	_	_	_	
+30-32	4522-4528	werden	_	_	_	_	_	_	_	
+30-33	4528-4529	.	_	_	_	_	_	_	_	
+
+#Text=Alle Patienten mit einem mediastinalen nichtseminomatösen EGKZT werden laut IGCCCG-Klassifikation ungeachtet der metastatischen Ausbreitung oder der Serumtumormarkerwerte in die schlechte Prognose-Gruppe (Stadium III) eingestuft [REF].
+31-1	4530-4534	Alle	_	_	_	_	_	_	_	
+31-2	4535-4544	Patienten	_	_	_	_	_	_	_	
+31-3	4545-4548	mit	_	_	_	_	_	_	_	
+31-4	4549-4554	einem	_	_	_	_	_	_	_	
+31-5	4555-4568	mediastinalen	*	*	_	*	*	Specification	_	
+31-6	4569-4587	nichtseminomatösen	*	*	_	*	*	Specification	_	
+31-7	4588-4593	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	31-5|31-6	
+31-8	4594-4600	werden	_	_	_	_	_	_	_	
+31-9	4601-4605	laut	_	_	_	_	_	_	_	
+31-10	4606-4627	IGCCCG-Klassifikation	*	Diagnostic	_	*	*	Procedure	_	
+31-11	4628-4638	ungeachtet	_	_	_	_	_	_	_	
+31-12	4639-4642	der	_	_	_	_	_	_	_	
+31-13	4643-4657	metastatischen	*	*	_	*	*	Specification	_	
+31-14	4658-4669	Ausbreitung	*	Diagnosis or Pathology	_	*	*	Finding	31-13	
+31-15	4670-4674	oder	_	_	_	_	_	_	_	
+31-16	4675-4678	der	_	_	_	_	_	_	_	
+31-17	4679-4700	Serumtumormarkerwerte	*	Other Finding	_	*	*	Finding	_	
+31-18	4701-4703	in	_	_	_	_	_	_	_	
+31-19	4704-4707	die	_	_	_	_	_	_	_	
+31-20	4708-4717	schlechte	*	*	_	*	*	Specification	_	
+31-21	4718-4733	Prognose-Gruppe	*	Diagnosis or Pathology	_	*	*	Finding	31-20	
+31-22	4734-4735	(	_	_	_	_	_	_	_	
+31-23	4735-4742	Stadium	*[58]	Diagnosis or Pathology[58]	_[58]	*	*[58]	Finding[58]	_	
+31-24	4743-4746	III	*[58]	Diagnosis or Pathology[58]	_[58]	*	*[58]	Finding[58]	_	
+31-25	4746-4747	)	_	_	_	_	_	_	_	
+31-26	4748-4758	eingestuft	_	_	_	_	_	_	_	
+31-27	4759-4760	[	_	_	_	_	_	_	_	
+31-28	4760-4763	REF	_	_	_	_	_	_	_	
+31-29	4763-4764	]	_	_	_	_	_	_	_	
+31-30	4764-4765	.	_	_	_	_	_	_	_	
+
+#Text=Die Chemosensitivität der primär mediastinalen nichtseminomatösen EGKZT scheint im Vergleich zu gonadalen und/oder retroperitonealen KZT reduziert zu sein, da sich in Resektaten postchemotherapeutischer Residuen häufig vitale Karzinomanteile finden [REF] [REF].
+32-1	4766-4769	Die	_	_	_	_	_	_	_	
+32-2	4770-4787	Chemosensitivität	*	Other Finding	_	*	*	Finding	32-3[59_0]	
+32-3	4788-4791	der	*[59]	*[59]	_[59]	*	*[59]	Specification[59]	_	
+32-4	4792-4798	primär	*[59]|*[60]	*[59]|*[60]	_[59]|_[60]	*|*	*[59]|*[60]	Specification[59]|Specification[60]	_	
+32-5	4799-4812	mediastinalen	*[59]|*[60]	*[59]|*[60]	_[59]|_[60]	*|*	*[59]|*[60]	Specification[59]|Specification[60]	_	
+32-6	4813-4831	nichtseminomatösen	*[59]|*[61]	*[59]|*[61]	_[59]|_[61]	*|*	*[59]|*[61]	Specification[59]|Specification[61]	_	
+32-7	4832-4837	EGKZT	*[59]|*[62]	*[59]|Diagnosis or Pathology[62]	_[59]|_[62]	*|*	*[59]|*[62]	Specification[59]|Finding[62]	32-6[61_62]|32-4[60_62]	
+32-8	4838-4845	scheint	_	_	_	_	_	_	_	
+32-9	4846-4848	im	_	_	_	_	_	_	_	
+32-10	4849-4858	Vergleich	_	_	_	_	_	_	_	
+32-11	4859-4861	zu	_	_	_	_	_	_	_	
+32-12	4862-4871	gonadalen	*	*	_	*	*	Specification	_	
+32-13	4872-4875	und	_	_	_	_	_	_	_	
+32-14	4875-4876	/	_	_	_	_	_	_	_	
+32-15	4876-4880	oder	_	_	_	_	_	_	_	
+32-16	4881-4898	retroperitonealen	*	*	_	*	*	Specification	_	
+32-17	4899-4902	KZT	*	Diagnosis or Pathology	_	*	*	Finding	32-12|32-16	
+32-18	4903-4912	reduziert	_	_	_	_	_	_	_	
+32-19	4913-4915	zu	_	_	_	_	_	_	_	
+32-20	4916-4920	sein	_	_	_	_	_	_	_	
+32-21	4920-4921	,	_	_	_	_	_	_	_	
+32-22	4922-4924	da	_	_	_	_	_	_	_	
+32-23	4925-4929	sich	_	_	_	_	_	_	_	
+32-24	4930-4932	in	_	_	_	_	_	_	_	
+32-25	4933-4943	Resektaten	_	_	_	_	_	_	_	
+32-26	4944-4968	postchemotherapeutischer	*	*	_	*	*	Specification	_	
+32-27	4969-4977	Residuen	*	Diagnosis or Pathology	_	*	*	Finding	32-26	
+32-28	4978-4984	häufig	_	_	_	_	_	_	_	
+32-29	4985-4991	vitale	*	*	_	*	*	Specification	_	
+32-30	4992-5007	Karzinomanteile	*	Diagnosis or Pathology	_	*	*	Finding	32-29	
+32-31	5008-5014	finden	_	_	_	_	_	_	_	
+32-32	5015-5016	[	_	_	_	_	_	_	_	
+32-33	5016-5019	REF	_	_	_	_	_	_	_	
+32-34	5019-5020	]	_	_	_	_	_	_	_	
+32-35	5021-5022	[	_	_	_	_	_	_	_	
+32-36	5022-5025	REF	_	_	_	_	_	_	_	
+32-37	5025-5026	]	_	_	_	_	_	_	_	
+32-38	5026-5027	.	_	_	_	_	_	_	_	
+
+#Text=Dementsprechend ist eine Therapieintensivierung mit Hochdosischemotherapie und chirurgischer Resektion aller sichtbaren Residuen nach Chemotherapie indiziert.
+33-1	5028-5043	Dementsprechend	_	_	_	_	_	_	_	
+33-2	5044-5047	ist	_	_	_	_	_	_	_	
+33-3	5048-5052	eine	_	_	_	_	_	_	_	
+33-4	5053-5075	Therapieintensivierung	*	Therapeutic	_	*	*	Procedure	33-5[63_0]|33-8[65_0]	
+33-5	5076-5079	mit	*[63]	*[63]	_[63]	*	*[63]	Specification[63]	_	
+33-6	5080-5102	Hochdosischemotherapie	*[63]|*[64]	*[63]|Therapeutic[64]	_[63]|_[64]	*|*	*[63]|*[64]	Specification[63]|Procedure[64]	_	
+33-7	5103-5106	und	_	_	_	_	_	_	_	
+33-8	5107-5120	chirurgischer	\_mit\_[65]|*[66]	*[65]|*[66]	_[65]|_[66]	*|*	*[65]|*[66]	Specification[65]|Specification[66]	_	
+33-9	5121-5130	Resektion	\_mit\_[65]|*[67]	*[65]|Therapeutic[67]	_[65]|_[67]	*|*	*[65]|*[67]	Specification[65]|Procedure[67]	33-8[66_67]|33-10[68_67]	
+33-10	5131-5136	aller	*[68]	*[68]	_[68]	*	*[68]	Specification[68]	_	
+33-11	5137-5147	sichtbaren	*[68]|*[69]	*[68]|*[69]	_[68]|_[69]	*|*	*[68]|*[69]	Specification[68]|Specification[69]	_	
+33-12	5148-5156	Residuen	*[68]|*[70]	*[68]|Diagnosis or Pathology[70]	_[68]|_[70]	*|*	*[68]|*[70]	Specification[68]|Finding[70]	33-11[69_70]	
+33-13	5157-5161	nach	_	_	_	_	_	_	_	
+33-14	5162-5175	Chemotherapie	*	Therapeutic	_	*	*	Procedure	_	
+33-15	5176-5185	indiziert	_	_	_	_	_	_	_	
+33-16	5185-5186	.	_	_	_	_	_	_	_	
+
+#Text=Die Therapie dieser Patienten soll an einem Zentrum mit ausgewiesener Erfahrung erfolgen.
+34-1	5187-5190	Die	_	_	_	_	_	_	_	
+34-2	5191-5199	Therapie	*	Therapeutic	_	*	*	Procedure	_	
+34-3	5200-5206	dieser	_	_	_	_	_	_	_	
+34-4	5207-5216	Patienten	_	_	_	_	_	_	_	
+34-5	5217-5221	soll	_	_	_	_	_	_	_	
+34-6	5222-5224	an	_	_	_	_	_	_	_	
+34-7	5225-5230	einem	_	_	_	_	_	_	_	
+34-8	5231-5238	Zentrum	_	_	_	_	_	_	_	
+34-9	5239-5242	mit	_	_	_	_	_	_	_	
+34-10	5243-5256	ausgewiesener	_	_	_	_	_	_	_	
+34-11	5257-5266	Erfahrung	_	_	_	_	_	_	_	
+34-12	5267-5275	erfolgen	_	_	_	_	_	_	_	
+34-13	5275-5276	.	_	_	_	_	_	_	_	
+
+#Text=Bei den nichtseminomatösen EGKZT sollte eine RTR analog der Indikationsstellung bei den metastasierten gonadalen KZT nach abgeschlossener Chemotherapie durchgeführt werden.
+35-1	5277-5280	Bei	_	_	_	_	_	_	_	
+35-2	5281-5284	den	_	_	_	_	_	_	_	
+35-3	5285-5303	nichtseminomatösen	*	*	_	*	*	Specification	_	
+35-4	5304-5309	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	35-3	
+35-5	5310-5316	sollte	_	_	_	_	_	_	_	
+35-6	5317-5321	eine	_	_	_	_	_	_	_	
+35-7	5322-5325	RTR	*	Therapeutic	_	*	*	Procedure	_	
+35-8	5326-5332	analog	_	_	_	_	_	_	_	
+35-9	5333-5336	der	_	_	_	_	_	_	_	
+35-10	5337-5356	Indikationsstellung	_	_	_	_	_	_	_	
+35-11	5357-5360	bei	_	_	_	_	_	_	_	
+35-12	5361-5364	den	_	_	_	_	_	_	_	
+35-13	5365-5379	metastasierten	*	*	_	*	*	Specification	_	
+35-14	5380-5389	gonadalen	*	*	_	*	*	Specification	_	
+35-15	5390-5393	KZT	*	Diagnosis or Pathology	_	*	*	Finding	35-13|35-14	
+35-16	5394-5398	nach	_	_	_	_	_	_	_	
+35-17	5399-5414	abgeschlossener	*	*	_	*	*	Specification	_	
+35-18	5415-5428	Chemotherapie	*	Therapeutic	_	*	*	Procedure	35-17	
+35-19	5429-5441	durchgeführt	_	_	_	_	_	_	_	
+35-20	5442-5448	werden	_	_	_	_	_	_	_	
+35-21	5448-5449	.	_	_	_	_	_	_	_	
+
+#Text=Beim primär mediastinalen nichtseminomatösen EGKZT sollte eine Resektion aller sichtbaren Residuen (auch < 1cm) angestrebt werden, wobei auch postchemotherapeutisch erhöhte Serumtumormarker nicht von einer Operation abhalten sollten.
+36-1	5450-5454	Beim	_	_	_	_	_	_	_	
+36-2	5455-5461	primär	*[71]	*[71]	_[71]	*	*[71]	Specification[71]	_	
+36-3	5462-5475	mediastinalen	*[71]	*[71]	_[71]	*	*[71]	Specification[71]	_	
+36-4	5476-5494	nichtseminomatösen	*	*	_	*	*	Specification	_	
+36-5	5495-5500	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	36-4|36-2[71_0]	
+36-6	5501-5507	sollte	_	_	_	_	_	_	_	
+36-7	5508-5512	eine	_	_	_	_	_	_	_	
+36-8	5513-5522	Resektion	*	Therapeutic	_	*	*	Procedure	36-9[72_0]	
+36-9	5523-5528	aller	*[72]	*[72]	_[72]	*	*[72]	Specification[72]	_	
+36-10	5529-5539	sichtbaren	*[72]|*[73]	*[72]|*[73]	_[72]|_[73]	*|*	*[72]|*[73]	Specification[72]|Specification[73]	_	
+36-11	5540-5548	Residuen	*[72]|*[74]	*[72]|Diagnosis or Pathology[74]	_[72]|_[74]	*|*	*[72]|*[74]	Specification[72]|Finding[74]	36-10[73_74]	
+36-12	5549-5550	(	_	_	_	_	_	_	_	
+36-13	5550-5554	auch	_	_	_	_	_	_	_	
+36-14	5555-5556	<	_	_	_	_	_	_	_	
+36-15	5557-5560	1cm	_	_	_	_	_	_	_	
+36-16	5560-5561	)	_	_	_	_	_	_	_	
+36-17	5562-5572	angestrebt	_	_	_	_	_	_	_	
+36-18	5573-5579	werden	_	_	_	_	_	_	_	
+36-19	5579-5580	,	_	_	_	_	_	_	_	
+36-20	5581-5586	wobei	_	_	_	_	_	_	_	
+36-21	5587-5591	auch	_	_	_	_	_	_	_	
+36-22	5592-5614	postchemotherapeutisch	*[75]	*[75]	_[75]	*	*[75]	Specification[75]	_	
+36-23	5615-5622	erhöhte	*[75]	*[75]	_[75]	*	*[75]	Specification[75]	_	
+36-24	5623-5639	Serumtumormarker	*	Diagnosis or Pathology	_	*	*	Finding	36-22[75_0]	
+36-25	5640-5645	nicht	_	_	_	_	_	_	_	
+36-26	5646-5649	von	_	_	_	_	_	_	_	
+36-27	5650-5655	einer	_	_	_	_	_	_	_	
+36-28	5656-5665	Operation	*	Therapeutic	_	*	*	Procedure	_	
+36-29	5666-5674	abhalten	_	_	_	_	_	_	_	
+36-30	5675-5682	sollten	_	_	_	_	_	_	_	
+36-31	5682-5683	.	_	_	_	_	_	_	_	
+
+#Text=In wenigen Studien mit geringen Fallzahlen wird über Patienten mit primär mediastinalen nichtseminomatösen KZT berichtet [REF] [REF] [REF].
+37-1	5684-5686	In	_	_	_	_	_	_	_	
+37-2	5687-5694	wenigen	_	_	_	_	_	_	_	
+37-3	5695-5702	Studien	_	_	_	_	_	_	_	
+37-4	5703-5706	mit	_	_	_	_	_	_	_	
+37-5	5707-5715	geringen	_	_	_	_	_	_	_	
+37-6	5716-5726	Fallzahlen	_	_	_	_	_	_	_	
+37-7	5727-5731	wird	_	_	_	_	_	_	_	
+37-8	5732-5736	über	_	_	_	_	_	_	_	
+37-9	5737-5746	Patienten	_	_	_	_	_	_	_	
+37-10	5747-5750	mit	_	_	_	_	_	_	_	
+37-11	5751-5757	primär	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+37-12	5758-5771	mediastinalen	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+37-13	5772-5790	nichtseminomatösen	*	*	_	*	*	Specification	_	
+37-14	5791-5794	KZT	*	Diagnosis or Pathology	_	*	*	Finding	37-13|37-11[76_0]	
+37-15	5795-5804	berichtet	_	_	_	_	_	_	_	
+37-16	5805-5806	[	_	_	_	_	_	_	_	
+37-17	5806-5809	REF	_	_	_	_	_	_	_	
+37-18	5809-5810	]	_	_	_	_	_	_	_	
+37-19	5811-5812	[	_	_	_	_	_	_	_	
+37-20	5812-5815	REF	_	_	_	_	_	_	_	
+37-21	5815-5816	]	_	_	_	_	_	_	_	
+37-22	5817-5818	[	_	_	_	_	_	_	_	
+37-23	5818-5821	REF	_	_	_	_	_	_	_	
+37-24	5821-5822	]	_	_	_	_	_	_	_	
+37-25	5822-5823	.	_	_	_	_	_	_	_	
+
+#Text=In der Studie von De Latour et al. wurden alle 21 eingeschlossenen Patienten mit der Erstlinien-Chemotherapie behandelt, bei 52% der Patient musste eine Zweitlinienchemotherapie erfolgen.
+38-1	5824-5826	In	_	_	_	_	_	_	_	
+38-2	5827-5830	der	_	_	_	_	_	_	_	
+38-3	5831-5837	Studie	_	_	_	_	_	_	_	
+38-4	5838-5841	von	_	_	_	_	_	_	_	
+38-5	5842-5844	De	_	_	_	_	_	_	_	
+38-6	5845-5851	Latour	_	_	_	_	_	_	_	
+38-7	5852-5854	et	_	_	_	_	_	_	_	
+38-8	5855-5857	al	_	_	_	_	_	_	_	
+38-9	5857-5858	.	_	_	_	_	_	_	_	
+38-10	5859-5865	wurden	_	_	_	_	_	_	_	
+38-11	5866-5870	alle	_	_	_	_	_	_	_	
+38-12	5871-5873	21	_	_	_	_	_	_	_	
+38-13	5874-5890	eingeschlossenen	_	_	_	_	_	_	_	
+38-14	5891-5900	Patienten	_	_	_	_	_	_	_	
+38-15	5901-5904	mit	_	_	_	_	_	_	_	
+38-16	5905-5908	der	_	_	_	_	_	_	_	
+38-17	5909-5933	Erstlinien-Chemotherapie	*	Therapeutic	_	*	*	Procedure	_	
+38-18	5934-5943	behandelt	_	_	_	_	_	_	_	
+38-19	5943-5944	,	_	_	_	_	_	_	_	
+38-20	5945-5948	bei	_	_	_	_	_	_	_	
+38-21	5949-5952	52%	_	_	_	_	_	_	_	
+38-22	5953-5956	der	_	_	_	_	_	_	_	
+38-23	5957-5964	Patient	_	_	_	_	_	_	_	
+38-24	5965-5971	musste	_	_	_	_	_	_	_	
+38-25	5972-5976	eine	_	_	_	_	_	_	_	
+38-26	5977-6001	Zweitlinienchemotherapie	*	Therapeutic	_	*	*	Procedure	_	
+38-27	6002-6010	erfolgen	_	_	_	_	_	_	_	
+38-28	6010-6011	.	_	_	_	_	_	_	_	
+
+#Text=Es wurde ein 5-Jahres-Gesamtüberleben von Patienten mit Tumoren, die auf das Mediastinum begrenzt sind, von 50% und bei Patienten mit extra-mediastinaler Beteiligung von 27% ermittelt [De Latour et al. 2012].
+39-1	6012-6014	Es	_	_	_	_	_	_	_	
+39-2	6015-6020	wurde	_	_	_	_	_	_	_	
+39-3	6021-6024	ein	_	_	_	_	_	_	_	
+39-4	6025-6026	5	*[77]	Other Finding[77]	_[77]	*	*[77]	Finding[77]	_	
+39-5	6026-6027	-	*[77]	Other Finding[77]	_[77]	*	*[77]	Finding[77]	_	
+39-6	6027-6049	Jahres-Gesamtüberleben	*[77]	Other Finding[77]	_[77]	*	*[77]	Finding[77]	_	
+39-7	6050-6053	von	_	_	_	_	_	_	_	
+39-8	6054-6063	Patienten	_	_	_	_	_	_	_	
+39-9	6064-6067	mit	_	_	_	_	_	_	_	
+39-10	6068-6075	Tumoren	*	Diagnosis or Pathology	_	*	*	Finding	_	
+39-11	6075-6076	,	_	_	_	_	_	_	_	
+39-12	6077-6080	die	_	_	_	_	_	_	_	
+39-13	6081-6084	auf	_	_	_	_	_	_	_	
+39-14	6085-6088	das	_	_	_	_	_	_	_	
+39-15	6089-6100	Mediastinum	_	_	_	_	_	_	_	
+39-16	6101-6109	begrenzt	_	_	_	_	_	_	_	
+39-17	6110-6114	sind	_	_	_	_	_	_	_	
+39-18	6114-6115	,	_	_	_	_	_	_	_	
+39-19	6116-6119	von	_	_	_	_	_	_	_	
+39-20	6120-6123	50%	_	_	_	_	_	_	_	
+39-21	6124-6127	und	_	_	_	_	_	_	_	
+39-22	6128-6131	bei	_	_	_	_	_	_	_	
+39-23	6132-6141	Patienten	_	_	_	_	_	_	_	
+39-24	6142-6145	mit	_	_	_	_	_	_	_	
+39-25	6146-6165	extra-mediastinaler	*	*	_	*	*	Specification	_	
+39-26	6166-6177	Beteiligung	*	Diagnosis or Pathology	_	*	*	Finding	39-25	
+39-27	6178-6181	von	_	_	_	_	_	_	_	
+39-28	6182-6185	27%	_	_	_	_	_	_	_	
+39-29	6186-6195	ermittelt	_	_	_	_	_	_	_	
+39-30	6196-6197	[	_	_	_	_	_	_	_	
+39-31	6197-6199	De	_	_	_	_	_	_	_	
+39-32	6200-6206	Latour	_	_	_	_	_	_	_	
+39-33	6207-6209	et	_	_	_	_	_	_	_	
+39-34	6210-6212	al	_	_	_	_	_	_	_	
+39-35	6212-6213	.	_	_	_	_	_	_	_	
+39-36	6214-6218	2012	_	_	_	_	_	_	_	
+39-37	6218-6219	]	_	_	_	_	_	_	_	
+39-38	6219-6220	.	_	_	_	_	_	_	_	
+
+#Text=Ein weiterer Vergleich des 5-Jahres-Gesamtüberlebens zeigt einen Anteil von 42% bei Patienten mit einer Zweitlinien-Chemotherapie im Vergleich zu 30% ohne eine Zweitlinien-Chemotherapie (p = 0,61) [REF].
+40-1	6221-6224	Ein	_	_	_	_	_	_	_	
+40-2	6225-6233	weiterer	_	_	_	_	_	_	_	
+40-3	6234-6243	Vergleich	_	_	_	_	_	_	_	
+40-4	6244-6247	des	_	_	_	_	_	_	_	
+40-5	6248-6249	5	*[78]	Other Finding[78]	_[78]	*	*[78]	Finding[78]	_	
+40-6	6249-6250	-	*[78]	Other Finding[78]	_[78]	*	*[78]	Finding[78]	_	
+40-7	6250-6273	Jahres-Gesamtüberlebens	*[78]	Other Finding[78]	_[78]	*	*[78]	Finding[78]	_	
+40-8	6274-6279	zeigt	_	_	_	_	_	_	_	
+40-9	6280-6285	einen	_	_	_	_	_	_	_	
+40-10	6286-6292	Anteil	_	_	_	_	_	_	_	
+40-11	6293-6296	von	_	_	_	_	_	_	_	
+40-12	6297-6300	42%	_	_	_	_	_	_	_	
+40-13	6301-6304	bei	_	_	_	_	_	_	_	
+40-14	6305-6314	Patienten	_	_	_	_	_	_	_	
+40-15	6315-6318	mit	_	_	_	_	_	_	_	
+40-16	6319-6324	einer	_	_	_	_	_	_	_	
+40-17	6325-6350	Zweitlinien-Chemotherapie	*	Therapeutic	_	*	*	Procedure	_	
+40-18	6351-6353	im	_	_	_	_	_	_	_	
+40-19	6354-6363	Vergleich	_	_	_	_	_	_	_	
+40-20	6364-6366	zu	_	_	_	_	_	_	_	
+40-21	6367-6370	30%	_	_	_	_	_	_	_	
+40-22	6371-6375	ohne	_	_	_	_	_	_	_	
+40-23	6376-6380	eine	_	_	_	_	_	_	_	
+40-24	6381-6406	Zweitlinien-Chemotherapie	*	Therapeutic	_	*	*	Procedure	_	
+40-25	6407-6408	(	_	_	_	_	_	_	_	
+40-26	6408-6409	p	_	_	_	_	_	_	_	
+40-27	6410-6411	=	_	_	_	_	_	_	_	
+40-28	6412-6416	0,61	_	_	_	_	_	_	_	
+40-29	6416-6417	)	_	_	_	_	_	_	_	
+40-30	6418-6419	[	_	_	_	_	_	_	_	
+40-31	6419-6422	REF	_	_	_	_	_	_	_	
+40-32	6422-6423	]	_	_	_	_	_	_	_	
+40-33	6423-6424	.	_	_	_	_	_	_	_	
+
+#Text=Eine Serie des Memorial Sloan Kettering Cancer Center berichtet über 57 resezierte Patienten mit primär mediastinalen nichtseminomatösen KZT, von denen 54 mit platin-basierter Chemotherapie vorbehandelt wurden.
+41-1	6425-6429	Eine	_	_	_	_	_	_	_	
+41-2	6430-6435	Serie	_	_	_	_	_	_	_	
+41-3	6436-6439	des	_	_	_	_	_	_	_	
+41-4	6440-6448	Memorial	_	_	_	_	_	_	_	
+41-5	6449-6454	Sloan	_	_	_	_	_	_	_	
+41-6	6455-6464	Kettering	_	_	_	_	_	_	_	
+41-7	6465-6471	Cancer	*	Diagnosis or Pathology	_	*	*	Finding	_	
+41-8	6472-6478	Center	_	_	_	_	_	_	_	
+41-9	6479-6488	berichtet	_	_	_	_	_	_	_	
+41-10	6489-6493	über	_	_	_	_	_	_	_	
+41-11	6494-6496	57	_	_	_	_	_	_	_	
+41-12	6497-6507	resezierte	*	Other Finding	_	*	*	Finding	_	
+41-13	6508-6517	Patienten	_	_	_	_	_	_	_	
+41-14	6518-6521	mit	_	_	_	_	_	_	_	
+41-15	6522-6528	primär	*[79]	*[79]	_[79]	*	*[79]	Specification[79]	_	
+41-16	6529-6542	mediastinalen	*[79]	*[79]	_[79]	*	*[79]	Specification[79]	_	
+41-17	6543-6561	nichtseminomatösen	*	*	_	*	*	Specification	_	
+41-18	6562-6565	KZT	*	Diagnosis or Pathology	_	*	*	Finding	41-17|41-15[79_0]	
+41-19	6565-6566	,	_	_	_	_	_	_	_	
+41-20	6567-6570	von	_	_	_	_	_	_	_	
+41-21	6571-6576	denen	_	_	_	_	_	_	_	
+41-22	6577-6579	54	_	_	_	_	_	_	_	
+41-23	6580-6583	mit	_	_	_	_	_	_	_	
+41-24	6584-6600	platin-basierter	*	*	_	*	*	Specification	_	
+41-25	6601-6614	Chemotherapie	*	Therapeutic	_	*	*	Procedure	41-24	
+41-26	6615-6627	vorbehandelt	_	_	_	_	_	_	_	
+41-27	6628-6634	wurden	_	_	_	_	_	_	_	
+41-28	6634-6635	.	_	_	_	_	_	_	_	
+
+#Text=Medianes Gesamtüberleben war 31,5 Monate, und präoperativ normalisierte oder reduzierte Serumtumormarker als Ansprechen auf die Chemotherapie waren die stärksten Prädiktoren eines verbesserten Überlebens [REF].
+42-1	6636-6644	Medianes	_	_	_	_	_	_	_	
+42-2	6645-6660	Gesamtüberleben	*	Other Finding	_	*	*	Finding	_	
+42-3	6661-6664	war	_	_	_	_	_	_	_	
+42-4	6665-6669	31,5	_	_	_	_	_	_	_	
+42-5	6670-6676	Monate	_	_	_	_	_	_	_	
+42-6	6676-6677	,	_	_	_	_	_	_	_	
+42-7	6678-6681	und	_	_	_	_	_	_	_	
+42-8	6682-6693	präoperativ	*[80]	*[80]	_[80]	*	*[80]	Specification[80]	_	
+42-9	6694-6707	normalisierte	*[80]	*[80]	_[80]	*	*[80]	Specification[80]	_	
+42-10	6708-6712	oder	_	_	_	_	_	_	_	
+42-11	6713-6723	reduzierte	\_präoperativ\_	*	_	*	*	Specification	_	
+42-12	6724-6740	Serumtumormarker	*	Other Finding	_	*	*	Finding	42-11|42-8[80_0]	
+42-13	6741-6744	als	_	_	_	_	_	_	_	
+42-14	6745-6755	Ansprechen	*	Other Finding	_	*	*	Finding	42-15[81_0]	
+42-15	6756-6759	auf	*[81]	*[81]	_[81]	*	*[81]	Specification[81]	_	
+42-16	6760-6763	die	*[81]	*[81]	_[81]	*	*[81]	Specification[81]	_	
+42-17	6764-6777	Chemotherapie	*[81]|*[82]	*[81]|Therapeutic[82]	_[81]|_[82]	*|*	*[81]|*[82]	Specification[81]|Procedure[82]	_	
+42-18	6778-6783	waren	_	_	_	_	_	_	_	
+42-19	6784-6787	die	_	_	_	_	_	_	_	
+42-20	6788-6797	stärksten	_	_	_	_	_	_	_	
+42-21	6798-6809	Prädiktoren	_	_	_	_	_	_	_	
+42-22	6810-6815	eines	_	_	_	_	_	_	_	
+42-23	6816-6828	verbesserten	*	*	_	*	*	Specification	_	
+42-24	6829-6839	Überlebens	*	Other Finding	_	*	*	Finding	42-23	
+42-25	6840-6841	[	_	_	_	_	_	_	_	
+42-26	6841-6844	REF	_	_	_	_	_	_	_	
+42-27	6844-6845	]	_	_	_	_	_	_	_	
+42-28	6845-6846	.	_	_	_	_	_	_	_	
+
+#Text=Patienten mit einem mediastinal lokalisierten seminomatösen EGKZT werden gemäß der IGCCCG-Klassifikation als „gute Prognose-Gruppe“ deklariert und erhalten dementsprechend eine Chemotherapie mit drei Zyklen PEB (Cispatin, Etoposid, Bleomycin) oder vier Zyklen PE (Ciplatin, Etoposid).
+43-1	6847-6856	Patienten	_	_	_	_	_	_	_	
+43-2	6857-6860	mit	_	_	_	_	_	_	_	
+43-3	6861-6866	einem	_	_	_	_	_	_	_	
+43-4	6867-6878	mediastinal	*[83]	*[83]	_[83]	*	*[83]	Specification[83]	_	
+43-5	6879-6892	lokalisierten	*[83]	*[83]	_[83]	*	*[83]	Specification[83]	_	
+43-6	6893-6906	seminomatösen	*	*	_	*	*	Specification	_	
+43-7	6907-6912	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	43-4[83_0]|43-6	
+43-8	6913-6919	werden	_	_	_	_	_	_	_	
+43-9	6920-6925	gemäß	_	_	_	_	_	_	_	
+43-10	6926-6929	der	_	_	_	_	_	_	_	
+43-11	6930-6951	IGCCCG-Klassifikation	*	Diagnostic	_	*	*	Procedure	_	
+43-12	6952-6955	als	_	_	_	_	_	_	_	
+43-13	6956-6957	„	_	_	_	_	_	_	_	
+43-14	6957-6961	gute	*	*	_	*	*	Specification	_	
+43-15	6962-6977	Prognose-Gruppe	*	Other Finding	_	*	*	Finding	43-14	
+43-16	6977-6978	“	_	_	_	_	_	_	_	
+43-17	6979-6989	deklariert	_	_	_	_	_	_	_	
+43-18	6990-6993	und	_	_	_	_	_	_	_	
+43-19	6994-7002	erhalten	_	_	_	_	_	_	_	
+43-20	7003-7018	dementsprechend	_	_	_	_	_	_	_	
+43-21	7019-7023	eine	_	_	_	_	_	_	_	
+43-22	7024-7037	Chemotherapie	*	Therapeutic	_	*	*	Procedure	43-23[84_0]|43-35[87_0]	
+43-23	7038-7041	mit	*[84]	*[84]	_[84]	*	*[84]	Specification[84]	_	
+43-24	7042-7046	drei	*[84]|*[85]	*[84]|*[85]	_[84]|_[85]	*|*	*[84]|*[85]	Specification[84]|Specification[85]	_	
+43-25	7047-7053	Zyklen	*[84]|*[85]	*[84]|*[85]	_[84]|_[85]	*|*	*[84]|*[85]	Specification[84]|Specification[85]	_	
+43-26	7054-7057	PEB	*[84]|*[86]	*[84]|Therapeutic[86]	_[84]|_[86]	*|*	*[84]|*[86]	Specification[84]|Procedure[86]	43-24[85_86]	
+43-27	7058-7059	(	_	_	_	_	_	_	_	
+43-28	7059-7067	Cispatin	*	Clinical Drug	_	*	*	Substance	_	
+43-29	7067-7068	,	_	_	_	_	_	_	_	
+43-30	7069-7077	Etoposid	*	Clinical Drug	_	*	*	Substance	_	
+43-31	7077-7078	,	_	_	_	_	_	_	_	
+43-32	7079-7088	Bleomycin	*	Clinical Drug	_	*	*	Substance	_	
+43-33	7088-7089	)	_	_	_	_	_	_	_	
+43-34	7090-7094	oder	_	_	_	_	_	_	_	
+43-35	7095-7099	vier	\_mit\_[87]|*[88]	*[87]|*[88]	_[87]|_[88]	*|*	*[87]|*[88]	Specification[87]|Specification[88]	_	
+43-36	7100-7106	Zyklen	\_mit\_[87]|*[88]	*[87]|*[88]	_[87]|_[88]	*|*	*[87]|*[88]	Specification[87]|Specification[88]	_	
+43-37	7107-7109	PE	\_mit\_[87]|*[89]	*[87]|Therapeutic[89]	_[87]|_[89]	*|*	*[87]|*[89]	Specification[87]|Procedure[89]	43-35[88_89]	
+43-38	7110-7111	(	_	_	_	_	_	_	_	
+43-39	7111-7119	Ciplatin	*	Clinical Drug	_	*	*	Substance	_	
+43-40	7119-7120	,	_	_	_	_	_	_	_	
+43-41	7121-7129	Etoposid	*	Clinical Drug	_	*	*	Substance	_	
+43-42	7129-7130	)	_	_	_	_	_	_	_	
+43-43	7130-7131	.	_	_	_	_	_	_	_	
+
+#Text=Eine RTR ist nicht erforderlich.
+44-1	7132-7136	Eine	_	_	_	_	_	_	_	
+44-2	7137-7140	RTR	*	Therapeutic	_	*	*	Procedure	_	
+44-3	7141-7144	ist	_	_	_	_	_	_	_	
+44-4	7145-7150	nicht	_	_	_	_	_	_	_	
+44-5	7151-7163	erforderlich	_	_	_	_	_	_	_	
+44-6	7163-7164	.	_	_	_	_	_	_	_	
+
+#Text=In drei retrospektiven Studien von Patienten mit mediastinal lokalisierten seminomatösen EGKZT (Fallzahlen zwischen n=7 und 17) werden 5-Jahres-Gesamtüberlebensraten von 71%, 87% und 100% nach einer durchschnittlichen Nachbeobachtungszeit von 51 Monaten berichtet [REF] [REF] [REF] [REF].
+45-1	7165-7167	In	_	_	_	_	_	_	_	
+45-2	7168-7172	drei	_	_	_	_	_	_	_	
+45-3	7173-7187	retrospektiven	_	_	_	_	_	_	_	
+45-4	7188-7195	Studien	_	_	_	_	_	_	_	
+45-5	7196-7199	von	_	_	_	_	_	_	_	
+45-6	7200-7209	Patienten	_	_	_	_	_	_	_	
+45-7	7210-7213	mit	_	_	_	_	_	_	_	
+45-8	7214-7225	mediastinal	*[90]	*[90]	_[90]	*	*[90]	Specification[90]	_	
+45-9	7226-7239	lokalisierten	*[90]	*[90]	_[90]	*	*[90]	Specification[90]	_	
+45-10	7240-7253	seminomatösen	*	*	_	*	*	Specification	_	
+45-11	7254-7259	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	45-8[90_0]|45-10	
+45-12	7260-7261	(	_	_	_	_	_	_	_	
+45-13	7261-7271	Fallzahlen	_	_	_	_	_	_	_	
+45-14	7272-7280	zwischen	_	_	_	_	_	_	_	
+45-15	7281-7282	n	_	_	_	_	_	_	_	
+45-16	7282-7283	=	_	_	_	_	_	_	_	
+45-17	7283-7284	7	_	_	_	_	_	_	_	
+45-18	7285-7288	und	_	_	_	_	_	_	_	
+45-19	7289-7291	17	_	_	_	_	_	_	_	
+45-20	7291-7292	)	_	_	_	_	_	_	_	
+45-21	7293-7299	werden	_	_	_	_	_	_	_	
+45-22	7300-7301	5	*[91]	Other Finding[91]	_[91]	*	*[91]	Finding[91]	_	
+45-23	7301-7302	-	*[91]	Other Finding[91]	_[91]	*	*[91]	Finding[91]	_	
+45-24	7302-7330	Jahres-Gesamtüberlebensraten	*[91]	Other Finding[91]	_[91]	*	*[91]	Finding[91]	_	
+45-25	7331-7334	von	_	_	_	_	_	_	_	
+45-26	7335-7338	71%	_	_	_	_	_	_	_	
+45-27	7338-7339	,	_	_	_	_	_	_	_	
+45-28	7340-7343	87%	_	_	_	_	_	_	_	
+45-29	7344-7347	und	_	_	_	_	_	_	_	
+45-30	7348-7352	100%	_	_	_	_	_	_	_	
+45-31	7353-7357	nach	_	_	_	_	_	_	_	
+45-32	7358-7363	einer	_	_	_	_	_	_	_	
+45-33	7364-7382	durchschnittlichen	_	_	_	_	_	_	_	
+45-34	7383-7403	Nachbeobachtungszeit	*	Diagnostic	_	*	*	Procedure	_	
+45-35	7404-7407	von	_	_	_	_	_	_	_	
+45-36	7408-7410	51	_	_	_	_	_	_	_	
+45-37	7411-7418	Monaten	_	_	_	_	_	_	_	
+45-38	7419-7428	berichtet	_	_	_	_	_	_	_	
+45-39	7429-7430	[	_	_	_	_	_	_	_	
+45-40	7430-7433	REF	_	_	_	_	_	_	_	
+45-41	7433-7434	]	_	_	_	_	_	_	_	
+45-42	7435-7436	[	_	_	_	_	_	_	_	
+45-43	7436-7439	REF	_	_	_	_	_	_	_	
+45-44	7439-7440	]	_	_	_	_	_	_	_	
+45-45	7441-7442	[	_	_	_	_	_	_	_	
+45-46	7442-7445	REF	_	_	_	_	_	_	_	
+45-47	7445-7446	]	_	_	_	_	_	_	_	
+45-48	7447-7448	[	_	_	_	_	_	_	_	
+45-49	7448-7451	REF	_	_	_	_	_	_	_	
+45-50	7451-7452	]	_	_	_	_	_	_	_	
+45-51	7452-7453	.	_	_	_	_	_	_	_	
+
+#Text=Reife Teratome sind die häufigsten KZT, die im Mediastinum lokalisiert sind.
+46-1	7454-7459	Reife	*	*	_	*	*	Specification	_	
+46-2	7460-7468	Teratome	*	Diagnosis or Pathology	_	*	*	Finding	46-1	
+46-3	7469-7473	sind	_	_	_	_	_	_	_	
+46-4	7474-7477	die	_	_	_	_	_	_	_	
+46-5	7478-7488	häufigsten	_	_	_	_	_	_	_	
+46-6	7489-7492	KZT	*	Diagnosis or Pathology	_	*	*	Finding	_	
+46-7	7492-7493	,	_	_	_	_	_	_	_	
+46-8	7494-7497	die	_	_	_	_	_	_	_	
+46-9	7498-7500	im	_	_	_	_	_	_	_	
+46-10	7501-7512	Mediastinum	_	_	_	_	_	_	_	
+46-11	7513-7524	lokalisiert	_	_	_	_	_	_	_	
+46-12	7525-7529	sind	_	_	_	_	_	_	_	
+46-13	7529-7530	.	_	_	_	_	_	_	_	
+
+#Text=Bei klarem histologischen Nachweis eines reifen Teratoms und normwertigen Serumtumormarkern ist eine operative Resektion des EGKZT indiziert.
+47-1	7531-7534	Bei	_	_	_	_	_	_	_	
+47-2	7535-7541	klarem	*	*	_	*	*	Specification	_	
+47-3	7542-7556	histologischen	*	*	_	*	*	Specification	_	
+47-4	7557-7565	Nachweis	*	Diagnosis or Pathology	_	*	*	Finding	47-3|47-2|47-5[92_0]	
+47-5	7566-7571	eines	*[92]	*[92]	_[92]	*	*[92]	Specification[92]	_	
+47-6	7572-7578	reifen	*[92]|*[93]	*[92]|*[93]	_[92]|_[93]	*|*	*[92]|*[93]	Specification[92]|Specification[93]	_	
+47-7	7579-7587	Teratoms	*[92]|*[94]	*[92]|Diagnosis or Pathology[94]	_[92]|_[94]	*|*	*[92]|*[94]	Specification[92]|Finding[94]	47-6[93_94]	
+47-8	7588-7591	und	_	_	_	_	_	_	_	
+47-9	7592-7604	normwertigen	*	*	_	*	*	Specification	_	
+47-10	7605-7622	Serumtumormarkern	*	Other Finding	_	*	*	Finding	47-9	
+47-11	7623-7626	ist	_	_	_	_	_	_	_	
+47-12	7627-7631	eine	_	_	_	_	_	_	_	
+47-13	7632-7641	operative	*	*	_	*	*	Specification	_	
+47-14	7642-7651	Resektion	*	Therapeutic	_	*	*	Procedure	47-13|47-15[95_0]	
+47-15	7652-7655	des	*[95]	*[95]	_[95]	*	*[95]	Specification[95]	_	
+47-16	7656-7661	EGKZT	*[95]|*[96]	*[95]|Diagnosis or Pathology[96]	_[95]|_[96]	*|*	*[95]|*[96]	Specification[95]|Finding[96]	_	
+47-17	7662-7671	indiziert	_	_	_	_	_	_	_	
+47-18	7671-7672	.	_	_	_	_	_	_	_	
+
+#Text=Bei erhöhten Serumtumormarkern wäre analog zu den gonadalen KZT und gemäß der IGCCCG-Klassifikation eine Cisplatin-basierte Polychemotherapie mit anschließender RTR erforderlich.
+48-1	7673-7676	Bei	_	_	_	_	_	_	_	
+48-2	7677-7685	erhöhten	*	*	_	*	*	Specification	_	
+48-3	7686-7703	Serumtumormarkern	*	Diagnosis or Pathology	_	*	*	Finding	48-2	
+48-4	7704-7708	wäre	_	_	_	_	_	_	_	
+48-5	7709-7715	analog	_	_	_	_	_	_	_	
+48-6	7716-7718	zu	_	_	_	_	_	_	_	
+48-7	7719-7722	den	_	_	_	_	_	_	_	
+48-8	7723-7732	gonadalen	*	*	_	*	*	Specification	_	
+48-9	7733-7736	KZT	*	Diagnosis or Pathology	_	*	*	Finding	48-8	
+48-10	7737-7740	und	_	_	_	_	_	_	_	
+48-11	7741-7746	gemäß	_	_	_	_	_	_	_	
+48-12	7747-7750	der	_	_	_	_	_	_	_	
+48-13	7751-7772	IGCCCG-Klassifikation	*	Diagnostic	_	*	*	Procedure	_	
+48-14	7773-7777	eine	_	_	_	_	_	_	_	
+48-15	7778-7796	Cisplatin-basierte	*	*	_	*	*	Specification	_	
+48-16	7797-7814	Polychemotherapie	*	Therapeutic	_	*	*	Procedure	48-15|48-17[97_0]	
+48-17	7815-7818	mit	*[97]	*[97]	_[97]	*	*[97]	Specification[97]	_	
+48-18	7819-7833	anschließender	*[97]|*[98]	*[97]|*[98]	_[97]|_[98]	*|*	*[97]|*[98]	Specification[97]|Specification[98]	_	
+48-19	7834-7837	RTR	*[97]|*[99]	*[97]|Therapeutic[99]	_[97]|_[99]	*|*	*[97]|*[99]	Specification[97]|Procedure[99]	48-18[98_99]	
+48-20	7838-7850	erforderlich	_	_	_	_	_	_	_	
+48-21	7850-7851	.	_	_	_	_	_	_	_	
+
+#Text=Nichtseminomatöse mediastinale EGKZT haben eine ungünstige Prognose mit einem 5-Jahres-Gesamtüberleben von 40–45%, bei insbesondere im Rezidiv schlechten Ansprechraten auf eine Chemotherapie.
+49-1	7852-7869	Nichtseminomatöse	*	*	_	*	*	Specification	_	
+49-2	7870-7882	mediastinale	*	*	_	*	*	Specification	_	
+49-3	7883-7888	EGKZT	*	Diagnosis or Pathology	_	*	*	Finding	49-1|49-2	
+49-4	7889-7894	haben	_	_	_	_	_	_	_	
+49-5	7895-7899	eine	_	_	_	_	_	_	_	
+49-6	7900-7910	ungünstige	*	*	_	*	*	Specification	_	
+49-7	7911-7919	Prognose	*	Other Finding	_	*	*	Finding	49-6	
+49-8	7920-7923	mit	_	_	_	_	_	_	_	
+49-9	7924-7929	einem	_	_	_	_	_	_	_	
+49-10	7930-7931	5	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+49-11	7931-7932	-	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+49-12	7932-7954	Jahres-Gesamtüberleben	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+49-13	7955-7958	von	_	_	_	_	_	_	_	
+49-14	7959-7961	40	_	_	_	_	_	_	_	
+49-15	7961-7962	–	_	_	_	_	_	_	_	
+49-16	7962-7965	45%	_	_	_	_	_	_	_	
+49-17	7965-7966	,	_	_	_	_	_	_	_	
+49-18	7967-7970	bei	_	_	_	_	_	_	_	
+49-19	7971-7983	insbesondere	_	_	_	_	_	_	_	
+49-20	7984-7986	im	_	_	_	_	_	_	_	
+49-21	7987-7994	Rezidiv	*	Diagnosis or Pathology	_	*	*	Finding	_	
+49-22	7995-8005	schlechten	*	*	_	*	*	Specification	_	
+49-23	8006-8019	Ansprechraten	*	Other Finding	_	*	*	Finding	49-22|49-24[101_0]	
+49-24	8020-8023	auf	*[101]	*[101]	_[101]	*	*[101]	Specification[101]	_	
+49-25	8024-8028	eine	*[101]	*[101]	_[101]	*	*[101]	Specification[101]	_	
+49-26	8029-8042	Chemotherapie	*[101]|*[102]	*[101]|Therapeutic[102]	_[101]|_[102]	*|*	*[101]|*[102]	Specification[101]|Procedure[102]	_	
+49-27	8042-8043	.	_	_	_	_	_	_	_	
+
+#Text=Die Prognose retroperitonealer EGKZT ist besser und ähnelt der der metastasierten gonadalen KZT.
+50-1	8044-8047	Die	_	_	_	_	_	_	_	
+50-2	8048-8056	Prognose	*	Other Finding	_	*	*	Finding	50-3[103_0]	
+50-3	8057-8074	retroperitonealer	*[103]|*[104]	*[103]|*[104]	_[103]|_[104]	*|*	*[103]|*[104]	Specification[103]|Specification[104]	_	
+50-4	8075-8080	EGKZT	*[103]|*[105]	*[103]|Diagnosis or Pathology[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Finding[105]	_	
+50-5	8081-8084	ist	_	_	_	_	_	_	_	
+50-6	8085-8091	besser	_	_	_	_	_	_	_	
+50-7	8092-8095	und	_	_	_	_	_	_	_	
+50-8	8096-8102	ähnelt	_	_	_	_	_	_	_	
+50-9	8103-8106	der	_	_	_	_	_	_	_	
+50-10	8107-8110	der	_	_	_	_	_	_	_	
+50-11	8111-8125	metastasierten	*	*	_	*	*	Specification	_	
+50-12	8126-8135	gonadalen	*	*	_	*	*	Specification	_	
+50-13	8136-8139	KZT	*	Diagnosis or Pathology	_	*	*	Finding	50-11|50-12	
+50-14	8139-8140	.	_	_	_	_	_	_	_	

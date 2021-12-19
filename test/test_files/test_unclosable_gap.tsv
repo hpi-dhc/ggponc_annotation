@@ -1,0 +1,24 @@
+#Text=eine Chemotherapie mit drei Zyklen PEB (Cispatin, Etoposid, Bleomycin) oder vier Zyklen PE (Ciplatin, Etoposid).
+43-1	7019-7023	eine	_	_	_	_	_	_	_	
+43-2	7024-7037	Chemotherapie	*	Therapeutic	_	*	*	Procedure	43-3[84_0]|43-15[87_0]	
+43-3	7038-7041	mit	*[84]	*[84]	_[84]	*	*[84]	Specification[84]	_	
+43-4	7042-7046	drei	*[84]|*[85]	*[84]|*[85]	_[84]|_[85]	*|*	*[84]|*[85]	Specification[84]|Specification[85]	_	
+43-5	7047-7053	Zyklen	*[84]|*[85]	*[84]|*[85]	_[84]|_[85]	*|*	*[84]|*[85]	Specification[84]|Specification[85]	_	
+43-6	7054-7057	PEB	*[84]|*[86]	*[84]|Therapeutic[86]	_[84]|_[86]	*|*	*[84]|*[86]	Specification[84]|Procedure[86]	43-4[85_86]	
+43-7	7058-7059	(	_	_	_	_	_	_	_	
+43-8	7059-7067	Cispatin	*	Clinical Drug	_	*	*	Substance	_	
+43-9	7067-7068	,	_	_	_	_	_	_	_	
+43-10	7069-7077	Etoposid	*	Clinical Drug	_	*	*	Substance	_	
+43-11	7077-7078	,	_	_	_	_	_	_	_	
+43-12	7079-7088	Bleomycin	*	Clinical Drug	_	*	*	Substance	_	
+43-13	7088-7089	)	_	_	_	_	_	_	_	
+43-14	7090-7094	oder	_	_	_	_	_	_	_	
+43-15	7095-7099	vier	\_mit\_[87]|*[88]	*[87]|*[88]	_[87]|_[88]	*|*	*[87]|*[88]	Specification[87]|Specification[88]	_	
+43-16	7100-7106	Zyklen	\_mit\_[87]|*[88]	*[87]|*[88]	_[87]|_[88]	*|*	*[87]|*[88]	Specification[87]|Specification[88]	_	
+43-17	7107-7109	PE	\_mit\_[87]|*[89]	*[87]|Therapeutic[89]	_[87]|_[89]	*|*	*[87]|*[89]	Specification[87]|Procedure[89]	43-15[88_89]	
+43-18	7110-7111	(	_	_	_	_	_	_	_	
+43-19	7111-7119	Ciplatin	*	Clinical Drug	_	*	*	Substance	_	
+43-20	7119-7120	,	_	_	_	_	_	_	_	
+43-21	7121-7129	Etoposid	*	Clinical Drug	_	*	*	Substance	_	
+43-22	7129-7130	)	_	_	_	_	_	_	_	
+43-23	7130-7131	.	_	_	_	_	_	_	_	

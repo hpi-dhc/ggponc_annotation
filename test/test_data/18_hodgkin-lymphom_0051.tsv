@@ -1,0 +1,2031 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Zu Empfehlung 5.12. bis 5.14.
+1-1	0-2	Zu	_	_	_	_	_	_	_	
+1-2	3-13	Empfehlung	_	_	_	_	_	_	_	
+1-3	14-18	5.12	_	_	_	_	_	_	_	
+1-4	18-19	.	_	_	_	_	_	_	_	
+1-5	20-23	bis	_	_	_	_	_	_	_	
+1-6	24-28	5.14	_	_	_	_	_	_	_	
+1-7	28-29	.	_	_	_	_	_	_	_	
+
+#Text=Datenlage zum prädiktiven Wert einer negativen Interim-PET nach zwei/drei Zyklen ABVD
+2-1	30-39	Datenlage	_	_	_	_	_	_	_	
+2-2	40-43	zum	_	_	_	_	_	_	_	
+2-3	44-55	prädiktiven	_	_	_	_	_	_	_	
+2-4	56-60	Wert	_	_	_	_	_	_	_	
+2-5	61-66	einer	_	_	_	_	_	_	_	
+2-6	67-76	negativen	*	*	_	*	*	Specification	_	
+2-7	77-88	Interim-PET	*	Other Finding	_	*	*	Finding	2-6	
+2-8	89-93	nach	_	_	_	_	_	_	_	
+2-9	94-98	zwei	*	*	_	*	\_Zyklen	Specification	_	
+2-10	98-99	/	_	_	_	_	_	_	_	
+2-11	99-103	drei	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+2-12	104-110	Zyklen	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+2-13	111-115	ABVD	*	Therapeutic	_	*	*	Procedure	2-11[1_0]|2-9	
+
+#Text=In kleinen (77 bzw. 85 Patienten), nicht-randomisierten Studien aus Dänemark (Hutchings 2006b) und aus England [REF] wurde das Ergebnis des PET/CTs nach 2 Zyklen Chemotherapie beim Hodgkin Lymphom als unabhängiger Prognosefaktor identifiziert.
+3-1	116-118	In	_	_	_	_	_	_	_	
+3-2	119-126	kleinen	_	_	_	_	_	_	_	
+3-3	127-128	(	_	_	_	_	_	_	_	
+3-4	128-130	77	_	_	_	_	_	_	_	
+3-5	131-134	bzw	_	_	_	_	_	_	_	
+3-6	134-135	.	_	_	_	_	_	_	_	
+3-7	136-138	85	_	_	_	_	_	_	_	
+3-8	139-148	Patienten	_	_	_	_	_	_	_	
+3-9	148-149	)	_	_	_	_	_	_	_	
+3-10	149-150	,	_	_	_	_	_	_	_	
+3-11	151-171	nicht-randomisierten	_	_	_	_	_	_	_	
+3-12	172-179	Studien	_	_	_	_	_	_	_	
+3-13	180-183	aus	_	_	_	_	_	_	_	
+3-14	184-192	Dänemark	_	_	_	_	_	_	_	
+3-15	193-194	(	_	_	_	_	_	_	_	
+3-16	194-203	Hutchings	_	_	_	_	_	_	_	
+3-17	204-209	2006b	_	_	_	_	_	_	_	
+3-18	209-210	)	_	_	_	_	_	_	_	
+3-19	211-214	und	_	_	_	_	_	_	_	
+3-20	215-218	aus	_	_	_	_	_	_	_	
+3-21	219-226	England	_	_	_	_	_	_	_	
+3-22	227-228	[	_	_	_	_	_	_	_	
+3-23	228-231	REF	_	_	_	_	_	_	_	
+3-24	231-232	]	_	_	_	_	_	_	_	
+3-25	233-238	wurde	_	_	_	_	_	_	_	
+3-26	239-242	das	_	_	_	_	_	_	_	
+3-27	243-251	Ergebnis	*	Other Finding	_	*	*	Finding	3-28[2_0]	
+3-28	252-255	des	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+3-29	256-259	PET	*[2]|*[3]	*[2]|Diagnostic[3]	_[2]|_[3]	*|*	*[2]|*[3]	Specification[2]|Procedure[3]	_	
+3-30	259-260	/	*[2]|*[3]	*[2]|Diagnostic[3]	_[2]|_[3]	*|*	*[2]|*[3]	Specification[2]|Procedure[3]	_	
+3-31	260-263	CTs	*[2]|*[3]	*[2]|Diagnostic[3]	_[2]|_[3]	*|*	*[2]|*[3]	Specification[2]|Procedure[3]	_	
+3-32	264-268	nach	_	_	_	_	_	_	_	
+3-33	269-270	2	*[4]	*[4]	_[4]	*	*[4]	Specification[4]	_	
+3-34	271-277	Zyklen	*[4]	*[4]	_[4]	*	*[4]	Specification[4]	_	
+3-35	278-291	Chemotherapie	*	Therapeutic	_	*	*	Procedure	3-33[4_0]	
+3-36	292-296	beim	_	_	_	_	_	_	_	
+3-37	297-304	Hodgkin	*[5]	Diagnosis or Pathology[5]	_[5]	*	*[5]	Finding[5]	_	
+3-38	305-312	Lymphom	*[5]	Diagnosis or Pathology[5]	_[5]	*	*[5]	Finding[5]	_	
+3-39	313-316	als	_	_	_	_	_	_	_	
+3-40	317-329	unabhängiger	_	_	_	_	_	_	_	
+3-41	330-344	Prognosefaktor	_	_	_	_	_	_	_	
+3-42	345-358	identifiziert	_	_	_	_	_	_	_	
+3-43	358-359	.	_	_	_	_	_	_	_	
+
+#Text=Diese und weitere kleinere prospektive Studien berichteten einen hohen negativen prädiktiven Wert eines negativen, d.h. unauffälligen PET/CTs nach der Chemotherapie [REF] [REF] [REF] [REF] [REF].
+4-1	360-365	Diese	_	_	_	_	_	_	_	
+4-2	366-369	und	_	_	_	_	_	_	_	
+4-3	370-377	weitere	_	_	_	_	_	_	_	
+4-4	378-386	kleinere	_	_	_	_	_	_	_	
+4-5	387-398	prospektive	_	_	_	_	_	_	_	
+4-6	399-406	Studien	_	_	_	_	_	_	_	
+4-7	407-418	berichteten	_	_	_	_	_	_	_	
+4-8	419-424	einen	_	_	_	_	_	_	_	
+4-9	425-430	hohen	_	_	_	_	_	_	_	
+4-10	431-440	negativen	_	_	_	_	_	_	_	
+4-11	441-452	prädiktiven	_	_	_	_	_	_	_	
+4-12	453-457	Wert	_	_	_	_	_	_	_	
+4-13	458-463	eines	_	_	_	_	_	_	_	
+4-14	464-473	negativen	*	*	_	*	*	Specification	_	
+4-15	473-474	,	_	_	_	_	_	_	_	
+4-16	475-478	d.h	_	_	_	_	_	_	_	
+4-17	478-479	.	_	_	_	_	_	_	_	
+4-18	480-493	unauffälligen	*	*	_	*	*	Specification	_	
+4-19	494-497	PET	*[6]	Other Finding[6]	_[6]	*	*[6]	Finding[6]	4-18[0_6]|4-14[0_6]|4-22[7_6]	
+4-20	497-498	/	*[6]	Other Finding[6]	_[6]	*	*[6]	Finding[6]	_	
+4-21	498-501	CTs	*[6]	Other Finding[6]	_[6]	*	*[6]	Finding[6]	_	
+4-22	502-506	nach	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+4-23	507-510	der	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+4-24	511-524	Chemotherapie	*[7]|*[8]	*[7]|Therapeutic[8]	_[7]|_[8]	*|*	*[7]|*[8]	Specification[7]|Procedure[8]	_	
+4-25	525-526	[	_	_	_	_	_	_	_	
+4-26	526-529	REF	_	_	_	_	_	_	_	
+4-27	529-530	]	_	_	_	_	_	_	_	
+4-28	531-532	[	_	_	_	_	_	_	_	
+4-29	532-535	REF	_	_	_	_	_	_	_	
+4-30	535-536	]	_	_	_	_	_	_	_	
+4-31	537-538	[	_	_	_	_	_	_	_	
+4-32	538-541	REF	_	_	_	_	_	_	_	
+4-33	541-542	]	_	_	_	_	_	_	_	
+4-34	543-544	[	_	_	_	_	_	_	_	
+4-35	544-547	REF	_	_	_	_	_	_	_	
+4-36	547-548	]	_	_	_	_	_	_	_	
+4-37	549-550	[	_	_	_	_	_	_	_	
+4-38	550-553	REF	_	_	_	_	_	_	_	
+4-39	553-554	]	_	_	_	_	_	_	_	
+4-40	554-555	.	_	_	_	_	_	_	_	
+
+#Text=Basierend auf diesen Daten wurden mehrere prospektive, randomisierte Studien initiiert, um der Frage nachzugehen, ob bei Erreichen einer PET/CT-Negativität nach Applikation der Chemotherapie auf die anschließende Strahlentherapie verzichtet werden kann.
+5-1	556-565	Basierend	_	_	_	_	_	_	_	
+5-2	566-569	auf	_	_	_	_	_	_	_	
+5-3	570-576	diesen	_	_	_	_	_	_	_	
+5-4	577-582	Daten	_	_	_	_	_	_	_	
+5-5	583-589	wurden	_	_	_	_	_	_	_	
+5-6	590-597	mehrere	_	_	_	_	_	_	_	
+5-7	598-609	prospektive	_	_	_	_	_	_	_	
+5-8	609-610	,	_	_	_	_	_	_	_	
+5-9	611-624	randomisierte	_	_	_	_	_	_	_	
+5-10	625-632	Studien	_	_	_	_	_	_	_	
+5-11	633-642	initiiert	_	_	_	_	_	_	_	
+5-12	642-643	,	_	_	_	_	_	_	_	
+5-13	644-646	um	_	_	_	_	_	_	_	
+5-14	647-650	der	_	_	_	_	_	_	_	
+5-15	651-656	Frage	_	_	_	_	_	_	_	
+5-16	657-668	nachzugehen	_	_	_	_	_	_	_	
+5-17	668-669	,	_	_	_	_	_	_	_	
+5-18	670-672	ob	_	_	_	_	_	_	_	
+5-19	673-676	bei	_	_	_	_	_	_	_	
+5-20	677-686	Erreichen	_	_	_	_	_	_	_	
+5-21	687-692	einer	_	_	_	_	_	_	_	
+5-22	693-696	PET	*[9]	Other Finding[9]	_[9]	*	*[9]	Finding[9]	5-25[10_9]	
+5-23	696-697	/	*[9]	Other Finding[9]	_[9]	*	*[9]	Finding[9]	_	
+5-24	697-711	CT-Negativität	*[9]	Other Finding[9]	_[9]	*	*[9]	Finding[9]	_	
+5-25	712-716	nach	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+5-26	717-728	Applikation	*[10]|*[11]	*[10]|Therapeutic[11]	_[10]|_[11]	*|*	*[10]|*[11]	Specification[10]|Procedure[11]	5-27[12_11]	
+5-27	729-732	der	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+5-28	733-746	Chemotherapie	*[12]|*[13]	*[12]|Therapeutic[13]	_[12]|_[13]	*|*	*[12]|*[13]	Specification[12]|Procedure[13]	_	
+5-29	747-750	auf	_	_	_	_	_	_	_	
+5-30	751-754	die	_	_	_	_	_	_	_	
+5-31	755-768	anschließende	*	*	_	*	*	Specification	_	
+5-32	769-785	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	5-31	
+5-33	786-796	verzichtet	_	_	_	_	_	_	_	
+5-34	797-803	werden	_	_	_	_	_	_	_	
+5-35	804-808	kann	_	_	_	_	_	_	_	
+5-36	808-809	.	_	_	_	_	_	_	_	
+
+#Text=In die „RAPID“-Studie des britischen „National Cancer Research Institute“(NCRI) wurden Patienten im Stadium IA/IIA eines klassischen Hodgkin Lymphoms (bei Diagnosestellung lag bei ca. 70% der Patienten nach der GHSG-Risikostratifizierung ein frühes Stadium vor) bei Vorliegen eines negativen PET/CTs nach drei Zyklen ABVD entweder in einen Nachbeobachtungsarm oder in einen Therapiearm mit konsolidierender Strahlentherapie mit 30 Gy IF-RT randomisiert.
+6-1	810-812	In	_	_	_	_	_	_	_	
+6-2	813-816	die	_	_	_	_	_	_	_	
+6-3	817-818	„	_	_	_	_	_	_	_	
+6-4	818-823	RAPID	_	_	_	_	_	_	_	
+6-5	823-824	“	_	_	_	_	_	_	_	
+6-6	824-825	-	_	_	_	_	_	_	_	
+6-7	825-831	Studie	_	_	_	_	_	_	_	
+6-8	832-835	des	_	_	_	_	_	_	_	
+6-9	836-846	britischen	_	_	_	_	_	_	_	
+6-10	847-848	„	_	_	_	_	_	_	_	
+6-11	848-856	National	_	_	_	_	_	_	_	
+6-12	857-863	Cancer	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-13	864-872	Research	_	_	_	_	_	_	_	
+6-14	873-882	Institute	_	_	_	_	_	_	_	
+6-15	882-883	“	_	_	_	_	_	_	_	
+6-16	883-884	(	_	_	_	_	_	_	_	
+6-17	884-888	NCRI	_	_	_	_	_	_	_	
+6-18	888-889	)	_	_	_	_	_	_	_	
+6-19	890-896	wurden	_	_	_	_	_	_	_	
+6-20	897-906	Patienten	_	_	_	_	_	_	_	
+6-21	907-909	im	_	_	_	_	_	_	_	
+6-22	910-917	Stadium	*[14]	Diagnosis or Pathology[14]	_[14]	*	*[14]	Finding[14]	6-26[15_14]	
+6-23	918-920	IA	*[14]	Diagnosis or Pathology[14]	_[14]	*	*[14]	Finding[14]	_	
+6-24	920-921	/	_	_	_	_	_	_	_	
+6-25	921-924	IIA	Stadium\_	Diagnosis or Pathology		6-22[14]	*	Finding	6-26[15_0]	
+6-26	925-930	eines	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-27	931-942	klassischen	*[15]|*[16]	*[15]|*[16]	_[15]|_[16]	*|*	*[15]|*[16]	Specification[15]|Specification[16]	_	
+6-28	943-950	Hodgkin	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
+6-29	951-959	Lymphoms	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
+6-30	960-961	(	_	_	_	_	_	_	_	
+6-31	961-964	bei	_	_	_	_	_	_	_	
+6-32	965-981	Diagnosestellung	*	Diagnostic	_	*	*	Procedure	_	
+6-33	982-985	lag	_	_	_	_	_	_	_	
+6-34	986-989	bei	_	_	_	_	_	_	_	
+6-35	990-992	ca	_	_	_	_	_	_	_	
+6-36	992-993	.	_	_	_	_	_	_	_	
+6-37	994-997	70%	_	_	_	_	_	_	_	
+6-38	998-1001	der	_	_	_	_	_	_	_	
+6-39	1002-1011	Patienten	_	_	_	_	_	_	_	
+6-40	1012-1016	nach	_	_	_	_	_	_	_	
+6-41	1017-1020	der	_	_	_	_	_	_	_	
+6-42	1021-1047	GHSG-Risikostratifizierung	*	Diagnostic	_	*	*	Procedure	_	
+6-43	1048-1051	ein	_	_	_	_	_	_	_	
+6-44	1052-1058	frühes	*	*	_	*	*	Specification	_	
+6-45	1059-1066	Stadium	*	Diagnosis or Pathology	_	*	*	Finding	6-44	
+6-46	1067-1070	vor	_	_	_	_	_	_	_	
+6-47	1070-1071	)	_	_	_	_	_	_	_	
+6-48	1072-1075	bei	_	_	_	_	_	_	_	
+6-49	1076-1085	Vorliegen	*	Other Finding	_	*	*	Finding	6-50[18_0]	
+6-50	1086-1091	eines	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+6-51	1092-1101	negativen	*[18]|*[19]	*[18]|*[19]	_[18]|_[19]	*|*	*[18]|*[19]	Specification[18]|Specification[19]	_	
+6-52	1102-1105	PET	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	6-51[19_20]|6-55[21_20]	
+6-53	1105-1106	/	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	_	
+6-54	1106-1109	CTs	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	_	
+6-55	1110-1114	nach	*[18]|*[21]	*[18]|*[21]	_[18]|_[21]	*|*	*[18]|*[21]	Specification[18]|Specification[21]	_	
+6-56	1115-1119	drei	*[18]|*[21]|*[22]	*[18]|*[21]|*[22]	_[18]|_[21]|_[22]	*|*|*	*[18]|*[21]|*[22]	Specification[18]|Specification[21]|Specification[22]	_	
+6-57	1120-1126	Zyklen	*[18]|*[21]|*[22]	*[18]|*[21]|*[22]	_[18]|_[21]|_[22]	*|*|*	*[18]|*[21]|*[22]	Specification[18]|Specification[21]|Specification[22]	_	
+6-58	1127-1131	ABVD	*[18]|*[21]|*[23]	*[18]|*[21]|Therapeutic[23]	_[18]|_[21]|_[23]	*|*|*	*[18]|*[21]|*[23]	Specification[18]|Specification[21]|Procedure[23]	6-56[22_23]	
+6-59	1132-1140	entweder	_	_	_	_	_	_	_	
+6-60	1141-1143	in	_	_	_	_	_	_	_	
+6-61	1144-1149	einen	_	_	_	_	_	_	_	
+6-62	1150-1169	Nachbeobachtungsarm	_	_	_	_	_	_	_	
+6-63	1170-1174	oder	_	_	_	_	_	_	_	
+6-64	1175-1177	in	_	_	_	_	_	_	_	
+6-65	1178-1183	einen	_	_	_	_	_	_	_	
+6-66	1184-1195	Therapiearm	*	Therapeutic	_	*	*	Procedure	_	
+6-67	1196-1199	mit	_	_	_	_	_	_	_	
+6-68	1200-1216	konsolidierender	*	*	_	*	*	Specification	_	
+6-69	1217-1233	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	6-68|6-70[24_0]	
+6-70	1234-1237	mit	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+6-71	1238-1240	30	*[24]|*[25]	*[24]|*[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Specification[25]	_	
+6-72	1241-1243	Gy	*[24]|*[25]	*[24]|*[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Specification[25]	_	
+6-73	1244-1249	IF-RT	*[24]|*[26]	*[24]|Therapeutic[26]	_[24]|_[26]	*|*	*[24]|*[26]	Specification[24]|Procedure[26]	6-71[25_26]	
+6-74	1250-1262	randomisiert	_	_	_	_	_	_	_	
+6-75	1262-1263	.	_	_	_	_	_	_	_	
+
+#Text=Bei einem medianen Follow-up von 60 Monaten wurden im Beobachtungsarm 9.5% und im Strahlentherapiearm 3.5% Progresse dokumentiert.
+7-1	1264-1267	Bei	_	_	_	_	_	_	_	
+7-2	1268-1273	einem	_	_	_	_	_	_	_	
+7-3	1274-1282	medianen	_	_	_	_	_	_	_	
+7-4	1283-1292	Follow-up	_	_	_	_	_	_	_	
+7-5	1293-1296	von	_	_	_	_	_	_	_	
+7-6	1297-1299	60	_	_	_	_	_	_	_	
+7-7	1300-1307	Monaten	_	_	_	_	_	_	_	
+7-8	1308-1314	wurden	_	_	_	_	_	_	_	
+7-9	1315-1317	im	_	_	_	_	_	_	_	
+7-10	1318-1333	Beobachtungsarm	_	_	_	_	_	_	_	
+7-11	1334-1338	9.5%	_	_	_	_	_	_	_	
+7-12	1339-1342	und	_	_	_	_	_	_	_	
+7-13	1343-1345	im	_	_	_	_	_	_	_	
+7-14	1346-1365	Strahlentherapiearm	_	_	_	_	_	_	_	
+7-15	1366-1370	3.5%	_	_	_	_	_	_	_	
+7-16	1371-1380	Progresse	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-17	1381-1393	dokumentiert	_	_	_	_	_	_	_	
+7-18	1393-1394	.	_	_	_	_	_	_	_	
+
+#Text=In der „Intent-to-Treat“-Analyse betrug das 3-Jahres progressionsfreie Überleben (PFS) 94.6% (95% Konfidenzintervall [CI], 91.5% bis 97.7%) im Bestrahlungsarm und 90.8% (95% CI, 86.9% bis 94.8%) im Beobachtungsarm; noch deutlicher war der PFS-Unterschied in der „Per-Protocol“-Analyse mit einem 3-Jahres PFS von 97.1% (95% CI, 94.7% bis 99.6%) im Bestrahlungsarm und von 90.8% (95% CI, 86.8% bis 94.7%) im Beobachtungsarm.
+8-1	1395-1397	In	_	_	_	_	_	_	_	
+8-2	1398-1401	der	_	_	_	_	_	_	_	
+8-3	1402-1403	„	_	_	_	_	_	_	_	
+8-4	1403-1418	Intent-to-Treat	_	_	_	_	_	_	_	
+8-5	1418-1419	“	_	_	_	_	_	_	_	
+8-6	1419-1420	-	_	_	_	_	_	_	_	
+8-7	1420-1427	Analyse	_	_	_	_	_	_	_	
+8-8	1428-1434	betrug	_	_	_	_	_	_	_	
+8-9	1435-1438	das	_	_	_	_	_	_	_	
+8-10	1439-1440	3	*[27]	*[27]	_[27]	*	*[27]	Specification[27]	_	
+8-11	1440-1441	-	*[27]	*[27]	_[27]	*	*[27]	Specification[27]	_	
+8-12	1441-1447	Jahres	*[27]	*[27]	_[27]	*	*[27]	Specification[27]	_	
+8-13	1448-1465	progressionsfreie	*	*	_	*	*	Specification	_	
+8-14	1466-1475	Überleben	*	Other Finding	_	*	*	Finding	8-13|8-10[27_0]	
+8-15	1476-1477	(	_	_	_	_	_	_	_	
+8-16	1477-1480	PFS	*	Other Finding	_	*	*	Finding	_	
+8-17	1480-1481	)	_	_	_	_	_	_	_	
+8-18	1482-1487	94.6%	_	_	_	_	_	_	_	
+8-19	1488-1489	(	_	_	_	_	_	_	_	
+8-20	1489-1492	95%	_	_	_	_	_	_	_	
+8-21	1493-1511	Konfidenzintervall	_	_	_	_	_	_	_	
+8-22	1512-1513	[	_	_	_	_	_	_	_	
+8-23	1513-1515	CI	_	_	_	_	_	_	_	
+8-24	1515-1516	]	_	_	_	_	_	_	_	
+8-25	1516-1517	,	_	_	_	_	_	_	_	
+8-26	1518-1523	91.5%	_	_	_	_	_	_	_	
+8-27	1524-1527	bis	_	_	_	_	_	_	_	
+8-28	1528-1533	97.7%	_	_	_	_	_	_	_	
+8-29	1533-1534	)	_	_	_	_	_	_	_	
+8-30	1535-1537	im	_	_	_	_	_	_	_	
+8-31	1538-1553	Bestrahlungsarm	_	_	_	_	_	_	_	
+8-32	1554-1557	und	_	_	_	_	_	_	_	
+8-33	1558-1563	90.8%	_	_	_	_	_	_	_	
+8-34	1564-1565	(	_	_	_	_	_	_	_	
+8-35	1565-1568	95%	_	_	_	_	_	_	_	
+8-36	1569-1571	CI	_	_	_	_	_	_	_	
+8-37	1571-1572	,	_	_	_	_	_	_	_	
+8-38	1573-1578	86.9%	_	_	_	_	_	_	_	
+8-39	1579-1582	bis	_	_	_	_	_	_	_	
+8-40	1583-1588	94.8%	_	_	_	_	_	_	_	
+8-41	1588-1589	)	_	_	_	_	_	_	_	
+8-42	1590-1592	im	_	_	_	_	_	_	_	
+8-43	1593-1608	Beobachtungsarm	_	_	_	_	_	_	_	
+8-44	1608-1609	;	_	_	_	_	_	_	_	
+8-45	1610-1614	noch	_	_	_	_	_	_	_	
+8-46	1615-1625	deutlicher	_	_	_	_	_	_	_	
+8-47	1626-1629	war	_	_	_	_	_	_	_	
+8-48	1630-1633	der	_	_	_	_	_	_	_	
+8-49	1634-1649	PFS-Unterschied	*	Other Finding	_	*	*	Finding	_	
+8-50	1650-1652	in	_	_	_	_	_	_	_	
+8-51	1653-1656	der	_	_	_	_	_	_	_	
+8-52	1657-1658	„	_	_	_	_	_	_	_	
+8-53	1658-1670	Per-Protocol	_	_	_	_	_	_	_	
+8-54	1670-1671	“	_	_	_	_	_	_	_	
+8-55	1671-1672	-	_	_	_	_	_	_	_	
+8-56	1672-1679	Analyse	_	_	_	_	_	_	_	
+8-57	1680-1683	mit	_	_	_	_	_	_	_	
+8-58	1684-1689	einem	_	_	_	_	_	_	_	
+8-59	1690-1691	3	*[28]	Other Finding[28]	_[28]	*	*[28]	Finding[28]	_	
+8-60	1691-1692	-	*[28]	Other Finding[28]	_[28]	*	*[28]	Finding[28]	_	
+8-61	1692-1698	Jahres	*[28]	Other Finding[28]	_[28]	*	*[28]	Finding[28]	_	
+8-62	1699-1702	PFS	*[28]	Other Finding[28]	_[28]	*	*[28]	Finding[28]	_	
+8-63	1703-1706	von	_	_	_	_	_	_	_	
+8-64	1707-1712	97.1%	_	_	_	_	_	_	_	
+8-65	1713-1714	(	_	_	_	_	_	_	_	
+8-66	1714-1717	95%	_	_	_	_	_	_	_	
+8-67	1718-1720	CI	_	_	_	_	_	_	_	
+8-68	1720-1721	,	_	_	_	_	_	_	_	
+8-69	1722-1727	94.7%	_	_	_	_	_	_	_	
+8-70	1728-1731	bis	_	_	_	_	_	_	_	
+8-71	1732-1737	99.6%	_	_	_	_	_	_	_	
+8-72	1737-1738	)	_	_	_	_	_	_	_	
+8-73	1739-1741	im	_	_	_	_	_	_	_	
+8-74	1742-1757	Bestrahlungsarm	_	_	_	_	_	_	_	
+8-75	1758-1761	und	_	_	_	_	_	_	_	
+8-76	1762-1765	von	_	_	_	_	_	_	_	
+8-77	1766-1771	90.8%	_	_	_	_	_	_	_	
+8-78	1772-1773	(	_	_	_	_	_	_	_	
+8-79	1773-1776	95%	_	_	_	_	_	_	_	
+8-80	1777-1779	CI	_	_	_	_	_	_	_	
+8-81	1779-1780	,	_	_	_	_	_	_	_	
+8-82	1781-1786	86.8%	_	_	_	_	_	_	_	
+8-83	1787-1790	bis	_	_	_	_	_	_	_	
+8-84	1791-1796	94.7%	_	_	_	_	_	_	_	
+8-85	1796-1797	)	_	_	_	_	_	_	_	
+8-86	1798-1800	im	_	_	_	_	_	_	_	
+8-87	1801-1816	Beobachtungsarm	_	_	_	_	_	_	_	
+8-88	1816-1817	.	_	_	_	_	_	_	_	
+
+#Text=Bei Festlegung einer Nichtunterlegenheitsgrenze von 7% bzgl. des PFS waren die Kriterien der Nichtunterlegenheit des Beobachtungsarms damit nicht erfüllt [REF].
+9-1	1818-1821	Bei	_	_	_	_	_	_	_	
+9-2	1822-1832	Festlegung	_	_	_	_	_	_	_	
+9-3	1833-1838	einer	_	_	_	_	_	_	_	
+9-4	1839-1865	Nichtunterlegenheitsgrenze	_	_	_	_	_	_	_	
+9-5	1866-1869	von	_	_	_	_	_	_	_	
+9-6	1870-1872	7%	_	_	_	_	_	_	_	
+9-7	1873-1877	bzgl	_	_	_	_	_	_	_	
+9-8	1877-1878	.	_	_	_	_	_	_	_	
+9-9	1879-1882	des	_	_	_	_	_	_	_	
+9-10	1883-1886	PFS	*	Other Finding	_	*	*	Finding	_	
+9-11	1887-1892	waren	_	_	_	_	_	_	_	
+9-12	1893-1896	die	_	_	_	_	_	_	_	
+9-13	1897-1906	Kriterien	_	_	_	_	_	_	_	
+9-14	1907-1910	der	_	_	_	_	_	_	_	
+9-15	1911-1930	Nichtunterlegenheit	_	_	_	_	_	_	_	
+9-16	1931-1934	des	_	_	_	_	_	_	_	
+9-17	1935-1951	Beobachtungsarms	_	_	_	_	_	_	_	
+9-18	1952-1957	damit	_	_	_	_	_	_	_	
+9-19	1958-1963	nicht	_	_	_	_	_	_	_	
+9-20	1964-1971	erfüllt	_	_	_	_	_	_	_	
+9-21	1972-1973	[	_	_	_	_	_	_	_	
+9-22	1973-1976	REF	_	_	_	_	_	_	_	
+9-23	1976-1977	]	_	_	_	_	_	_	_	
+9-24	1977-1978	.	_	_	_	_	_	_	_	
+
+#Text=In der H10F Studie der EORTC/The Lymphoma Study Association (LYSA)/Italian Foundation for Lymphoma Study (FIL) wurden Patienten im Stadium I/II eines klassischen Hodgkin Lymphoms ohne Vorliegen eines definierten Risikofaktors bei Dokumentation eines negativen PET/CTs nach zwei Zyklen ABVD im Standardarm mit einem weiteren Zyklus ABVD gefolgt von 30 Gy „involved-node“ (IN)-RT und im experimentellen Arm mit zwei weiteren Zyklen ABVD ohne konsolidierende Strahlentherapie behandelt.
+10-1	1979-1981	In	_	_	_	_	_	_	_	
+10-2	1982-1985	der	_	_	_	_	_	_	_	
+10-3	1986-1990	H10F	_	_	_	_	_	_	_	
+10-4	1991-1997	Studie	_	_	_	_	_	_	_	
+10-5	1998-2001	der	_	_	_	_	_	_	_	
+10-6	2002-2007	EORTC	_	_	_	_	_	_	_	
+10-7	2007-2008	/	_	_	_	_	_	_	_	
+10-8	2008-2011	The	_	_	_	_	_	_	_	
+10-9	2012-2020	Lymphoma	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-10	2021-2026	Study	_	_	_	_	_	_	_	
+10-11	2027-2038	Association	_	_	_	_	_	_	_	
+10-12	2039-2040	(	_	_	_	_	_	_	_	
+10-13	2040-2044	LYSA	_	_	_	_	_	_	_	
+10-14	2044-2045	)	_	_	_	_	_	_	_	
+10-15	2045-2046	/	_	_	_	_	_	_	_	
+10-16	2046-2053	Italian	_	_	_	_	_	_	_	
+10-17	2054-2064	Foundation	_	_	_	_	_	_	_	
+10-18	2065-2068	for	_	_	_	_	_	_	_	
+10-19	2069-2077	Lymphoma	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-20	2078-2083	Study	_	_	_	_	_	_	_	
+10-21	2084-2085	(	_	_	_	_	_	_	_	
+10-22	2085-2088	FIL	_	_	_	_	_	_	_	
+10-23	2088-2089	)	_	_	_	_	_	_	_	
+10-24	2090-2096	wurden	_	_	_	_	_	_	_	
+10-25	2097-2106	Patienten	_	_	_	_	_	_	_	
+10-26	2107-2109	im	_	_	_	_	_	_	_	
+10-27	2110-2117	Stadium	*[29]	Diagnosis or Pathology[29]	_[29]	*	*[29]	Finding[29]	10-31[30_29]	
+10-28	2118-2119	I	*[29]	Diagnosis or Pathology[29]	_[29]	*	*[29]	Finding[29]	_	
+10-29	2119-2120	/	_	_	_	_	_	_	_	
+10-30	2120-2122	II	Stadium\_	Diagnosis or Pathology		10-27[29]	*	Finding	10-31[30_0]	
+10-31	2123-2128	eines	*[30]	*[30]	_[30]	*	*[30]	Specification[30]	_	
+10-32	2129-2140	klassischen	*[30]|*[31]	*[30]|*[31]	_[30]|_[31]	*|*	*[30]|*[31]	Specification[30]|Specification[31]	_	
+10-33	2141-2148	Hodgkin	*[30]|*[32]	*[30]|Diagnosis or Pathology[32]	_[30]|_[32]	*|*	*[30]|*[32]	Specification[30]|Finding[32]	10-32[31_32]|10-35[33_32]	
+10-34	2149-2157	Lymphoms	*[30]|*[32]	*[30]|Diagnosis or Pathology[32]	_[30]|_[32]	*|*	*[30]|*[32]	Specification[30]|Finding[32]	_	
+10-35	2158-2162	ohne	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+10-36	2163-2172	Vorliegen	*[33]|*[34]	*[33]|Other Finding[34]	_[33]|_[34]	*|*	*[33]|*[34]	Specification[33]|Finding[34]	10-37[35_34]	
+10-37	2173-2178	eines	*[33]|*[35]	*[33]|*[35]	_[33]|_[35]	*|*	*[33]|*[35]	Specification[33]|Specification[35]	_	
+10-38	2179-2190	definierten	*[33]|*[35]	*[33]|*[35]	_[33]|_[35]	*|*	*[33]|*[35]	Specification[33]|Specification[35]	_	
+10-39	2191-2204	Risikofaktors	*[33]|*[35]|*[36]	*[33]|*[35]|Other Finding[36]	_[33]|_[35]|_[36]	*|*|*	*[33]|*[35]|*[36]	Specification[33]|Specification[35]|Finding[36]	_	
+10-40	2205-2208	bei	_	_	_	_	_	_	_	
+10-41	2209-2222	Dokumentation	_	_	_	_	_	_	_	
+10-42	2223-2228	eines	_	_	_	_	_	_	_	
+10-43	2229-2238	negativen	*	*	_	*	*	Specification	_	
+10-44	2239-2242	PET	*[37]	Other Finding[37]	_[37]	*	*[37]	Finding[37]	10-43[0_37]|10-47[38_37]	
+10-45	2242-2243	/	*[37]	Other Finding[37]	_[37]	*	*[37]	Finding[37]	_	
+10-46	2243-2246	CTs	*[37]	Other Finding[37]	_[37]	*	*[37]	Finding[37]	_	
+10-47	2247-2251	nach	*[38]	*[38]	_[38]	*	*[38]	Specification[38]	_	
+10-48	2252-2256	zwei	*[38]|*[39]	*[38]|*[39]	_[38]|_[39]	*|*	*[38]|*[39]	Specification[38]|Specification[39]	_	
+10-49	2257-2263	Zyklen	*[38]|*[39]	*[38]|*[39]	_[38]|_[39]	*|*	*[38]|*[39]	Specification[38]|Specification[39]	_	
+10-50	2264-2268	ABVD	*[38]|*[40]	*[38]|Therapeutic[40]	_[38]|_[40]	*|*	*[38]|*[40]	Specification[38]|Procedure[40]	10-48[39_40]	
+10-51	2269-2271	im	_	_	_	_	_	_	_	
+10-52	2272-2283	Standardarm	_	_	_	_	_	_	_	
+10-53	2284-2287	mit	_	_	_	_	_	_	_	
+10-54	2288-2293	einem	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+10-55	2294-2302	weiteren	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+10-56	2303-2309	Zyklus	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+10-57	2310-2314	ABVD	*	Therapeutic	_	*	*	Procedure	10-54[41_0]	
+10-58	2315-2322	gefolgt	_	_	_	_	_	_	_	
+10-59	2323-2326	von	_	_	_	_	_	_	_	
+10-60	2327-2329	30	*[42]	*[42]	_[42]	*	*[42]	Specification[42]	_	
+10-61	2330-2332	Gy	*[42]	*[42]	_[42]	*	*[42]	Specification[42]	_	
+10-62	2333-2334	„	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	10-60[42_43]	
+10-63	2334-2347	involved-node	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-64	2347-2348	“	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-65	2349-2350	(	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-66	2350-2352	IN	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-67	2352-2353	)	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-68	2353-2354	-	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-69	2354-2356	RT	*[43]	Therapeutic[43]	_[43]	*	*[43]	Procedure[43]	_	
+10-70	2357-2360	und	_	_	_	_	_	_	_	
+10-71	2361-2363	im	_	_	_	_	_	_	_	
+10-72	2364-2379	experimentellen	_	_	_	_	_	_	_	
+10-73	2380-2383	Arm	_	_	_	_	_	_	_	
+10-74	2384-2387	mit	_	_	_	_	_	_	_	
+10-75	2388-2392	zwei	*[44]	*[44]	_[44]	*	*[44]	Specification[44]	_	
+10-76	2393-2401	weiteren	*[44]	*[44]	_[44]	*	*[44]	Specification[44]	_	
+10-77	2402-2408	Zyklen	*[44]	*[44]	_[44]	*	*[44]	Specification[44]	_	
+10-78	2409-2413	ABVD	*	Therapeutic	_	*	*	Procedure	10-75[44_0]|10-79[45_0]	
+10-79	2414-2418	ohne	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+10-80	2419-2434	konsolidierende	*[45]|*[46]	*[45]|*[46]	_[45]|_[46]	*|*	*[45]|*[46]	Specification[45]|Specification[46]	_	
+10-81	2435-2451	Strahlentherapie	*[45]|*[47]	*[45]|Therapeutic[47]	_[45]|_[47]	*|*	*[45]|*[47]	Specification[45]|Procedure[47]	10-80[46_47]	
+10-82	2452-2461	behandelt	_	_	_	_	_	_	_	
+10-83	2461-2462	.	_	_	_	_	_	_	_	
+
+#Text=Der experimentelle Arm wurde nach Vorliegen der Ergebnisse der 12-Monats-Interimsanalyse geschlossen, da im experimentellen Arm 9 Rezidive und im Standardarm nur 1 Rezidiv zu dokumentieren waren (1-Jahres PFS 94.9% (95% CI 91.9% bis 96.9%) bzw. 100%) [REF].
+11-1	2463-2466	Der	_	_	_	_	_	_	_	
+11-2	2467-2481	experimentelle	_	_	_	_	_	_	_	
+11-3	2482-2485	Arm	_	_	_	_	_	_	_	
+11-4	2486-2491	wurde	_	_	_	_	_	_	_	
+11-5	2492-2496	nach	_	_	_	_	_	_	_	
+11-6	2497-2506	Vorliegen	_	_	_	_	_	_	_	
+11-7	2507-2510	der	_	_	_	_	_	_	_	
+11-8	2511-2521	Ergebnisse	_	_	_	_	_	_	_	
+11-9	2522-2525	der	_	_	_	_	_	_	_	
+11-10	2526-2528	12	_	_	_	_	_	_	_	
+11-11	2528-2529	-	_	_	_	_	_	_	_	
+11-12	2529-2551	Monats-Interimsanalyse	_	_	_	_	_	_	_	
+11-13	2552-2563	geschlossen	_	_	_	_	_	_	_	
+11-14	2563-2564	,	_	_	_	_	_	_	_	
+11-15	2565-2567	da	_	_	_	_	_	_	_	
+11-16	2568-2570	im	_	_	_	_	_	_	_	
+11-17	2571-2586	experimentellen	_	_	_	_	_	_	_	
+11-18	2587-2590	Arm	_	_	_	_	_	_	_	
+11-19	2591-2592	9	_	_	_	_	_	_	_	
+11-20	2593-2601	Rezidive	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-21	2602-2605	und	_	_	_	_	_	_	_	
+11-22	2606-2608	im	_	_	_	_	_	_	_	
+11-23	2609-2620	Standardarm	_	_	_	_	_	_	_	
+11-24	2621-2624	nur	_	_	_	_	_	_	_	
+11-25	2625-2626	1	_	_	_	_	_	_	_	
+11-26	2627-2634	Rezidiv	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-27	2635-2637	zu	_	_	_	_	_	_	_	
+11-28	2638-2651	dokumentieren	_	_	_	_	_	_	_	
+11-29	2652-2657	waren	_	_	_	_	_	_	_	
+11-30	2658-2659	(	_	_	_	_	_	_	_	
+11-31	2659-2660	1	*[48]	Other Finding[48]	_[48]	*	*[48]	Finding[48]	_	
+11-32	2660-2661	-	*[48]	Other Finding[48]	_[48]	*	*[48]	Finding[48]	_	
+11-33	2661-2667	Jahres	*[48]	Other Finding[48]	_[48]	*	*[48]	Finding[48]	_	
+11-34	2668-2671	PFS	*[48]	Other Finding[48]	_[48]	*	*[48]	Finding[48]	_	
+11-35	2672-2677	94.9%	_	_	_	_	_	_	_	
+11-36	2678-2679	(	_	_	_	_	_	_	_	
+11-37	2679-2682	95%	_	_	_	_	_	_	_	
+11-38	2683-2685	CI	_	_	_	_	_	_	_	
+11-39	2686-2691	91.9%	_	_	_	_	_	_	_	
+11-40	2692-2695	bis	_	_	_	_	_	_	_	
+11-41	2696-2701	96.9%	_	_	_	_	_	_	_	
+11-42	2701-2702	)	_	_	_	_	_	_	_	
+11-43	2703-2706	bzw	_	_	_	_	_	_	_	
+11-44	2706-2707	.	_	_	_	_	_	_	_	
+11-45	2708-2712	100%	_	_	_	_	_	_	_	
+11-46	2712-2713	)	_	_	_	_	_	_	_	
+11-47	2714-2715	[	_	_	_	_	_	_	_	
+11-48	2715-2718	REF	_	_	_	_	_	_	_	
+11-49	2718-2719	]	_	_	_	_	_	_	_	
+11-50	2719-2720	.	_	_	_	_	_	_	_	
+
+#Text=Die HD16-Studie [REF] der GHSG ist die dritte große randomisierte Studie, die sich der Frage eines PET/CT-basierten Strahlentherapieansatzes in den frühen Stadien des Hodgkin Lymphoms gewidmet hat.
+12-1	2721-2724	Die	_	_	_	_	_	_	_	
+12-2	2725-2729	HD16	_	_	_	_	_	_	_	
+12-3	2729-2730	-	_	_	_	_	_	_	_	
+12-4	2730-2736	Studie	_	_	_	_	_	_	_	
+12-5	2737-2738	[	_	_	_	_	_	_	_	
+12-6	2738-2741	REF	_	_	_	_	_	_	_	
+12-7	2741-2742	]	_	_	_	_	_	_	_	
+12-8	2743-2746	der	_	_	_	_	_	_	_	
+12-9	2747-2751	GHSG	_	_	_	_	_	_	_	
+12-10	2752-2755	ist	_	_	_	_	_	_	_	
+12-11	2756-2759	die	_	_	_	_	_	_	_	
+12-12	2760-2766	dritte	_	_	_	_	_	_	_	
+12-13	2767-2772	große	_	_	_	_	_	_	_	
+12-14	2773-2786	randomisierte	_	_	_	_	_	_	_	
+12-15	2787-2793	Studie	_	_	_	_	_	_	_	
+12-16	2793-2794	,	_	_	_	_	_	_	_	
+12-17	2795-2798	die	_	_	_	_	_	_	_	
+12-18	2799-2803	sich	_	_	_	_	_	_	_	
+12-19	2804-2807	der	_	_	_	_	_	_	_	
+12-20	2808-2813	Frage	_	_	_	_	_	_	_	
+12-21	2814-2819	eines	_	_	_	_	_	_	_	
+12-22	2820-2823	PET	*[49]	*[49]	_[49]	*	*[49]	Specification[49]	_	
+12-23	2823-2824	/	*[49]	*[49]	_[49]	*	*[49]	Specification[49]	_	
+12-24	2824-2836	CT-basierten	*[49]	*[49]	_[49]	*	*[49]	Specification[49]	_	
+12-25	2837-2861	Strahlentherapieansatzes	*	Therapeutic	_	*	*	Procedure	12-22[49_0]	
+12-26	2862-2864	in	_	_	_	_	_	_	_	
+12-27	2865-2868	den	_	_	_	_	_	_	_	
+12-28	2869-2875	frühen	*	*	_	*	*	Specification	_	
+12-29	2876-2883	Stadien	*	Diagnosis or Pathology	_	*	*	Finding	12-28|12-30[50_0]	
+12-30	2884-2887	des	*[50]	*[50]	_[50]	*	*[50]	Specification[50]	_	
+12-31	2888-2895	Hodgkin	*[50]|*[51]	*[50]|Diagnosis or Pathology[51]	_[50]|_[51]	*|*	*[50]|*[51]	Specification[50]|Finding[51]	_	
+12-32	2896-2904	Lymphoms	*[50]|*[51]	*[50]|Diagnosis or Pathology[51]	_[50]|_[51]	*|*	*[50]|*[51]	Specification[50]|Finding[51]	_	
+12-33	2905-2913	gewidmet	_	_	_	_	_	_	_	
+12-34	2914-2917	hat	_	_	_	_	_	_	_	
+12-35	2917-2918	.	_	_	_	_	_	_	_	
+
+#Text=In HD16 erhielten die Patienten, die in den experimentellen Arm randomisiert wurden und bei denen eine negative PET/CT nach zwei Zyklen ABVD (Deauville-Score 1-2) dokumentiert wurde, keine weitere Therapie, während die anderen Patienten konsolidierend mit 20 Gy IF-RT bestrahlt wurden.
+13-1	2919-2921	In	_	_	_	_	_	_	_	
+13-2	2922-2926	HD16	_	_	_	_	_	_	_	
+13-3	2927-2936	erhielten	_	_	_	_	_	_	_	
+13-4	2937-2940	die	_	_	_	_	_	_	_	
+13-5	2941-2950	Patienten	_	_	_	_	_	_	_	
+13-6	2950-2951	,	_	_	_	_	_	_	_	
+13-7	2952-2955	die	_	_	_	_	_	_	_	
+13-8	2956-2958	in	_	_	_	_	_	_	_	
+13-9	2959-2962	den	_	_	_	_	_	_	_	
+13-10	2963-2978	experimentellen	_	_	_	_	_	_	_	
+13-11	2979-2982	Arm	_	_	_	_	_	_	_	
+13-12	2983-2995	randomisiert	_	_	_	_	_	_	_	
+13-13	2996-3002	wurden	_	_	_	_	_	_	_	
+13-14	3003-3006	und	_	_	_	_	_	_	_	
+13-15	3007-3010	bei	_	_	_	_	_	_	_	
+13-16	3011-3016	denen	_	_	_	_	_	_	_	
+13-17	3017-3021	eine	_	_	_	_	_	_	_	
+13-18	3022-3030	negative	*	*	_	*	*	Specification	_	
+13-19	3031-3034	PET	*[52]	Other Finding[52]	_[52]	*	*[52]	Finding[52]	13-18[0_52]	
+13-20	3034-3035	/	*[52]	Other Finding[52]	_[52]	*	*[52]	Finding[52]	_	
+13-21	3035-3037	CT	*[52]	Other Finding[52]	_[52]	*	*[52]	Finding[52]	_	
+13-22	3038-3042	nach	_	_	_	_	_	_	_	
+13-23	3043-3047	zwei	*[53]	*[53]	_[53]	*	*[53]	Specification[53]	_	
+13-24	3048-3054	Zyklen	*[53]	*[53]	_[53]	*	*[53]	Specification[53]	_	
+13-25	3055-3059	ABVD	*	Therapeutic	_	*	*	Procedure	13-23[53_0]	
+13-26	3060-3061	(	_	_	_	_	_	_	_	
+13-27	3061-3076	Deauville-Score	*	Other Finding	_	*	*	Finding	13-28|13-30	
+13-28	3077-3078	1	*	*	_	*	*	Specification	_	
+13-29	3078-3079	-	_	_	_	_	_	_	_	
+13-30	3079-3080	2	*	*	_	*	*	Specification	_	
+13-31	3080-3081	)	_	_	_	_	_	_	_	
+13-32	3082-3094	dokumentiert	_	_	_	_	_	_	_	
+13-33	3095-3100	wurde	_	_	_	_	_	_	_	
+13-34	3100-3101	,	_	_	_	_	_	_	_	
+13-35	3102-3107	keine	_	_	_	_	_	_	_	
+13-36	3108-3115	weitere	_	_	_	_	_	_	_	
+13-37	3116-3124	Therapie	*	Therapeutic	_	*	*	Procedure	_	
+13-38	3124-3125	,	_	_	_	_	_	_	_	
+13-39	3126-3133	während	_	_	_	_	_	_	_	
+13-40	3134-3137	die	_	_	_	_	_	_	_	
+13-41	3138-3145	anderen	_	_	_	_	_	_	_	
+13-42	3146-3155	Patienten	_	_	_	_	_	_	_	
+13-43	3156-3170	konsolidierend	_	_	_	_	_	_	_	
+13-44	3171-3174	mit	_	_	_	_	_	_	_	
+13-45	3175-3177	20	*[54]	*[54]	_[54]	*	*[54]	Specification[54]	_	
+13-46	3178-3180	Gy	*[54]	*[54]	_[54]	*	*[54]	Specification[54]	_	
+13-47	3181-3186	IF-RT	*	Therapeutic	_	*	*	Procedure	13-45[54_0]	
+13-48	3187-3196	bestrahlt	_	_	_	_	_	_	_	
+13-49	3197-3203	wurden	_	_	_	_	_	_	_	
+13-50	3203-3204	.	_	_	_	_	_	_	_	
+
+#Text=Die mit einer medianen Nachbeobachtungszeit von 47 Monaten durchgeführte „per protocol“-Analyse ergab ein PFS von 93.4% (95% CI, 90.4% bis 96.5%) in dem Kombinationstherapiearm und 86.1% (95%CI, 81.4% bis 90.9%) in dem Nicht-Bestrahlungsarm.
+14-1	3205-3208	Die	_	_	_	_	_	_	_	
+14-2	3209-3212	mit	_	_	_	_	_	_	_	
+14-3	3213-3218	einer	_	_	_	_	_	_	_	
+14-4	3219-3227	medianen	_	_	_	_	_	_	_	
+14-5	3228-3248	Nachbeobachtungszeit	*	Diagnostic	_	*	*	Procedure	_	
+14-6	3249-3252	von	_	_	_	_	_	_	_	
+14-7	3253-3255	47	_	_	_	_	_	_	_	
+14-8	3256-3263	Monaten	_	_	_	_	_	_	_	
+14-9	3264-3277	durchgeführte	_	_	_	_	_	_	_	
+14-10	3278-3279	„	_	_	_	_	_	_	_	
+14-11	3279-3282	per	_	_	_	_	_	_	_	
+14-12	3283-3291	protocol	_	_	_	_	_	_	_	
+14-13	3291-3292	“	_	_	_	_	_	_	_	
+14-14	3292-3293	-	_	_	_	_	_	_	_	
+14-15	3293-3300	Analyse	_	_	_	_	_	_	_	
+14-16	3301-3306	ergab	_	_	_	_	_	_	_	
+14-17	3307-3310	ein	_	_	_	_	_	_	_	
+14-18	3311-3314	PFS	*	Other Finding	_	*	*	Finding	_	
+14-19	3315-3318	von	_	_	_	_	_	_	_	
+14-20	3319-3324	93.4%	_	_	_	_	_	_	_	
+14-21	3325-3326	(	_	_	_	_	_	_	_	
+14-22	3326-3329	95%	_	_	_	_	_	_	_	
+14-23	3330-3332	CI	_	_	_	_	_	_	_	
+14-24	3332-3333	,	_	_	_	_	_	_	_	
+14-25	3334-3339	90.4%	_	_	_	_	_	_	_	
+14-26	3340-3343	bis	_	_	_	_	_	_	_	
+14-27	3344-3349	96.5%	_	_	_	_	_	_	_	
+14-28	3349-3350	)	_	_	_	_	_	_	_	
+14-29	3351-3353	in	_	_	_	_	_	_	_	
+14-30	3354-3357	dem	_	_	_	_	_	_	_	
+14-31	3358-3381	Kombinationstherapiearm	_	_	_	_	_	_	_	
+14-32	3382-3385	und	_	_	_	_	_	_	_	
+14-33	3386-3391	86.1%	_	_	_	_	_	_	_	
+14-34	3392-3393	(	_	_	_	_	_	_	_	
+14-35	3393-3396	95%	_	_	_	_	_	_	_	
+14-36	3396-3398	CI	_	_	_	_	_	_	_	
+14-37	3398-3399	,	_	_	_	_	_	_	_	
+14-38	3400-3405	81.4%	_	_	_	_	_	_	_	
+14-39	3406-3409	bis	_	_	_	_	_	_	_	
+14-40	3410-3415	90.9%	_	_	_	_	_	_	_	
+14-41	3415-3416	)	_	_	_	_	_	_	_	
+14-42	3417-3419	in	_	_	_	_	_	_	_	
+14-43	3420-3423	dem	_	_	_	_	_	_	_	
+14-44	3424-3445	Nicht-Bestrahlungsarm	_	_	_	_	_	_	_	
+14-45	3445-3446	.	_	_	_	_	_	_	_	
+
+#Text=Damit wurde die Nichtunterlegenheitsgrenze von ≥ 10% überschritten, und für den experimentellen Arm konnte die Nichtunterlegenheit nicht gezeigt werden.
+15-1	3447-3452	Damit	_	_	_	_	_	_	_	
+15-2	3453-3458	wurde	_	_	_	_	_	_	_	
+15-3	3459-3462	die	_	_	_	_	_	_	_	
+15-4	3463-3489	Nichtunterlegenheitsgrenze	_	_	_	_	_	_	_	
+15-5	3490-3493	von	_	_	_	_	_	_	_	
+15-6	3494-3495	≥	_	_	_	_	_	_	_	
+15-7	3496-3499	10%	_	_	_	_	_	_	_	
+15-8	3500-3513	überschritten	_	_	_	_	_	_	_	
+15-9	3513-3514	,	_	_	_	_	_	_	_	
+15-10	3515-3518	und	_	_	_	_	_	_	_	
+15-11	3519-3522	für	_	_	_	_	_	_	_	
+15-12	3523-3526	den	_	_	_	_	_	_	_	
+15-13	3527-3542	experimentellen	_	_	_	_	_	_	_	
+15-14	3543-3546	Arm	_	_	_	_	_	_	_	
+15-15	3547-3553	konnte	_	_	_	_	_	_	_	
+15-16	3554-3557	die	_	_	_	_	_	_	_	
+15-17	3558-3577	Nichtunterlegenheit	_	_	_	_	_	_	_	
+15-18	3578-3583	nicht	_	_	_	_	_	_	_	
+15-19	3584-3591	gezeigt	_	_	_	_	_	_	_	
+15-20	3592-3598	werden	_	_	_	_	_	_	_	
+15-21	3598-3599	.	_	_	_	_	_	_	_	
+
+#Text=Der PFS-Unterschied war v.a. durch eine vermehrte Inzidenz an Rezidiven im Bereich der initialen Lymphomlokalisation und damit im Bestrahlungsfeld bedingt.
+16-1	3600-3603	Der	_	_	_	_	_	_	_	
+16-2	3604-3619	PFS-Unterschied	*	Other Finding	_	*	*	Finding	_	
+16-3	3620-3623	war	_	_	_	_	_	_	_	
+16-4	3624-3627	v.a	_	_	_	_	_	_	_	
+16-5	3627-3628	.	_	_	_	_	_	_	_	
+16-6	3629-3634	durch	_	_	_	_	_	_	_	
+16-7	3635-3639	eine	_	_	_	_	_	_	_	
+16-8	3640-3649	vermehrte	_	_	_	_	_	_	_	
+16-9	3650-3658	Inzidenz	_	_	_	_	_	_	_	
+16-10	3659-3661	an	_	_	_	_	_	_	_	
+16-11	3662-3671	Rezidiven	*	Diagnosis or Pathology	_	*	*	Finding	16-12[55_0]	
+16-12	3672-3674	im	*[55]	*[55]	_[55]	*	*[55]	Specification[55]	_	
+16-13	3675-3682	Bereich	*[55]	*[55]	_[55]	*	*[55]	Specification[55]	_	
+16-14	3683-3686	der	*[55]	*[55]	_[55]	*	*[55]	Specification[55]	_	
+16-15	3687-3696	initialen	*[55]|*[56]	*[55]|*[56]	_[55]|_[56]	*|*	*[55]|*[56]	Specification[55]|Specification[56]	_	
+16-16	3697-3716	Lymphomlokalisation	*[55]|*[57]	*[55]|Diagnosis or Pathology[57]	_[55]|_[57]	*|*	*[55]|*[57]	Specification[55]|Finding[57]	16-15[56_57]	
+16-17	3717-3720	und	_	_	_	_	_	_	_	
+16-18	3721-3726	damit	_	_	_	_	_	_	_	
+16-19	3727-3729	im	_	_	_	_	_	_	_	
+16-20	3730-3746	Bestrahlungsfeld	*	Therapeutic	_	*	*	Procedure	_	
+16-21	3747-3754	bedingt	_	_	_	_	_	_	_	
+16-22	3754-3755	.	_	_	_	_	_	_	_	
+
+#Text=Das Gesamtüberleben unterschied sich mit 98.1% bzw. 98.4% in den beiden Armen nicht [REF].
+17-1	3756-3759	Das	_	_	_	_	_	_	_	
+17-2	3760-3775	Gesamtüberleben	*	Other Finding	_	*	*	Finding	_	
+17-3	3776-3787	unterschied	_	_	_	_	_	_	_	
+17-4	3788-3792	sich	_	_	_	_	_	_	_	
+17-5	3793-3796	mit	_	_	_	_	_	_	_	
+17-6	3797-3802	98.1%	_	_	_	_	_	_	_	
+17-7	3803-3806	bzw	_	_	_	_	_	_	_	
+17-8	3806-3807	.	_	_	_	_	_	_	_	
+17-9	3808-3813	98.4%	_	_	_	_	_	_	_	
+17-10	3814-3816	in	_	_	_	_	_	_	_	
+17-11	3817-3820	den	_	_	_	_	_	_	_	
+17-12	3821-3827	beiden	_	_	_	_	_	_	_	
+17-13	3828-3833	Armen	_	_	_	_	_	_	_	
+17-14	3834-3839	nicht	_	_	_	_	_	_	_	
+17-15	3840-3841	[	_	_	_	_	_	_	_	
+17-16	3841-3844	REF	_	_	_	_	_	_	_	
+17-17	3844-3845	]	_	_	_	_	_	_	_	
+17-18	3845-3846	.	_	_	_	_	_	_	_	
+
+#Text=In der von Sickinger et al., 2015, veröffentlichten Meta-Analyse wurde neben den Ergebnissen der RAPID- und der H10-Studie auch die von Picardi et al. 2007, veröffentlichte randomisierte Studie analysiert, in die Patienten mit vorliegendem Bulk, d.h. Vorliegen von mindestens einem intermediären Stadium eingeschlossen, vor dem PET/CT mit 6 Zyklen VEBEP (Vinblastine, Etoposide, Bleomycin, Epirubicin, Prednisone) behandelt und bei Vorliegen eines FDG-negativen Residuums in einen Nachbeobachtungsarm und in einen Arm mit konsolidierender Nachbestrahlung randomisiert wurden.
+18-1	3847-3849	In	_	_	_	_	_	_	_	
+18-2	3850-3853	der	_	_	_	_	_	_	_	
+18-3	3854-3857	von	_	_	_	_	_	_	_	
+18-4	3858-3867	Sickinger	_	_	_	_	_	_	_	
+18-5	3868-3870	et	_	_	_	_	_	_	_	
+18-6	3871-3873	al	_	_	_	_	_	_	_	
+18-7	3873-3874	.	_	_	_	_	_	_	_	
+18-8	3874-3875	,	_	_	_	_	_	_	_	
+18-9	3876-3880	2015	_	_	_	_	_	_	_	
+18-10	3880-3881	,	_	_	_	_	_	_	_	
+18-11	3882-3898	veröffentlichten	_	_	_	_	_	_	_	
+18-12	3899-3911	Meta-Analyse	_	_	_	_	_	_	_	
+18-13	3912-3917	wurde	_	_	_	_	_	_	_	
+18-14	3918-3923	neben	_	_	_	_	_	_	_	
+18-15	3924-3927	den	_	_	_	_	_	_	_	
+18-16	3928-3939	Ergebnissen	_	_	_	_	_	_	_	
+18-17	3940-3943	der	_	_	_	_	_	_	_	
+18-18	3944-3949	RAPID	_	_	_	_	_	_	_	
+18-19	3949-3950	-	_	_	_	_	_	_	_	
+18-20	3951-3954	und	_	_	_	_	_	_	_	
+18-21	3955-3958	der	_	_	_	_	_	_	_	
+18-22	3959-3962	H10	_	_	_	_	_	_	_	
+18-23	3962-3963	-	_	_	_	_	_	_	_	
+18-24	3963-3969	Studie	_	_	_	_	_	_	_	
+18-25	3970-3974	auch	_	_	_	_	_	_	_	
+18-26	3975-3978	die	_	_	_	_	_	_	_	
+18-27	3979-3982	von	_	_	_	_	_	_	_	
+18-28	3983-3990	Picardi	_	_	_	_	_	_	_	
+18-29	3991-3993	et	_	_	_	_	_	_	_	
+18-30	3994-3996	al	_	_	_	_	_	_	_	
+18-31	3996-3997	.	_	_	_	_	_	_	_	
+18-32	3998-4002	2007	_	_	_	_	_	_	_	
+18-33	4002-4003	,	_	_	_	_	_	_	_	
+18-34	4004-4019	veröffentlichte	_	_	_	_	_	_	_	
+18-35	4020-4033	randomisierte	_	_	_	_	_	_	_	
+18-36	4034-4040	Studie	_	_	_	_	_	_	_	
+18-37	4041-4051	analysiert	_	_	_	_	_	_	_	
+18-38	4051-4052	,	_	_	_	_	_	_	_	
+18-39	4053-4055	in	_	_	_	_	_	_	_	
+18-40	4056-4059	die	_	_	_	_	_	_	_	
+18-41	4060-4069	Patienten	_	_	_	_	_	_	_	
+18-42	4070-4073	mit	_	_	_	_	_	_	_	
+18-43	4074-4086	vorliegendem	_	_	_	_	_	_	_	
+18-44	4087-4091	Bulk	*	Diagnosis or Pathology	_	*	*	Finding	_	
+18-45	4091-4092	,	_	_	_	_	_	_	_	
+18-46	4093-4096	d.h	_	_	_	_	_	_	_	
+18-47	4096-4097	.	_	_	_	_	_	_	_	
+18-48	4098-4107	Vorliegen	_	_	_	_	_	_	_	
+18-49	4108-4111	von	_	_	_	_	_	_	_	
+18-50	4112-4122	mindestens	_	_	_	_	_	_	_	
+18-51	4123-4128	einem	_	_	_	_	_	_	_	
+18-52	4129-4142	intermediären	*	*	_	*	*	Specification	_	
+18-53	4143-4150	Stadium	*	Diagnosis or Pathology	_	*	*	Finding	18-52	
+18-54	4151-4165	eingeschlossen	_	_	_	_	_	_	_	
+18-55	4165-4166	,	_	_	_	_	_	_	_	
+18-56	4167-4170	vor	_	_	_	_	_	_	_	
+18-57	4171-4174	dem	_	_	_	_	_	_	_	
+18-58	4175-4178	PET	*[58]	Diagnostic[58]	_[58]	*	*[58]	Procedure[58]	_	
+18-59	4178-4179	/	*[58]	Diagnostic[58]	_[58]	*	*[58]	Procedure[58]	_	
+18-60	4179-4181	CT	*[58]	Diagnostic[58]	_[58]	*	*[58]	Procedure[58]	_	
+18-61	4182-4185	mit	_	_	_	_	_	_	_	
+18-62	4186-4187	6	*[59]	*[59]	_[59]	*	*[59]	Specification[59]	_	
+18-63	4188-4194	Zyklen	*[59]	*[59]	_[59]	*	*[59]	Specification[59]	_	
+18-64	4195-4200	VEBEP	*	Therapeutic	_	*	*	Procedure	18-62[59_0]	
+18-65	4201-4202	(	_	_	_	_	_	_	_	
+18-66	4202-4213	Vinblastine	*	Clinical Drug	_	*	*	Substance	_	
+18-67	4213-4214	,	_	_	_	_	_	_	_	
+18-68	4215-4224	Etoposide	*	Clinical Drug	_	*	*	Substance	_	
+18-69	4224-4225	,	_	_	_	_	_	_	_	
+18-70	4226-4235	Bleomycin	*	Clinical Drug	_	*	*	Substance	_	
+18-71	4235-4236	,	_	_	_	_	_	_	_	
+18-72	4237-4247	Epirubicin	*	Clinical Drug	_	*	*	Substance	_	
+18-73	4247-4248	,	_	_	_	_	_	_	_	
+18-74	4249-4259	Prednisone	*	Clinical Drug	_	*	*	Substance	_	
+18-75	4259-4260	)	_	_	_	_	_	_	_	
+18-76	4261-4270	behandelt	_	_	_	_	_	_	_	
+18-77	4271-4274	und	_	_	_	_	_	_	_	
+18-78	4275-4278	bei	_	_	_	_	_	_	_	
+18-79	4279-4288	Vorliegen	*	Diagnosis or Pathology	_	*	*	Finding	18-80[60_0]	
+18-80	4289-4294	eines	*[60]	*[60]	_[60]	*	*[60]	Specification[60]	_	
+18-81	4295-4308	FDG-negativen	*[60]|*[61]	*[60]|*[61]	_[60]|_[61]	*|*	*[60]|*[61]	Specification[60]|Specification[61]	_	
+18-82	4309-4318	Residuums	*[60]|*[62]	*[60]|Diagnosis or Pathology[62]	_[60]|_[62]	*|*	*[60]|*[62]	Specification[60]|Finding[62]	18-81[61_62]	
+18-83	4319-4321	in	_	_	_	_	_	_	_	
+18-84	4322-4327	einen	_	_	_	_	_	_	_	
+18-85	4328-4347	Nachbeobachtungsarm	_	_	_	_	_	_	_	
+18-86	4348-4351	und	_	_	_	_	_	_	_	
+18-87	4352-4354	in	_	_	_	_	_	_	_	
+18-88	4355-4360	einen	_	_	_	_	_	_	_	
+18-89	4361-4364	Arm	_	_	_	_	_	_	_	
+18-90	4365-4368	mit	_	_	_	_	_	_	_	
+18-91	4369-4385	konsolidierender	*	*	_	*	*	Specification	_	
+18-92	4386-4401	Nachbestrahlung	*	Therapeutic	_	*	*	Procedure	18-91	
+18-93	4402-4414	randomisiert	_	_	_	_	_	_	_	
+18-94	4415-4421	wurden	_	_	_	_	_	_	_	
+18-95	4421-4422	.	_	_	_	_	_	_	_	
+
+#Text=Die Ergebnisse dieser Meta-Analyse deuten ebenfalls daraufhin, dass der Verzicht auf eine konsolidierende Strahlentherapie trotz Dokumentation einer PET/CT-Negativität nach Induktionschemotherapie mit einem niedrigeren PFS einhergeht [REF].
+19-1	4423-4426	Die	_	_	_	_	_	_	_	
+19-2	4427-4437	Ergebnisse	_	_	_	_	_	_	_	
+19-3	4438-4444	dieser	_	_	_	_	_	_	_	
+19-4	4445-4457	Meta-Analyse	_	_	_	_	_	_	_	
+19-5	4458-4464	deuten	_	_	_	_	_	_	_	
+19-6	4465-4474	ebenfalls	_	_	_	_	_	_	_	
+19-7	4475-4484	daraufhin	_	_	_	_	_	_	_	
+19-8	4484-4485	,	_	_	_	_	_	_	_	
+19-9	4486-4490	dass	_	_	_	_	_	_	_	
+19-10	4491-4494	der	_	_	_	_	_	_	_	
+19-11	4495-4503	Verzicht	_	_	_	_	_	_	_	
+19-12	4504-4507	auf	_	_	_	_	_	_	_	
+19-13	4508-4512	eine	_	_	_	_	_	_	_	
+19-14	4513-4528	konsolidierende	*	*	_	*	*	Specification	_	
+19-15	4529-4545	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	19-14	
+19-16	4546-4551	trotz	_	_	_	_	_	_	_	
+19-17	4552-4565	Dokumentation	_	_	_	_	_	_	_	
+19-18	4566-4571	einer	_	_	_	_	_	_	_	
+19-19	4572-4575	PET	*[63]	Other Finding[63]	_[63]	*	*[63]	Finding[63]	19-22[64_63]	
+19-20	4575-4576	/	*[63]	Other Finding[63]	_[63]	*	*[63]	Finding[63]	_	
+19-21	4576-4590	CT-Negativität	*[63]	Other Finding[63]	_[63]	*	*[63]	Finding[63]	_	
+19-22	4591-4595	nach	*[64]	*[64]	_[64]	*	*[64]	Specification[64]	_	
+19-23	4596-4619	Induktionschemotherapie	*[64]|*[65]	*[64]|Therapeutic[65]	_[64]|_[65]	*|*	*[64]|*[65]	Specification[64]|Procedure[65]	_	
+19-24	4620-4623	mit	_	_	_	_	_	_	_	
+19-25	4624-4629	einem	_	_	_	_	_	_	_	
+19-26	4630-4641	niedrigeren	*	*	_	*	*	Specification	_	
+19-27	4642-4645	PFS	*	Other Finding	_	*	*	Finding	19-26	
+19-28	4646-4656	einhergeht	_	_	_	_	_	_	_	
+19-29	4657-4658	[	_	_	_	_	_	_	_	
+19-30	4658-4661	REF	_	_	_	_	_	_	_	
+19-31	4661-4662	]	_	_	_	_	_	_	_	
+19-32	4662-4663	.	_	_	_	_	_	_	_	
+
+#Text=Zusammenfassend ergab die Meta-Analyse der RAPID-, H10F- und HD16-Studie der GHSG, dass der Verzicht auf eine konsolidierende Strahlentherapie trotz Dokumentation einer PET-Negativität nach zwei bis drei Zyklen ABVD mit einer niedrigeren Tumorkontrolle und damit einem niedrigeren PFS/EFS einhergeht ( [REF] [REF] und Metaanalyse im Leitlinienreport).
+20-1	4664-4679	Zusammenfassend	_	_	_	_	_	_	_	
+20-2	4680-4685	ergab	_	_	_	_	_	_	_	
+20-3	4686-4689	die	_	_	_	_	_	_	_	
+20-4	4690-4702	Meta-Analyse	_	_	_	_	_	_	_	
+20-5	4703-4706	der	_	_	_	_	_	_	_	
+20-6	4707-4712	RAPID	_	_	_	_	_	_	_	
+20-7	4712-4713	-	_	_	_	_	_	_	_	
+20-8	4713-4714	,	_	_	_	_	_	_	_	
+20-9	4715-4719	H10F	_	_	_	_	_	_	_	
+20-10	4719-4720	-	_	_	_	_	_	_	_	
+20-11	4721-4724	und	_	_	_	_	_	_	_	
+20-12	4725-4729	HD16	_	_	_	_	_	_	_	
+20-13	4729-4730	-	_	_	_	_	_	_	_	
+20-14	4730-4736	Studie	_	_	_	_	_	_	_	
+20-15	4737-4740	der	_	_	_	_	_	_	_	
+20-16	4741-4745	GHSG	_	_	_	_	_	_	_	
+20-17	4745-4746	,	_	_	_	_	_	_	_	
+20-18	4747-4751	dass	_	_	_	_	_	_	_	
+20-19	4752-4755	der	_	_	_	_	_	_	_	
+20-20	4756-4764	Verzicht	_	_	_	_	_	_	_	
+20-21	4765-4768	auf	_	_	_	_	_	_	_	
+20-22	4769-4773	eine	_	_	_	_	_	_	_	
+20-23	4774-4789	konsolidierende	*	*	_	*	*	Specification	_	
+20-24	4790-4806	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	20-23	
+20-25	4807-4812	trotz	_	_	_	_	_	_	_	
+20-26	4813-4826	Dokumentation	_	_	_	_	_	_	_	
+20-27	4827-4832	einer	_	_	_	_	_	_	_	
+20-28	4833-4848	PET-Negativität	*	Other Finding	_	*	*	Finding	20-29[66_0]	
+20-29	4849-4853	nach	*[66]	*[66]	_[66]	*	*[66]	Specification[66]	_	
+20-30	4854-4858	zwei	*[66]|*[67]	*[66]|*[67]	_[66]|_[67]	*|*	*[66]|\_Zyklen[67]	Specification[66]|Specification[67]	_	
+20-31	4859-4862	bis	*[66]	*[66]	_[66]	*	*[66]	Specification[66]	_	
+20-32	4863-4867	drei	*[66]|*[68]	*[66]|*[68]	_[66]|_[68]	*|*	*[66]|*[68]	Specification[66]|Specification[68]	_	
+20-33	4868-4874	Zyklen	*[66]|*[68]	*[66]|*[68]	_[66]|_[68]	*|*	*[66]|*[68]	Specification[66]|Specification[68]	_	
+20-34	4875-4879	ABVD	*[66]|*[69]	*[66]|Therapeutic[69]	_[66]|_[69]	*|*	*[66]|*[69]	Specification[66]|Procedure[69]	20-32[68_69]|20-30[67_69]	
+20-35	4880-4883	mit	_	_	_	_	_	_	_	
+20-36	4884-4889	einer	_	_	_	_	_	_	_	
+20-37	4890-4901	niedrigeren	*	*	_	*	*	Specification	_	
+20-38	4902-4916	Tumorkontrolle	*	Diagnosis or Pathology	_	*	*	Finding	20-37	
+20-39	4917-4920	und	_	_	_	_	_	_	_	
+20-40	4921-4926	damit	_	_	_	_	_	_	_	
+20-41	4927-4932	einem	_	_	_	_	_	_	_	
+20-42	4933-4944	niedrigeren	*	*	_	*	*	Specification	_	
+20-43	4945-4948	PFS	*	Other Finding	_	*	*	Finding	20-42	
+20-44	4948-4949	/	_	_	_	_	_	_	_	
+20-45	4949-4952	EFS	*	Other Finding	_	*	*	Finding	20-42	
+20-46	4953-4963	einhergeht	_	_	_	_	_	_	_	
+20-47	4964-4965	(	_	_	_	_	_	_	_	
+20-48	4966-4967	[	_	_	_	_	_	_	_	
+20-49	4967-4970	REF	_	_	_	_	_	_	_	
+20-50	4970-4971	]	_	_	_	_	_	_	_	
+20-51	4972-4973	[	_	_	_	_	_	_	_	
+20-52	4973-4976	REF	_	_	_	_	_	_	_	
+20-53	4976-4977	]	_	_	_	_	_	_	_	
+20-54	4978-4981	und	_	_	_	_	_	_	_	
+20-55	4982-4993	Metaanalyse	_	_	_	_	_	_	_	
+20-56	4994-4996	im	_	_	_	_	_	_	_	
+20-57	4997-5013	Leitlinienreport	_	_	_	_	_	_	_	
+20-58	5013-5014	)	_	_	_	_	_	_	_	
+20-59	5014-5015	.	_	_	_	_	_	_	_	
+
+#Text=Datenlage zum prädiktiven Wert einer positiven Interim-PET nach zwei/drei Zyklen ABVD
+21-1	5016-5025	Datenlage	_	_	_	_	_	_	_	
+21-2	5026-5029	zum	_	_	_	_	_	_	_	
+21-3	5030-5041	prädiktiven	_	_	_	_	_	_	_	
+21-4	5042-5046	Wert	_	_	_	_	_	_	_	
+21-5	5047-5052	einer	_	_	_	_	_	_	_	
+21-6	5053-5062	positiven	*	*	_	*	*	Specification	_	
+21-7	5063-5074	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	21-6|21-8[70_0]	
+21-8	5075-5079	nach	*[70]	*[70]	_[70]	*	*[70]	Specification[70]	_	
+21-9	5080-5084	zwei	*[70]|*[71]	*[70]|*[71]	_[70]|_[71]	*|*	*[70]|\_Zyklen[71]	Specification[70]|Specification[71]	_	
+21-10	5084-5085	/	*[70]	*[70]	_[70]	*	*[70]	Specification[70]	_	
+21-11	5085-5089	drei	*[70]|*[72]	*[70]|*[72]	_[70]|_[72]	*|*	*[70]|*[72]	Specification[70]|Specification[72]	_	
+21-12	5090-5096	Zyklen	*[70]|*[72]	*[70]|*[72]	_[70]|_[72]	*|*	*[70]|*[72]	Specification[70]|Specification[72]	_	
+21-13	5097-5101	ABVD	*[70]|*[73]	*[70]|Therapeutic[73]	_[70]|_[73]	*|*	*[70]|*[73]	Specification[70]|Procedure[73]	21-11[72_73]|21-9[71_73]	
+
+#Text=Die Frage, ob einem nach zwei Zyklen ABVD positive PET ein prädiktiver Wert zukommt und ob darauf basierend die weitere Therapie intensiviert werden sollte, wurde prospektiv in der H10F-Studie als einer der sekundären Endpunkte untersucht, indem die Patienten mit einer positiven Interim-PET/CT entweder mit einem weiteren Zyklus ABVD+ 30 Gy IN-RT oder mit zwei BEACOPPesk.
+22-1	5102-5105	Die	_	_	_	_	_	_	_	
+22-2	5106-5111	Frage	_	_	_	_	_	_	_	
+22-3	5111-5112	,	_	_	_	_	_	_	_	
+22-4	5113-5115	ob	_	_	_	_	_	_	_	
+22-5	5116-5121	einem	_	_	_	_	_	_	_	
+22-6	5122-5126	nach	_	_	_	_	_	_	_	
+22-7	5127-5131	zwei	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+22-8	5132-5138	Zyklen	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+22-9	5139-5143	ABVD	*	Therapeutic	_	*	*	Procedure	22-7[74_0]	
+22-10	5144-5152	positive	*	*	_	*	*	Specification	_	
+22-11	5153-5156	PET	*	Diagnosis or Pathology	_	*	*	Finding	22-10	
+22-12	5157-5160	ein	_	_	_	_	_	_	_	
+22-13	5161-5172	prädiktiver	_	_	_	_	_	_	_	
+22-14	5173-5177	Wert	_	_	_	_	_	_	_	
+22-15	5178-5185	zukommt	_	_	_	_	_	_	_	
+22-16	5186-5189	und	_	_	_	_	_	_	_	
+22-17	5190-5192	ob	_	_	_	_	_	_	_	
+22-18	5193-5199	darauf	_	_	_	_	_	_	_	
+22-19	5200-5209	basierend	_	_	_	_	_	_	_	
+22-20	5210-5213	die	_	_	_	_	_	_	_	
+22-21	5214-5221	weitere	_	_	_	_	_	_	_	
+22-22	5222-5230	Therapie	*	Therapeutic	_	*	*	Procedure	_	
+22-23	5231-5243	intensiviert	_	_	_	_	_	_	_	
+22-24	5244-5250	werden	_	_	_	_	_	_	_	
+22-25	5251-5257	sollte	_	_	_	_	_	_	_	
+22-26	5257-5258	,	_	_	_	_	_	_	_	
+22-27	5259-5264	wurde	_	_	_	_	_	_	_	
+22-28	5265-5275	prospektiv	_	_	_	_	_	_	_	
+22-29	5276-5278	in	_	_	_	_	_	_	_	
+22-30	5279-5282	der	_	_	_	_	_	_	_	
+22-31	5283-5294	H10F-Studie	_	_	_	_	_	_	_	
+22-32	5295-5298	als	_	_	_	_	_	_	_	
+22-33	5299-5304	einer	_	_	_	_	_	_	_	
+22-34	5305-5308	der	_	_	_	_	_	_	_	
+22-35	5309-5319	sekundären	_	_	_	_	_	_	_	
+22-36	5320-5329	Endpunkte	_	_	_	_	_	_	_	
+22-37	5330-5340	untersucht	_	_	_	_	_	_	_	
+22-38	5340-5341	,	_	_	_	_	_	_	_	
+22-39	5342-5347	indem	_	_	_	_	_	_	_	
+22-40	5348-5351	die	_	_	_	_	_	_	_	
+22-41	5352-5361	Patienten	_	_	_	_	_	_	_	
+22-42	5362-5365	mit	_	_	_	_	_	_	_	
+22-43	5366-5371	einer	_	_	_	_	_	_	_	
+22-44	5372-5381	positiven	*	*	_	*	*	Specification	_	
+22-45	5382-5393	Interim-PET	*[75]	Diagnosis or Pathology[75]	_[75]	*	*[75]	Finding[75]	22-44[0_75]	
+22-46	5393-5394	/	*[75]	Diagnosis or Pathology[75]	_[75]	*	*[75]	Finding[75]	_	
+22-47	5394-5396	CT	*[75]	Diagnosis or Pathology[75]	_[75]	*	*[75]	Finding[75]	_	
+22-48	5397-5405	entweder	_	_	_	_	_	_	_	
+22-49	5406-5409	mit	_	_	_	_	_	_	_	
+22-50	5410-5415	einem	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+22-51	5416-5424	weiteren	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+22-52	5425-5431	Zyklus	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+22-53	5432-5436	ABVD	*	Therapeutic	_	*	*	Procedure	22-50[76_0]	
+22-54	5436-5437	+	_	_	_	_	_	_	_	
+22-55	5438-5440	30	*[77]	*[77]	_[77]	*	*[77]	Specification[77]	_	
+22-56	5441-5443	Gy	*[77]	*[77]	_[77]	*	*[77]	Specification[77]	_	
+22-57	5444-5449	IN-RT	*	Therapeutic	_	*	*	Procedure	22-55[77_0]	
+22-58	5450-5454	oder	_	_	_	_	_	_	_	
+22-59	5455-5458	mit	_	_	_	_	_	_	_	
+22-60	5459-5463	zwei	*	*	_	*	\_Zyklen	Specification	_	
+22-61	5464-5474	BEACOPPesk	*	Therapeutic	_	*	*	Procedure	22-60	
+22-62	5474-5475	.	_	_	_	_	_	_	_	
+
+#Text=und 30 Gy IN-RT behandelt wurden.
+23-1	5476-5479	und	_	_	_	_	_	_	_	
+23-2	5480-5482	30	*[78]	*[78]	_[78]	*	*[78]	Specification[78]	_	
+23-3	5483-5485	Gy	*[78]	*[78]	_[78]	*	*[78]	Specification[78]	_	
+23-4	5486-5491	IN-RT	*	Therapeutic	_	*	*	Procedure	23-2[78_0]	
+23-5	5492-5501	behandelt	_	_	_	_	_	_	_	
+23-6	5502-5508	wurden	_	_	_	_	_	_	_	
+23-7	5508-5509	.	_	_	_	_	_	_	_	
+
+#Text=Nach zwei Zyklen ABVD wurde bei 18.8% der Patienten eine positive Interim-PET dokumentiert.
+24-1	5510-5514	Nach	_	_	_	_	_	_	_	
+24-2	5515-5519	zwei	*[79]	*[79]	_[79]	*	*[79]	Specification[79]	_	
+24-3	5520-5526	Zyklen	*[79]	*[79]	_[79]	*	*[79]	Specification[79]	_	
+24-4	5527-5531	ABVD	*	Therapeutic	_	*	*	Procedure	24-2[79_0]	
+24-5	5532-5537	wurde	_	_	_	_	_	_	_	
+24-6	5538-5541	bei	_	_	_	_	_	_	_	
+24-7	5542-5547	18.8%	_	_	_	_	_	_	_	
+24-8	5548-5551	der	_	_	_	_	_	_	_	
+24-9	5552-5561	Patienten	_	_	_	_	_	_	_	
+24-10	5562-5566	eine	_	_	_	_	_	_	_	
+24-11	5567-5575	positive	*	*	_	*	*	Specification	_	
+24-12	5576-5587	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	24-11	
+24-13	5588-5600	dokumentiert	_	_	_	_	_	_	_	
+24-14	5600-5601	.	_	_	_	_	_	_	_	
+
+#Text=Für die im experimentellen Arm behandelten PET-positiven Patienten wurde eine signifikant höhere 5-Jahres-PFS-Rate (90.6%, 95% CI 84.7% bis 94.3%) im Vergleich zu der im Standardarm behandelten PET-positiven Patienten (5-Jahres PFS 77.4%; 95%CI 70.4% bis 82.9%) dokumentiert [REF].
+25-1	5602-5605	Für	_	_	_	_	_	_	_	
+25-2	5606-5609	die	_	_	_	_	_	_	_	
+25-3	5610-5612	im	_	_	_	_	_	_	_	
+25-4	5613-5628	experimentellen	_	_	_	_	_	_	_	
+25-5	5629-5632	Arm	_	_	_	_	_	_	_	
+25-6	5633-5644	behandelten	_	_	_	_	_	_	_	
+25-7	5645-5658	PET-positiven	*	Diagnosis or Pathology	_	*	*	Finding	_	
+25-8	5659-5668	Patienten	_	_	_	_	_	_	_	
+25-9	5669-5674	wurde	_	_	_	_	_	_	_	
+25-10	5675-5679	eine	_	_	_	_	_	_	_	
+25-11	5680-5691	signifikant	_	_	_	_	_	_	_	
+25-12	5692-5698	höhere	_	_	_	_	_	_	_	
+25-13	5699-5700	5	*[80]	Other Finding[80]	_[80]	*	*[80]	Finding[80]	_	
+25-14	5700-5701	-	*[80]	Other Finding[80]	_[80]	*	*[80]	Finding[80]	_	
+25-15	5701-5716	Jahres-PFS-Rate	*[80]	Other Finding[80]	_[80]	*	*[80]	Finding[80]	_	
+25-16	5717-5718	(	_	_	_	_	_	_	_	
+25-17	5718-5723	90.6%	_	_	_	_	_	_	_	
+25-18	5723-5724	,	_	_	_	_	_	_	_	
+25-19	5725-5728	95%	_	_	_	_	_	_	_	
+25-20	5729-5731	CI	_	_	_	_	_	_	_	
+25-21	5732-5737	84.7%	_	_	_	_	_	_	_	
+25-22	5738-5741	bis	_	_	_	_	_	_	_	
+25-23	5742-5747	94.3%	_	_	_	_	_	_	_	
+25-24	5747-5748	)	_	_	_	_	_	_	_	
+25-25	5749-5751	im	_	_	_	_	_	_	_	
+25-26	5752-5761	Vergleich	_	_	_	_	_	_	_	
+25-27	5762-5764	zu	_	_	_	_	_	_	_	
+25-28	5765-5768	der	_	_	_	_	_	_	_	
+25-29	5769-5771	im	_	_	_	_	_	_	_	
+25-30	5772-5783	Standardarm	_	_	_	_	_	_	_	
+25-31	5784-5795	behandelten	_	_	_	_	_	_	_	
+25-32	5796-5809	PET-positiven	*	Diagnosis or Pathology	_	*	*	Finding	_	
+25-33	5810-5819	Patienten	_	_	_	_	_	_	_	
+25-34	5820-5821	(	_	_	_	_	_	_	_	
+25-35	5821-5822	5	*[81]	Other Finding[81]	_[81]	*	*[81]	Finding[81]	_	
+25-36	5822-5823	-	*[81]	Other Finding[81]	_[81]	*	*[81]	Finding[81]	_	
+25-37	5823-5829	Jahres	*[81]	Other Finding[81]	_[81]	*	*[81]	Finding[81]	_	
+25-38	5830-5833	PFS	*[81]	Other Finding[81]	_[81]	*	*[81]	Finding[81]	_	
+25-39	5834-5839	77.4%	_	_	_	_	_	_	_	
+25-40	5839-5840	;	_	_	_	_	_	_	_	
+25-41	5841-5844	95%	_	_	_	_	_	_	_	
+25-42	5844-5846	CI	_	_	_	_	_	_	_	
+25-43	5847-5852	70.4%	_	_	_	_	_	_	_	
+25-44	5853-5856	bis	_	_	_	_	_	_	_	
+25-45	5857-5862	82.9%	_	_	_	_	_	_	_	
+25-46	5862-5863	)	_	_	_	_	_	_	_	
+25-47	5864-5876	dokumentiert	_	_	_	_	_	_	_	
+25-48	5877-5878	[	_	_	_	_	_	_	_	
+25-49	5878-5881	REF	_	_	_	_	_	_	_	
+25-50	5881-5882	]	_	_	_	_	_	_	_	
+25-51	5882-5883	.	_	_	_	_	_	_	_	
+
+#Text=Einschränkend ist zu erwähnen, dass die Patienten mit einem in frühem und im intermediären Stadium diagnostizierten HL und positiver Interim-PET nicht separat analysiert wurden.
+26-1	5884-5897	Einschränkend	_	_	_	_	_	_	_	
+26-2	5898-5901	ist	_	_	_	_	_	_	_	
+26-3	5902-5904	zu	_	_	_	_	_	_	_	
+26-4	5905-5913	erwähnen	_	_	_	_	_	_	_	
+26-5	5913-5914	,	_	_	_	_	_	_	_	
+26-6	5915-5919	dass	_	_	_	_	_	_	_	
+26-7	5920-5923	die	_	_	_	_	_	_	_	
+26-8	5924-5933	Patienten	_	_	_	_	_	_	_	
+26-9	5934-5937	mit	_	_	_	_	_	_	_	
+26-10	5938-5943	einem	_	_	_	_	_	_	_	
+26-11	5944-5946	in	_	_	_	_	_	_	_	
+26-12	5947-5953	frühem	*[82]|*[83]	*[82]|*[83]	_[82]|_[83]	*|*	*[82]|*[83]	Specification[82]|Specification[83]	_	
+26-13	5954-5957	und	*[82]	*[82]	_[82]	*	*[82]	Specification[82]	_	
+26-14	5958-5960	im	*[82]	*[82]	_[82]	*	*[82]	Specification[82]	_	
+26-15	5961-5974	intermediären	*[82]|*[84]	*[82]|*[84]	_[82]|_[84]	*|*	*[82]|*[84]	Specification[82]|Specification[84]	_	
+26-16	5975-5982	Stadium	*[82]|*[85]	*[82]|Diagnosis or Pathology[85]	_[82]|_[85]	*|*	*[82]|*[85]	Specification[82]|Finding[85]	26-15[84_85]|26-12[83_85]	
+26-17	5983-5999	diagnostizierten	*[82]	*[82]	_[82]	*	*[82]	Specification[82]	_	
+26-18	6000-6002	HL	*	Diagnosis or Pathology	_	*	*	Finding	26-12[82_0]	
+26-19	6003-6006	und	_	_	_	_	_	_	_	
+26-20	6007-6016	positiver	*	*	_	*	*	Specification	_	
+26-21	6017-6028	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	26-20	
+26-22	6029-6034	nicht	_	_	_	_	_	_	_	
+26-23	6035-6042	separat	_	_	_	_	_	_	_	
+26-24	6043-6053	analysiert	_	_	_	_	_	_	_	
+26-25	6054-6060	wurden	_	_	_	_	_	_	_	
+26-26	6060-6061	.	_	_	_	_	_	_	_	
+
+#Text=In einer ergänzenden Analyse der RAPID-Studie wurde für die PET-positiven Patienten ein 5-Jahres EFS von 89.7% (95% CI, 84.6% bis 94.8%) ermittelt.
+27-1	6062-6064	In	_	_	_	_	_	_	_	
+27-2	6065-6070	einer	_	_	_	_	_	_	_	
+27-3	6071-6082	ergänzenden	_	_	_	_	_	_	_	
+27-4	6083-6090	Analyse	_	_	_	_	_	_	_	
+27-5	6091-6094	der	_	_	_	_	_	_	_	
+27-6	6095-6107	RAPID-Studie	_	_	_	_	_	_	_	
+27-7	6108-6113	wurde	_	_	_	_	_	_	_	
+27-8	6114-6117	für	_	_	_	_	_	_	_	
+27-9	6118-6121	die	_	_	_	_	_	_	_	
+27-10	6122-6135	PET-positiven	*	Diagnosis or Pathology	_	*	*	Finding	_	
+27-11	6136-6145	Patienten	_	_	_	_	_	_	_	
+27-12	6146-6149	ein	_	_	_	_	_	_	_	
+27-13	6150-6151	5	*[86]	Other Finding[86]	_[86]	*	*[86]	Finding[86]	_	
+27-14	6151-6152	-	*[86]	Other Finding[86]	_[86]	*	*[86]	Finding[86]	_	
+27-15	6152-6158	Jahres	*[86]	Other Finding[86]	_[86]	*	*[86]	Finding[86]	_	
+27-16	6159-6162	EFS	*[86]	Other Finding[86]	_[86]	*	*[86]	Finding[86]	_	
+27-17	6163-6166	von	_	_	_	_	_	_	_	
+27-18	6167-6172	89.7%	_	_	_	_	_	_	_	
+27-19	6173-6174	(	_	_	_	_	_	_	_	
+27-20	6174-6177	95%	_	_	_	_	_	_	_	
+27-21	6178-6180	CI	_	_	_	_	_	_	_	
+27-22	6180-6181	,	_	_	_	_	_	_	_	
+27-23	6182-6187	84.6%	_	_	_	_	_	_	_	
+27-24	6188-6191	bis	_	_	_	_	_	_	_	
+27-25	6192-6197	94.8%	_	_	_	_	_	_	_	
+27-26	6197-6198	)	_	_	_	_	_	_	_	
+27-27	6199-6208	ermittelt	_	_	_	_	_	_	_	
+27-28	6208-6209	.	_	_	_	_	_	_	_	
+
+#Text=Mit der angewandten Definition der PET-Positivität scheint daher keine ausreichende Differenzierung der Prognose der PET-negativen und PET-positiven Patienten möglich zu sein; die weiterführende Analyse der PET-positiven Patienten ergab, dass insbesondere für die Patienten mit einem Deauville-Score von 5 im Vergleich zu den Patienten mit einem Deauville-Score von 1-4 ein signifikant niedrigeres PFS und ES (5-Jahres PFS und -EFS jeweils 61.9%) und ein niedrigeres Gesamtüberleben (5-Jahres OS 85,2%; 95% CI, 69.7% bis 100% versus 97.8%, 95%CI, 96.4 bis 99.2%) zu dokumentieren war [REF].
+28-1	6210-6213	Mit	_	_	_	_	_	_	_	
+28-2	6214-6217	der	_	_	_	_	_	_	_	
+28-3	6218-6229	angewandten	_	_	_	_	_	_	_	
+28-4	6230-6240	Definition	_	_	_	_	_	_	_	
+28-5	6241-6244	der	_	_	_	_	_	_	_	
+28-6	6245-6260	PET-Positivität	*	Diagnosis or Pathology	_	*	*	Finding	_	
+28-7	6261-6268	scheint	_	_	_	_	_	_	_	
+28-8	6269-6274	daher	_	_	_	_	_	_	_	
+28-9	6275-6280	keine	_	_	_	_	_	_	_	
+28-10	6281-6293	ausreichende	_	_	_	_	_	_	_	
+28-11	6294-6309	Differenzierung	_	_	_	_	_	_	_	
+28-12	6310-6313	der	_	_	_	_	_	_	_	
+28-13	6314-6322	Prognose	*	Other Finding	_	*	*	Finding	28-14[87_0]|28-17[90_0]	
+28-14	6323-6326	der	*[87]	*[87]	_[87]	*	*[87]	Specification[87]	_	
+28-15	6327-6340	PET-negativen	*[87]|*[88]	*[87]|Other Finding[88]	_[87]|_[88]	*|*	*[87]|*[88]	Specification[87]|Finding[88]	_	
+28-16	6341-6344	und	_	_	_	_	_	_	_	
+28-17	6345-6358	PET-positiven	*[89]|\_der\_[90]	Diagnosis or Pathology[89]|*[90]	_[89]|_[90]	*|*	*[89]|*[90]	Finding[89]|Specification[90]	_	
+28-18	6359-6368	Patienten	_	_	_	_	_	_	_	
+28-19	6369-6376	möglich	_	_	_	_	_	_	_	
+28-20	6377-6379	zu	_	_	_	_	_	_	_	
+28-21	6380-6384	sein	_	_	_	_	_	_	_	
+28-22	6384-6385	;	_	_	_	_	_	_	_	
+28-23	6386-6389	die	_	_	_	_	_	_	_	
+28-24	6390-6404	weiterführende	_	_	_	_	_	_	_	
+28-25	6405-6412	Analyse	_	_	_	_	_	_	_	
+28-26	6413-6416	der	_	_	_	_	_	_	_	
+28-27	6417-6430	PET-positiven	*	Diagnosis or Pathology	_	*	*	Finding	_	
+28-28	6431-6440	Patienten	_	_	_	_	_	_	_	
+28-29	6441-6446	ergab	_	_	_	_	_	_	_	
+28-30	6446-6447	,	_	_	_	_	_	_	_	
+28-31	6448-6452	dass	_	_	_	_	_	_	_	
+28-32	6453-6465	insbesondere	_	_	_	_	_	_	_	
+28-33	6466-6469	für	_	_	_	_	_	_	_	
+28-34	6470-6473	die	_	_	_	_	_	_	_	
+28-35	6474-6483	Patienten	_	_	_	_	_	_	_	
+28-36	6484-6487	mit	_	_	_	_	_	_	_	
+28-37	6488-6493	einem	_	_	_	_	_	_	_	
+28-38	6494-6509	Deauville-Score	*	Other Finding	_	*	*	Finding	28-39[91_0]	
+28-39	6510-6513	von	*[91]	*[91]	_[91]	*	*[91]	Specification[91]	_	
+28-40	6514-6515	5	*[91]	*[91]	_[91]	*	*[91]	Specification[91]	_	
+28-41	6516-6518	im	_	_	_	_	_	_	_	
+28-42	6519-6528	Vergleich	_	_	_	_	_	_	_	
+28-43	6529-6531	zu	_	_	_	_	_	_	_	
+28-44	6532-6535	den	_	_	_	_	_	_	_	
+28-45	6536-6545	Patienten	_	_	_	_	_	_	_	
+28-46	6546-6549	mit	_	_	_	_	_	_	_	
+28-47	6550-6555	einem	_	_	_	_	_	_	_	
+28-48	6556-6571	Deauville-Score	*	Other Finding	_	*	*	Finding	28-49[92_0]	
+28-49	6572-6575	von	*[92]	*[92]	_[92]	*	*[92]	Specification[92]	_	
+28-50	6576-6577	1	*[92]	*[92]	_[92]	*	*[92]	Specification[92]	_	
+28-51	6577-6578	-	*[92]	*[92]	_[92]	*	*[92]	Specification[92]	_	
+28-52	6578-6579	4	*[92]	*[92]	_[92]	*	*[92]	Specification[92]	_	
+28-53	6580-6583	ein	_	_	_	_	_	_	_	
+28-54	6584-6595	signifikant	*[93]	*[93]	_[93]	*	*[93]	Specification[93]	_	
+28-55	6596-6607	niedrigeres	*[93]	*[93]	_[93]	*	*[93]	Specification[93]	_	
+28-56	6608-6611	PFS	*	Other Finding	_	*	*	Finding	28-54[93_0]	
+28-57	6612-6615	und	_	_	_	_	_	_	_	
+28-58	6616-6618	ES	*	Other Finding	_	*	*	Finding	28-54[93_0]	
+28-59	6619-6620	(	_	_	_	_	_	_	_	
+28-60	6620-6621	5	*[94]	Other Finding[94]	_[94]	*	*[94]	Finding[94]	_	
+28-61	6621-6622	-	*[94]	Other Finding[94]	_[94]	*	*[94]	Finding[94]	_	
+28-62	6622-6628	Jahres	*[94]	Other Finding[94]	_[94]	*	*[94]	Finding[94]	_	
+28-63	6629-6632	PFS	*[94]	Other Finding[94]	_[94]	*	*[94]	Finding[94]	_	
+28-64	6633-6636	und	_	_	_	_	_	_	_	
+28-65	6637-6638	-	_	_	_	_	_	_	_	
+28-66	6638-6641	EFS	5-Jahres-	Other Finding		28-60[94]	*	Finding	_	
+28-67	6642-6649	jeweils	_	_	_	_	_	_	_	
+28-68	6650-6655	61.9%	_	_	_	_	_	_	_	
+28-69	6655-6656	)	_	_	_	_	_	_	_	
+28-70	6657-6660	und	_	_	_	_	_	_	_	
+28-71	6661-6664	ein	_	_	_	_	_	_	_	
+28-72	6665-6676	niedrigeres	*	*	_	*	*	Specification	_	
+28-73	6677-6692	Gesamtüberleben	*	Other Finding	_	*	*	Finding	28-72	
+28-74	6693-6694	(	_	_	_	_	_	_	_	
+28-75	6694-6695	5	*[95]	Other Finding[95]	_[95]	*	*[95]	Finding[95]	_	
+28-76	6695-6696	-	*[95]	Other Finding[95]	_[95]	*	*[95]	Finding[95]	_	
+28-77	6696-6702	Jahres	*[95]	Other Finding[95]	_[95]	*	*[95]	Finding[95]	_	
+28-78	6703-6705	OS	*[95]	Other Finding[95]	_[95]	*	*[95]	Finding[95]	_	
+28-79	6706-6711	85,2%	_	_	_	_	_	_	_	
+28-80	6711-6712	;	_	_	_	_	_	_	_	
+28-81	6713-6716	95%	_	_	_	_	_	_	_	
+28-82	6717-6719	CI	_	_	_	_	_	_	_	
+28-83	6719-6720	,	_	_	_	_	_	_	_	
+28-84	6721-6726	69.7%	_	_	_	_	_	_	_	
+28-85	6727-6730	bis	_	_	_	_	_	_	_	
+28-86	6731-6735	100%	_	_	_	_	_	_	_	
+28-87	6736-6742	versus	_	_	_	_	_	_	_	
+28-88	6743-6748	97.8%	_	_	_	_	_	_	_	
+28-89	6748-6749	,	_	_	_	_	_	_	_	
+28-90	6750-6753	95%	_	_	_	_	_	_	_	
+28-91	6753-6755	CI	_	_	_	_	_	_	_	
+28-92	6755-6756	,	_	_	_	_	_	_	_	
+28-93	6757-6761	96.4	_	_	_	_	_	_	_	
+28-94	6762-6765	bis	_	_	_	_	_	_	_	
+28-95	6766-6771	99.2%	_	_	_	_	_	_	_	
+28-96	6771-6772	)	_	_	_	_	_	_	_	
+28-97	6773-6775	zu	_	_	_	_	_	_	_	
+28-98	6776-6789	dokumentieren	_	_	_	_	_	_	_	
+28-99	6790-6793	war	_	_	_	_	_	_	_	
+28-100	6794-6795	[	_	_	_	_	_	_	_	
+28-101	6795-6798	REF	_	_	_	_	_	_	_	
+28-102	6798-6799	]	_	_	_	_	_	_	_	
+28-103	6799-6800	.	_	_	_	_	_	_	_	
+
+#Text=Die Auswertung der in der HD16-Studie mit einer Kombinationstherapie behandelten Patienten ergab für das Kollektiv der nach zwei Zyklen ABVD PET-positiven im Vergleich zu den PET-negativen Patienten ein signifikant niedrigeres 5-Jahres PFS (88.1%, 95% CI, 83.8% bis 92.3% versus 93.2%, 95%CI, 90.2% bis 96.2%);
+29-1	6801-6804	Die	_	_	_	_	_	_	_	
+29-2	6805-6815	Auswertung	_	_	_	_	_	_	_	
+29-3	6816-6819	der	_	_	_	_	_	_	_	
+29-4	6820-6822	in	_	_	_	_	_	_	_	
+29-5	6823-6826	der	_	_	_	_	_	_	_	
+29-6	6827-6831	HD16	_	_	_	_	_	_	_	
+29-7	6831-6832	-	_	_	_	_	_	_	_	
+29-8	6832-6838	Studie	_	_	_	_	_	_	_	
+29-9	6839-6842	mit	_	_	_	_	_	_	_	
+29-10	6843-6848	einer	_	_	_	_	_	_	_	
+29-11	6849-6869	Kombinationstherapie	*	Therapeutic	_	*	*	Procedure	_	
+29-12	6870-6881	behandelten	_	_	_	_	_	_	_	
+29-13	6882-6891	Patienten	_	_	_	_	_	_	_	
+29-14	6892-6897	ergab	_	_	_	_	_	_	_	
+29-15	6898-6901	für	_	_	_	_	_	_	_	
+29-16	6902-6905	das	_	_	_	_	_	_	_	
+29-17	6906-6915	Kollektiv	_	_	_	_	_	_	_	
+29-18	6916-6919	der	_	_	_	_	_	_	_	
+29-19	6920-6924	nach	_	_	_	_	_	_	_	
+29-20	6925-6929	zwei	*[96]	*[96]	_[96]	*	*[96]	Specification[96]	_	
+29-21	6930-6936	Zyklen	*[96]	*[96]	_[96]	*	*[96]	Specification[96]	_	
+29-22	6937-6941	ABVD	*	Therapeutic	_	*	*	Procedure	29-20[96_0]	
+29-23	6942-6955	PET-positiven	*	Diagnosis or Pathology	_	*	*	Finding	_	
+29-24	6956-6958	im	_	_	_	_	_	_	_	
+29-25	6959-6968	Vergleich	_	_	_	_	_	_	_	
+29-26	6969-6971	zu	_	_	_	_	_	_	_	
+29-27	6972-6975	den	_	_	_	_	_	_	_	
+29-28	6976-6989	PET-negativen	*	Other Finding	_	*	*	Finding	_	
+29-29	6990-6999	Patienten	_	_	_	_	_	_	_	
+29-30	7000-7003	ein	_	_	_	_	_	_	_	
+29-31	7004-7015	signifikant	*[97]	*[97]	_[97]	*	*[97]	Specification[97]	_	
+29-32	7016-7027	niedrigeres	*[97]	*[97]	_[97]	*	*[97]	Specification[97]	_	
+29-33	7028-7029	5	*[98]	Other Finding[98]	_[98]	*	*[98]	Finding[98]	29-31[97_98]	
+29-34	7029-7030	-	*[98]	Other Finding[98]	_[98]	*	*[98]	Finding[98]	_	
+29-35	7030-7036	Jahres	*[98]	Other Finding[98]	_[98]	*	*[98]	Finding[98]	_	
+29-36	7037-7040	PFS	*[98]	Other Finding[98]	_[98]	*	*[98]	Finding[98]	_	
+29-37	7041-7042	(	_	_	_	_	_	_	_	
+29-38	7042-7047	88.1%	_	_	_	_	_	_	_	
+29-39	7047-7048	,	_	_	_	_	_	_	_	
+29-40	7049-7052	95%	_	_	_	_	_	_	_	
+29-41	7053-7055	CI	_	_	_	_	_	_	_	
+29-42	7055-7056	,	_	_	_	_	_	_	_	
+29-43	7057-7062	83.8%	_	_	_	_	_	_	_	
+29-44	7063-7066	bis	_	_	_	_	_	_	_	
+29-45	7067-7072	92.3%	_	_	_	_	_	_	_	
+29-46	7073-7079	versus	_	_	_	_	_	_	_	
+29-47	7080-7085	93.2%	_	_	_	_	_	_	_	
+29-48	7085-7086	,	_	_	_	_	_	_	_	
+29-49	7087-7090	95%	_	_	_	_	_	_	_	
+29-50	7090-7092	CI	_	_	_	_	_	_	_	
+29-51	7092-7093	,	_	_	_	_	_	_	_	
+29-52	7094-7099	90.2%	_	_	_	_	_	_	_	
+29-53	7100-7103	bis	_	_	_	_	_	_	_	
+29-54	7104-7109	96.2%	_	_	_	_	_	_	_	
+29-55	7109-7110	)	_	_	_	_	_	_	_	
+29-56	7110-7111	;	_	_	_	_	_	_	_	
+
+#Text=der Unterschied war noch eindrücklicher, wenn als PET-Positivität ein Deauville-Score von 4-5 definiert wurde (5-Jahres PFS 80.1%, 95%CI, 71.2% bis 88.9% versus 93.1%, 95% CI, 90.7% bis 95.5%) [REF].
+30-1	7112-7115	der	_	_	_	_	_	_	_	
+30-2	7116-7127	Unterschied	_	_	_	_	_	_	_	
+30-3	7128-7131	war	_	_	_	_	_	_	_	
+30-4	7132-7136	noch	_	_	_	_	_	_	_	
+30-5	7137-7151	eindrücklicher	_	_	_	_	_	_	_	
+30-6	7151-7152	,	_	_	_	_	_	_	_	
+30-7	7153-7157	wenn	_	_	_	_	_	_	_	
+30-8	7158-7161	als	_	_	_	_	_	_	_	
+30-9	7162-7177	PET-Positivität	*	Diagnosis or Pathology	_	*	*	Finding	_	
+30-10	7178-7181	ein	_	_	_	_	_	_	_	
+30-11	7182-7197	Deauville-Score	*	Other Finding	_	*	*	Finding	30-12[99_0]	
+30-12	7198-7201	von	*[99]	*[99]	_[99]	*	*[99]	Specification[99]	_	
+30-13	7202-7203	4	*[99]	*[99]	_[99]	*	*[99]	Specification[99]	_	
+30-14	7203-7204	-	*[99]	*[99]	_[99]	*	*[99]	Specification[99]	_	
+30-15	7204-7205	5	*[99]	*[99]	_[99]	*	*[99]	Specification[99]	_	
+30-16	7206-7215	definiert	_	_	_	_	_	_	_	
+30-17	7216-7221	wurde	_	_	_	_	_	_	_	
+30-18	7222-7223	(	_	_	_	_	_	_	_	
+30-19	7223-7224	5	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+30-20	7224-7225	-	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+30-21	7225-7231	Jahres	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+30-22	7232-7235	PFS	*[100]	Other Finding[100]	_[100]	*	*[100]	Finding[100]	_	
+30-23	7236-7241	80.1%	_	_	_	_	_	_	_	
+30-24	7241-7242	,	_	_	_	_	_	_	_	
+30-25	7243-7246	95%	_	_	_	_	_	_	_	
+30-26	7246-7248	CI	_	_	_	_	_	_	_	
+30-27	7248-7249	,	_	_	_	_	_	_	_	
+30-28	7250-7255	71.2%	_	_	_	_	_	_	_	
+30-29	7256-7259	bis	_	_	_	_	_	_	_	
+30-30	7260-7265	88.9%	_	_	_	_	_	_	_	
+30-31	7266-7272	versus	_	_	_	_	_	_	_	
+30-32	7273-7278	93.1%	_	_	_	_	_	_	_	
+30-33	7278-7279	,	_	_	_	_	_	_	_	
+30-34	7280-7283	95%	_	_	_	_	_	_	_	
+30-35	7284-7286	CI	_	_	_	_	_	_	_	
+30-36	7286-7287	,	_	_	_	_	_	_	_	
+30-37	7288-7293	90.7%	_	_	_	_	_	_	_	
+30-38	7294-7297	bis	_	_	_	_	_	_	_	
+30-39	7298-7303	95.5%	_	_	_	_	_	_	_	
+30-40	7303-7304	)	_	_	_	_	_	_	_	
+30-41	7305-7306	[	_	_	_	_	_	_	_	
+30-42	7306-7309	REF	_	_	_	_	_	_	_	
+30-43	7309-7310	]	_	_	_	_	_	_	_	
+30-44	7310-7311	.	_	_	_	_	_	_	_	
+
+#Text=Die Ergebnisse der H10F-, RAPID- und der HD16- Studie unterstützen daher die Hypothese des prognostischen Werts einer positiven PET-CT nach zwei bis drei Zyklen ABVD, d.h. einer signifikant schlechteren Prognose der Patienten mit einer positiven Interim-PET, insbesondere bei Vorliegen eines Deauville-Scores von 4-5.
+31-1	7312-7315	Die	_	_	_	_	_	_	_	
+31-2	7316-7326	Ergebnisse	_	_	_	_	_	_	_	
+31-3	7327-7330	der	_	_	_	_	_	_	_	
+31-4	7331-7335	H10F	_	_	_	_	_	_	_	
+31-5	7335-7336	-	_	_	_	_	_	_	_	
+31-6	7336-7337	,	_	_	_	_	_	_	_	
+31-7	7338-7343	RAPID	_	_	_	_	_	_	_	
+31-8	7343-7344	-	_	_	_	_	_	_	_	
+31-9	7345-7348	und	_	_	_	_	_	_	_	
+31-10	7349-7352	der	_	_	_	_	_	_	_	
+31-11	7353-7357	HD16	_	_	_	_	_	_	_	
+31-12	7357-7358	-	_	_	_	_	_	_	_	
+31-13	7359-7365	Studie	_	_	_	_	_	_	_	
+31-14	7366-7378	unterstützen	_	_	_	_	_	_	_	
+31-15	7379-7384	daher	_	_	_	_	_	_	_	
+31-16	7385-7388	die	_	_	_	_	_	_	_	
+31-17	7389-7398	Hypothese	_	_	_	_	_	_	_	
+31-18	7399-7402	des	_	_	_	_	_	_	_	
+31-19	7403-7417	prognostischen	_	_	_	_	_	_	_	
+31-20	7418-7423	Werts	_	_	_	_	_	_	_	
+31-21	7424-7429	einer	_	_	_	_	_	_	_	
+31-22	7430-7439	positiven	*	*	_	*	*	Specification	_	
+31-23	7440-7446	PET-CT	*	Diagnosis or Pathology	_	*	*	Finding	31-22	
+31-24	7447-7451	nach	_	_	_	_	_	_	_	
+31-25	7452-7456	zwei	*	*	_	*	\_Zyklen	Specification	_	
+31-26	7457-7460	bis	_	_	_	_	_	_	_	
+31-27	7461-7465	drei	*[101]	*[101]	_[101]	*	*[101]	Specification[101]	_	
+31-28	7466-7472	Zyklen	*[101]	*[101]	_[101]	*	*[101]	Specification[101]	_	
+31-29	7473-7477	ABVD	*	Therapeutic	_	*	*	Procedure	31-27[101_0]|31-25	
+31-30	7477-7478	,	_	_	_	_	_	_	_	
+31-31	7479-7482	d.h	_	_	_	_	_	_	_	
+31-32	7482-7483	.	_	_	_	_	_	_	_	
+31-33	7484-7489	einer	_	_	_	_	_	_	_	
+31-34	7490-7501	signifikant	*[102]	*[102]	_[102]	*	*[102]	Specification[102]	_	
+31-35	7502-7514	schlechteren	*[102]	*[102]	_[102]	*	*[102]	Specification[102]	_	
+31-36	7515-7523	Prognose	*	Other Finding	_	*	*	Finding	31-34[102_0]	
+31-37	7524-7527	der	_	_	_	_	_	_	_	
+31-38	7528-7537	Patienten	_	_	_	_	_	_	_	
+31-39	7538-7541	mit	_	_	_	_	_	_	_	
+31-40	7542-7547	einer	_	_	_	_	_	_	_	
+31-41	7548-7557	positiven	*	*	_	*	*	Specification	_	
+31-42	7558-7569	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	31-41	
+31-43	7569-7570	,	_	_	_	_	_	_	_	
+31-44	7571-7583	insbesondere	_	_	_	_	_	_	_	
+31-45	7584-7587	bei	_	_	_	_	_	_	_	
+31-46	7588-7597	Vorliegen	*	Other Finding	_	*	*	Finding	31-47[103_0]	
+31-47	7598-7603	eines	*[103]	*[103]	_[103]	*	*[103]	Specification[103]	_	
+31-48	7604-7620	Deauville-Scores	*[103]|*[104]	*[103]|Other Finding[104]	_[103]|_[104]	*|*	*[103]|*[104]	Specification[103]|Finding[104]	31-49[105_104]	
+31-49	7621-7624	von	*[103]|*[105]	*[103]|*[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Specification[105]	_	
+31-50	7625-7626	4	*[103]|*[105]	*[103]|*[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Specification[105]	_	
+31-51	7626-7627	-	*[103]|*[105]	*[103]|*[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Specification[105]	_	
+31-52	7627-7628	5	*[103]|*[105]	*[103]|*[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Specification[105]	_	
+31-53	7628-7629	.	_	_	_	_	_	_	_	
+
+#Text=Schlussfolgerungen/Empfehlungen
+32-1	7630-7648	Schlussfolgerungen	_	_	_	_	_	_	_	
+32-2	7648-7649	/	_	_	_	_	_	_	_	
+32-3	7649-7661	Empfehlungen	_	_	_	_	_	_	_	
+
+#Text=Da noch keine distinkte Auswertung der Daten der H10F-Studie hinsichtlich der in frühem Stadium diagnostizierten Patienten mit einer positiven Interim-PET/CT vorliegt und da die absolute Zahl der Patienten mit einer positiven Interim-PET in frühem Stadium in der H10F-Studie gering war, ist die Datenlage noch nicht ausreichend, um eine allgemeine Empfehlung zur Therapieeskalation für die frühen Stadien im Falle einer positiven Interim-PET/CT auszusprechen.
+33-1	7662-7664	Da	_	_	_	_	_	_	_	
+33-2	7665-7669	noch	_	_	_	_	_	_	_	
+33-3	7670-7675	keine	_	_	_	_	_	_	_	
+33-4	7676-7685	distinkte	_	_	_	_	_	_	_	
+33-5	7686-7696	Auswertung	_	_	_	_	_	_	_	
+33-6	7697-7700	der	_	_	_	_	_	_	_	
+33-7	7701-7706	Daten	_	_	_	_	_	_	_	
+33-8	7707-7710	der	_	_	_	_	_	_	_	
+33-9	7711-7722	H10F-Studie	_	_	_	_	_	_	_	
+33-10	7723-7735	hinsichtlich	_	_	_	_	_	_	_	
+33-11	7736-7739	der	_	_	_	_	_	_	_	
+33-12	7740-7742	in	_	_	_	_	_	_	_	
+33-13	7743-7749	frühem	*	*	_	*	*	Specification	_	
+33-14	7750-7757	Stadium	*	Diagnosis or Pathology	_	*	*	Finding	33-13	
+33-15	7758-7774	diagnostizierten	_	_	_	_	_	_	_	
+33-16	7775-7784	Patienten	_	_	_	_	_	_	_	
+33-17	7785-7788	mit	_	_	_	_	_	_	_	
+33-18	7789-7794	einer	_	_	_	_	_	_	_	
+33-19	7795-7804	positiven	*	*	_	*	*	Specification	_	
+33-20	7805-7816	Interim-PET	*[106]	Diagnosis or Pathology[106]	_[106]	*	*[106]	Finding[106]	33-19[0_106]	
+33-21	7816-7817	/	*[106]	Diagnosis or Pathology[106]	_[106]	*	*[106]	Finding[106]	_	
+33-22	7817-7819	CT	*[106]	Diagnosis or Pathology[106]	_[106]	*	*[106]	Finding[106]	_	
+33-23	7820-7828	vorliegt	_	_	_	_	_	_	_	
+33-24	7829-7832	und	_	_	_	_	_	_	_	
+33-25	7833-7835	da	_	_	_	_	_	_	_	
+33-26	7836-7839	die	_	_	_	_	_	_	_	
+33-27	7840-7848	absolute	_	_	_	_	_	_	_	
+33-28	7849-7853	Zahl	_	_	_	_	_	_	_	
+33-29	7854-7857	der	_	_	_	_	_	_	_	
+33-30	7858-7867	Patienten	_	_	_	_	_	_	_	
+33-31	7868-7871	mit	_	_	_	_	_	_	_	
+33-32	7872-7877	einer	_	_	_	_	_	_	_	
+33-33	7878-7887	positiven	*	*	_	*	*	Specification	_	
+33-34	7888-7899	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	33-33	
+33-35	7900-7902	in	_	_	_	_	_	_	_	
+33-36	7903-7909	frühem	*	*	_	*	*	Specification	_	
+33-37	7910-7917	Stadium	*	Diagnosis or Pathology	_	*	*	Finding	33-36	
+33-38	7918-7920	in	_	_	_	_	_	_	_	
+33-39	7921-7924	der	_	_	_	_	_	_	_	
+33-40	7925-7936	H10F-Studie	_	_	_	_	_	_	_	
+33-41	7937-7943	gering	_	_	_	_	_	_	_	
+33-42	7944-7947	war	_	_	_	_	_	_	_	
+33-43	7947-7948	,	_	_	_	_	_	_	_	
+33-44	7949-7952	ist	_	_	_	_	_	_	_	
+33-45	7953-7956	die	_	_	_	_	_	_	_	
+33-46	7957-7966	Datenlage	_	_	_	_	_	_	_	
+33-47	7967-7971	noch	_	_	_	_	_	_	_	
+33-48	7972-7977	nicht	_	_	_	_	_	_	_	
+33-49	7978-7989	ausreichend	_	_	_	_	_	_	_	
+33-50	7989-7990	,	_	_	_	_	_	_	_	
+33-51	7991-7993	um	_	_	_	_	_	_	_	
+33-52	7994-7998	eine	_	_	_	_	_	_	_	
+33-53	7999-8009	allgemeine	_	_	_	_	_	_	_	
+33-54	8010-8020	Empfehlung	_	_	_	_	_	_	_	
+33-55	8021-8024	zur	_	_	_	_	_	_	_	
+33-56	8025-8043	Therapieeskalation	*	Therapeutic	_	*	*	Procedure	_	
+33-57	8044-8047	für	_	_	_	_	_	_	_	
+33-58	8048-8051	die	_	_	_	_	_	_	_	
+33-59	8052-8058	frühen	*	*	_	*	*	Specification	_	
+33-60	8059-8066	Stadien	*	Diagnosis or Pathology	_	*	*	Finding	33-59	
+33-61	8067-8069	im	_	_	_	_	_	_	_	
+33-62	8070-8075	Falle	_	_	_	_	_	_	_	
+33-63	8076-8081	einer	_	_	_	_	_	_	_	
+33-64	8082-8091	positiven	*	*	_	*	*	Specification	_	
+33-65	8092-8103	Interim-PET	*[107]	Diagnosis or Pathology[107]	_[107]	*	*[107]	Finding[107]	33-64[0_107]	
+33-66	8103-8104	/	*[107]	Diagnosis or Pathology[107]	_[107]	*	*[107]	Finding[107]	_	
+33-67	8104-8106	CT	*[107]	Diagnosis or Pathology[107]	_[107]	*	*[107]	Finding[107]	_	
+33-68	8107-8120	auszusprechen	_	_	_	_	_	_	_	
+33-69	8120-8121	.	_	_	_	_	_	_	_	
+
+#Text=Im Hinblick darauf, dass in der HD16-Studie für die Patienten mit einer positiven Interim-PET ein signifikant niedrigeres PFS dokumentiert wurde und das der PFS-Unterschied besonders deutlich bei Vorliegen eines Deauville-Score von 4-5 war, sollte die Option einer Therapieeskalation in Form von zwei Zyklen BEACOPPeskaliert analog der H10F-Studie vor der konsolidierenden Strahlentherapie bei den Patienten mit einem positiven PET Ergebnis mit einem Deauville-Score von 4-5 nach zwei Zyklen ABVD individuell erwogen werden.
+34-1	8122-8124	Im	_	_	_	_	_	_	_	
+34-2	8125-8133	Hinblick	_	_	_	_	_	_	_	
+34-3	8134-8140	darauf	_	_	_	_	_	_	_	
+34-4	8140-8141	,	_	_	_	_	_	_	_	
+34-5	8142-8146	dass	_	_	_	_	_	_	_	
+34-6	8147-8149	in	_	_	_	_	_	_	_	
+34-7	8150-8153	der	_	_	_	_	_	_	_	
+34-8	8154-8158	HD16	_	_	_	_	_	_	_	
+34-9	8158-8159	-	_	_	_	_	_	_	_	
+34-10	8159-8165	Studie	_	_	_	_	_	_	_	
+34-11	8166-8169	für	_	_	_	_	_	_	_	
+34-12	8170-8173	die	_	_	_	_	_	_	_	
+34-13	8174-8183	Patienten	_	_	_	_	_	_	_	
+34-14	8184-8187	mit	_	_	_	_	_	_	_	
+34-15	8188-8193	einer	_	_	_	_	_	_	_	
+34-16	8194-8203	positiven	*	*	_	*	*	Specification	_	
+34-17	8204-8215	Interim-PET	*	Diagnosis or Pathology	_	*	*	Finding	34-16	
+34-18	8216-8219	ein	_	_	_	_	_	_	_	
+34-19	8220-8231	signifikant	*[108]	*[108]	_[108]	*	*[108]	Specification[108]	_	
+34-20	8232-8243	niedrigeres	*[108]	*[108]	_[108]	*	*[108]	Specification[108]	_	
+34-21	8244-8247	PFS	*	Other Finding	_	*	*	Finding	34-19[108_0]	
+34-22	8248-8260	dokumentiert	_	_	_	_	_	_	_	
+34-23	8261-8266	wurde	_	_	_	_	_	_	_	
+34-24	8267-8270	und	_	_	_	_	_	_	_	
+34-25	8271-8274	das	_	_	_	_	_	_	_	
+34-26	8275-8278	der	_	_	_	_	_	_	_	
+34-27	8279-8294	PFS-Unterschied	*	Other Finding	_	*	*	Finding	_	
+34-28	8295-8304	besonders	_	_	_	_	_	_	_	
+34-29	8305-8313	deutlich	_	_	_	_	_	_	_	
+34-30	8314-8317	bei	_	_	_	_	_	_	_	
+34-31	8318-8327	Vorliegen	_	_	_	_	_	_	_	
+34-32	8328-8333	eines	_	_	_	_	_	_	_	
+34-33	8334-8349	Deauville-Score	*	Other Finding	_	*	*	Finding	34-34[109_0]	
+34-34	8350-8353	von	*[109]	*[109]	_[109]	*	*[109]	Specification[109]	_	
+34-35	8354-8355	4	*[109]	*[109]	_[109]	*	*[109]	Specification[109]	_	
+34-36	8355-8356	-	*[109]	*[109]	_[109]	*	*[109]	Specification[109]	_	
+34-37	8356-8357	5	*[109]	*[109]	_[109]	*	*[109]	Specification[109]	_	
+34-38	8358-8361	war	_	_	_	_	_	_	_	
+34-39	8361-8362	,	_	_	_	_	_	_	_	
+34-40	8363-8369	sollte	_	_	_	_	_	_	_	
+34-41	8370-8373	die	_	_	_	_	_	_	_	
+34-42	8374-8380	Option	_	_	_	_	_	_	_	
+34-43	8381-8386	einer	_	_	_	_	_	_	_	
+34-44	8387-8405	Therapieeskalation	*	Therapeutic	_	*	*	Procedure	34-45[110_0]	
+34-45	8406-8408	in	*[110]	*[110]	_[110]	*	*[110]	Specification[110]	_	
+34-46	8409-8413	Form	*[110]	*[110]	_[110]	*	*[110]	Specification[110]	_	
+34-47	8414-8417	von	*[110]	*[110]	_[110]	*	*[110]	Specification[110]	_	
+34-48	8418-8422	zwei	*[110]|*[111]	*[110]|*[111]	_[110]|_[111]	*|*	*[110]|*[111]	Specification[110]|Specification[111]	_	
+34-49	8423-8429	Zyklen	*[110]|*[111]	*[110]|*[111]	_[110]|_[111]	*|*	*[110]|*[111]	Specification[110]|Specification[111]	_	
+34-50	8430-8446	BEACOPPeskaliert	*[110]|*[112]	*[110]|Therapeutic[112]	_[110]|_[112]	*|*	*[110]|*[112]	Specification[110]|Procedure[112]	34-48[111_112]	
+34-51	8447-8453	analog	_	_	_	_	_	_	_	
+34-52	8454-8457	der	_	_	_	_	_	_	_	
+34-53	8458-8469	H10F-Studie	_	_	_	_	_	_	_	
+34-54	8470-8473	vor	_	_	_	_	_	_	_	
+34-55	8474-8477	der	_	_	_	_	_	_	_	
+34-56	8478-8494	konsolidierenden	*	*	_	*	*	Specification	_	
+34-57	8495-8511	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	34-56	
+34-58	8512-8515	bei	_	_	_	_	_	_	_	
+34-59	8516-8519	den	_	_	_	_	_	_	_	
+34-60	8520-8529	Patienten	_	_	_	_	_	_	_	
+34-61	8530-8533	mit	_	_	_	_	_	_	_	
+34-62	8534-8539	einem	_	_	_	_	_	_	_	
+34-63	8540-8549	positiven	*	*	_	*	*	Specification	_	
+34-64	8550-8553	PET	*[113]	Diagnosis or Pathology[113]	_[113]	*	*[113]	Finding[113]	34-63[0_113]	
+34-65	8554-8562	Ergebnis	*[113]	Diagnosis or Pathology[113]	_[113]	*	*[113]	Finding[113]	_	
+34-66	8563-8566	mit	_	_	_	_	_	_	_	
+34-67	8567-8572	einem	_	_	_	_	_	_	_	
+34-68	8573-8588	Deauville-Score	*	Other Finding	_	*	*	Finding	34-69[114_0]	
+34-69	8589-8592	von	*[114]	*[114]	_[114]	*	*[114]	Specification[114]	_	
+34-70	8593-8594	4	*[114]	*[114]	_[114]	*	*[114]	Specification[114]	_	
+34-71	8594-8595	-	*[114]	*[114]	_[114]	*	*[114]	Specification[114]	_	
+34-72	8595-8596	5	*[114]	*[114]	_[114]	*	*[114]	Specification[114]	_	
+34-73	8597-8601	nach	_	_	_	_	_	_	_	
+34-74	8602-8606	zwei	*[115]	*[115]	_[115]	*	*[115]	Specification[115]	_	
+34-75	8607-8613	Zyklen	*[115]	*[115]	_[115]	*	*[115]	Specification[115]	_	
+34-76	8614-8618	ABVD	*	Therapeutic	_	*	*	Procedure	34-74[115_0]	
+34-77	8619-8630	individuell	_	_	_	_	_	_	_	
+34-78	8631-8638	erwogen	_	_	_	_	_	_	_	
+34-79	8639-8645	werden	_	_	_	_	_	_	_	
+34-80	8645-8646	.	_	_	_	_	_	_	_	
+
+#Text=Ein Verzicht auf die konsolidierende Strahlentherapie bei PET-Negativität nach zwei bis drei Zyklen ABVD kann allenfalls individuell unter Abwägung des Risikos eines Rezidivs und einer Strahlentherapie-assoziierten Sekundärneoplasie oder Organtoxizität diskutiert werden.
+35-1	8647-8650	Ein	_	_	_	_	_	_	_	
+35-2	8651-8659	Verzicht	_	_	_	_	_	_	_	
+35-3	8660-8663	auf	_	_	_	_	_	_	_	
+35-4	8664-8667	die	_	_	_	_	_	_	_	
+35-5	8668-8683	konsolidierende	*	*	_	*	*	Specification	_	
+35-6	8684-8700	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	35-5	
+35-7	8701-8704	bei	_	_	_	_	_	_	_	
+35-8	8705-8720	PET-Negativität	*	Other Finding	_	*	*	Finding	_	
+35-9	8721-8725	nach	_	_	_	_	_	_	_	
+35-10	8726-8730	zwei	*	*	_	*	\_Zyklen\_	Specification	_	
+35-11	8731-8734	bis	_	_	_	_	_	_	_	
+35-12	8735-8739	drei	*[116]	*[116]	_[116]	*	*[116]	Specification[116]	_	
+35-13	8740-8746	Zyklen	*[116]	*[116]	_[116]	*	*[116]	Specification[116]	_	
+35-14	8747-8751	ABVD	*	Therapeutic	_	*	*	Procedure	35-12[116_0]|35-10	
+35-15	8752-8756	kann	_	_	_	_	_	_	_	
+35-16	8757-8767	allenfalls	_	_	_	_	_	_	_	
+35-17	8768-8779	individuell	_	_	_	_	_	_	_	
+35-18	8780-8785	unter	_	_	_	_	_	_	_	
+35-19	8786-8794	Abwägung	*	Diagnostic	_	*	*	Procedure	35-20[117_0]	
+35-20	8795-8798	des	*[117]	*[117]	_[117]	*	*[117]	Specification[117]	_	
+35-21	8799-8806	Risikos	*[117]|*[118]	*[117]|Other Finding[118]	_[117]|_[118]	*|*	*[117]|*[118]	Specification[117]|Finding[118]	35-22[119_118]	
+35-22	8807-8812	eines	*[117]|*[119]	*[117]|*[119]	_[117]|_[119]	*|*	*[117]|*[119]	Specification[117]|Specification[119]	_	
+35-23	8813-8821	Rezidivs	*[117]|*[119]|*[120]	*[117]|*[119]|Diagnosis or Pathology[120]	_[117]|_[119]|_[120]	*|*|*	*[117]|*[119]|*[120]	Specification[117]|Specification[119]|Finding[120]	_	
+35-24	8822-8825	und	_	_	_	_	_	_	_	
+35-25	8826-8831	einer	_	_	_	_	_	_	_	
+35-26	8832-8861	Strahlentherapie-assoziierten	*	*	_	*	*	Specification	_	
+35-27	8862-8879	Sekundärneoplasie	*	Diagnosis or Pathology	_	*	*	Finding	35-26	
+35-28	8880-8884	oder	_	_	_	_	_	_	_	
+35-29	8885-8899	Organtoxizität	*	Other Finding	_	*	*	Finding	_	
+35-30	8900-8910	diskutiert	_	_	_	_	_	_	_	
+35-31	8911-8917	werden	_	_	_	_	_	_	_	
+35-32	8917-8918	.	_	_	_	_	_	_	_	
+
+#Text=Als potentiell Strahlentherapie-assoziierter sekundärer solider Tumor ist das sekundäre Mamma-Karzinom zu nennen [REF].
+36-1	8919-8922	Als	_	_	_	_	_	_	_	
+36-2	8923-8933	potentiell	_	_	_	_	_	_	_	
+36-3	8934-8963	Strahlentherapie-assoziierter	*	*	_	*	*	Specification	_	
+36-4	8964-8974	sekundärer	*	*	_	*	*	Specification	_	
+36-5	8975-8982	solider	*	*	_	*	*	Specification	_	
+36-6	8983-8988	Tumor	*	Diagnosis or Pathology	_	*	*	Finding	36-5|36-4|36-3	
+36-7	8989-8992	ist	_	_	_	_	_	_	_	
+36-8	8993-8996	das	_	_	_	_	_	_	_	
+36-9	8997-9006	sekundäre	*	*	_	*	*	Specification	_	
+36-10	9007-9021	Mamma-Karzinom	*	Diagnosis or Pathology	_	*	*	Finding	36-9	
+36-11	9022-9024	zu	_	_	_	_	_	_	_	
+36-12	9025-9031	nennen	_	_	_	_	_	_	_	
+36-13	9032-9033	[	_	_	_	_	_	_	_	
+36-14	9033-9036	REF	_	_	_	_	_	_	_	
+36-15	9036-9037	]	_	_	_	_	_	_	_	
+36-16	9037-9038	.	_	_	_	_	_	_	_	
+
+#Text=In retrospektiven bzw. in Kohortenanalysen konnte gezeigt werden, dass insbesondere bei Frauen bis zu einem Alter von 29 Jahren zum Zeitpunkt der Therapie des Hodgkin Lymphoms ein gegenüber der Normalbevölkerung deutlich erhöhtes Risiko der Entwicklung eines sekundären Mamma-Karzinoms vorliegt und, dass das Risiko mit zunehmendem Alter zum Zeitpunkt der Hodgkin-Lymphom-Diagnose abnimmt [REF].
+37-1	9039-9041	In	_	_	_	_	_	_	_	
+37-2	9042-9056	retrospektiven	_	_	_	_	_	_	_	
+37-3	9057-9060	bzw	_	_	_	_	_	_	_	
+37-4	9060-9061	.	_	_	_	_	_	_	_	
+37-5	9062-9064	in	_	_	_	_	_	_	_	
+37-6	9065-9081	Kohortenanalysen	_	_	_	_	_	_	_	
+37-7	9082-9088	konnte	_	_	_	_	_	_	_	
+37-8	9089-9096	gezeigt	_	_	_	_	_	_	_	
+37-9	9097-9103	werden	_	_	_	_	_	_	_	
+37-10	9103-9104	,	_	_	_	_	_	_	_	
+37-11	9105-9109	dass	_	_	_	_	_	_	_	
+37-12	9110-9122	insbesondere	_	_	_	_	_	_	_	
+37-13	9123-9126	bei	_	_	_	_	_	_	_	
+37-14	9127-9133	Frauen	_	_	_	_	_	_	_	
+37-15	9134-9137	bis	_	_	_	_	_	_	_	
+37-16	9138-9140	zu	_	_	_	_	_	_	_	
+37-17	9141-9146	einem	_	_	_	_	_	_	_	
+37-18	9147-9152	Alter	*	Other Finding	_	*	*	Finding	37-19[121_0]	
+37-19	9153-9156	von	*[121]	*[121]	_[121]	*	*[121]	Specification[121]	_	
+37-20	9157-9159	29	*[121]	*[121]	_[121]	*	*[121]	Specification[121]	_	
+37-21	9160-9166	Jahren	*[121]	*[121]	_[121]	*	*[121]	Specification[121]	_	
+37-22	9167-9170	zum	_	_	_	_	_	_	_	
+37-23	9171-9180	Zeitpunkt	_	_	_	_	_	_	_	
+37-24	9181-9184	der	_	_	_	_	_	_	_	
+37-25	9185-9193	Therapie	*	Therapeutic	_	*	*	Procedure	37-26[122_0]	
+37-26	9194-9197	des	*[122]	*[122]	_[122]	*	*[122]	Specification[122]	_	
+37-27	9198-9205	Hodgkin	*[122]|*[123]	*[122]|Diagnosis or Pathology[123]	_[122]|_[123]	*|*	*[122]|*[123]	Specification[122]|Finding[123]	_	
+37-28	9206-9214	Lymphoms	*[122]|*[123]	*[122]|Diagnosis or Pathology[123]	_[122]|_[123]	*|*	*[122]|*[123]	Specification[122]|Finding[123]	_	
+37-29	9215-9218	ein	_	_	_	_	_	_	_	
+37-30	9219-9228	gegenüber	_	_	_	_	_	_	_	
+37-31	9229-9232	der	_	_	_	_	_	_	_	
+37-32	9233-9250	Normalbevölkerung	_	_	_	_	_	_	_	
+37-33	9251-9259	deutlich	_	_	_	_	_	_	_	
+37-34	9260-9268	erhöhtes	*	*	_	*	*	Specification	_	
+37-35	9269-9275	Risiko	*	Other Finding	_	*	*	Finding	37-34|37-36[124_0]	
+37-36	9276-9279	der	*[124]	*[124]	_[124]	*	*[124]	Specification[124]	_	
+37-37	9280-9291	Entwicklung	*[124]	*[124]	_[124]	*	*[124]	Specification[124]	_	
+37-38	9292-9297	eines	*[124]	*[124]	_[124]	*	*[124]	Specification[124]	_	
+37-39	9298-9308	sekundären	*[124]|*[125]	*[124]|*[125]	_[124]|_[125]	*|*	*[124]|*[125]	Specification[124]|Specification[125]	_	
+37-40	9309-9324	Mamma-Karzinoms	*[124]|*[126]	*[124]|Diagnosis or Pathology[126]	_[124]|_[126]	*|*	*[124]|*[126]	Specification[124]|Finding[126]	37-39[125_126]	
+37-41	9325-9333	vorliegt	_	_	_	_	_	_	_	
+37-42	9334-9337	und	_	_	_	_	_	_	_	
+37-43	9337-9338	,	_	_	_	_	_	_	_	
+37-44	9339-9343	dass	_	_	_	_	_	_	_	
+37-45	9344-9347	das	_	_	_	_	_	_	_	
+37-46	9348-9354	Risiko	*	Other Finding	_	*	*	Finding	_	
+37-47	9355-9358	mit	_	_	_	_	_	_	_	
+37-48	9359-9370	zunehmendem	_	_	_	_	_	_	_	
+37-49	9371-9376	Alter	_	_	_	_	_	_	_	
+37-50	9377-9380	zum	_	_	_	_	_	_	_	
+37-51	9381-9390	Zeitpunkt	_	_	_	_	_	_	_	
+37-52	9391-9394	der	_	_	_	_	_	_	_	
+37-53	9395-9419	Hodgkin-Lymphom-Diagnose	*	Diagnosis or Pathology	_	*	*	Finding	_	
+37-54	9420-9427	abnimmt	_	_	_	_	_	_	_	
+37-55	9428-9429	[	_	_	_	_	_	_	_	
+37-56	9429-9432	REF	_	_	_	_	_	_	_	
+37-57	9432-9433	]	_	_	_	_	_	_	_	
+37-58	9433-9434	.	_	_	_	_	_	_	_	
+
+#Text=Daher sollten insbesondere junge Patientinnen über das Risiko eines sekundären Mamma-Karzinoms bei Lokalisation des Bestrahlungsfeldes im Bereich der Mammae/Mamma aufgeklärt und die Option einer PET/CT-basierten Entscheidung zur Strahlentherapie diskutiert werden.
+38-1	9435-9440	Daher	_	_	_	_	_	_	_	
+38-2	9441-9448	sollten	_	_	_	_	_	_	_	
+38-3	9449-9461	insbesondere	_	_	_	_	_	_	_	
+38-4	9462-9467	junge	*	Other Finding	_	*	*	Finding	_	
+38-5	9468-9480	Patientinnen	_	_	_	_	_	_	_	
+38-6	9481-9485	über	_	_	_	_	_	_	_	
+38-7	9486-9489	das	_	_	_	_	_	_	_	
+38-8	9490-9496	Risiko	*	Other Finding	_	*	*	Finding	38-9[127_0]	
+38-9	9497-9502	eines	*[127]	*[127]	_[127]	*	*[127]	Specification[127]	_	
+38-10	9503-9513	sekundären	*[127]|*[128]	*[127]|*[128]	_[127]|_[128]	*|*	*[127]|*[128]	Specification[127]|Specification[128]	_	
+38-11	9514-9529	Mamma-Karzinoms	*[127]|*[129]	*[127]|Diagnosis or Pathology[129]	_[127]|_[129]	*|*	*[127]|*[129]	Specification[127]|Finding[129]	38-10[128_129]	
+38-12	9530-9533	bei	_	_	_	_	_	_	_	
+38-13	9534-9546	Lokalisation	_	_	_	_	_	_	_	
+38-14	9547-9550	des	_	_	_	_	_	_	_	
+38-15	9551-9569	Bestrahlungsfeldes	*	Therapeutic	_	*	*	Procedure	38-16[130_0]	
+38-16	9570-9572	im	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-17	9573-9580	Bereich	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-18	9581-9584	der	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-19	9585-9591	Mammae	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-20	9591-9592	/	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-21	9592-9597	Mamma	*[130]	*[130]	_[130]	*	*[130]	Specification[130]	_	
+38-22	9598-9608	aufgeklärt	_	_	_	_	_	_	_	
+38-23	9609-9612	und	_	_	_	_	_	_	_	
+38-24	9613-9616	die	_	_	_	_	_	_	_	
+38-25	9617-9623	Option	_	_	_	_	_	_	_	
+38-26	9624-9629	einer	_	_	_	_	_	_	_	
+38-27	9630-9633	PET	*[131]	Diagnostic[131]	_[131]	*	*[131]	Procedure[131]	_	
+38-28	9633-9634	/	*[131]	Diagnostic[131]	_[131]	*	*[131]	Procedure[131]	_	
+38-29	9634-9646	CT-basierten	*[131]	Diagnostic[131]	_[131]	*	*[131]	Procedure[131]	_	
+38-30	9647-9659	Entscheidung	_	_	_	_	_	_	_	
+38-31	9660-9663	zur	_	_	_	_	_	_	_	
+38-32	9664-9680	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	_	
+38-33	9681-9691	diskutiert	_	_	_	_	_	_	_	
+38-34	9692-9698	werden	_	_	_	_	_	_	_	
+38-35	9698-9699	.	_	_	_	_	_	_	_	
+
+#Text=Sollte aufgrund des Vorliegens einer positiven PET/CT oder unabhängig vom PET/CT-Befund die Entscheidung zur konsolidierenden Strahlentherapie gefällt werden, sollten- wie in Abschnitt 11.2 beschrieben- frühzeitig intensivierte Vorsorgeuntersuchungen erfolgen.
+39-1	9700-9706	Sollte	_	_	_	_	_	_	_	
+39-2	9707-9715	aufgrund	_	_	_	_	_	_	_	
+39-3	9716-9719	des	_	_	_	_	_	_	_	
+39-4	9720-9730	Vorliegens	_	_	_	_	_	_	_	
+39-5	9731-9736	einer	_	_	_	_	_	_	_	
+39-6	9737-9746	positiven	*	*	_	*	*	Specification	_	
+39-7	9747-9750	PET	*[132]	Diagnosis or Pathology[132]	_[132]	*	*[132]	Finding[132]	39-6[0_132]	
+39-8	9750-9751	/	*[132]	Diagnosis or Pathology[132]	_[132]	*	*[132]	Finding[132]	_	
+39-9	9751-9753	CT	*[132]	Diagnosis or Pathology[132]	_[132]	*	*[132]	Finding[132]	_	
+39-10	9754-9758	oder	_	_	_	_	_	_	_	
+39-11	9759-9769	unabhängig	_	_	_	_	_	_	_	
+39-12	9770-9773	vom	_	_	_	_	_	_	_	
+39-13	9774-9777	PET	*[133]	Other Finding[133]	_[133]	*	*[133]	Finding[133]	_	
+39-14	9777-9778	/	*[133]	Other Finding[133]	_[133]	*	*[133]	Finding[133]	_	
+39-15	9778-9787	CT-Befund	*[133]	Other Finding[133]	_[133]	*	*[133]	Finding[133]	_	
+39-16	9788-9791	die	_	_	_	_	_	_	_	
+39-17	9792-9804	Entscheidung	_	_	_	_	_	_	_	
+39-18	9805-9808	zur	_	_	_	_	_	_	_	
+39-19	9809-9825	konsolidierenden	*	*	_	*	*	Specification	_	
+39-20	9826-9842	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	39-19	
+39-21	9843-9850	gefällt	_	_	_	_	_	_	_	
+39-22	9851-9857	werden	_	_	_	_	_	_	_	
+39-23	9857-9858	,	_	_	_	_	_	_	_	
+39-24	9859-9866	sollten	_	_	_	_	_	_	_	
+39-25	9866-9867	-	_	_	_	_	_	_	_	
+39-26	9868-9871	wie	_	_	_	_	_	_	_	
+39-27	9872-9874	in	_	_	_	_	_	_	_	
+39-28	9875-9884	Abschnitt	_	_	_	_	_	_	_	
+39-29	9885-9889	11.2	_	_	_	_	_	_	_	
+39-30	9890-9901	beschrieben	_	_	_	_	_	_	_	
+39-31	9901-9902	-	_	_	_	_	_	_	_	
+39-32	9903-9913	frühzeitig	*[134]	*[134]	_[134]	*	*[134]	Specification[134]	_	
+39-33	9914-9927	intensivierte	*[134]	*[134]	_[134]	*	*[134]	Specification[134]	_	
+39-34	9928-9950	Vorsorgeuntersuchungen	*	Diagnostic	_	*	*	Procedure	39-32[134_0]	
+39-35	9951-9959	erfolgen	_	_	_	_	_	_	_	
+39-36	9959-9960	.	_	_	_	_	_	_	_	
+
+#Text=In der großen Kohortenanalyse von Veit-Rubin wurde nämlich gezeigt, dass bis zu 30 Jahre nach Therapie des Hodgkin-Lymphoms von einer steigenden Inzidenz des sekundären Mamma-Karzinoms auszugehen ist.
+40-1	9961-9963	In	_	_	_	_	_	_	_	
+40-2	9964-9967	der	_	_	_	_	_	_	_	
+40-3	9968-9974	großen	_	_	_	_	_	_	_	
+40-4	9975-9990	Kohortenanalyse	_	_	_	_	_	_	_	
+40-5	9991-9994	von	_	_	_	_	_	_	_	
+40-6	9995-10005	Veit-Rubin	_	_	_	_	_	_	_	
+40-7	10006-10011	wurde	_	_	_	_	_	_	_	
+40-8	10012-10019	nämlich	_	_	_	_	_	_	_	
+40-9	10020-10027	gezeigt	_	_	_	_	_	_	_	
+40-10	10027-10028	,	_	_	_	_	_	_	_	
+40-11	10029-10033	dass	_	_	_	_	_	_	_	
+40-12	10034-10037	bis	_	_	_	_	_	_	_	
+40-13	10038-10040	zu	_	_	_	_	_	_	_	
+40-14	10041-10043	30	_	_	_	_	_	_	_	
+40-15	10044-10049	Jahre	_	_	_	_	_	_	_	
+40-16	10050-10054	nach	_	_	_	_	_	_	_	
+40-17	10055-10063	Therapie	*	Therapeutic	_	*	*	Procedure	40-18[135_0]	
+40-18	10064-10067	des	*[135]	*[135]	_[135]	*	*[135]	Specification[135]	_	
+40-19	10068-10084	Hodgkin-Lymphoms	*[135]|*[136]	*[135]|Diagnosis or Pathology[136]	_[135]|_[136]	*|*	*[135]|*[136]	Specification[135]|Finding[136]	_	
+40-20	10085-10088	von	_	_	_	_	_	_	_	
+40-21	10089-10094	einer	_	_	_	_	_	_	_	
+40-22	10095-10105	steigenden	_	_	_	_	_	_	_	
+40-23	10106-10114	Inzidenz	_	_	_	_	_	_	_	
+40-24	10115-10118	des	_	_	_	_	_	_	_	
+40-25	10119-10129	sekundären	*	*	_	*	*	Specification	_	
+40-26	10130-10145	Mamma-Karzinoms	*	Diagnosis or Pathology	_	*	*	Finding	40-25	
+40-27	10146-10156	auszugehen	_	_	_	_	_	_	_	
+40-28	10157-10160	ist	_	_	_	_	_	_	_	
+40-29	10160-10161	.	_	_	_	_	_	_	_	
+
+#Text=Allerdings muss bei der Interpretation dieser historischen Daten stets berücksichtigt werden, dass sowohl das Radiotherapievolumen (heute IS-RT), die Radiotherapietechnik (heute 3DCRT oder IMRT) als auch die zu applizierende Radiotherapiedosis (heute 20 Gy) in den vergangenen 10 Jahren einen enormen Wandel erfahren haben und die applizierte Dosis im Bereich der weiblichen Brust im Rahmen der Bestrahlungsplanung dokumentiert werden sollte.
+41-1	10162-10172	Allerdings	_	_	_	_	_	_	_	
+41-2	10173-10177	muss	_	_	_	_	_	_	_	
+41-3	10178-10181	bei	_	_	_	_	_	_	_	
+41-4	10182-10185	der	_	_	_	_	_	_	_	
+41-5	10186-10200	Interpretation	_	_	_	_	_	_	_	
+41-6	10201-10207	dieser	_	_	_	_	_	_	_	
+41-7	10208-10220	historischen	_	_	_	_	_	_	_	
+41-8	10221-10226	Daten	_	_	_	_	_	_	_	
+41-9	10227-10232	stets	_	_	_	_	_	_	_	
+41-10	10233-10247	berücksichtigt	_	_	_	_	_	_	_	
+41-11	10248-10254	werden	_	_	_	_	_	_	_	
+41-12	10254-10255	,	_	_	_	_	_	_	_	
+41-13	10256-10260	dass	_	_	_	_	_	_	_	
+41-14	10261-10267	sowohl	_	_	_	_	_	_	_	
+41-15	10268-10271	das	_	_	_	_	_	_	_	
+41-16	10272-10292	Radiotherapievolumen	*	Therapeutic	_	*	*	Procedure	_	
+41-17	10293-10294	(	_	_	_	_	_	_	_	
+41-18	10294-10299	heute	_	_	_	_	_	_	_	
+41-19	10300-10305	IS-RT	*	Therapeutic	_	*	*	Procedure	_	
+41-20	10305-10306	)	_	_	_	_	_	_	_	
+41-21	10306-10307	,	_	_	_	_	_	_	_	
+41-22	10308-10311	die	_	_	_	_	_	_	_	
+41-23	10312-10332	Radiotherapietechnik	*	Therapeutic	_	*	*	Procedure	_	
+41-24	10333-10334	(	_	_	_	_	_	_	_	
+41-25	10334-10339	heute	_	_	_	_	_	_	_	
+41-26	10340-10345	3DCRT	*	Therapeutic	_	*	*	Procedure	_	
+41-27	10346-10350	oder	_	_	_	_	_	_	_	
+41-28	10351-10355	IMRT	*	Therapeutic	_	*	*	Procedure	_	
+41-29	10355-10356	)	_	_	_	_	_	_	_	
+41-30	10357-10360	als	_	_	_	_	_	_	_	
+41-31	10361-10365	auch	_	_	_	_	_	_	_	
+41-32	10366-10369	die	_	_	_	_	_	_	_	
+41-33	10370-10372	zu	_	_	_	_	_	_	_	
+41-34	10373-10386	applizierende	_	_	_	_	_	_	_	
+41-35	10387-10405	Radiotherapiedosis	*	Therapeutic	_	*	*	Procedure	41-37[137_0]	
+41-36	10406-10407	(	_	_	_	_	_	_	_	
+41-37	10407-10412	heute	*[137]	*[137]	_[137]	*	*[137]	Specification[137]	_	
+41-38	10413-10415	20	*[137]	*[137]	_[137]	*	*[137]	Specification[137]	_	
+41-39	10416-10418	Gy	*[137]	*[137]	_[137]	*	*[137]	Specification[137]	_	
+41-40	10418-10419	)	_	_	_	_	_	_	_	
+41-41	10420-10422	in	_	_	_	_	_	_	_	
+41-42	10423-10426	den	_	_	_	_	_	_	_	
+41-43	10427-10438	vergangenen	_	_	_	_	_	_	_	
+41-44	10439-10441	10	_	_	_	_	_	_	_	
+41-45	10442-10448	Jahren	_	_	_	_	_	_	_	
+41-46	10449-10454	einen	_	_	_	_	_	_	_	
+41-47	10455-10462	enormen	_	_	_	_	_	_	_	
+41-48	10463-10469	Wandel	_	_	_	_	_	_	_	
+41-49	10470-10478	erfahren	_	_	_	_	_	_	_	
+41-50	10479-10484	haben	_	_	_	_	_	_	_	
+41-51	10485-10488	und	_	_	_	_	_	_	_	
+41-52	10489-10492	die	_	_	_	_	_	_	_	
+41-53	10493-10504	applizierte	_	_	_	_	_	_	_	
+41-54	10505-10510	Dosis	_	_	_	_	_	_	_	
+41-55	10511-10513	im	_	_	_	_	_	_	_	
+41-56	10514-10521	Bereich	_	_	_	_	_	_	_	
+41-57	10522-10525	der	_	_	_	_	_	_	_	
+41-58	10526-10536	weiblichen	_	_	_	_	_	_	_	
+41-59	10537-10542	Brust	_	_	_	_	_	_	_	
+41-60	10543-10545	im	_	_	_	_	_	_	_	
+41-61	10546-10552	Rahmen	_	_	_	_	_	_	_	
+41-62	10553-10556	der	_	_	_	_	_	_	_	
+41-63	10557-10576	Bestrahlungsplanung	*	Therapeutic	_	*	*	Procedure	_	
+41-64	10577-10589	dokumentiert	_	_	_	_	_	_	_	
+41-65	10590-10596	werden	_	_	_	_	_	_	_	
+41-66	10597-10603	sollte	_	_	_	_	_	_	_	
+41-67	10603-10604	.	_	_	_	_	_	_	_	
+
+#Text=Bei den meisten Patientinnen wurde das Mamma-Karzinom in einem sehr frühen, lokal begrenzten und damit kurativ behandelbarem Stadium diagnostiziert [REF]; diese Beobachtung unterstützt die Relevanz eines intensivierten Vorsorgeprogramms für dieses Patientenkollektiv.
+42-1	10605-10608	Bei	_	_	_	_	_	_	_	
+42-2	10609-10612	den	_	_	_	_	_	_	_	
+42-3	10613-10620	meisten	_	_	_	_	_	_	_	
+42-4	10621-10633	Patientinnen	_	_	_	_	_	_	_	
+42-5	10634-10639	wurde	_	_	_	_	_	_	_	
+42-6	10640-10643	das	_	_	_	_	_	_	_	
+42-7	10644-10658	Mamma-Karzinom	*	Diagnosis or Pathology	_	*	*	Finding	42-8[138_0]	
+42-8	10659-10661	in	*[138]	*[138]	_[138]	*	*[138]	Specification[138]	_	
+42-9	10662-10667	einem	*[138]	*[138]	_[138]	*	*[138]	Specification[138]	_	
+42-10	10668-10672	sehr	*[138]|*[139]	*[138]|*[139]	_[138]|_[139]	*|*	*[138]|*[139]	Specification[138]|Specification[139]	_	
+42-11	10673-10679	frühen	*[138]|*[139]	*[138]|*[139]	_[138]|_[139]	*|*	*[138]|*[139]	Specification[138]|Specification[139]	_	
+42-12	10679-10680	,	*[138]	*[138]	_[138]	*	*[138]	Specification[138]	_	
+42-13	10681-10686	lokal	*[138]|*[140]	*[138]|*[140]	_[138]|_[140]	*|*	*[138]|*[140]	Specification[138]|Specification[140]	_	
+42-14	10687-10697	begrenzten	*[138]|*[140]	*[138]|*[140]	_[138]|_[140]	*|*	*[138]|*[140]	Specification[138]|Specification[140]	_	
+42-15	10698-10701	und	*[138]	*[138]	_[138]	*	*[138]	Specification[138]	_	
+42-16	10702-10707	damit	*[138]	*[138]	_[138]	*	*[138]	Specification[138]	_	
+42-17	10708-10715	kurativ	*[138]|*[141]	*[138]|*[141]	_[138]|_[141]	*|*	*[138]|*[141]	Specification[138]|Specification[141]	_	
+42-18	10716-10729	behandelbarem	*[138]|*[141]	*[138]|*[141]	_[138]|_[141]	*|*	*[138]|*[141]	Specification[138]|Specification[141]	_	
+42-19	10730-10737	Stadium	*[138]|*[142]	*[138]|Diagnosis or Pathology[142]	_[138]|_[142]	*|*	*[138]|*[142]	Specification[138]|Finding[142]	42-17[141_142]|42-13[140_142]|42-10[139_142]	
+42-20	10738-10752	diagnostiziert	_	_	_	_	_	_	_	
+42-21	10753-10754	[	_	_	_	_	_	_	_	
+42-22	10754-10757	REF	_	_	_	_	_	_	_	
+42-23	10757-10758	]	_	_	_	_	_	_	_	
+42-24	10758-10759	;	_	_	_	_	_	_	_	
+42-25	10760-10765	diese	_	_	_	_	_	_	_	
+42-26	10766-10777	Beobachtung	_	_	_	_	_	_	_	
+42-27	10778-10789	unterstützt	_	_	_	_	_	_	_	
+42-28	10790-10793	die	_	_	_	_	_	_	_	
+42-29	10794-10802	Relevanz	_	_	_	_	_	_	_	
+42-30	10803-10808	eines	_	_	_	_	_	_	_	
+42-31	10809-10823	intensivierten	*	*	_	*	*	Specification	_	
+42-32	10824-10841	Vorsorgeprogramms	*	Diagnostic	_	*	*	Procedure	42-31	
+42-33	10842-10845	für	_	_	_	_	_	_	_	
+42-34	10846-10852	dieses	_	_	_	_	_	_	_	
+42-35	10853-10871	Patientenkollektiv	_	_	_	_	_	_	_	
+42-36	10871-10872	.	_	_	_	_	_	_	_	
+
+#Text=Empfehlungen zur Nachsorge nach Abschluss der Chemo- und Strahlentherapie
+43-1	10873-10885	Empfehlungen	_	_	_	_	_	_	_	
+43-2	10886-10889	zur	_	_	_	_	_	_	_	
+43-3	10890-10899	Nachsorge	*	Diagnostic	_	*	*	Procedure	43-4[143_0]	
+43-4	10900-10904	nach	*[143]	*[143]	_[143]	*	*[143]	Specification[143]	_	
+43-5	10905-10914	Abschluss	*[143]	*[143]	_[143]	*	*[143]	Specification[143]	_	
+43-6	10915-10918	der	*[143]	*[143]	_[143]	*	*[143]	Specification[143]	_	
+43-7	10919-10924	Chemo	*[143]|*[144]	*[143]|Therapeutic[144]	_[143]|[144]	*|43-10[145]	*[143]|therapie[144]	Specification[143]|Procedure[144]	_	
+43-8	10924-10925	-	*[143]	*[143]	_[143]	*	*[143]	Specification[143]	_	
+43-9	10926-10929	und	*[143]	*[143]	_[143]	*	*[143]	Specification[143]	_	
+43-10	10930-10946	Strahlentherapie	*[143]|*[145]	*[143]|Therapeutic[145]	_[143]|_[145]	*|*	*[143]|*[145]	Specification[143]|Procedure[145]	_	
+
+#Text=Nach Bestrahlung erfolgt ein Restaging des Patienten, um das Therapieansprechen zu evaluieren.
+44-1	10947-10951	Nach	_	_	_	_	_	_	_	
+44-2	10952-10963	Bestrahlung	*	Therapeutic	_	*	*	Procedure	_	
+44-3	10964-10971	erfolgt	_	_	_	_	_	_	_	
+44-4	10972-10975	ein	_	_	_	_	_	_	_	
+44-5	10976-10985	Restaging	*	Diagnostic	_	*	*	Procedure	_	
+44-6	10986-10989	des	_	_	_	_	_	_	_	
+44-7	10990-10999	Patienten	_	_	_	_	_	_	_	
+44-8	10999-11000	,	_	_	_	_	_	_	_	
+44-9	11001-11003	um	_	_	_	_	_	_	_	
+44-10	11004-11007	das	_	_	_	_	_	_	_	
+44-11	11008-11026	Therapieansprechen	*	Other Finding	_	*	*	Finding	_	
+44-12	11027-11029	zu	_	_	_	_	_	_	_	
+44-13	11030-11040	evaluieren	_	_	_	_	_	_	_	
+44-14	11040-11041	.	_	_	_	_	_	_	_	
+
+#Text=Obligatorische Untersuchungen des Restagings nach Bestrahlung enthalten:
+45-1	11042-11056	Obligatorische	*	*	_	*	*	Specification	_	
+45-2	11057-11071	Untersuchungen	*	Diagnostic	_	*	*	Procedure	45-1|45-3[146_0]	
+45-3	11072-11075	des	*[146]	*[146]	_[146]	*	*[146]	Specification[146]	_	
+45-4	11076-11086	Restagings	*[146]|*[147]	*[146]|Diagnostic[147]	_[146]|_[147]	*|*	*[146]|*[147]	Specification[146]|Procedure[147]	45-5[148_147]	
+45-5	11087-11091	nach	*[148]	*[148]	_[148]	*	*[148]	Specification[148]	_	
+45-6	11092-11103	Bestrahlung	*[148]|*[149]	*[148]|Therapeutic[149]	_[148]|_[149]	*|*	*[148]|*[149]	Specification[148]|Procedure[149]	_	
+45-7	11104-11113	enthalten	_	_	_	_	_	_	_	
+45-8	11113-11114	:	_	_	_	_	_	_	_	
+
+#Text=- Anamnese
+46-1	11115-11116	-	_	_	_	_	_	_	_	
+46-2	11117-11125	Anamnese	*	Diagnostic	_	*	*	Procedure	_	
+
+#Text=- Körperliche Untersuchung des Patienten
+47-1	11126-11127	-	_	_	_	_	_	_	_	
+47-2	11128-11139	Körperliche	*	*	_	*	*	Specification	_	
+47-3	11140-11152	Untersuchung	*	Diagnostic	_	*	*	Procedure	47-2	
+47-4	11153-11156	des	_	_	_	_	_	_	_	
+47-5	11157-11166	Patienten	_	_	_	_	_	_	_	
+
+#Text=- Labordiagnostik, wie Blutsenkungsgeschwindigkeit (BSG), Differentialblutbild, Klinische Chemie (Gamma-GT, GOT, GPT, Bilirubin, Kreatinin, Harnsäure), Alkalische Phosphatase (AP), Laktatdehydrogenase (LDH)
+48-1	11167-11168	-	_	_	_	_	_	_	_	
+48-2	11169-11184	Labordiagnostik	*	Diagnostic	_	*	*	Procedure	_	
+48-3	11184-11185	,	_	_	_	_	_	_	_	
+48-4	11186-11189	wie	_	_	_	_	_	_	_	
+48-5	11190-11217	Blutsenkungsgeschwindigkeit	*	Diagnostic	_	*	*	Procedure	_	
+48-6	11218-11219	(	_	_	_	_	_	_	_	
+48-7	11219-11222	BSG	*	Diagnostic	_	*	*	Procedure	_	
+48-8	11222-11223	)	_	_	_	_	_	_	_	
+48-9	11223-11224	,	_	_	_	_	_	_	_	
+48-10	11225-11245	Differentialblutbild	*	Diagnostic	_	*	*	Procedure	_	
+48-11	11245-11246	,	_	_	_	_	_	_	_	
+48-12	11247-11256	Klinische	*[150]	Diagnostic[150]	_[150]	*	*[150]	Procedure[150]	_	
+48-13	11257-11263	Chemie	*[150]	Diagnostic[150]	_[150]	*	*[150]	Procedure[150]	_	
+48-14	11264-11265	(	_	_	_	_	_	_	_	
+48-15	11265-11273	Gamma-GT	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-16	11273-11274	,	_	_	_	_	_	_	_	
+48-17	11275-11278	GOT	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-18	11278-11279	,	_	_	_	_	_	_	_	
+48-19	11280-11283	GPT	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-20	11283-11284	,	_	_	_	_	_	_	_	
+48-21	11285-11294	Bilirubin	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-22	11294-11295	,	_	_	_	_	_	_	_	
+48-23	11296-11305	Kreatinin	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-24	11305-11306	,	_	_	_	_	_	_	_	
+48-25	11307-11316	Harnsäure	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-26	11316-11317	)	_	_	_	_	_	_	_	
+48-27	11317-11318	,	_	_	_	_	_	_	_	
+48-28	11319-11329	Alkalische	*[151]	Nutrient or Body Substance[151]	_[151]	*	*[151]	Substance[151]	_	
+48-29	11330-11341	Phosphatase	*[151]	Nutrient or Body Substance[151]	_[151]	*	*[151]	Substance[151]	_	
+48-30	11342-11343	(	_	_	_	_	_	_	_	
+48-31	11343-11345	AP	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-32	11345-11346	)	_	_	_	_	_	_	_	
+48-33	11346-11347	,	_	_	_	_	_	_	_	
+48-34	11348-11367	Laktatdehydrogenase	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-35	11368-11369	(	_	_	_	_	_	_	_	
+48-36	11369-11372	LDH	*	Nutrient or Body Substance	_	*	*	Substance	_	
+48-37	11372-11373	)	_	_	_	_	_	_	_	
+
+#Text=- Sonographie des Abdomens
+49-1	11374-11375	-	_	_	_	_	_	_	_	
+49-2	11376-11387	Sonographie	*	Diagnostic	_	*	*	Procedure	49-3[152_0]	
+49-3	11388-11391	des	*[152]	*[152]	_[152]	*	*[152]	Specification[152]	_	
+49-4	11392-11400	Abdomens	*[152]	*[152]	_[152]	*	*[152]	Specification[152]	_	
+
+#Text=- CT aller ursprünglich befallenen Regionen (zu CT im Follow-up, siehe Kapitel 11.1 zur Nachsorge des Patienten)
+50-1	11401-11402	-	_	_	_	_	_	_	_	
+50-2	11403-11405	CT	*	Diagnostic	_	*	*	Procedure	50-3[153_0]	
+50-3	11406-11411	aller	*[153]	*[153]	_[153]	*	*[153]	Specification[153]	_	
+50-4	11412-11424	ursprünglich	*[153]|*[154]	*[153]|*[154]	_[153]|_[154]	*|*	*[153]|*[154]	Specification[153]|Specification[154]	_	
+50-5	11425-11435	befallenen	*[153]|*[154]	*[153]|*[154]	_[153]|_[154]	*|*	*[153]|*[154]	Specification[153]|Specification[154]	_	
+50-6	11436-11444	Regionen	*[153]|*[155]	*[153]|Diagnosis or Pathology[155]	_[153]|_[155]	*|*	*[153]|*[155]	Specification[153]|Finding[155]	_	
+50-7	11445-11446	(	_	_	_	_	_	_	_	
+50-8	11446-11448	zu	_	_	_	_	_	_	_	
+50-9	11449-11451	CT	*	Diagnostic	_	*	*	Procedure	_	
+50-10	11452-11454	im	_	_	_	_	_	_	_	
+50-11	11455-11464	Follow-up	*	Diagnostic	_	*	*	Procedure	_	
+50-12	11464-11465	,	_	_	_	_	_	_	_	
+50-13	11466-11471	siehe	_	_	_	_	_	_	_	
+50-14	11472-11479	Kapitel	_	_	_	_	_	_	_	
+50-15	11480-11484	11.1	_	_	_	_	_	_	_	
+50-16	11485-11488	zur	_	_	_	_	_	_	_	
+50-17	11489-11498	Nachsorge	*	Diagnostic	_	*	*	Procedure	_	
+50-18	11499-11502	des	_	_	_	_	_	_	_	
+50-19	11503-11512	Patienten	_	_	_	_	_	_	_	
+50-20	11512-11513	)	_	_	_	_	_	_	_	
+
+#Text=Gegebenenfalls sind zusätzliche Untersuchungen (PET/CT ( * CAVE Kostenübernahme); Kernspintomographie, Szintigraphie, Knochenmarkpunktion; Röntgenuntersuchung etc.) je nach ursprünglichem Befall und klinischer Notwendigkeit möglich.
+51-1	11514-11528	Gegebenenfalls	_	_	_	_	_	_	_	
+51-2	11529-11533	sind	_	_	_	_	_	_	_	
+51-3	11534-11545	zusätzliche	_	_	_	_	_	_	_	
+51-4	11546-11560	Untersuchungen	*	Diagnostic	_	*	*	Procedure	_	
+51-5	11561-11562	(	_	_	_	_	_	_	_	
+51-6	11562-11565	PET	*[156]	Diagnostic[156]	_[156]	*	*[156]	Procedure[156]	_	
+51-7	11565-11566	/	*[156]	Diagnostic[156]	_[156]	*	*[156]	Procedure[156]	_	
+51-8	11566-11568	CT	*[156]	Diagnostic[156]	_[156]	*	*[156]	Procedure[156]	_	
+51-9	11569-11570	(	_	_	_	_	_	_	_	
+51-10	11571-11572	*	_	_	_	_	_	_	_	
+51-11	11573-11577	CAVE	_	_	_	_	_	_	_	
+51-12	11578-11593	Kostenübernahme	_	_	_	_	_	_	_	
+51-13	11593-11594	)	_	_	_	_	_	_	_	
+51-14	11594-11595	;	_	_	_	_	_	_	_	
+51-15	11596-11615	Kernspintomographie	*	Diagnostic	_	*	*	Procedure	_	
+51-16	11615-11616	,	_	_	_	_	_	_	_	
+51-17	11617-11630	Szintigraphie	*	Diagnostic	_	*	*	Procedure	_	
+51-18	11630-11631	,	_	_	_	_	_	_	_	
+51-19	11632-11651	Knochenmarkpunktion	*	Diagnostic	_	*	*	Procedure	_	
+51-20	11651-11652	;	_	_	_	_	_	_	_	
+51-21	11653-11672	Röntgenuntersuchung	*	Diagnostic	_	*	*	Procedure	_	
+51-22	11673-11676	etc	_	_	_	_	_	_	_	
+51-23	11676-11677	.	_	_	_	_	_	_	_	
+51-24	11677-11678	)	_	_	_	_	_	_	_	
+51-25	11679-11681	je	_	_	_	_	_	_	_	
+51-26	11682-11686	nach	_	_	_	_	_	_	_	
+51-27	11687-11701	ursprünglichem	*	*	_	*	*	Specification	_	
+51-28	11702-11708	Befall	*	Other Finding	_	*	*	Finding	51-27	
+51-29	11709-11712	und	_	_	_	_	_	_	_	
+51-30	11713-11723	klinischer	_	_	_	_	_	_	_	
+51-31	11724-11737	Notwendigkeit	_	_	_	_	_	_	_	
+51-32	11738-11745	möglich	_	_	_	_	_	_	_	
+51-33	11745-11746	.	_	_	_	_	_	_	_	
+
+#Text=Aktuelle Studien der Deutschen Hodgkin Studiengruppe sind unter dem Link:
+52-1	11747-11755	Aktuelle	_	_	_	_	_	_	_	
+52-2	11756-11763	Studien	_	_	_	_	_	_	_	
+52-3	11764-11767	der	_	_	_	_	_	_	_	
+52-4	11768-11777	Deutschen	_	_	_	_	_	_	_	
+52-5	11778-11785	Hodgkin	*	Diagnosis or Pathology	_	*	*	Finding	_	
+52-6	11786-11799	Studiengruppe	_	_	_	_	_	_	_	
+52-7	11800-11804	sind	_	_	_	_	_	_	_	
+52-8	11805-11810	unter	_	_	_	_	_	_	_	
+52-9	11811-11814	dem	_	_	_	_	_	_	_	
+52-10	11815-11819	Link	_	_	_	_	_	_	_	
+52-11	11819-11820	:	_	_	_	_	_	_	_	
+
+#Text=[URL] einsehbar.
+53-1	11821-11822	[	_	_	_	_	_	_	_	
+53-2	11822-11825	URL	_	_	_	_	_	_	_	
+53-3	11825-11826	]	_	_	_	_	_	_	_	
+53-4	11827-11836	einsehbar	_	_	_	_	_	_	_	
+53-5	11836-11837	.	_	_	_	_	_	_	_	

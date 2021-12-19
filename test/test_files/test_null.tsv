@@ -1,0 +1,67 @@
+#Text=Eine prospektive Kohortenstudie des „Timing of Rectal Cancer Response to Chemoradiation Consortium” in den USA untersuchte nach neaodjuvanter Radiochemotherapie mit infusionalem 5-Fluorouracil die Applikation von null, zwei, vier, und sechs Zyklen einer Chemotherapie mit FOLFOX, gefolgt von Operation 6, 11, 15, und 19 Wochen nach Abschluss der Radiochemotherapie (siehe Evidenztabelle im Leitlinienreport).
+6-1	940-944	Eine	_	_	_	_	_	_	_	
+6-2	945-956	prospektive	_	_	_	_	_	_	_	
+6-3	957-971	Kohortenstudie	_	_	_	_	_	_	_	
+6-4	972-975	des	_	_	_	_	_	_	_	
+6-5	976-977	„	_	_	_	_	_	_	_	
+6-6	977-983	Timing	_	_	_	_	_	_	_	
+6-7	984-986	of	_	_	_	_	_	_	_	
+6-8	987-993	Rectal	*[17]|*[18]	*[17]|*[18]	_[17]|_[18]	*|*	*[17]|*[18]	Specification[17]|Specification[18]	_	
+6-9	994-1000	Cancer	*[17]|*[19]	*[17]|Diagnosis or Pathology[19]	_[17]|_[19]	*|*	*[17]|*[19]	Specification[17]|Finding[19]	6-8[18_19]	
+6-10	1001-1009	Response	*	Other Finding	_	*	*	Finding	6-8[17_0]	
+6-11	1010-1012	to	_	_	_	_	_	_	_	
+6-12	1013-1027	Chemoradiation	*	Therapeutic	_	*	*	Procedure	_	
+6-13	1028-1038	Consortium	_	_	_	_	_	_	_	
+6-14	1038-1039	”	_	_	_	_	_	_	_	
+6-15	1040-1042	in	_	_	_	_	_	_	_	
+6-16	1043-1046	den	_	_	_	_	_	_	_	
+6-17	1047-1050	USA	_	_	_	_	_	_	_	
+6-18	1051-1062	untersuchte	_	_	_	_	_	_	_	
+6-19	1063-1067	nach	_	_	_	_	_	_	_	
+6-20	1068-1081	neaodjuvanter	*	*	_	*	*	Specification	_	
+6-21	1082-1100	Radiochemotherapie	*	Therapeutic	_	*	*	Procedure	6-20|6-22[20_0]	
+6-22	1101-1104	mit	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+6-23	1105-1117	infusionalem	*[20]|*[21]	*[20]|*[21]	_[20]|_[21]	*|*	*[20]|*[21]	Specification[20]|Specification[21]	_	
+6-24	1118-1119	5	*[20]|*[22]	*[20]|Clinical Drug[22]	_[20]|_[22]	*|*	*[20]|*[22]	Specification[20]|Substance[22]	6-23[21_22]	
+6-25	1119-1120	-	*[20]|*[22]	*[20]|Clinical Drug[22]	_[20]|_[22]	*|*	*[20]|*[22]	Specification[20]|Substance[22]	_	
+6-26	1120-1132	Fluorouracil	*[20]|*[22]	*[20]|Clinical Drug[22]	_[20]|_[22]	*|*	*[20]|*[22]	Specification[20]|Substance[22]	_	
+6-27	1133-1136	die	_	_	_	_	_	_	_	
+6-28	1137-1148	Applikation	*	Therapeutic	_	*	*	Procedure	6-29[23_0]	
+6-29	1149-1152	von	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+6-30	1153-1157	null	*[23]|*[24]	*[23]|*[24]	_[23]|_[24]	*|*	*[23]|*[24]	Specification[23]|Specification[24]	_	
+6-31	1157-1158	,	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+6-32	1159-1163	zwei	*[23]|*[25]	*[23]|*[25]	_[23]|_[25]	*|*	*[23]|*[25]	Specification[23]|Specification[25]	_	
+6-33	1163-1164	,	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+6-34	1165-1169	vier	*[23]|*[26]	*[23]|*[26]	_[23]|_[26]	*|*	*[23]|*[26]	Specification[23]|Specification[26]	_	
+6-35	1169-1170	,	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+6-36	1171-1174	und	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+6-37	1175-1180	sechs	*[23]|*[27]	*[23]|*[27]	_[23]|_[27]	*|*	*[23]|*[27]	Specification[23]|Specification[27]	_	
+6-38	1181-1187	Zyklen	*[23]|*[28]	*[23]|Therapeutic[28]	_[23]|_[28]	*|*	*[23]|*[28]	Specification[23]|Procedure[28]	6-37[27_28]|6-34[26_28]|6-32[25_28]|6-30[24_28]|6-39[29_28]	
+6-39	1188-1193	einer	*[29]	*[29]	_[29]	*	*[29]	Specification[29]	_	
+6-40	1194-1207	Chemotherapie	*[29]|*[30]	*[29]|Therapeutic[30]	_[29]|_[30]	*|*	*[29]|*[30]	Specification[29]|Procedure[30]	6-41[31_30]	
+6-41	1208-1211	mit	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+6-42	1212-1218	FOLFOX	*[31]|*[32]	*[31]|Therapeutic[32]	_[31]|_[32]	*|*	*[31]|*[32]	Specification[31]|Procedure[32]	_	
+6-43	1218-1219	,	_	_	_	_	_	_	_	
+6-44	1220-1227	gefolgt	_	_	_	_	_	_	_	
+6-45	1228-1231	von	_	_	_	_	_	_	_	
+6-46	1232-1241	Operation	*	Therapeutic	_	*	*	Procedure	_	
+6-47	1242-1243	6	_	_	_	_	_	_	_	
+6-48	1243-1244	,	_	_	_	_	_	_	_	
+6-49	1245-1247	11	_	_	_	_	_	_	_	
+6-50	1247-1248	,	_	_	_	_	_	_	_	
+6-51	1249-1251	15	_	_	_	_	_	_	_	
+6-52	1251-1252	,	_	_	_	_	_	_	_	
+6-53	1253-1256	und	_	_	_	_	_	_	_	
+6-54	1257-1259	19	_	_	_	_	_	_	_	
+6-55	1260-1266	Wochen	_	_	_	_	_	_	_	
+6-56	1267-1271	nach	_	_	_	_	_	_	_	
+6-57	1272-1281	Abschluss	*	Therapeutic	_	*	*	Procedure	6-58[33_0]	
+6-58	1282-1285	der	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+6-59	1286-1304	Radiochemotherapie	*[33]|*[34]	*[33]|Therapeutic[34]	_[33]|_[34]	*|*	*[33]|*[34]	Specification[33]|Procedure[34]	_	
+6-60	1305-1306	(	_	_	_	_	_	_	_	
+6-61	1306-1311	siehe	_	_	_	_	_	_	_	
+6-62	1312-1326	Evidenztabelle	_	_	_	_	_	_	_	
+6-63	1327-1329	im	_	_	_	_	_	_	_	
+6-64	1330-1346	Leitlinienreport	_	_	_	_	_	_	_	
+6-65	1346-1347	)	_	_	_	_	_	_	_	
+6-66	1347-1348	.	_	_	_	_	_	_	_	

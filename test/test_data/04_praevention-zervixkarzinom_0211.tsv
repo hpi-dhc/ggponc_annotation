@@ -1,0 +1,723 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Niedriggradige CIN haben eine hohe spontane Abheilungsrate.
+1-1	0-14	Niedriggradige	*	*	_	*	*	Specification	_	
+1-2	15-18	CIN	*	Diagnosis or Pathology	_	*	*	Finding	1-1	
+1-3	19-24	haben	_	_	_	_	_	_	_	
+1-4	25-29	eine	_	_	_	_	_	_	_	
+1-5	30-34	hohe	*	*	_	*	*	Specification	_	
+1-6	35-43	spontane	*	*	_	*	*	Specification	_	
+1-7	44-58	Abheilungsrate	*	Other Finding	_	*	*	Finding	1-5|1-6	
+1-8	58-59	.	_	_	_	_	_	_	_	
+
+#Text=In einer brasilianischen Studie heilten 90% der zytologischen LSIL innerhalb 24 Monaten ab [REF].
+2-1	60-62	In	_	_	_	_	_	_	_	
+2-2	63-68	einer	_	_	_	_	_	_	_	
+2-3	69-84	brasilianischen	_	_	_	_	_	_	_	
+2-4	85-91	Studie	_	_	_	_	_	_	_	
+2-5	92-99	heilten	_	_	_	_	_	_	_	
+2-6	100-103	90%	_	_	_	_	_	_	_	
+2-7	104-107	der	_	_	_	_	_	_	_	
+2-8	108-121	zytologischen	*	*	_	*	*	Specification	_	
+2-9	122-126	LSIL	*	Diagnosis or Pathology	_	*	*	Finding	2-8	
+2-10	127-136	innerhalb	_	_	_	_	_	_	_	
+2-11	137-139	24	_	_	_	_	_	_	_	
+2-12	140-147	Monaten	_	_	_	_	_	_	_	
+2-13	148-150	ab	_	_	_	_	_	_	_	
+2-14	151-152	[	_	_	_	_	_	_	_	
+2-15	152-155	REF	_	_	_	_	_	_	_	
+2-16	155-156	]	_	_	_	_	_	_	_	
+2-17	156-157	.	_	_	_	_	_	_	_	
+
+#Text=In einer niederländischen Studie über 4 Jahre heilten alle LSIL, welche mit nicht-onkogenen HPV Typen assoziiert waren und 70% der LSIL-Patientinnen mit onkogener HPV Infektion ab [REF].
+3-1	158-160	In	_	_	_	_	_	_	_	
+3-2	161-166	einer	_	_	_	_	_	_	_	
+3-3	167-183	niederländischen	_	_	_	_	_	_	_	
+3-4	184-190	Studie	_	_	_	_	_	_	_	
+3-5	191-195	über	_	_	_	_	_	_	_	
+3-6	196-197	4	_	_	_	_	_	_	_	
+3-7	198-203	Jahre	_	_	_	_	_	_	_	
+3-8	204-211	heilten	_	_	_	_	_	_	_	
+3-9	212-216	alle	_	_	_	_	_	_	_	
+3-10	217-221	LSIL	*	Diagnosis or Pathology	_	*	*	Finding	_	
+3-11	221-222	,	_	_	_	_	_	_	_	
+3-12	223-229	welche	_	_	_	_	_	_	_	
+3-13	230-233	mit	_	_	_	_	_	_	_	
+3-14	234-249	nicht-onkogenen	*	*	_	*	*	Specification	_	
+3-15	250-253	HPV	*[1]	Diagnosis or Pathology[1]	_[1]	*	*[1]	Finding[1]	3-14[0_1]	
+3-16	254-259	Typen	*[1]	Diagnosis or Pathology[1]	_[1]	*	*[1]	Finding[1]	_	
+3-17	260-270	assoziiert	_	_	_	_	_	_	_	
+3-18	271-276	waren	_	_	_	_	_	_	_	
+3-19	277-280	und	_	_	_	_	_	_	_	
+3-20	281-284	70%	_	_	_	_	_	_	_	
+3-21	285-288	der	_	_	_	_	_	_	_	
+3-22	289-306	LSIL-Patientinnen	*	Diagnosis or Pathology	_	*	*	Finding	3-23[2_0]	
+3-23	307-310	mit	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+3-24	311-320	onkogener	*[2]|*[3]	*[2]|*[3]	_[2]|_[3]	*|*	*[2]|*[3]	Specification[2]|Specification[3]	_	
+3-25	321-324	HPV	*[2]|*[4]	*[2]|Diagnosis or Pathology[4]	_[2]|_[4]	*|*	*[2]|*[4]	Specification[2]|Finding[4]	3-24[3_4]	
+3-26	325-334	Infektion	*[2]|*[4]	*[2]|Diagnosis or Pathology[4]	_[2]|_[4]	*|*	*[2]|*[4]	Specification[2]|Finding[4]	_	
+3-27	335-337	ab	_	_	_	_	_	_	_	
+3-28	338-339	[	_	_	_	_	_	_	_	
+3-29	339-342	REF	_	_	_	_	_	_	_	
+3-30	342-343	]	_	_	_	_	_	_	_	
+3-31	343-344	.	_	_	_	_	_	_	_	
+
+#Text=Bei Adoleszentinnen ist die Abheilungsrate von LSIL für Patientinnen mit Nachweis von high-risk HPV Typen innert 36 Monaten 91% unabhängig vom Typ der HPV Infektion [REF].
+4-1	345-348	Bei	_	_	_	_	_	_	_	
+4-2	349-364	Adoleszentinnen	*	Other Finding	_	*	*	Finding	_	
+4-3	365-368	ist	_	_	_	_	_	_	_	
+4-4	369-372	die	_	_	_	_	_	_	_	
+4-5	373-387	Abheilungsrate	*	Other Finding	_	*	*	Finding	4-6[5_0]	
+4-6	388-391	von	*[5]	*[5]	_[5]	*	*[5]	Specification[5]	_	
+4-7	392-396	LSIL	*[5]|*[6]	*[5]|Diagnosis or Pathology[6]	_[5]|_[6]	*|*	*[5]|*[6]	Specification[5]|Finding[6]	_	
+4-8	397-400	für	_	_	_	_	_	_	_	
+4-9	401-413	Patientinnen	_	_	_	_	_	_	_	
+4-10	414-417	mit	_	_	_	_	_	_	_	
+4-11	418-426	Nachweis	*	Diagnosis or Pathology	_	*	*	Finding	4-12[7_0]	
+4-12	427-430	von	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+4-13	431-440	high-risk	*[7]|*[8]	*[7]|*[8]	_[7]|_[8]	*|*	*[7]|*[8]	Specification[7]|Specification[8]	_	
+4-14	441-444	HPV	*[7]|*[9]	*[7]|Diagnosis or Pathology[9]	_[7]|_[9]	*|*	*[7]|*[9]	Specification[7]|Finding[9]	4-13[8_9]	
+4-15	445-450	Typen	*[7]|*[9]	*[7]|Diagnosis or Pathology[9]	_[7]|_[9]	*|*	*[7]|*[9]	Specification[7]|Finding[9]	_	
+4-16	451-457	innert	_	_	_	_	_	_	_	
+4-17	458-460	36	_	_	_	_	_	_	_	
+4-18	461-468	Monaten	_	_	_	_	_	_	_	
+4-19	469-472	91%	_	_	_	_	_	_	_	
+4-20	473-483	unabhängig	_	_	_	_	_	_	_	
+4-21	484-487	vom	_	_	_	_	_	_	_	
+4-22	488-491	Typ	_	_	_	_	_	_	_	
+4-23	492-495	der	_	_	_	_	_	_	_	
+4-24	496-499	HPV	*[10]	Diagnosis or Pathology[10]	_[10]	*	*[10]	Finding[10]	_	
+4-25	500-509	Infektion	*[10]	Diagnosis or Pathology[10]	_[10]	*	*[10]	Finding[10]	_	
+4-26	510-511	[	_	_	_	_	_	_	_	
+4-27	511-514	REF	_	_	_	_	_	_	_	
+4-28	514-515	]	_	_	_	_	_	_	_	
+4-29	515-516	.	_	_	_	_	_	_	_	
+
+#Text=Bei einer durch kolposkopisch gezielte Biopsie gesicherten CIN 1 beträgt das Risiko der Entwicklung einer CIN 2/3 innerhalb den nächsten 2 Jahren nur 13% [REF].
+5-1	517-520	Bei	_	_	_	_	_	_	_	
+5-2	521-526	einer	_	_	_	_	_	_	_	
+5-3	527-532	durch	_	_	_	_	_	_	_	
+5-4	533-546	kolposkopisch	*[11]|*[12]	*[11]|*[12]	_[11]|_[12]	*|*	*[11]|*[12]	Specification[11]|Specification[12]	_	
+5-5	547-555	gezielte	*[11]|*[12]	*[11]|*[12]	_[11]|_[12]	*|*	*[11]|*[12]	Specification[11]|Specification[12]	_	
+5-6	556-563	Biopsie	*[11]|*[13]	*[11]|Diagnostic[13]	_[11]|_[13]	*|*	*[11]|*[13]	Specification[11]|Procedure[13]	5-4[12_13]	
+5-7	564-575	gesicherten	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-8	576-579	CIN	*	Diagnosis or Pathology	_	*	*	Finding	5-9|5-4[11_0]	
+5-9	580-581	1	*	*	_	*	*	Specification	_	
+5-10	582-589	beträgt	_	_	_	_	_	_	_	
+5-11	590-593	das	_	_	_	_	_	_	_	
+5-12	594-600	Risiko	*	Other Finding	_	*	*	Finding	5-13[14_0]	
+5-13	601-604	der	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-14	605-616	Entwicklung	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-15	617-622	einer	*[14]	*[14]	_[14]	*	*[14]	Specification[14]	_	
+5-16	623-626	CIN	*[14]|*[15]	*[14]|Diagnosis or Pathology[15]	_[14]|_[15]	*|*	*[14]|*[15]	Specification[14]|Finding[15]	5-17[0_15]|5-19[0_15]	
+5-17	627-628	2	*	*	_	*	*	Specification	_	
+5-18	628-629	/	_	_	_	_	_	_	_	
+5-19	629-630	3	*	*	_	*	*	Specification	_	
+5-20	631-640	innerhalb	_	_	_	_	_	_	_	
+5-21	641-644	den	_	_	_	_	_	_	_	
+5-22	645-653	nächsten	_	_	_	_	_	_	_	
+5-23	654-655	2	_	_	_	_	_	_	_	
+5-24	656-662	Jahren	_	_	_	_	_	_	_	
+5-25	663-666	nur	_	_	_	_	_	_	_	
+5-26	667-670	13%	_	_	_	_	_	_	_	
+5-27	671-672	[	_	_	_	_	_	_	_	
+5-28	672-675	REF	_	_	_	_	_	_	_	
+5-29	675-676	]	_	_	_	_	_	_	_	
+5-30	676-677	.	_	_	_	_	_	_	_	
+
+#Text=Ergibt die kolposkopische Abklärung bei zytologischem Verdacht auf CIN 1 (s. Kapitel VI „Differentialdiagnostik und Abklärungsalgorithmus“) den histopathologischen Nachweis von CIN 1, so wird die Patientin bzgl. einer Kontrolluntersuchung oder Behandlung beraten.
+6-1	678-684	Ergibt	_	_	_	_	_	_	_	
+6-2	685-688	die	_	_	_	_	_	_	_	
+6-3	689-703	kolposkopische	*	*	_	*	*	Specification	_	
+6-4	704-713	Abklärung	*	Diagnostic	_	*	*	Procedure	6-3	
+6-5	714-717	bei	_	_	_	_	_	_	_	
+6-6	718-731	zytologischem	*	*	_	*	*	Specification	_	
+6-7	732-740	Verdacht	*	Other Finding	_	*	*	Finding	6-6|6-8[16_0]	
+6-8	741-744	auf	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+6-9	745-748	CIN	*[16]|*[17]	*[16]|Diagnosis or Pathology[17]	_[16]|_[17]	*|*	*[16]|*[17]	Specification[16]|Finding[17]	6-10[0_17]	
+6-10	749-750	1	*	*	_	*	*	Specification	_	
+6-11	751-752	(	_	_	_	_	_	_	_	
+6-12	752-753	s	_	_	_	_	_	_	_	
+6-13	753-754	.	_	_	_	_	_	_	_	
+6-14	755-762	Kapitel	_	_	_	_	_	_	_	
+6-15	763-765	VI	_	_	_	_	_	_	_	
+6-16	766-767	„	_	_	_	_	_	_	_	
+6-17	767-789	Differentialdiagnostik	*	Diagnostic	_	*	*	Procedure	_	
+6-18	790-793	und	_	_	_	_	_	_	_	
+6-19	794-815	Abklärungsalgorithmus	*	Diagnostic	_	*	*	Procedure	_	
+6-20	815-816	“	_	_	_	_	_	_	_	
+6-21	816-817	)	_	_	_	_	_	_	_	
+6-22	818-821	den	_	_	_	_	_	_	_	
+6-23	822-841	histopathologischen	*	*	_	*	*	Specification	_	
+6-24	842-850	Nachweis	*	Diagnosis or Pathology	_	*	*	Finding	6-23|6-25[18_0]	
+6-25	851-854	von	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+6-26	855-858	CIN	*[18]|*[19]	*[18]|Diagnosis or Pathology[19]	_[18]|_[19]	*|*	*[18]|*[19]	Specification[18]|Finding[19]	6-27[0_19]	
+6-27	859-860	1	*	*	_	*	*	Specification	_	
+6-28	860-861	,	_	_	_	_	_	_	_	
+6-29	862-864	so	_	_	_	_	_	_	_	
+6-30	865-869	wird	_	_	_	_	_	_	_	
+6-31	870-873	die	_	_	_	_	_	_	_	
+6-32	874-883	Patientin	_	_	_	_	_	_	_	
+6-33	884-888	bzgl	_	_	_	_	_	_	_	
+6-34	888-889	.	_	_	_	_	_	_	_	
+6-35	890-895	einer	_	_	_	_	_	_	_	
+6-36	896-916	Kontrolluntersuchung	*	Diagnostic	_	*	*	Procedure	_	
+6-37	917-921	oder	_	_	_	_	_	_	_	
+6-38	922-932	Behandlung	*	Therapeutic	_	*	*	Procedure	_	
+6-39	933-940	beraten	_	_	_	_	_	_	_	
+6-40	940-941	.	_	_	_	_	_	_	_	
+
+#Text=Das Risiko für eine okkulte CIN 3+ korreliert direkt mit dem zytologischen Vorbefund:
+7-1	942-945	Das	_	_	_	_	_	_	_	
+7-2	946-952	Risiko	*	Other Finding	_	*	*	Finding	7-3[20_0]	
+7-3	953-956	für	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+7-4	957-961	eine	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+7-5	962-969	okkulte	*[20]|*[21]	*[20]|*[21]	_[20]|_[21]	*|*	*[20]|*[21]	Specification[20]|Specification[21]	_	
+7-6	970-973	CIN	*[20]|*[22]	*[20]|Diagnosis or Pathology[22]	_[20]|_[22]	*|*	*[20]|*[22]	Specification[20]|Finding[22]	7-5[21_22]|7-7[23_22]	
+7-7	974-975	3	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+7-8	975-976	+	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+7-9	977-987	korreliert	_	_	_	_	_	_	_	
+7-10	988-994	direkt	_	_	_	_	_	_	_	
+7-11	995-998	mit	_	_	_	_	_	_	_	
+7-12	999-1002	dem	_	_	_	_	_	_	_	
+7-13	1003-1016	zytologischen	*	*	_	*	*	Specification	_	
+7-14	1017-1026	Vorbefund	*	Other Finding	_	*	*	Finding	7-13	
+7-15	1026-1027	:	_	_	_	_	_	_	_	
+
+#Text=liegt ein Pap Gruppe IIID1oder HPV positiver Pap II-p vor, beträgt das 5 Jahres Risiko für CIN 3+ 3,8%, bei Pap IIID2 oder IVA-p in der Vorgeschichte beträgt das 5 Jahres Risiko 15% ( [REF], S16).
+8-1	1028-1033	liegt	_	_	_	_	_	_	_	
+8-2	1034-1037	ein	_	_	_	_	_	_	_	
+8-3	1038-1041	Pap	*	Diagnosis or Pathology	_	*	*	Finding	8-4[24_0]	
+8-4	1042-1048	Gruppe	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+8-5	1049-1058	IIID1oder	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+8-6	1059-1062	HPV	*[25]	*[25]	_[25]	*	*[25]	Specification[25]	_	
+8-7	1063-1072	positiver	*[25]	*[25]	_[25]	*	*[25]	Specification[25]	_	
+8-8	1073-1076	Pap	*	Diagnosis or Pathology	_	*	*	Finding	8-9|8-6[25_0]	
+8-9	1077-1081	II-p	*	*	_	*	*	Specification	_	
+8-10	1082-1085	vor	_	_	_	_	_	_	_	
+8-11	1085-1086	,	_	_	_	_	_	_	_	
+8-12	1087-1094	beträgt	_	_	_	_	_	_	_	
+8-13	1095-1098	das	_	_	_	_	_	_	_	
+8-14	1099-1100	5	*[26]	Other Finding[26]	_[26]	*	*[26]	Finding[26]	8-17[27_26]	
+8-15	1101-1107	Jahres	*[26]	Other Finding[26]	_[26]	*	*[26]	Finding[26]	_	
+8-16	1108-1114	Risiko	*[26]	Other Finding[26]	_[26]	*	*[26]	Finding[26]	_	
+8-17	1115-1118	für	*[27]	*[27]	_[27]	*	*[27]	Specification[27]	_	
+8-18	1119-1122	CIN	*[27]|*[28]	*[27]|Diagnosis or Pathology[28]	_[27]|_[28]	*|*	*[27]|*[28]	Specification[27]|Finding[28]	8-19[29_28]	
+8-19	1123-1124	3	*[29]	*[29]	_[29]	*	*[29]	Specification[29]	_	
+8-20	1124-1125	+	*[29]	*[29]	_[29]	*	*[29]	Specification[29]	_	
+8-21	1126-1130	3,8%	_	_	_	_	_	_	_	
+8-22	1130-1131	,	_	_	_	_	_	_	_	
+8-23	1132-1135	bei	_	_	_	_	_	_	_	
+8-24	1136-1139	Pap	*	Diagnosis or Pathology	_	*	*	Finding	8-25|8-27	
+8-25	1140-1145	IIID2	*	*	_	*	*	Specification	_	
+8-26	1146-1150	oder	_	_	_	_	_	_	_	
+8-27	1151-1156	IVA-p	*	*	_	*	*	Specification	_	
+8-28	1157-1159	in	_	_	_	_	_	_	_	
+8-29	1160-1163	der	_	_	_	_	_	_	_	
+8-30	1164-1177	Vorgeschichte	_	_	_	_	_	_	_	
+8-31	1178-1185	beträgt	_	_	_	_	_	_	_	
+8-32	1186-1189	das	_	_	_	_	_	_	_	
+8-33	1190-1191	5	*[30]	Other Finding[30]	_[30]	*	*[30]	Finding[30]	_	
+8-34	1192-1198	Jahres	*[30]	Other Finding[30]	_[30]	*	*[30]	Finding[30]	_	
+8-35	1199-1205	Risiko	*[30]	Other Finding[30]	_[30]	*	*[30]	Finding[30]	_	
+8-36	1206-1209	15%	_	_	_	_	_	_	_	
+8-37	1210-1211	(	_	_	_	_	_	_	_	
+8-38	1212-1213	[	_	_	_	_	_	_	_	
+8-39	1213-1216	REF	_	_	_	_	_	_	_	
+8-40	1216-1217	]	_	_	_	_	_	_	_	
+8-41	1217-1218	,	_	_	_	_	_	_	_	
+8-42	1219-1222	S16	_	_	_	_	_	_	_	
+8-43	1222-1223	)	_	_	_	_	_	_	_	
+8-44	1223-1224	.	_	_	_	_	_	_	_	
+
+#Text=Bei Frauen mit histopathologisch gesicherter CIN 1 und leichtgradigen zytologischen Veränderungen in der Vorgeschichte (z.B. PapIIID1oder HPV positiver Pap II-p ) wird nach einem Jahr eine Kontrolle mit Zytologie und HPV Nachweis empfohlen ( [REF], S.17).
+9-1	1225-1228	Bei	_	_	_	_	_	_	_	
+9-2	1229-1235	Frauen	*	Other Finding	_	*	*	Finding	_	
+9-3	1236-1239	mit	_	_	_	_	_	_	_	
+9-4	1240-1257	histopathologisch	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+9-5	1258-1269	gesicherter	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+9-6	1270-1273	CIN	*	Diagnosis or Pathology	_	*	*	Finding	9-4[31_0]|9-7	
+9-7	1274-1275	1	*	*	_	*	*	Specification	_	
+9-8	1276-1279	und	_	_	_	_	_	_	_	
+9-9	1280-1294	leichtgradigen	*	*	_	*	*	Specification	_	
+9-10	1295-1308	zytologischen	*	*	_	*	*	Specification	_	
+9-11	1309-1322	Veränderungen	*	Other Finding	_	*	*	Finding	9-10|9-9	
+9-12	1323-1325	in	_	_	_	_	_	_	_	
+9-13	1326-1329	der	_	_	_	_	_	_	_	
+9-14	1330-1343	Vorgeschichte	_	_	_	_	_	_	_	
+9-15	1344-1345	(	_	_	_	_	_	_	_	
+9-16	1345-1348	z.B	_	_	_	_	_	_	_	
+9-17	1348-1349	.	_	_	_	_	_	_	_	
+9-18	1350-1362	PapIIID1oder	*	Diagnosis or Pathology	_	*	*	Finding	_	
+9-19	1363-1366	HPV	*[32]	*[32]	_[32]	*	*[32]	Specification[32]	_	
+9-20	1367-1376	positiver	*[32]	*[32]	_[32]	*	*[32]	Specification[32]	_	
+9-21	1377-1380	Pap	*	Diagnosis or Pathology	_	*	*	Finding	9-19[32_0]|9-22	
+9-22	1381-1385	II-p	*	*	_	*	*	Specification	_	
+9-23	1386-1387	)	_	_	_	_	_	_	_	
+9-24	1388-1392	wird	_	_	_	_	_	_	_	
+9-25	1393-1397	nach	_	_	_	_	_	_	_	
+9-26	1398-1403	einem	_	_	_	_	_	_	_	
+9-27	1404-1408	Jahr	_	_	_	_	_	_	_	
+9-28	1409-1413	eine	_	_	_	_	_	_	_	
+9-29	1414-1423	Kontrolle	*	Diagnostic	_	*	*	Procedure	9-30[33_0]|9-33[36_0]	
+9-30	1424-1427	mit	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+9-31	1428-1437	Zytologie	*[33]|*[34]	*[33]|Diagnostic[34]	_[33]|_[34]	*|*	*[33]|*[34]	Specification[33]|Procedure[34]	_	
+9-32	1438-1441	und	_	_	_	_	_	_	_	
+9-33	1442-1445	HPV	*[35]|\_mit\_[36]	Diagnostic[35]|*[36]	_[35]|_[36]	*|*	*[35]|*[36]	Procedure[35]|Specification[36]	_	
+9-34	1446-1454	Nachweis	*[35]|\_mit\_[36]	Diagnostic[35]|*[36]	_[35]|_[36]	*|*	*[35]|*[36]	Procedure[35]|Specification[36]	_	
+9-35	1455-1464	empfohlen	_	_	_	_	_	_	_	
+9-36	1465-1466	(	_	_	_	_	_	_	_	
+9-37	1467-1468	[	_	_	_	_	_	_	_	
+9-38	1468-1471	REF	_	_	_	_	_	_	_	
+9-39	1471-1472	]	_	_	_	_	_	_	_	
+9-40	1472-1473	,	_	_	_	_	_	_	_	
+9-41	1474-1475	S	_	_	_	_	_	_	_	
+9-42	1475-1478	.17	_	_	_	_	_	_	_	
+9-43	1478-1479	)	_	_	_	_	_	_	_	
+9-44	1479-1480	.	_	_	_	_	_	_	_	
+
+#Text=Wenn CIN 1 für 2 Jahre persistiert, dann ist sowohl die chirurgische Behandlung als auch weitere Beobachtung möglich.
+10-1	1481-1485	Wenn	_	_	_	_	_	_	_	
+10-2	1486-1489	CIN	*	Diagnosis or Pathology	_	*	*	Finding	10-3	
+10-3	1490-1491	1	*	*	_	*	*	Specification	_	
+10-4	1492-1495	für	_	_	_	_	_	_	_	
+10-5	1496-1497	2	_	_	_	_	_	_	_	
+10-6	1498-1503	Jahre	_	_	_	_	_	_	_	
+10-7	1504-1515	persistiert	_	_	_	_	_	_	_	
+10-8	1515-1516	,	_	_	_	_	_	_	_	
+10-9	1517-1521	dann	_	_	_	_	_	_	_	
+10-10	1522-1525	ist	_	_	_	_	_	_	_	
+10-11	1526-1532	sowohl	_	_	_	_	_	_	_	
+10-12	1533-1536	die	_	_	_	_	_	_	_	
+10-13	1537-1549	chirurgische	*	*	_	*	*	Specification	_	
+10-14	1550-1560	Behandlung	*	Therapeutic	_	*	*	Procedure	10-13	
+10-15	1561-1564	als	_	_	_	_	_	_	_	
+10-16	1565-1569	auch	_	_	_	_	_	_	_	
+10-17	1570-1577	weitere	*	*	_	*	*	Specification	_	
+10-18	1578-1589	Beobachtung	*	Diagnostic	_	*	*	Procedure	10-17	
+10-19	1590-1597	möglich	_	_	_	_	_	_	_	
+10-20	1597-1598	.	_	_	_	_	_	_	_	
+
+#Text=Für die Behandlung sind Ablation und Exzision möglich ( [REF], S17).
+11-1	1599-1602	Für	_	_	_	_	_	_	_	
+11-2	1603-1606	die	_	_	_	_	_	_	_	
+11-3	1607-1617	Behandlung	*	Therapeutic	_	*	*	Procedure	_	
+11-4	1618-1622	sind	_	_	_	_	_	_	_	
+11-5	1623-1631	Ablation	*	Therapeutic	_	*	*	Procedure	_	
+11-6	1632-1635	und	_	_	_	_	_	_	_	
+11-7	1636-1644	Exzision	*	Therapeutic	_	*	*	Procedure	_	
+11-8	1645-1652	möglich	_	_	_	_	_	_	_	
+11-9	1653-1654	(	_	_	_	_	_	_	_	
+11-10	1655-1656	[	_	_	_	_	_	_	_	
+11-11	1656-1659	REF	_	_	_	_	_	_	_	
+11-12	1659-1660	]	_	_	_	_	_	_	_	
+11-13	1660-1661	,	_	_	_	_	_	_	_	
+11-14	1662-1665	S17	_	_	_	_	_	_	_	
+11-15	1665-1666	)	_	_	_	_	_	_	_	
+11-16	1666-1667	.	_	_	_	_	_	_	_	
+
+#Text=Bei kolposkopisch komplett beurteilbarer Platten-Zylinderepithelgrenze und vorheriger histopathologischer Evaluierung durch kolposkopisch entnommene Biopsie, die eine glanduläre und invasive Läsion ausgeschlossen hat, sowie fehlender Diskrepanz zwischen zytologischem, kolposkopischem und histologischem Befund sowie Alter jünger als 51 Jahre kann die Laservaporisation eingesetzt werden * (s. 14.1).
+12-1	1668-1671	Bei	_	_	_	_	_	_	_	
+12-2	1672-1685	kolposkopisch	*[37]	*[37]	_[37]	*	*[37]	Specification[37]	_	
+12-3	1686-1694	komplett	*[37]	*[37]	_[37]	*	*[37]	Specification[37]	_	
+12-4	1695-1708	beurteilbarer	*[37]	*[37]	_[37]	*	*[37]	Specification[37]	_	
+12-5	1709-1738	Platten-Zylinderepithelgrenze	*	Other Finding	_	*	*	Finding	12-2[37_0]	
+12-6	1739-1742	und	_	_	_	_	_	_	_	
+12-7	1743-1753	vorheriger	*	*	_	*	*	Specification	_	
+12-8	1754-1773	histopathologischer	*	*	_	*	*	Specification	_	
+12-9	1774-1785	Evaluierung	*	Diagnostic	_	*	*	Procedure	12-8|12-7|12-10[38_0]	
+12-10	1786-1791	durch	*[38]	*[38]	_[38]	*	*[38]	Specification[38]	_	
+12-11	1792-1805	kolposkopisch	*[38]|*[39]	*[38]|*[39]	_[38]|_[39]	*|*	*[38]|*[39]	Specification[38]|Specification[39]	_	
+12-12	1806-1816	entnommene	*[38]|*[39]	*[38]|*[39]	_[38]|_[39]	*|*	*[38]|*[39]	Specification[38]|Specification[39]	_	
+12-13	1817-1824	Biopsie	*[38]|*[40]	*[38]|Diagnostic[40]	_[38]|_[40]	*|*	*[38]|*[40]	Specification[38]|Procedure[40]	12-11[39_40]	
+12-14	1824-1825	,	_	_	_	_	_	_	_	
+12-15	1826-1829	die	_	_	_	_	_	_	_	
+12-16	1830-1834	eine	_	_	_	_	_	_	_	
+12-17	1835-1845	glanduläre	*	*	_	*	*	Specification	_	
+12-18	1846-1849	und	_	_	_	_	_	_	_	
+12-19	1850-1858	invasive	*	*	_	*	*	Specification	_	
+12-20	1859-1865	Läsion	*	Diagnosis or Pathology	_	*	*	Finding	12-17|12-19	
+12-21	1866-1880	ausgeschlossen	_	_	_	_	_	_	_	
+12-22	1881-1884	hat	_	_	_	_	_	_	_	
+12-23	1884-1885	,	_	_	_	_	_	_	_	
+12-24	1886-1891	sowie	_	_	_	_	_	_	_	
+12-25	1892-1901	fehlender	_	_	_	_	_	_	_	
+12-26	1902-1912	Diskrepanz	_	_	_	_	_	_	_	
+12-27	1913-1921	zwischen	_	_	_	_	_	_	_	
+12-28	1922-1935	zytologischem	*	*	_	*	*	Specification	_	
+12-29	1935-1936	,	_	_	_	_	_	_	_	
+12-30	1937-1952	kolposkopischem	*	*	_	*	*	Specification	_	
+12-31	1953-1956	und	_	_	_	_	_	_	_	
+12-32	1957-1971	histologischem	*	*	_	*	*	Specification	_	
+12-33	1972-1978	Befund	*	Other Finding	_	*	*	Finding	12-28|12-30|12-32	
+12-34	1979-1984	sowie	_	_	_	_	_	_	_	
+12-35	1985-1990	Alter	*	Other Finding	_	*	*	Finding	12-36[41_0]	
+12-36	1991-1997	jünger	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+12-37	1998-2001	als	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+12-38	2002-2004	51	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+12-39	2005-2010	Jahre	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+12-40	2011-2015	kann	_	_	_	_	_	_	_	
+12-41	2016-2019	die	_	_	_	_	_	_	_	
+12-42	2020-2037	Laservaporisation	*	Therapeutic	_	*	*	Procedure	_	
+12-43	2038-2048	eingesetzt	_	_	_	_	_	_	_	
+12-44	2049-2055	werden	_	_	_	_	_	_	_	
+12-45	2056-2057	*	_	_	_	_	_	_	_	
+12-46	2058-2059	(	_	_	_	_	_	_	_	
+12-47	2059-2060	s	_	_	_	_	_	_	_	
+12-48	2060-2061	.	_	_	_	_	_	_	_	
+12-49	2062-2066	14.1	_	_	_	_	_	_	_	
+12-50	2066-2067	)	_	_	_	_	_	_	_	
+12-51	2067-2068	.	_	_	_	_	_	_	_	
+
+#Text=Bei inadäquater kolposkopischer Aussage, Verdacht auf endocervikale CIN 2 oder CIN 3 oder Zustand nach früherer Behandlung einer CIN wird die Exzision mit kompletter histopathologischer Evaluierung empfohlen ( [REF], S17).
+13-1	2069-2072	Bei	_	_	_	_	_	_	_	
+13-2	2073-2084	inadäquater	*	*	_	*	*	Specification	_	
+13-3	2085-2100	kolposkopischer	*	*	_	*	*	Specification	_	
+13-4	2101-2108	Aussage	*	Other Finding	_	*	*	Finding	13-3|13-2	
+13-5	2108-2109	,	_	_	_	_	_	_	_	
+13-6	2110-2118	Verdacht	*	Other Finding	_	*	*	Finding	13-7[42_0]|13-12[46_0]	
+13-7	2119-2122	auf	*[42]	*[42]	_[42]	*	*[42]	Specification[42]	_	
+13-8	2123-2136	endocervikale	*[42]|*[43]	*[42]|*[43]	_[42]|_[43]	*|*	*[42]|*[43]	Specification[42]|Specification[43]	_	
+13-9	2137-2140	CIN	*[42]|*[44]	*[42]|Diagnosis or Pathology[44]	_[42]|_[44]	*|*	*[42]|*[44]	Specification[42]|Finding[44]	13-10[0_44]|13-8[43_44]	
+13-10	2141-2142	2	*	*	_	*	*	Specification	_	
+13-11	2143-2147	oder	_	_	_	_	_	_	_	
+13-12	2148-2151	CIN	*[45]|\_auf\_[46]	Diagnosis or Pathology[45]|*[46]	_[45]|_[46]	*|*	*[45]|*[46]	Finding[45]|Specification[46]	13-13[0_45]|13-8[43_45]	
+13-13	2152-2153	3	*	*	_	*	*	Specification	_	
+13-14	2154-2158	oder	_	_	_	_	_	_	_	
+13-15	2159-2166	Zustand	*	Other Finding	_	*	*	Finding	13-16[47_0]	
+13-16	2167-2171	nach	*[47]	*[47]	_[47]	*	*[47]	Specification[47]	_	
+13-17	2172-2180	früherer	*[47]|*[48]	*[47]|*[48]	_[47]|_[48]	*|*	*[47]|*[48]	Specification[47]|Specification[48]	_	
+13-18	2181-2191	Behandlung	*[47]|*[49]	*[47]|Therapeutic[49]	_[47]|_[49]	*|*	*[47]|*[49]	Specification[47]|Procedure[49]	13-19[50_49]|13-17[48_49]	
+13-19	2192-2197	einer	*[50]	*[50]	_[50]	*	*[50]	Specification[50]	_	
+13-20	2198-2201	CIN	*[50]|*[51]	*[50]|Diagnosis or Pathology[51]	_[50]|_[51]	*|*	*[50]|*[51]	Specification[50]|Finding[51]	_	
+13-21	2202-2206	wird	_	_	_	_	_	_	_	
+13-22	2207-2210	die	_	_	_	_	_	_	_	
+13-23	2211-2219	Exzision	*	Therapeutic	_	*	*	Procedure	_	
+13-24	2220-2223	mit	_	_	_	_	_	_	_	
+13-25	2224-2234	kompletter	*	*	_	*	*	Specification	_	
+13-26	2235-2254	histopathologischer	*	*	_	*	*	Specification	_	
+13-27	2255-2266	Evaluierung	*	Diagnostic	_	*	*	Procedure	13-26|13-25	
+13-28	2267-2276	empfohlen	_	_	_	_	_	_	_	
+13-29	2277-2278	(	_	_	_	_	_	_	_	
+13-30	2279-2280	[	_	_	_	_	_	_	_	
+13-31	2280-2283	REF	_	_	_	_	_	_	_	
+13-32	2283-2284	]	_	_	_	_	_	_	_	
+13-33	2284-2285	,	_	_	_	_	_	_	_	
+13-34	2286-2289	S17	_	_	_	_	_	_	_	
+13-35	2289-2290	)	_	_	_	_	_	_	_	
+13-36	2290-2291	.	_	_	_	_	_	_	_	
+
+#Text=Frauen mit Nachweis von CIN 1 in der ECC haben ein niedriges Risiko für CIN 2 und CIN 3 ([372], S17).
+14-1	2292-2298	Frauen	*	Other Finding	_	*	*	Finding	_	
+14-2	2299-2302	mit	_	_	_	_	_	_	_	
+14-3	2303-2311	Nachweis	*	Diagnosis or Pathology	_	*	*	Finding	14-7[54_0]|14-4[52_0]	
+14-4	2312-2315	von	*[52]	*[52]	_[52]	*	*[52]	Specification[52]	_	
+14-5	2316-2319	CIN	*[52]|*[53]	*[52]|Diagnosis or Pathology[53]	_[52]|_[53]	*|*	*[52]|*[53]	Specification[52]|Finding[53]	14-6[0_53]	
+14-6	2320-2321	1	*	*	_	*	*	Specification	_	
+14-7	2322-2324	in	*[54]	*[54]	_[54]	*	*[54]	Specification[54]	_	
+14-8	2325-2328	der	*[54]	*[54]	_[54]	*	*[54]	Specification[54]	_	
+14-9	2329-2332	ECC	*[54]|*[55]	*[54]|Diagnostic[55]	_[54]|_[55]	*|*	*[54]|*[55]	Specification[54]|Procedure[55]	_	
+14-10	2333-2338	haben	_	_	_	_	_	_	_	
+14-11	2339-2342	ein	_	_	_	_	_	_	_	
+14-12	2343-2352	niedriges	*	*	_	*	*	Specification	_	
+14-13	2353-2359	Risiko	*	Other Finding	_	*	*	Finding	14-12|14-14[56_0]|14-18[59_0]	
+14-14	2360-2363	für	*[56]	*[56]	_[56]	*	*[56]	Specification[56]	_	
+14-15	2364-2367	CIN	*[56]|*[57]	*[56]|Diagnosis or Pathology[57]	_[56]|_[57]	*|*	*[56]|*[57]	Specification[56]|Finding[57]	14-16[0_57]	
+14-16	2368-2369	2	*	*	_	*	*	Specification	_	
+14-17	2370-2373	und	_	_	_	_	_	_	_	
+14-18	2374-2377	CIN	*[58]|\_für\_[59]	Diagnosis or Pathology[58]|*[59]	_[58]|_[59]	*|*	*[58]|*[59]	Finding[58]|Specification[59]	14-19[0_58]	
+14-19	2378-2379	3	*	*	_	*	*	Specification	_	
+14-20	2380-2381	(	_	_	_	_	_	_	_	
+14-21	2381-2382	[	_	_	_	_	_	_	_	
+14-22	2382-2385	372	_	_	_	_	_	_	_	
+14-23	2385-2386	]	_	_	_	_	_	_	_	
+14-24	2386-2387	,	_	_	_	_	_	_	_	
+14-25	2388-2391	S17	_	_	_	_	_	_	_	
+14-26	2391-2392	)	_	_	_	_	_	_	_	
+14-27	2392-2393	.	_	_	_	_	_	_	_	
+
+#Text=Wird eine CIN 1 histopathologisch in einer endozervikalen Biopsie nachgewiesen bei leichtgradigen zytologischen Veränderungen mit oder ohne HPV Nachweis in der Vorgeschichte, ist die Beobachtung mit einer Kontroll-Evaluierung der Endozervix in 12 Monaten möglich.
+15-1	2394-2398	Wird	_	_	_	_	_	_	_	
+15-2	2399-2403	eine	_	_	_	_	_	_	_	
+15-3	2404-2407	CIN	*	Diagnosis or Pathology	_	*	*	Finding	15-4	
+15-4	2408-2409	1	*	*	_	*	*	Specification	_	
+15-5	2410-2427	histopathologisch	_	_	_	_	_	_	_	
+15-6	2428-2430	in	_	_	_	_	_	_	_	
+15-7	2431-2436	einer	_	_	_	_	_	_	_	
+15-8	2437-2451	endozervikalen	*	*	_	*	*	Specification	_	
+15-9	2452-2459	Biopsie	*	Diagnostic	_	*	*	Procedure	15-8	
+15-10	2460-2472	nachgewiesen	_	_	_	_	_	_	_	
+15-11	2473-2476	bei	_	_	_	_	_	_	_	
+15-12	2477-2491	leichtgradigen	*	*	_	*	*	Specification	_	
+15-13	2492-2505	zytologischen	*	*	_	*	*	Specification	_	
+15-14	2506-2519	Veränderungen	*	Other Finding	_	*	*	Finding	15-13|15-12|15-15[60_0]	
+15-15	2520-2523	mit	*[60]	*[60]	_[60]	*	*[60]	Specification[60]	_	
+15-16	2524-2528	oder	*[60]	*[60]	_[60]	*	*[60]	Specification[60]	_	
+15-17	2529-2533	ohne	*[60]	*[60]	_[60]	*	*[60]	Specification[60]	_	
+15-18	2534-2537	HPV	*[60]|*[61]	*[60]|Diagnosis or Pathology[61]	_[60]|_[61]	*|*	*[60]|*[61]	Specification[60]|Finding[61]	_	
+15-19	2538-2546	Nachweis	*[60]|*[61]	*[60]|Diagnosis or Pathology[61]	_[60]|_[61]	*|*	*[60]|*[61]	Specification[60]|Finding[61]	_	
+15-20	2547-2549	in	_	_	_	_	_	_	_	
+15-21	2550-2553	der	_	_	_	_	_	_	_	
+15-22	2554-2567	Vorgeschichte	_	_	_	_	_	_	_	
+15-23	2567-2568	,	_	_	_	_	_	_	_	
+15-24	2569-2572	ist	_	_	_	_	_	_	_	
+15-25	2573-2576	die	_	_	_	_	_	_	_	
+15-26	2577-2588	Beobachtung	*	Diagnostic	_	*	*	Procedure	15-27[62_0]	
+15-27	2589-2592	mit	*[62]	*[62]	_[62]	*	*[62]	Specification[62]	_	
+15-28	2593-2598	einer	*[62]	*[62]	_[62]	*	*[62]	Specification[62]	_	
+15-29	2599-2619	Kontroll-Evaluierung	*[62]|*[63]	*[62]|Diagnostic[63]	_[62]|_[63]	*|*	*[62]|*[63]	Specification[62]|Procedure[63]	15-30[64_63]	
+15-30	2620-2623	der	*[64]	*[64]	_[64]	*	*[64]	Specification[64]	_	
+15-31	2624-2634	Endozervix	*[64]	*[64]	_[64]	*	*[64]	Specification[64]	_	
+15-32	2635-2637	in	_	_	_	_	_	_	_	
+15-33	2638-2640	12	_	_	_	_	_	_	_	
+15-34	2641-2648	Monaten	_	_	_	_	_	_	_	
+15-35	2649-2656	möglich	_	_	_	_	_	_	_	
+15-36	2656-2657	.	_	_	_	_	_	_	_	
+
+#Text=*
+16-1	2658-2659	*	_	_	_	_	_	_	_	
+
+#Text=Die endozervikale Kürettage mit unauffälligem histopathologischen Ergebnis schließt eine CIN 3+ nicht mit letzter Sicherheit aus.
+17-1	2661-2664	Die	_	_	_	_	_	_	_	
+17-2	2665-2678	endozervikale	*	*	_	*	*	Specification	_	
+17-3	2679-2688	Kürettage	*	Diagnostic	_	*	*	Procedure	17-2	
+17-4	2689-2692	mit	_	_	_	_	_	_	_	
+17-5	2693-2706	unauffälligem	*	*	_	*	*	Specification	_	
+17-6	2707-2726	histopathologischen	*	*	_	*	*	Specification	_	
+17-7	2727-2735	Ergebnis	*	Other Finding	_	*	*	Finding	17-6|17-5	
+17-8	2736-2744	schließt	_	_	_	_	_	_	_	
+17-9	2745-2749	eine	_	_	_	_	_	_	_	
+17-10	2750-2753	CIN	*	Diagnosis or Pathology	_	*	*	Finding	17-11[65_0]	
+17-11	2754-2755	3	*[65]	*[65]	_[65]	*	*[65]	Specification[65]	_	
+17-12	2755-2756	+	*[65]	*[65]	_[65]	*	*[65]	Specification[65]	_	
+17-13	2757-2762	nicht	_	_	_	_	_	_	_	
+17-14	2763-2766	mit	_	_	_	_	_	_	_	
+17-15	2767-2774	letzter	_	_	_	_	_	_	_	
+17-16	2775-2785	Sicherheit	_	_	_	_	_	_	_	
+17-17	2786-2789	aus	_	_	_	_	_	_	_	
+17-18	2789-2790	.	_	_	_	_	_	_	_	
+
+#Text=Je älter die Patientin, umso größer ist das Risiko für das Vorliegen einer endozervikalen schwergradigen Veränderung und umso großzügiger sollte man die Indikation zu einem exzidierenden Verfahren stellen.
+18-1	2791-2793	Je	_	_	_	_	_	_	_	
+18-2	2794-2799	älter	_	_	_	_	_	_	_	
+18-3	2800-2803	die	_	_	_	_	_	_	_	
+18-4	2804-2813	Patientin	_	_	_	_	_	_	_	
+18-5	2813-2814	,	_	_	_	_	_	_	_	
+18-6	2815-2819	umso	_	_	_	_	_	_	_	
+18-7	2820-2826	größer	_	_	_	_	_	_	_	
+18-8	2827-2830	ist	_	_	_	_	_	_	_	
+18-9	2831-2834	das	_	_	_	_	_	_	_	
+18-10	2835-2841	Risiko	*	Other Finding	_	*	*	Finding	18-11[66_0]	
+18-11	2842-2845	für	*[66]	*[66]	_[66]	*	*[66]	Specification[66]	_	
+18-12	2846-2849	das	*[66]	*[66]	_[66]	*	*[66]	Specification[66]	_	
+18-13	2850-2859	Vorliegen	*[66]|*[67]	*[66]|Diagnosis or Pathology[67]	_[66]|_[67]	*|*	*[66]|*[67]	Specification[66]|Finding[67]	18-14[68_67]	
+18-14	2860-2865	einer	*[66]|*[68]	*[66]|*[68]	_[66]|_[68]	*|*	*[66]|*[68]	Specification[66]|Specification[68]	_	
+18-15	2866-2880	endozervikalen	*[66]|*[68]|*[69]	*[66]|*[68]|*[69]	_[66]|_[68]|_[69]	*|*|*	*[66]|*[68]|*[69]	Specification[66]|Specification[68]|Specification[69]	_	
+18-16	2881-2895	schwergradigen	*[66]|*[68]|*[70]	*[66]|*[68]|*[70]	_[66]|_[68]|_[70]	*|*|*	*[66]|*[68]|*[70]	Specification[66]|Specification[68]|Specification[70]	_	
+18-17	2896-2907	Veränderung	*[66]|*[68]|*[71]	*[66]|*[68]|Diagnosis or Pathology[71]	_[66]|_[68]|_[71]	*|*|*	*[66]|*[68]|*[71]	Specification[66]|Specification[68]|Finding[71]	18-16[70_71]|18-15[69_71]	
+18-18	2908-2911	und	_	_	_	_	_	_	_	
+18-19	2912-2916	umso	_	_	_	_	_	_	_	
+18-20	2917-2928	großzügiger	_	_	_	_	_	_	_	
+18-21	2929-2935	sollte	_	_	_	_	_	_	_	
+18-22	2936-2939	man	_	_	_	_	_	_	_	
+18-23	2940-2943	die	_	_	_	_	_	_	_	
+18-24	2944-2954	Indikation	_	_	_	_	_	_	_	
+18-25	2955-2957	zu	_	_	_	_	_	_	_	
+18-26	2958-2963	einem	_	_	_	_	_	_	_	
+18-27	2964-2977	exzidierenden	*	*	_	*	*	Specification	_	
+18-28	2978-2987	Verfahren	*	Therapeutic	_	*	*	Procedure	18-27	
+18-29	2988-2995	stellen	_	_	_	_	_	_	_	
+18-30	2995-2996	.	_	_	_	_	_	_	_	
+
+#Text=Falls eine rein ektozervikal liegende CIN I behandelt werden soll (z.B. auf Wunsch der Patientin) sind ablative Verfahren wie die Laservaporisation zu bevorzugen.
+19-1	2997-3002	Falls	_	_	_	_	_	_	_	
+19-2	3003-3007	eine	_	_	_	_	_	_	_	
+19-3	3008-3012	rein	*[72]	*[72]	_[72]	*	*[72]	Specification[72]	_	
+19-4	3013-3025	ektozervikal	*[72]	*[72]	_[72]	*	*[72]	Specification[72]	_	
+19-5	3026-3034	liegende	*[72]	*[72]	_[72]	*	*[72]	Specification[72]	_	
+19-6	3035-3038	CIN	*	Diagnosis or Pathology	_	*	*	Finding	19-7|19-3[72_0]	
+19-7	3039-3040	I	*	*	_	*	*	Specification	_	
+19-8	3041-3050	behandelt	_	_	_	_	_	_	_	
+19-9	3051-3057	werden	_	_	_	_	_	_	_	
+19-10	3058-3062	soll	_	_	_	_	_	_	_	
+19-11	3063-3064	(	_	_	_	_	_	_	_	
+19-12	3064-3067	z.B	_	_	_	_	_	_	_	
+19-13	3067-3068	.	_	_	_	_	_	_	_	
+19-14	3069-3072	auf	_	_	_	_	_	_	_	
+19-15	3073-3079	Wunsch	_	_	_	_	_	_	_	
+19-16	3080-3083	der	_	_	_	_	_	_	_	
+19-17	3084-3093	Patientin	_	_	_	_	_	_	_	
+19-18	3093-3094	)	_	_	_	_	_	_	_	
+19-19	3095-3099	sind	_	_	_	_	_	_	_	
+19-20	3100-3108	ablative	*	*	_	*	*	Specification	_	
+19-21	3109-3118	Verfahren	*	Therapeutic	_	*	*	Procedure	19-20	
+19-22	3119-3122	wie	_	_	_	_	_	_	_	
+19-23	3123-3126	die	_	_	_	_	_	_	_	
+19-24	3127-3144	Laservaporisation	*	Therapeutic	_	*	*	Procedure	_	
+19-25	3145-3147	zu	_	_	_	_	_	_	_	
+19-26	3148-3158	bevorzugen	_	_	_	_	_	_	_	
+19-27	3158-3159	.	_	_	_	_	_	_	_	
+
+#Text=Bei einer Ausdehnung in den Endozervikalkanal ist eine histopathologische Evaluierung des endozervikalen Anteiles der Läsion empfohlen ( [REF], S. 31; [REF], S. 18).
+20-1	3160-3163	Bei	_	_	_	_	_	_	_	
+20-2	3164-3169	einer	_	_	_	_	_	_	_	
+20-3	3170-3180	Ausdehnung	*	Other Finding	_	*	*	Finding	20-4[73_0]	
+20-4	3181-3183	in	*[73]	*[73]	_[73]	*	*[73]	Specification[73]	_	
+20-5	3184-3187	den	*[73]	*[73]	_[73]	*	*[73]	Specification[73]	_	
+20-6	3188-3205	Endozervikalkanal	*[73]	*[73]	_[73]	*	*[73]	Specification[73]	_	
+20-7	3206-3209	ist	_	_	_	_	_	_	_	
+20-8	3210-3214	eine	_	_	_	_	_	_	_	
+20-9	3215-3233	histopathologische	*	*	_	*	*	Specification	_	
+20-10	3234-3245	Evaluierung	*	Diagnostic	_	*	*	Procedure	20-9|20-11[74_0]	
+20-11	3246-3249	des	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+20-12	3250-3264	endozervikalen	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+20-13	3265-3273	Anteiles	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+20-14	3274-3277	der	*[74]	*[74]	_[74]	*	*[74]	Specification[74]	_	
+20-15	3278-3284	Läsion	*[74]|*[75]	*[74]|Diagnosis or Pathology[75]	_[74]|_[75]	*|*	*[74]|*[75]	Specification[74]|Finding[75]	_	
+20-16	3285-3294	empfohlen	_	_	_	_	_	_	_	
+20-17	3295-3296	(	_	_	_	_	_	_	_	
+20-18	3297-3298	[	_	_	_	_	_	_	_	
+20-19	3298-3301	REF	_	_	_	_	_	_	_	
+20-20	3301-3302	]	_	_	_	_	_	_	_	
+20-21	3302-3303	,	_	_	_	_	_	_	_	
+20-22	3304-3305	S	_	_	_	_	_	_	_	
+20-23	3305-3306	.	_	_	_	_	_	_	_	
+20-24	3307-3309	31	_	_	_	_	_	_	_	
+20-25	3309-3310	;	_	_	_	_	_	_	_	
+20-26	3311-3312	[	_	_	_	_	_	_	_	
+20-27	3312-3315	REF	_	_	_	_	_	_	_	
+20-28	3315-3316	]	_	_	_	_	_	_	_	
+20-29	3316-3317	,	_	_	_	_	_	_	_	
+20-30	3318-3319	S	_	_	_	_	_	_	_	
+20-31	3319-3320	.	_	_	_	_	_	_	_	
+20-32	3321-3323	18	_	_	_	_	_	_	_	
+20-33	3323-3324	)	_	_	_	_	_	_	_	
+20-34	3324-3325	.	_	_	_	_	_	_	_	
+
+#Text=Eine Hysterektomie als primäre Therapie sollte bei histologisch nachgewiesener CIN 1 ohne Zusatzindikation nicht durchgeführt werden.
+21-1	3326-3330	Eine	_	_	_	_	_	_	_	
+21-2	3331-3344	Hysterektomie	*	Therapeutic	_	*	*	Procedure	_	
+21-3	3345-3348	als	_	_	_	_	_	_	_	
+21-4	3349-3356	primäre	*	*	_	*	*	Specification	_	
+21-5	3357-3365	Therapie	*	Therapeutic	_	*	*	Procedure	21-4	
+21-6	3366-3372	sollte	_	_	_	_	_	_	_	
+21-7	3373-3376	bei	_	_	_	_	_	_	_	
+21-8	3377-3389	histologisch	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+21-9	3390-3404	nachgewiesener	*[76]	*[76]	_[76]	*	*[76]	Specification[76]	_	
+21-10	3405-3408	CIN	*	Diagnosis or Pathology	_	*	*	Finding	21-8[76_0]|21-11	
+21-11	3409-3410	1	*	*	_	*	*	Specification	_	
+21-12	3411-3415	ohne	_	_	_	_	_	_	_	
+21-13	3416-3432	Zusatzindikation	_	_	_	_	_	_	_	
+21-14	3433-3438	nicht	_	_	_	_	_	_	_	
+21-15	3439-3451	durchgeführt	_	_	_	_	_	_	_	
+21-16	3452-3458	werden	_	_	_	_	_	_	_	
+21-17	3458-3459	.	_	_	_	_	_	_	_	
+
+#Text=Vor Hysterektomie bei V.a.
+22-1	3460-3463	Vor	_	_	_	_	_	_	_	
+22-2	3464-3477	Hysterektomie	*	Therapeutic	_	*	*	Procedure	_	
+22-3	3478-3481	bei	_	_	_	_	_	_	_	
+22-4	3482-3485	V.a	*[77]	Other Finding[77]	_[77]	*	*[77]	Finding[77]	_	
+22-5	3485-3486	.	*[77]	Other Finding[77]	_[77]	*	*[77]	Finding[77]	_	
+
+#Text=CIN ist eine kolposkopische Untersuchung mit Biopsie empfohlen ( [REF], S.62).
+23-1	3487-3490	CIN	*	Diagnosis or Pathology	_	*	*	Finding	_	
+23-2	3491-3494	ist	_	_	_	_	_	_	_	
+23-3	3495-3499	eine	_	_	_	_	_	_	_	
+23-4	3500-3514	kolposkopische	*	*	_	*	*	Specification	_	
+23-5	3515-3527	Untersuchung	*	Diagnostic	_	*	*	Procedure	23-4|23-6[78_0]	
+23-6	3528-3531	mit	*[78]	*[78]	_[78]	*	*[78]	Specification[78]	_	
+23-7	3532-3539	Biopsie	*[78]|*[79]	*[78]|Diagnostic[79]	_[78]|_[79]	*|*	*[78]|*[79]	Specification[78]|Procedure[79]	_	
+23-8	3540-3549	empfohlen	_	_	_	_	_	_	_	
+23-9	3550-3551	(	_	_	_	_	_	_	_	
+23-10	3552-3553	[	_	_	_	_	_	_	_	
+23-11	3553-3556	REF	_	_	_	_	_	_	_	
+23-12	3556-3557	]	_	_	_	_	_	_	_	
+23-13	3557-3558	,	_	_	_	_	_	_	_	
+23-14	3559-3560	S	_	_	_	_	_	_	_	
+23-15	3560-3563	.62	_	_	_	_	_	_	_	
+23-16	3563-3564	)	_	_	_	_	_	_	_	
+23-17	3564-3565	.	_	_	_	_	_	_	_	
+
+#Text=* Kommt eine exspektative Verlaufsbeobachtung oder ein rein ablatives Therapieverfahren zum Einsatz, wird empfohlen, dass eine kolposkopische Expertise mit einem positiven Vorhersagewert für CIN 2 oder CIN 3 von mindestens 65% besteht 483.
+24-1	3566-3567	*	_	_	_	_	_	_	_	
+24-2	3568-3573	Kommt	_	_	_	_	_	_	_	
+24-3	3574-3578	eine	_	_	_	_	_	_	_	
+24-4	3579-3591	exspektative	*	*	_	*	*	Specification	_	
+24-5	3592-3611	Verlaufsbeobachtung	*	Diagnostic	_	*	*	Procedure	24-4	
+24-6	3612-3616	oder	_	_	_	_	_	_	_	
+24-7	3617-3620	ein	_	_	_	_	_	_	_	
+24-8	3621-3625	rein	*[80]	*[80]	_[80]	*	*[80]	Specification[80]	_	
+24-9	3626-3635	ablatives	*[80]	*[80]	_[80]	*	*[80]	Specification[80]	_	
+24-10	3636-3653	Therapieverfahren	*	Therapeutic	_	*	*	Procedure	24-8[80_0]	
+24-11	3654-3657	zum	_	_	_	_	_	_	_	
+24-12	3658-3665	Einsatz	_	_	_	_	_	_	_	
+24-13	3665-3666	,	_	_	_	_	_	_	_	
+24-14	3667-3671	wird	_	_	_	_	_	_	_	
+24-15	3672-3681	empfohlen	_	_	_	_	_	_	_	
+24-16	3681-3682	,	_	_	_	_	_	_	_	
+24-17	3683-3687	dass	_	_	_	_	_	_	_	
+24-18	3688-3692	eine	_	_	_	_	_	_	_	
+24-19	3693-3707	kolposkopische	_	_	_	_	_	_	_	
+24-20	3708-3717	Expertise	_	_	_	_	_	_	_	
+24-21	3718-3721	mit	_	_	_	_	_	_	_	
+24-22	3722-3727	einem	_	_	_	_	_	_	_	
+24-23	3728-3737	positiven	_	_	_	_	_	_	_	
+24-24	3738-3752	Vorhersagewert	_	_	_	_	_	_	_	
+24-25	3753-3756	für	_	_	_	_	_	_	_	
+24-26	3757-3760	CIN	*	Diagnosis or Pathology	_	*	*	Finding	24-27	
+24-27	3761-3762	2	*	*	_	*	*	Specification	_	
+24-28	3763-3767	oder	_	_	_	_	_	_	_	
+24-29	3768-3771	CIN	*	Diagnosis or Pathology	_	*	*	Finding	24-30	
+24-30	3772-3773	3	*	*	_	*	*	Specification	_	
+24-31	3774-3777	von	_	_	_	_	_	_	_	
+24-32	3778-3788	mindestens	_	_	_	_	_	_	_	
+24-33	3789-3792	65%	_	_	_	_	_	_	_	
+24-34	3793-3800	besteht	_	_	_	_	_	_	_	
+24-35	3801-3804	483	_	_	_	_	_	_	_	
+24-36	3804-3805	.	_	_	_	_	_	_	_	
+
+#Text=Colposcopy and programme management Guidelines for the NHS Cervical Screening Programme.
+25-1	3806-3816	Colposcopy	*	Diagnostic	_	*	*	Procedure	_	
+25-2	3817-3820	and	_	_	_	_	_	_	_	
+25-3	3821-3830	programme	_	_	_	_	_	_	_	
+25-4	3831-3841	management	_	_	_	_	_	_	_	
+25-5	3842-3852	Guidelines	_	_	_	_	_	_	_	
+25-6	3853-3856	for	_	_	_	_	_	_	_	
+25-7	3857-3860	the	_	_	_	_	_	_	_	
+25-8	3861-3864	NHS	_	_	_	_	_	_	_	
+25-9	3865-3873	Cervical	*	*	_	*	*	Specification	_	
+25-10	3874-3883	Screening	*	Diagnostic	_	*	*	Procedure	25-9	
+25-11	3884-3893	Programme	_	_	_	_	_	_	_	
+25-12	3893-3894	.	_	_	_	_	_	_	_	
+
+#Text=2010 [cited 2016 15.01.2016]; 2:[NHSCSP Publication No 20].
+26-1	3895-3899	2010	_	_	_	_	_	_	_	
+26-2	3900-3901	[	_	_	_	_	_	_	_	
+26-3	3901-3906	cited	_	_	_	_	_	_	_	
+26-4	3907-3911	2016	_	_	_	_	_	_	_	
+26-5	3912-3922	15.01.2016	_	_	_	_	_	_	_	
+26-6	3922-3923	]	_	_	_	_	_	_	_	
+26-7	3923-3924	;	_	_	_	_	_	_	_	
+26-8	3925-3926	2	_	_	_	_	_	_	_	
+26-9	3926-3927	:	_	_	_	_	_	_	_	
+26-10	3927-3928	[	_	_	_	_	_	_	_	
+26-11	3928-3934	NHSCSP	_	_	_	_	_	_	_	
+26-12	3935-3946	Publication	_	_	_	_	_	_	_	
+26-13	3947-3949	No	_	_	_	_	_	_	_	
+26-14	3950-3952	20	_	_	_	_	_	_	_	
+26-15	3952-3953	]	_	_	_	_	_	_	_	
+26-16	3953-3954	.	_	_	_	_	_	_	_	
+
+#Text=Abgerufen von:
+27-1	3955-3964	Abgerufen	_	_	_	_	_	_	_	
+27-2	3965-3968	von	_	_	_	_	_	_	_	
+27-3	3968-3969	:	_	_	_	_	_	_	_	
+
+#Text=[URL]
+28-1	3970-3971	[	_	_	_	_	_	_	_	
+28-2	3971-3974	URL	_	_	_	_	_	_	_	
+28-3	3974-3975	]	_	_	_	_	_	_	_	

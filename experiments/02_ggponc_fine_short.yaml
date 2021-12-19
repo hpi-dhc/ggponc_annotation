@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - ggponc_base_config
+
+name: 02_ggponc_fine_short
+
+train_dataset : ../data/annotations/huggingface/fine/short/train_fine_short.json
+dev_dataset : ../data/annotations/huggingface/fine/short/dev_fine_short.json
+test_dataset : ../data/annotations/huggingface/fine/short/test_fine_short.json
+
+task: ['Other_Finding', 'Diagnosis_or_Pathology', 'Therapeutic', 'Diagnostic', 'Nutrient_or_Body_Substance', 'External_Substance', 'Clinical_Drug' ]  
+
+weight_decay: 0.0 
+learning_rate: 0.00001
+label_smoothing_factor: 0.05

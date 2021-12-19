@@ -1,0 +1,76 @@
+#Text=In die „RAPID“-Studie des britischen „National Cancer Research Institute“(NCRI) wurden Patienten im Stadium IA/IIA eines klassischen Hodgkin Lymphoms (bei Diagnosestellung lag bei ca. 70% der Patienten nach der GHSG-Risikostratifizierung ein frühes Stadium vor) bei Vorliegen eines negativen PET/CTs nach drei Zyklen ABVD entweder in einen Nachbeobachtungsarm oder in einen Therapiearm mit konsolidierender Strahlentherapie mit 30 Gy IF-RT randomisiert.
+6-1	810-812	In	_	_	_	_	_	_	_	
+6-2	813-816	die	_	_	_	_	_	_	_	
+6-3	817-818	„	_	_	_	_	_	_	_	
+6-4	818-823	RAPID	_	_	_	_	_	_	_	
+6-5	823-824	“	_	_	_	_	_	_	_	
+6-6	824-825	-	_	_	_	_	_	_	_	
+6-7	825-831	Studie	_	_	_	_	_	_	_	
+6-8	832-835	des	_	_	_	_	_	_	_	
+6-9	836-846	britischen	_	_	_	_	_	_	_	
+6-10	847-848	„	_	_	_	_	_	_	_	
+6-11	848-856	National	_	_	_	_	_	_	_	
+6-12	857-863	Cancer	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-13	864-872	Research	_	_	_	_	_	_	_	
+6-14	873-882	Institute	_	_	_	_	_	_	_	
+6-15	882-883	“	_	_	_	_	_	_	_	
+6-16	883-884	(	_	_	_	_	_	_	_	
+6-17	884-888	NCRI	_	_	_	_	_	_	_	
+6-18	888-889	)	_	_	_	_	_	_	_	
+6-19	890-896	wurden	_	_	_	_	_	_	_	
+6-20	897-906	Patienten	_	_	_	_	_	_	_	
+6-21	907-909	im	_	_	_	_	_	_	_	
+6-22	910-917	Stadium	*[14]	Diagnosis or Pathology[14]	_[14]	*	*[14]	Finding[14]	6-26[15_14]	
+6-23	918-920	IA	*[14]	Diagnosis or Pathology[14]	_[14]	*	*[14]	Finding[14]	_	
+6-24	920-921	/	_	_	_	_	_	_	_	
+6-25	921-924	IIA	Stadium\_	Diagnosis or Pathology		6-22[14]	*	Finding	6-26[15_0]	
+6-26	925-930	eines	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+6-27	931-942	klassischen	*[15]|*[16]	*[15]|*[16]	_[15]|_[16]	*|*	*[15]|*[16]	Specification[15]|Specification[16]	_	
+6-28	943-950	Hodgkin	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
+6-29	951-959	Lymphoms	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
+6-30	960-961	(	_	_	_	_	_	_	_	
+6-31	961-964	bei	_	_	_	_	_	_	_	
+6-32	965-981	Diagnosestellung	*	Diagnostic	_	*	*	Procedure	_	
+6-33	982-985	lag	_	_	_	_	_	_	_	
+6-34	986-989	bei	_	_	_	_	_	_	_	
+6-35	990-992	ca	_	_	_	_	_	_	_	
+6-36	992-993	.	_	_	_	_	_	_	_	
+6-37	994-997	70%	_	_	_	_	_	_	_	
+6-38	998-1001	der	_	_	_	_	_	_	_	
+6-39	1002-1011	Patienten	_	_	_	_	_	_	_	
+6-40	1012-1016	nach	_	_	_	_	_	_	_	
+6-41	1017-1020	der	_	_	_	_	_	_	_	
+6-42	1021-1047	GHSG-Risikostratifizierung	*	Diagnostic	_	*	*	Procedure	_	
+6-43	1048-1051	ein	_	_	_	_	_	_	_	
+6-44	1052-1058	frühes	*	*	_	*	*	Specification	_	
+6-45	1059-1066	Stadium	*	Diagnosis or Pathology	_	*	*	Finding	6-44	
+6-46	1067-1070	vor	_	_	_	_	_	_	_	
+6-47	1070-1071	)	_	_	_	_	_	_	_	
+6-48	1072-1075	bei	_	_	_	_	_	_	_	
+6-49	1076-1085	Vorliegen	*	Other Finding	_	*	*	Finding	6-50[18_0]	
+6-50	1086-1091	eines	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+6-51	1092-1101	negativen	*[18]|*[19]	*[18]|*[19]	_[18]|_[19]	*|*	*[18]|*[19]	Specification[18]|Specification[19]	_	
+6-52	1102-1105	PET	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	6-51[19_20]|6-55[21_20]	
+6-53	1105-1106	/	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	_	
+6-54	1106-1109	CTs	*[18]|*[20]	*[18]|Other Finding[20]	_[18]|_[20]	*|*	*[18]|*[20]	Specification[18]|Finding[20]	_	
+6-55	1110-1114	nach	*[18]|*[21]	*[18]|*[21]	_[18]|_[21]	*|*	*[18]|*[21]	Specification[18]|Specification[21]	_	
+6-56	1115-1119	drei	*[18]|*[21]|*[22]	*[18]|*[21]|*[22]	_[18]|_[21]|_[22]	*|*|*	*[18]|*[21]|*[22]	Specification[18]|Specification[21]|Specification[22]	_	
+6-57	1120-1126	Zyklen	*[18]|*[21]|*[22]	*[18]|*[21]|*[22]	_[18]|_[21]|_[22]	*|*|*	*[18]|*[21]|*[22]	Specification[18]|Specification[21]|Specification[22]	_	
+6-58	1127-1131	ABVD	*[18]|*[21]|*[23]	*[18]|*[21]|Therapeutic[23]	_[18]|_[21]|_[23]	*|*|*	*[18]|*[21]|*[23]	Specification[18]|Specification[21]|Procedure[23]	6-56[22_23]	
+6-59	1132-1140	entweder	_	_	_	_	_	_	_	
+6-60	1141-1143	in	_	_	_	_	_	_	_	
+6-61	1144-1149	einen	_	_	_	_	_	_	_	
+6-62	1150-1169	Nachbeobachtungsarm	_	_	_	_	_	_	_	
+6-63	1170-1174	oder	_	_	_	_	_	_	_	
+6-64	1175-1177	in	_	_	_	_	_	_	_	
+6-65	1178-1183	einen	_	_	_	_	_	_	_	
+6-66	1184-1195	Therapiearm	*	Therapeutic	_	*	*	Procedure	_	
+6-67	1196-1199	mit	_	_	_	_	_	_	_	
+6-68	1200-1216	konsolidierender	*	*	_	*	*	Specification	_	
+6-69	1217-1233	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	6-68|6-70[24_0]	
+6-70	1234-1237	mit	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+6-71	1238-1240	30	*[24]|*[25]	*[24]|*[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Specification[25]	_	
+6-72	1241-1243	Gy	*[24]|*[25]	*[24]|*[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Specification[25]	_	
+6-73	1244-1249	IF-RT	*[24]|*[26]	*[24]|Therapeutic[26]	_[24]|_[26]	*|*	*[24]|*[26]	Specification[24]|Procedure[26]	6-71[25_26]	
+6-74	1250-1262	randomisiert	_	_	_	_	_	_	_	
+6-75	1262-1263	.	_	_	_	_	_	_	_	

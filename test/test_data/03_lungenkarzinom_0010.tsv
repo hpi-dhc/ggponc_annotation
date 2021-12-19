@@ -1,0 +1,669 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Radon-222 ist ein natrlich vorkommendes radioaktives Edelgas, das innerhalb der Zerfallsreihen langlebiger, in Gesteinen und Böden enthaltener Uran- und Thoriumnuklide entsteht.
+1-1	0-5	Radon	*[1]	External Substance[1]	_[1]	*	*[1]	Substance[1]	_	
+1-2	5-6	-	*[1]	External Substance[1]	_[1]	*	*[1]	Substance[1]	_	
+1-3	6-9	222	*[1]	External Substance[1]	_[1]	*	*[1]	Substance[1]	_	
+1-4	10-13	ist	_	_	_	_	_	_	_	
+1-5	14-17	ein	_	_	_	_	_	_	_	
+1-6	18-26	natrlich	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-7	27-39	vorkommendes	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+1-8	40-52	radioaktives	*	*	_	*	*	Specification	_	
+1-9	53-60	Edelgas	*	External Substance	_	*	*	Substance	1-6[2_0]|1-8	
+1-10	60-61	,	_	_	_	_	_	_	_	
+1-11	62-65	das	_	_	_	_	_	_	_	
+1-12	66-75	innerhalb	_	_	_	_	_	_	_	
+1-13	76-79	der	_	_	_	_	_	_	_	
+1-14	80-94	Zerfallsreihen	_	_	_	_	_	_	_	
+1-15	95-106	langlebiger	_	_	_	_	_	_	_	
+1-16	106-107	,	_	_	_	_	_	_	_	
+1-17	108-110	in	_	_	_	_	_	_	_	
+1-18	111-120	Gesteinen	_	_	_	_	_	_	_	
+1-19	121-124	und	_	_	_	_	_	_	_	
+1-20	125-130	Böden	_	_	_	_	_	_	_	
+1-21	131-142	enthaltener	_	_	_	_	_	_	_	
+1-22	143-147	Uran	*	External Substance		1-25	nuklide	Substance	_	
+1-23	147-148	-	_	_	_	_	_	_	_	
+1-24	149-152	und	_	_	_	_	_	_	_	
+1-25	153-167	Thoriumnuklide	*	External Substance	_	*	*	Substance	_	
+1-26	168-176	entsteht	_	_	_	_	_	_	_	
+1-27	176-177	.	_	_	_	_	_	_	_	
+
+#Text=Der Hauptbeitrag zur natürlichen Strahlenexposition der Bevölkerung erfolgt durch die Inhalation des radioaktiven Radons, insbesondere in geologischen Regionen Deutschlands wie z. B. im Bayerischen Wald und im Erzgebirge oder auf Grund von beruflichen Tätigkeiten (Bergbau, Wasserwerke).
+2-1	178-181	Der	_	_	_	_	_	_	_	
+2-2	182-194	Hauptbeitrag	_	_	_	_	_	_	_	
+2-3	195-198	zur	_	_	_	_	_	_	_	
+2-4	199-210	natürlichen	*	*	_	*	*	Specification	_	
+2-5	211-229	Strahlenexposition	*	Other Finding	_	*	*	Finding	2-4	
+2-6	230-233	der	_	_	_	_	_	_	_	
+2-7	234-245	Bevölkerung	_	_	_	_	_	_	_	
+2-8	246-253	erfolgt	_	_	_	_	_	_	_	
+2-9	254-259	durch	_	_	_	_	_	_	_	
+2-10	260-263	die	_	_	_	_	_	_	_	
+2-11	264-274	Inhalation	*	Other Finding	_	*	*	Finding	2-12[3_0]	
+2-12	275-278	des	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-13	279-291	radioaktiven	*[3]|*[4]	*[3]|*[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Specification[4]	_	
+2-14	292-298	Radons	*[3]|*[5]	*[3]|External Substance[5]	_[3]|_[5]	*|*	*[3]|*[5]	Specification[3]|Substance[5]	2-13[4_5]	
+2-15	298-299	,	_	_	_	_	_	_	_	
+2-16	300-312	insbesondere	_	_	_	_	_	_	_	
+2-17	313-315	in	_	_	_	_	_	_	_	
+2-18	316-328	geologischen	_	_	_	_	_	_	_	
+2-19	329-337	Regionen	_	_	_	_	_	_	_	
+2-20	338-350	Deutschlands	_	_	_	_	_	_	_	
+2-21	351-354	wie	_	_	_	_	_	_	_	
+2-22	355-356	z	_	_	_	_	_	_	_	
+2-23	356-357	.	_	_	_	_	_	_	_	
+2-24	358-359	B	_	_	_	_	_	_	_	
+2-25	359-360	.	_	_	_	_	_	_	_	
+2-26	361-363	im	_	_	_	_	_	_	_	
+2-27	364-375	Bayerischen	_	_	_	_	_	_	_	
+2-28	376-380	Wald	_	_	_	_	_	_	_	
+2-29	381-384	und	_	_	_	_	_	_	_	
+2-30	385-387	im	_	_	_	_	_	_	_	
+2-31	388-398	Erzgebirge	_	_	_	_	_	_	_	
+2-32	399-403	oder	_	_	_	_	_	_	_	
+2-33	404-407	auf	_	_	_	_	_	_	_	
+2-34	408-413	Grund	_	_	_	_	_	_	_	
+2-35	414-417	von	_	_	_	_	_	_	_	
+2-36	418-429	beruflichen	_	_	_	_	_	_	_	
+2-37	430-441	Tätigkeiten	_	_	_	_	_	_	_	
+2-38	442-443	(	_	_	_	_	_	_	_	
+2-39	443-450	Bergbau	_	_	_	_	_	_	_	
+2-40	450-451	,	_	_	_	_	_	_	_	
+2-41	452-463	Wasserwerke	_	_	_	_	_	_	_	
+2-42	463-464	)	_	_	_	_	_	_	_	
+2-43	464-465	.	_	_	_	_	_	_	_	
+
+#Text=Durch Übertritt des Radongases aus dem Gestein kann es zu erheblichen Konzentrationen in Innenräumen - bei Wohnungen vor allem im Keller und Erdgeschoss - kommen.
+3-1	466-471	Durch	_	_	_	_	_	_	_	
+3-2	472-481	Übertritt	_	_	_	_	_	_	_	
+3-3	482-485	des	_	_	_	_	_	_	_	
+3-4	486-496	Radongases	*	External Substance	_	*	*	Substance	_	
+3-5	497-500	aus	_	_	_	_	_	_	_	
+3-6	501-504	dem	_	_	_	_	_	_	_	
+3-7	505-512	Gestein	_	_	_	_	_	_	_	
+3-8	513-517	kann	_	_	_	_	_	_	_	
+3-9	518-520	es	_	_	_	_	_	_	_	
+3-10	521-523	zu	_	_	_	_	_	_	_	
+3-11	524-535	erheblichen	_	_	_	_	_	_	_	
+3-12	536-551	Konzentrationen	_	_	_	_	_	_	_	
+3-13	552-554	in	_	_	_	_	_	_	_	
+3-14	555-566	Innenräumen	_	_	_	_	_	_	_	
+3-15	567-568	-	_	_	_	_	_	_	_	
+3-16	569-572	bei	_	_	_	_	_	_	_	
+3-17	573-582	Wohnungen	_	_	_	_	_	_	_	
+3-18	583-586	vor	_	_	_	_	_	_	_	
+3-19	587-592	allem	_	_	_	_	_	_	_	
+3-20	593-595	im	_	_	_	_	_	_	_	
+3-21	596-602	Keller	_	_	_	_	_	_	_	
+3-22	603-606	und	_	_	_	_	_	_	_	
+3-23	607-618	Erdgeschoss	_	_	_	_	_	_	_	
+3-24	619-620	-	_	_	_	_	_	_	_	
+3-25	621-627	kommen	_	_	_	_	_	_	_	
+3-26	627-628	.	_	_	_	_	_	_	_	
+
+#Text=Die Konzentration in der Außenluft ist deutlich geringer.
+4-1	629-632	Die	_	_	_	_	_	_	_	
+4-2	633-646	Konzentration	_	_	_	_	_	_	_	
+4-3	647-649	in	_	_	_	_	_	_	_	
+4-4	650-653	der	_	_	_	_	_	_	_	
+4-5	654-663	Außenluft	_	_	_	_	_	_	_	
+4-6	664-667	ist	_	_	_	_	_	_	_	
+4-7	668-676	deutlich	_	_	_	_	_	_	_	
+4-8	677-685	geringer	_	_	_	_	_	_	_	
+4-9	685-686	.	_	_	_	_	_	_	_	
+
+#Text=Die Inhalation von Radon und seinen Zerfallsprodukten führt zu einer Exposition des Bronchialepithels durch die freigesetzte Alphastrahlung.
+5-1	687-690	Die	_	_	_	_	_	_	_	
+5-2	691-701	Inhalation	*	Other Finding	_	*	*	Finding	5-3[6_0]|5-6[8_0]	
+5-3	702-705	von	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+5-4	706-711	Radon	*[6]|*[7]	*[6]|External Substance[7]	_[6]|_[7]	*|*	*[6]|*[7]	Specification[6]|Substance[7]	_	
+5-5	712-715	und	_	_	_	_	_	_	_	
+5-6	716-722	seinen	\_von\_[8]	*[8]	_[8]	*	*[8]	Specification[8]	_	
+5-7	723-740	Zerfallsprodukten	\_von\_[8]|*[9]	*[8]|External Substance[9]	_[8]|_[9]	*|*	*[8]|*[9]	Specification[8]|Substance[9]	_	
+5-8	741-746	führt	_	_	_	_	_	_	_	
+5-9	747-749	zu	_	_	_	_	_	_	_	
+5-10	750-755	einer	_	_	_	_	_	_	_	
+5-11	756-766	Exposition	*	Other Finding	_	*	*	Finding	5-12[10_0]|5-14[11_0]	
+5-12	767-770	des	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+5-13	771-788	Bronchialepithels	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+5-14	789-794	durch	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-15	795-798	die	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-16	799-811	freigesetzte	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-17	812-826	Alphastrahlung	*[11]	*[11]	_[11]	*	*[11]	Specification[11]	_	
+5-18	826-827	.	_	_	_	_	_	_	_	
+
+#Text=Die Dosen für übrige Organe und Gewebe sind demgegenüber gering.
+6-1	828-831	Die	_	_	_	_	_	_	_	
+6-2	832-837	Dosen	_	_	_	_	_	_	_	
+6-3	838-841	für	_	_	_	_	_	_	_	
+6-4	842-848	übrige	_	_	_	_	_	_	_	
+6-5	849-855	Organe	_	_	_	_	_	_	_	
+6-6	856-859	und	_	_	_	_	_	_	_	
+6-7	860-866	Gewebe	_	_	_	_	_	_	_	
+6-8	867-871	sind	_	_	_	_	_	_	_	
+6-9	872-884	demgegenüber	_	_	_	_	_	_	_	
+6-10	885-891	gering	_	_	_	_	_	_	_	
+6-11	891-892	.	_	_	_	_	_	_	_	
+
+#Text=Eine europäische Poolingstudie hat gezeigt, dass eine lineare Expositions-Wirkungs-Beziehung angenommen werden kann.
+7-1	893-897	Eine	_	_	_	_	_	_	_	
+7-2	898-909	europäische	_	_	_	_	_	_	_	
+7-3	910-923	Poolingstudie	_	_	_	_	_	_	_	
+7-4	924-927	hat	_	_	_	_	_	_	_	
+7-5	928-935	gezeigt	_	_	_	_	_	_	_	
+7-6	935-936	,	_	_	_	_	_	_	_	
+7-7	937-941	dass	_	_	_	_	_	_	_	
+7-8	942-946	eine	_	_	_	_	_	_	_	
+7-9	947-954	lineare	_	_	_	_	_	_	_	
+7-10	955-985	Expositions-Wirkungs-Beziehung	_	_	_	_	_	_	_	
+7-11	986-996	angenommen	_	_	_	_	_	_	_	
+7-12	997-1003	werden	_	_	_	_	_	_	_	
+7-13	1004-1008	kann	_	_	_	_	_	_	_	
+7-14	1008-1009	.	_	_	_	_	_	_	_	
+
+#Text=Pro 100 Bq/m3 korrigierter Radonexposition kann von einem Anstieg des relativen Risikos um 16 % ausgegangen werden [REF].
+8-1	1010-1013	Pro	_	_	_	_	_	_	_	
+8-2	1014-1017	100	_	_	_	_	_	_	_	
+8-3	1018-1020	Bq	_	_	_	_	_	_	_	
+8-4	1020-1021	/	_	_	_	_	_	_	_	
+8-5	1021-1023	m3	_	_	_	_	_	_	_	
+8-6	1024-1036	korrigierter	_	_	_	_	_	_	_	
+8-7	1037-1052	Radonexposition	*	Other Finding	_	*	*	Finding	_	
+8-8	1053-1057	kann	_	_	_	_	_	_	_	
+8-9	1058-1061	von	_	_	_	_	_	_	_	
+8-10	1062-1067	einem	_	_	_	_	_	_	_	
+8-11	1068-1075	Anstieg	*	Other Finding	_	*	*	Finding	8-12[12_0]	
+8-12	1076-1079	des	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-13	1080-1089	relativen	*[12]|*[13]	*[12]|*[13]	_[12]|_[13]	*|*	*[12]|*[13]	Specification[12]|Specification[13]	_	
+8-14	1090-1097	Risikos	*[12]|*[14]	*[12]|Other Finding[14]	_[12]|_[14]	*|*	*[12]|*[14]	Specification[12]|Finding[14]	8-13[13_14]	
+8-15	1098-1100	um	_	_	_	_	_	_	_	
+8-16	1101-1103	16	_	_	_	_	_	_	_	
+8-17	1104-1105	%	_	_	_	_	_	_	_	
+8-18	1106-1117	ausgegangen	_	_	_	_	_	_	_	
+8-19	1118-1124	werden	_	_	_	_	_	_	_	
+8-20	1125-1126	[	_	_	_	_	_	_	_	
+8-21	1126-1129	REF	_	_	_	_	_	_	_	
+8-22	1129-1130	]	_	_	_	_	_	_	_	
+8-23	1130-1131	.	_	_	_	_	_	_	_	
+
+#Text=Diese Datenlage macht Interventionen zur Senkung der Radonexposition erforderlich [REF].
+9-1	1132-1137	Diese	_	_	_	_	_	_	_	
+9-2	1138-1147	Datenlage	_	_	_	_	_	_	_	
+9-3	1148-1153	macht	_	_	_	_	_	_	_	
+9-4	1154-1168	Interventionen	*	Therapeutic	_	*	*	Procedure	9-5[15_0]	
+9-5	1169-1172	zur	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+9-6	1173-1180	Senkung	*[15]|*[16]	*[15]|Therapeutic[16]	_[15]|_[16]	*|*	*[15]|*[16]	Specification[15]|Procedure[16]	9-7[17_16]	
+9-7	1181-1184	der	*[15]|*[17]	*[15]|*[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Specification[17]	_	
+9-8	1185-1200	Radonexposition	*[15]|*[17]|*[18]	*[15]|*[17]|Other Finding[18]	_[15]|_[17]|_[18]	*|*|*	*[15]|*[17]|*[18]	Specification[15]|Specification[17]|Finding[18]	_	
+9-9	1201-1213	erforderlich	_	_	_	_	_	_	_	
+9-10	1214-1215	[	_	_	_	_	_	_	_	
+9-11	1215-1218	REF	_	_	_	_	_	_	_	
+9-12	1218-1219	]	_	_	_	_	_	_	_	
+9-13	1219-1220	.	_	_	_	_	_	_	_	
+
+#Text=In Deutschland beträgt die mittlere Radonkonzentration in Wohnungen 49 Bq/m³ und die mittlere Konzentration im Freien 9 Bq/m³.
+10-1	1221-1223	In	_	_	_	_	_	_	_	
+10-2	1224-1235	Deutschland	_	_	_	_	_	_	_	
+10-3	1236-1243	beträgt	_	_	_	_	_	_	_	
+10-4	1244-1247	die	_	_	_	_	_	_	_	
+10-5	1248-1256	mittlere	_	_	_	_	_	_	_	
+10-6	1257-1275	Radonkonzentration	*	External Substance	_	*	*	Substance	_	
+10-7	1276-1278	in	_	_	_	_	_	_	_	
+10-8	1279-1288	Wohnungen	_	_	_	_	_	_	_	
+10-9	1289-1291	49	_	_	_	_	_	_	_	
+10-10	1292-1294	Bq	_	_	_	_	_	_	_	
+10-11	1294-1295	/	_	_	_	_	_	_	_	
+10-12	1295-1297	m³	_	_	_	_	_	_	_	
+10-13	1298-1301	und	_	_	_	_	_	_	_	
+10-14	1302-1305	die	_	_	_	_	_	_	_	
+10-15	1306-1314	mittlere	_	_	_	_	_	_	_	
+10-16	1315-1328	Konzentration	_	_	_	_	_	_	_	
+10-17	1329-1331	im	_	_	_	_	_	_	_	
+10-18	1332-1338	Freien	_	_	_	_	_	_	_	
+10-19	1339-1340	9	_	_	_	_	_	_	_	
+10-20	1341-1343	Bq	_	_	_	_	_	_	_	
+10-21	1343-1344	/	_	_	_	_	_	_	_	
+10-22	1344-1346	m³	_	_	_	_	_	_	_	
+10-23	1346-1347	.	_	_	_	_	_	_	_	
+
+#Text=Bezogen auf die maximal vermeidbare Konzentration von 40 Bq/m³ ergibt sich ein Betrag von 5 % des Radons in Wohnungen zum Lungenkrebsrisiko, was 1896 Lungenkrebs-Todesfällen pro Jahr entspricht [REF].
+11-1	1348-1355	Bezogen	_	_	_	_	_	_	_	
+11-2	1356-1359	auf	_	_	_	_	_	_	_	
+11-3	1360-1363	die	_	_	_	_	_	_	_	
+11-4	1364-1371	maximal	_	_	_	_	_	_	_	
+11-5	1372-1383	vermeidbare	_	_	_	_	_	_	_	
+11-6	1384-1397	Konzentration	_	_	_	_	_	_	_	
+11-7	1398-1401	von	_	_	_	_	_	_	_	
+11-8	1402-1404	40	_	_	_	_	_	_	_	
+11-9	1405-1407	Bq	_	_	_	_	_	_	_	
+11-10	1407-1408	/	_	_	_	_	_	_	_	
+11-11	1408-1410	m³	_	_	_	_	_	_	_	
+11-12	1411-1417	ergibt	_	_	_	_	_	_	_	
+11-13	1418-1422	sich	_	_	_	_	_	_	_	
+11-14	1423-1426	ein	_	_	_	_	_	_	_	
+11-15	1427-1433	Betrag	_	_	_	_	_	_	_	
+11-16	1434-1437	von	_	_	_	_	_	_	_	
+11-17	1438-1439	5	_	_	_	_	_	_	_	
+11-18	1440-1441	%	_	_	_	_	_	_	_	
+11-19	1442-1445	des	_	_	_	_	_	_	_	
+11-20	1446-1452	Radons	*	External Substance	_	*	*	Substance	_	
+11-21	1453-1455	in	_	_	_	_	_	_	_	
+11-22	1456-1465	Wohnungen	_	_	_	_	_	_	_	
+11-23	1466-1469	zum	_	_	_	_	_	_	_	
+11-24	1470-1487	Lungenkrebsrisiko	*	Other Finding	_	*	*	Finding	_	
+11-25	1487-1488	,	_	_	_	_	_	_	_	
+11-26	1489-1492	was	_	_	_	_	_	_	_	
+11-27	1493-1497	1896	_	_	_	_	_	_	_	
+11-28	1498-1521	Lungenkrebs-Todesfällen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-29	1522-1525	pro	_	_	_	_	_	_	_	
+11-30	1526-1530	Jahr	_	_	_	_	_	_	_	
+11-31	1531-1541	entspricht	_	_	_	_	_	_	_	
+11-32	1542-1543	[	_	_	_	_	_	_	_	
+11-33	1543-1546	REF	_	_	_	_	_	_	_	
+11-34	1546-1547	]	_	_	_	_	_	_	_	
+11-35	1547-1548	.	_	_	_	_	_	_	_	
+
+#Text=Sehr hohe Aktivitätskonzentrationen von Radon und seinen Zerfallsprodukten bestanden im Uranerzbergbau der Wismut AG in der ehemaligen DDR.
+12-1	1549-1553	Sehr	_	_	_	_	_	_	_	
+12-2	1554-1558	hohe	_	_	_	_	_	_	_	
+12-3	1559-1584	Aktivitätskonzentrationen	_	_	_	_	_	_	_	
+12-4	1585-1588	von	_	_	_	_	_	_	_	
+12-5	1589-1594	Radon	*	External Substance	_	*	*	Substance	_	
+12-6	1595-1598	und	_	_	_	_	_	_	_	
+12-7	1599-1605	seinen	_	_	_	_	_	_	_	
+12-8	1606-1623	Zerfallsprodukten	*	External Substance	_	*	*	Substance	_	
+12-9	1624-1633	bestanden	_	_	_	_	_	_	_	
+12-10	1634-1636	im	_	_	_	_	_	_	_	
+12-11	1637-1651	Uranerzbergbau	_	_	_	_	_	_	_	
+12-12	1652-1655	der	_	_	_	_	_	_	_	
+12-13	1656-1662	Wismut	_	_	_	_	_	_	_	
+12-14	1663-1665	AG	_	_	_	_	_	_	_	
+12-15	1666-1668	in	_	_	_	_	_	_	_	
+12-16	1669-1672	der	_	_	_	_	_	_	_	
+12-17	1673-1683	ehemaligen	_	_	_	_	_	_	_	
+12-18	1684-1687	DDR	_	_	_	_	_	_	_	
+12-19	1687-1688	.	_	_	_	_	_	_	_	
+
+#Text=Insbesondere während der sogenannten „wilden Jahre“ von 1946 bis 1955 bestand eine sehr hohe Exposition gegenüber ionisierenden Alpha-Strahlen.
+13-1	1689-1701	Insbesondere	_	_	_	_	_	_	_	
+13-2	1702-1709	während	_	_	_	_	_	_	_	
+13-3	1710-1713	der	_	_	_	_	_	_	_	
+13-4	1714-1725	sogenannten	_	_	_	_	_	_	_	
+13-5	1726-1727	„	_	_	_	_	_	_	_	
+13-6	1727-1733	wilden	_	_	_	_	_	_	_	
+13-7	1734-1739	Jahre	_	_	_	_	_	_	_	
+13-8	1739-1740	“	_	_	_	_	_	_	_	
+13-9	1741-1744	von	_	_	_	_	_	_	_	
+13-10	1745-1749	1946	_	_	_	_	_	_	_	
+13-11	1750-1753	bis	_	_	_	_	_	_	_	
+13-12	1754-1758	1955	_	_	_	_	_	_	_	
+13-13	1759-1766	bestand	_	_	_	_	_	_	_	
+13-14	1767-1771	eine	_	_	_	_	_	_	_	
+13-15	1772-1776	sehr	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+13-16	1777-1781	hohe	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+13-17	1782-1792	Exposition	*	Other Finding	_	*	*	Finding	13-18[20_0]|13-15[19_0]	
+13-18	1793-1802	gegenüber	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+13-19	1803-1816	ionisierenden	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+13-20	1817-1831	Alpha-Strahlen	*[20]	*[20]	_[20]	*	*[20]	Specification[20]	_	
+13-21	1831-1832	.	_	_	_	_	_	_	_	
+
+#Text=Fast alle entschädigten BK-Fälle für ionisierende Strahlung (BK 2402) stammen aus der Gruppe der Beschäftigten der Wismut AG.
+14-1	1833-1837	Fast	_	_	_	_	_	_	_	
+14-2	1838-1842	alle	_	_	_	_	_	_	_	
+14-3	1843-1856	entschädigten	_	_	_	_	_	_	_	
+14-4	1857-1865	BK-Fälle	_	_	_	_	_	_	_	
+14-5	1866-1869	für	_	_	_	_	_	_	_	
+14-6	1870-1882	ionisierende	_	_	_	_	_	_	_	
+14-7	1883-1892	Strahlung	_	_	_	_	_	_	_	
+14-8	1893-1894	(	_	_	_	_	_	_	_	
+14-9	1894-1896	BK	_	_	_	_	_	_	_	
+14-10	1897-1901	2402	_	_	_	_	_	_	_	
+14-11	1901-1902	)	_	_	_	_	_	_	_	
+14-12	1903-1910	stammen	_	_	_	_	_	_	_	
+14-13	1911-1914	aus	_	_	_	_	_	_	_	
+14-14	1915-1918	der	_	_	_	_	_	_	_	
+14-15	1919-1925	Gruppe	_	_	_	_	_	_	_	
+14-16	1926-1929	der	_	_	_	_	_	_	_	
+14-17	1930-1943	Beschäftigten	_	_	_	_	_	_	_	
+14-18	1944-1947	der	_	_	_	_	_	_	_	
+14-19	1948-1954	Wismut	_	_	_	_	_	_	_	
+14-20	1955-1957	AG	_	_	_	_	_	_	_	
+14-21	1957-1958	.	_	_	_	_	_	_	_	
+
+#Text=Deutlich niedriger ist die Exposition für Berufstätige in Wasserwerken, Heilstollen und Radonbädern.
+15-1	1959-1967	Deutlich	_	_	_	_	_	_	_	
+15-2	1968-1977	niedriger	_	_	_	_	_	_	_	
+15-3	1978-1981	ist	_	_	_	_	_	_	_	
+15-4	1982-1985	die	_	_	_	_	_	_	_	
+15-5	1986-1996	Exposition	*	Other Finding	_	*	*	Finding	15-6[21_0]	
+15-6	1997-2000	für	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+15-7	2001-2013	Berufstätige	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+15-8	2014-2016	in	_	_	_	_	_	_	_	
+15-9	2017-2029	Wasserwerken	_	_	_	_	_	_	_	
+15-10	2029-2030	,	_	_	_	_	_	_	_	
+15-11	2031-2042	Heilstollen	_	_	_	_	_	_	_	
+15-12	2043-2046	und	_	_	_	_	_	_	_	
+15-13	2047-2058	Radonbädern	*	External Substance	_	*	*	Substance	_	
+15-14	2058-2059	.	_	_	_	_	_	_	_	
+
+#Text=Aktuelle Daten zur Radonexposition finden sich in der Radonkarte des Bundesamts für Strahlenschutz, welche online verfügbar ist ([URL]).
+16-1	2060-2068	Aktuelle	_	_	_	_	_	_	_	
+16-2	2069-2074	Daten	_	_	_	_	_	_	_	
+16-3	2075-2078	zur	_	_	_	_	_	_	_	
+16-4	2079-2094	Radonexposition	*	Other Finding	_	*	*	Finding	_	
+16-5	2095-2101	finden	_	_	_	_	_	_	_	
+16-6	2102-2106	sich	_	_	_	_	_	_	_	
+16-7	2107-2109	in	_	_	_	_	_	_	_	
+16-8	2110-2113	der	_	_	_	_	_	_	_	
+16-9	2114-2124	Radonkarte	*	External Substance	_	*	*	Substance	_	
+16-10	2125-2128	des	_	_	_	_	_	_	_	
+16-11	2129-2139	Bundesamts	_	_	_	_	_	_	_	
+16-12	2140-2143	für	_	_	_	_	_	_	_	
+16-13	2144-2158	Strahlenschutz	*	Therapeutic	_	*	*	Procedure	_	
+16-14	2158-2159	,	_	_	_	_	_	_	_	
+16-15	2160-2166	welche	_	_	_	_	_	_	_	
+16-16	2167-2173	online	_	_	_	_	_	_	_	
+16-17	2174-2183	verfügbar	_	_	_	_	_	_	_	
+16-18	2184-2187	ist	_	_	_	_	_	_	_	
+16-19	2188-2189	(	_	_	_	_	_	_	_	
+16-20	2189-2190	[	_	_	_	_	_	_	_	
+16-21	2190-2193	URL	_	_	_	_	_	_	_	
+16-22	2193-2194	]	_	_	_	_	_	_	_	
+16-23	2194-2195	)	_	_	_	_	_	_	_	
+16-24	2195-2196	.	_	_	_	_	_	_	_	
+
+#Text=Flugpersonal ist gegenüber natürlicher kosmischer Strahlung exponiert.
+17-1	2197-2209	Flugpersonal	_	_	_	_	_	_	_	
+17-2	2210-2213	ist	_	_	_	_	_	_	_	
+17-3	2214-2223	gegenüber	_	_	_	_	_	_	_	
+17-4	2224-2235	natürlicher	_	_	_	_	_	_	_	
+17-5	2236-2246	kosmischer	_	_	_	_	_	_	_	
+17-6	2247-2256	Strahlung	_	_	_	_	_	_	_	
+17-7	2257-2266	exponiert	_	_	_	_	_	_	_	
+17-8	2266-2267	.	_	_	_	_	_	_	_	
+
+#Text=In Deutschland wurden im Jahr 2013 insgesamt 39 449 Personen (Vorjahr: 40 404) überwacht, die mittlere effektive Jahresdosis betrug wie im Vorjahr 1,9 mSv.
+18-1	2268-2270	In	_	_	_	_	_	_	_	
+18-2	2271-2282	Deutschland	_	_	_	_	_	_	_	
+18-3	2283-2289	wurden	_	_	_	_	_	_	_	
+18-4	2290-2292	im	_	_	_	_	_	_	_	
+18-5	2293-2297	Jahr	_	_	_	_	_	_	_	
+18-6	2298-2302	2013	_	_	_	_	_	_	_	
+18-7	2303-2312	insgesamt	_	_	_	_	_	_	_	
+18-8	2313-2315	39	_	_	_	_	_	_	_	
+18-9	2316-2319	449	_	_	_	_	_	_	_	
+18-10	2320-2328	Personen	_	_	_	_	_	_	_	
+18-11	2329-2330	(	_	_	_	_	_	_	_	
+18-12	2330-2337	Vorjahr	_	_	_	_	_	_	_	
+18-13	2337-2338	:	_	_	_	_	_	_	_	
+18-14	2339-2341	40	_	_	_	_	_	_	_	
+18-15	2342-2345	404	_	_	_	_	_	_	_	
+18-16	2345-2346	)	_	_	_	_	_	_	_	
+18-17	2347-2356	überwacht	_	_	_	_	_	_	_	
+18-18	2356-2357	,	_	_	_	_	_	_	_	
+18-19	2358-2361	die	_	_	_	_	_	_	_	
+18-20	2362-2370	mittlere	*	*	_	*	*	Specification	_	
+18-21	2371-2380	effektive	*	*	_	*	*	Specification	_	
+18-22	2381-2392	Jahresdosis	*	Other Finding	_	*	*	Finding	18-21|18-20	
+18-23	2393-2399	betrug	_	_	_	_	_	_	_	
+18-24	2400-2403	wie	_	_	_	_	_	_	_	
+18-25	2404-2406	im	_	_	_	_	_	_	_	
+18-26	2407-2414	Vorjahr	_	_	_	_	_	_	_	
+18-27	2415-2418	1,9	_	_	_	_	_	_	_	
+18-28	2419-2422	mSv	_	_	_	_	_	_	_	
+18-29	2422-2423	.	_	_	_	_	_	_	_	
+
+#Text=Der höchste Jahrespersonendosiswert liegt bei 6,2 mSv.
+19-1	2424-2427	Der	_	_	_	_	_	_	_	
+19-2	2428-2435	höchste	*	*	_	*	*	Specification	_	
+19-3	2436-2459	Jahrespersonendosiswert	*	Other Finding	_	*	*	Finding	19-2	
+19-4	2460-2465	liegt	_	_	_	_	_	_	_	
+19-5	2466-2469	bei	_	_	_	_	_	_	_	
+19-6	2470-2473	6,2	_	_	_	_	_	_	_	
+19-7	2474-2477	mSv	_	_	_	_	_	_	_	
+19-8	2477-2478	.	_	_	_	_	_	_	_	
+
+#Text=Das Flugpersonal, das mehr als 1 mSv pro Jahr durch kosmische Strahlung erhalten kann, gilt nach Strahlenschutzverordnung als beruflich strahlenexponierte Personen (Bundesministerium für Umwelt, Naturschutz und Reaktorsicherheit [REF]. Weitere berufsbedingte Strahlenexpositionen mit ionisierender Strahlung treten oder traten z.B. bei dem Einsatz von Röntgengeräten zur Materialprüfung, bei Schweißarbeiten mit thoriumhaltigen Schweißelektroden oder bei Technikern bei der Bundeswehr bis ca. 1985 (NVA bis 1990), die Röntgenstörstrahlung von Radargeräten ausgesetzt waren, auf [REF].
+20-1	2479-2482	Das	_	_	_	_	_	_	_	
+20-2	2483-2495	Flugpersonal	_	_	_	_	_	_	_	
+20-3	2495-2496	,	_	_	_	_	_	_	_	
+20-4	2497-2500	das	_	_	_	_	_	_	_	
+20-5	2501-2505	mehr	_	_	_	_	_	_	_	
+20-6	2506-2509	als	_	_	_	_	_	_	_	
+20-7	2510-2511	1	_	_	_	_	_	_	_	
+20-8	2512-2515	mSv	_	_	_	_	_	_	_	
+20-9	2516-2519	pro	_	_	_	_	_	_	_	
+20-10	2520-2524	Jahr	_	_	_	_	_	_	_	
+20-11	2525-2530	durch	_	_	_	_	_	_	_	
+20-12	2531-2540	kosmische	_	_	_	_	_	_	_	
+20-13	2541-2550	Strahlung	_	_	_	_	_	_	_	
+20-14	2551-2559	erhalten	_	_	_	_	_	_	_	
+20-15	2560-2564	kann	_	_	_	_	_	_	_	
+20-16	2564-2565	,	_	_	_	_	_	_	_	
+20-17	2566-2570	gilt	_	_	_	_	_	_	_	
+20-18	2571-2575	nach	_	_	_	_	_	_	_	
+20-19	2576-2600	Strahlenschutzverordnung	*	Therapeutic	_	*	*	Procedure	_	
+20-20	2601-2604	als	_	_	_	_	_	_	_	
+20-21	2605-2614	beruflich	*	*	_	*	*	Specification	_	
+20-22	2615-2633	strahlenexponierte	*	Other Finding	_	*	*	Finding	20-21	
+20-23	2634-2642	Personen	_	_	_	_	_	_	_	
+20-24	2643-2644	(	_	_	_	_	_	_	_	
+20-25	2644-2661	Bundesministerium	_	_	_	_	_	_	_	
+20-26	2662-2665	für	_	_	_	_	_	_	_	
+20-27	2666-2672	Umwelt	_	_	_	_	_	_	_	
+20-28	2672-2673	,	_	_	_	_	_	_	_	
+20-29	2674-2685	Naturschutz	_	_	_	_	_	_	_	
+20-30	2686-2689	und	_	_	_	_	_	_	_	
+20-31	2690-2707	Reaktorsicherheit	_	_	_	_	_	_	_	
+20-32	2708-2709	[	_	_	_	_	_	_	_	
+20-33	2709-2712	REF	_	_	_	_	_	_	_	
+20-34	2712-2713	]	_	_	_	_	_	_	_	
+20-35	2713-2714	.	_	_	_	_	_	_	_	
+20-36	2715-2722	Weitere	_	_	_	_	_	_	_	
+20-37	2723-2737	berufsbedingte	*	*	_	*	*	Specification	_	
+20-38	2738-2758	Strahlenexpositionen	*	Other Finding	_	*	*	Finding	20-37|20-39[22_0]	
+20-39	2759-2762	mit	*[22]	*[22]	_[22]	*	*[22]	Specification[22]	_	
+20-40	2763-2776	ionisierender	*[22]	*[22]	_[22]	*	*[22]	Specification[22]	_	
+20-41	2777-2786	Strahlung	*[22]	*[22]	_[22]	*	*[22]	Specification[22]	_	
+20-42	2787-2793	treten	_	_	_	_	_	_	_	
+20-43	2794-2798	oder	_	_	_	_	_	_	_	
+20-44	2799-2805	traten	_	_	_	_	_	_	_	
+20-45	2806-2809	z.B	_	_	_	_	_	_	_	
+20-46	2809-2810	.	_	_	_	_	_	_	_	
+20-47	2811-2814	bei	_	_	_	_	_	_	_	
+20-48	2815-2818	dem	_	_	_	_	_	_	_	
+20-49	2819-2826	Einsatz	_	_	_	_	_	_	_	
+20-50	2827-2830	von	_	_	_	_	_	_	_	
+20-51	2831-2845	Röntgengeräten	_	_	_	_	_	_	_	
+20-52	2846-2849	zur	_	_	_	_	_	_	_	
+20-53	2850-2865	Materialprüfung	_	_	_	_	_	_	_	
+20-54	2865-2866	,	_	_	_	_	_	_	_	
+20-55	2867-2870	bei	_	_	_	_	_	_	_	
+20-56	2871-2886	Schweißarbeiten	_	_	_	_	_	_	_	
+20-57	2887-2890	mit	_	_	_	_	_	_	_	
+20-58	2891-2906	thoriumhaltigen	*	External Substance	_	*	*	Substance	_	
+20-59	2907-2924	Schweißelektroden	_	_	_	_	_	_	_	
+20-60	2925-2929	oder	_	_	_	_	_	_	_	
+20-61	2930-2933	bei	_	_	_	_	_	_	_	
+20-62	2934-2944	Technikern	_	_	_	_	_	_	_	
+20-63	2945-2948	bei	_	_	_	_	_	_	_	
+20-64	2949-2952	der	_	_	_	_	_	_	_	
+20-65	2953-2963	Bundeswehr	_	_	_	_	_	_	_	
+20-66	2964-2967	bis	_	_	_	_	_	_	_	
+20-67	2968-2970	ca	_	_	_	_	_	_	_	
+20-68	2970-2971	.	_	_	_	_	_	_	_	
+20-69	2972-2976	1985	_	_	_	_	_	_	_	
+20-70	2977-2978	(	_	_	_	_	_	_	_	
+20-71	2978-2981	NVA	_	_	_	_	_	_	_	
+20-72	2982-2985	bis	_	_	_	_	_	_	_	
+20-73	2986-2990	1990	_	_	_	_	_	_	_	
+20-74	2990-2991	)	_	_	_	_	_	_	_	
+20-75	2991-2992	,	_	_	_	_	_	_	_	
+20-76	2993-2996	die	_	_	_	_	_	_	_	
+20-77	2997-3017	Röntgenstörstrahlung	_	_	_	_	_	_	_	
+20-78	3018-3021	von	_	_	_	_	_	_	_	
+20-79	3022-3034	Radargeräten	_	_	_	_	_	_	_	
+20-80	3035-3045	ausgesetzt	_	_	_	_	_	_	_	
+20-81	3046-3051	waren	_	_	_	_	_	_	_	
+20-82	3051-3052	,	_	_	_	_	_	_	_	
+20-83	3053-3056	auf	_	_	_	_	_	_	_	
+20-84	3057-3058	[	_	_	_	_	_	_	_	
+20-85	3058-3061	REF	_	_	_	_	_	_	_	
+20-86	3061-3062	]	_	_	_	_	_	_	_	
+20-87	3062-3063	.	_	_	_	_	_	_	_	
+
+#Text=Die medizinische Strahlenexposition und da vor allem die Röntgendiagnostik bewirken den höchsten Beitrag zur zivilisatorischen Strahlenexposition der Bevölkerung.
+21-1	3064-3067	Die	_	_	_	_	_	_	_	
+21-2	3068-3080	medizinische	*	*	_	*	*	Specification	_	
+21-3	3081-3099	Strahlenexposition	*	Other Finding	_	*	*	Finding	21-2	
+21-4	3100-3103	und	_	_	_	_	_	_	_	
+21-5	3104-3106	da	_	_	_	_	_	_	_	
+21-6	3107-3110	vor	_	_	_	_	_	_	_	
+21-7	3111-3116	allem	_	_	_	_	_	_	_	
+21-8	3117-3120	die	_	_	_	_	_	_	_	
+21-9	3121-3138	Röntgendiagnostik	*	Diagnostic	_	*	*	Procedure	_	
+21-10	3139-3147	bewirken	_	_	_	_	_	_	_	
+21-11	3148-3151	den	_	_	_	_	_	_	_	
+21-12	3152-3160	höchsten	_	_	_	_	_	_	_	
+21-13	3161-3168	Beitrag	_	_	_	_	_	_	_	
+21-14	3169-3172	zur	_	_	_	_	_	_	_	
+21-15	3173-3190	zivilisatorischen	*	*	_	*	*	Specification	_	
+21-16	3191-3209	Strahlenexposition	*	Other Finding	_	*	*	Finding	21-15	
+21-17	3210-3213	der	_	_	_	_	_	_	_	
+21-18	3214-3225	Bevölkerung	_	_	_	_	_	_	_	
+21-19	3225-3226	.	_	_	_	_	_	_	_	
+
+#Text=Im Gesundheitswesen wurden bis in die 60er Jahre hinein teilweise veraltete Röntgengeräte eingesetzt, die auch zu einer erheblichen Personalbelastung führen konnten.
+22-1	3227-3229	Im	_	_	_	_	_	_	_	
+22-2	3230-3246	Gesundheitswesen	_	_	_	_	_	_	_	
+22-3	3247-3253	wurden	_	_	_	_	_	_	_	
+22-4	3254-3257	bis	_	_	_	_	_	_	_	
+22-5	3258-3260	in	_	_	_	_	_	_	_	
+22-6	3261-3264	die	_	_	_	_	_	_	_	
+22-7	3265-3269	60er	_	_	_	_	_	_	_	
+22-8	3270-3275	Jahre	_	_	_	_	_	_	_	
+22-9	3276-3282	hinein	_	_	_	_	_	_	_	
+22-10	3283-3292	teilweise	_	_	_	_	_	_	_	
+22-11	3293-3302	veraltete	_	_	_	_	_	_	_	
+22-12	3303-3316	Röntgengeräte	_	_	_	_	_	_	_	
+22-13	3317-3327	eingesetzt	_	_	_	_	_	_	_	
+22-14	3327-3328	,	_	_	_	_	_	_	_	
+22-15	3329-3332	die	_	_	_	_	_	_	_	
+22-16	3333-3337	auch	_	_	_	_	_	_	_	
+22-17	3338-3340	zu	_	_	_	_	_	_	_	
+22-18	3341-3346	einer	_	_	_	_	_	_	_	
+22-19	3347-3358	erheblichen	*	*	_	*	*	Specification	_	
+22-20	3359-3376	Personalbelastung	*	Other Finding	_	*	*	Finding	22-19	
+22-21	3377-3383	führen	_	_	_	_	_	_	_	
+22-22	3384-3391	konnten	_	_	_	_	_	_	_	
+22-23	3391-3392	.	_	_	_	_	_	_	_	
+
+#Text=Die medizinische Strahlenexposition heute liegt im statistischen Mittel in der gleichen Größenordnung wie die natürliche Strahlenexposition der Bevölkerung (ca. 2 mSv/Jahr).
+23-1	3393-3396	Die	_	_	_	_	_	_	_	
+23-2	3397-3409	medizinische	*	*	_	*	*	Specification	_	
+23-3	3410-3428	Strahlenexposition	*	Other Finding	_	*	*	Finding	23-2	
+23-4	3429-3434	heute	_	_	_	_	_	_	_	
+23-5	3435-3440	liegt	_	_	_	_	_	_	_	
+23-6	3441-3443	im	_	_	_	_	_	_	_	
+23-7	3444-3457	statistischen	_	_	_	_	_	_	_	
+23-8	3458-3464	Mittel	_	_	_	_	_	_	_	
+23-9	3465-3467	in	_	_	_	_	_	_	_	
+23-10	3468-3471	der	_	_	_	_	_	_	_	
+23-11	3472-3480	gleichen	_	_	_	_	_	_	_	
+23-12	3481-3494	Größenordnung	_	_	_	_	_	_	_	
+23-13	3495-3498	wie	_	_	_	_	_	_	_	
+23-14	3499-3502	die	_	_	_	_	_	_	_	
+23-15	3503-3513	natürliche	*	*	_	*	*	Specification	_	
+23-16	3514-3532	Strahlenexposition	*	Other Finding	_	*	*	Finding	23-15	
+23-17	3533-3536	der	_	_	_	_	_	_	_	
+23-18	3537-3548	Bevölkerung	_	_	_	_	_	_	_	
+23-19	3549-3550	(	_	_	_	_	_	_	_	
+23-20	3550-3552	ca	_	_	_	_	_	_	_	
+23-21	3552-3553	.	_	_	_	_	_	_	_	
+23-22	3554-3555	2	_	_	_	_	_	_	_	
+23-23	3556-3559	mSv	_	_	_	_	_	_	_	
+23-24	3559-3560	/	_	_	_	_	_	_	_	
+23-25	3560-3564	Jahr	_	_	_	_	_	_	_	
+23-26	3564-3565	)	_	_	_	_	_	_	_	
+23-27	3565-3566	.	_	_	_	_	_	_	_	
+
+#Text=Weitere Daten finden sich in der Bundestagsdrucksache 18/5565 vom 13.7.2015 (online verfügbar unter [URL])
+24-1	3567-3574	Weitere	_	_	_	_	_	_	_	
+24-2	3575-3580	Daten	_	_	_	_	_	_	_	
+24-3	3581-3587	finden	_	_	_	_	_	_	_	
+24-4	3588-3592	sich	_	_	_	_	_	_	_	
+24-5	3593-3595	in	_	_	_	_	_	_	_	
+24-6	3596-3599	der	_	_	_	_	_	_	_	
+24-7	3600-3620	Bundestagsdrucksache	_	_	_	_	_	_	_	
+24-8	3621-3623	18	_	_	_	_	_	_	_	
+24-9	3623-3624	/	_	_	_	_	_	_	_	
+24-10	3624-3628	5565	_	_	_	_	_	_	_	
+24-11	3629-3632	vom	_	_	_	_	_	_	_	
+24-12	3633-3642	13.7.2015	_	_	_	_	_	_	_	
+24-13	3643-3644	(	_	_	_	_	_	_	_	
+24-14	3644-3650	online	_	_	_	_	_	_	_	
+24-15	3651-3660	verfügbar	_	_	_	_	_	_	_	
+24-16	3661-3666	unter	_	_	_	_	_	_	_	
+24-17	3667-3668	[	_	_	_	_	_	_	_	
+24-18	3668-3671	URL	_	_	_	_	_	_	_	
+24-19	3671-3672	]	_	_	_	_	_	_	_	
+24-20	3672-3673	)	_	_	_	_	_	_	_	
+
+#Text=Epidemiologisch ist es bei kleinen Strahlendosen (20 mSv, Grenzwert für die effektive Dosis für beruflich strahlenexponierter Personen) nicht nachweisbar, dass das Mortalitätsrisiko durch Krebs erhöht wird.
+25-1	3674-3689	Epidemiologisch	_	_	_	_	_	_	_	
+25-2	3690-3693	ist	_	_	_	_	_	_	_	
+25-3	3694-3696	es	_	_	_	_	_	_	_	
+25-4	3697-3700	bei	_	_	_	_	_	_	_	
+25-5	3701-3708	kleinen	_	_	_	_	_	_	_	
+25-6	3709-3722	Strahlendosen	_	_	_	_	_	_	_	
+25-7	3723-3724	(	_	_	_	_	_	_	_	
+25-8	3724-3726	20	_	_	_	_	_	_	_	
+25-9	3727-3730	mSv	_	_	_	_	_	_	_	
+25-10	3730-3731	,	_	_	_	_	_	_	_	
+25-11	3732-3741	Grenzwert	_	_	_	_	_	_	_	
+25-12	3742-3745	für	_	_	_	_	_	_	_	
+25-13	3746-3749	die	_	_	_	_	_	_	_	
+25-14	3750-3759	effektive	_	_	_	_	_	_	_	
+25-15	3760-3765	Dosis	_	_	_	_	_	_	_	
+25-16	3766-3769	für	_	_	_	_	_	_	_	
+25-17	3770-3779	beruflich	*	*	_	*	*	Specification	_	
+25-18	3780-3799	strahlenexponierter	*	Other Finding	_	*	*	Finding	25-17	
+25-19	3800-3808	Personen	_	_	_	_	_	_	_	
+25-20	3808-3809	)	_	_	_	_	_	_	_	
+25-21	3810-3815	nicht	_	_	_	_	_	_	_	
+25-22	3816-3827	nachweisbar	_	_	_	_	_	_	_	
+25-23	3827-3828	,	_	_	_	_	_	_	_	
+25-24	3829-3833	dass	_	_	_	_	_	_	_	
+25-25	3834-3837	das	_	_	_	_	_	_	_	
+25-26	3838-3855	Mortalitätsrisiko	*	Other Finding	_	*	*	Finding	25-27[23_0]	
+25-27	3856-3861	durch	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+25-28	3862-3867	Krebs	*[23]|*[24]	*[23]|Diagnosis or Pathology[24]	_[23]|_[24]	*|*	*[23]|*[24]	Specification[23]|Finding[24]	_	
+25-29	3868-3874	erhöht	_	_	_	_	_	_	_	
+25-30	3875-3879	wird	_	_	_	_	_	_	_	
+25-31	3879-3880	.	_	_	_	_	_	_	_	
+
+#Text=Das Mortalitätsrisiko bei einer mittleren Lungendosis von 1 mSv/Jahr wird heute kleiner als 1 pro 100.000 geschätzt.
+26-1	3881-3884	Das	_	_	_	_	_	_	_	
+26-2	3885-3902	Mortalitätsrisiko	*	Other Finding	_	*	*	Finding	_	
+26-3	3903-3906	bei	_	_	_	_	_	_	_	
+26-4	3907-3912	einer	_	_	_	_	_	_	_	
+26-5	3913-3922	mittleren	_	_	_	_	_	_	_	
+26-6	3923-3934	Lungendosis	_	_	_	_	_	_	_	
+26-7	3935-3938	von	_	_	_	_	_	_	_	
+26-8	3939-3940	1	_	_	_	_	_	_	_	
+26-9	3941-3944	mSv	_	_	_	_	_	_	_	
+26-10	3944-3945	/	_	_	_	_	_	_	_	
+26-11	3945-3949	Jahr	_	_	_	_	_	_	_	
+26-12	3950-3954	wird	_	_	_	_	_	_	_	
+26-13	3955-3960	heute	_	_	_	_	_	_	_	
+26-14	3961-3968	kleiner	_	_	_	_	_	_	_	
+26-15	3969-3972	als	_	_	_	_	_	_	_	
+26-16	3973-3974	1	_	_	_	_	_	_	_	
+26-17	3975-3978	pro	_	_	_	_	_	_	_	
+26-18	3979-3986	100.000	_	_	_	_	_	_	_	
+26-19	3987-3996	geschätzt	_	_	_	_	_	_	_	
+26-20	3996-3997	.	_	_	_	_	_	_	_	

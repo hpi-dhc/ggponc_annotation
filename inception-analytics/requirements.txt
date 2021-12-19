@@ -1,0 +1,9 @@
+dkpro-cassis
+pandas
+scikit-learn
+krippendorff
+streamlit
+watchdog
+plotly
+numpy==1.20
+pygamma-agreement

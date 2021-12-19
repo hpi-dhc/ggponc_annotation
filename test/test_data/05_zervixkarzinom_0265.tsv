@@ -1,0 +1,490 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Zum Thema der Antioxidantien und Vitamine während der aktiven konventionellen Behandlung des Zervixkarzinoms existieren nur wenige Daten.
+1-1	0-3	Zum	_	_	_	_	_	_	_	
+1-2	4-9	Thema	_	_	_	_	_	_	_	
+1-3	10-13	der	_	_	_	_	_	_	_	
+1-4	14-28	Antioxidantien	*	Nutrient or Body Substance	_	*	*	Substance	_	
+1-5	29-32	und	_	_	_	_	_	_	_	
+1-6	33-41	Vitamine	*	Nutrient or Body Substance	_	*	*	Substance	_	
+1-7	42-49	während	_	_	_	_	_	_	_	
+1-8	50-53	der	_	_	_	_	_	_	_	
+1-9	54-61	aktiven	*	*	_	*	*	Specification	_	
+1-10	62-77	konventionellen	*	*	_	*	*	Specification	_	
+1-11	78-88	Behandlung	*	Therapeutic	_	*	*	Procedure	1-9|1-10|1-12[1_0]	
+1-12	89-92	des	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+1-13	93-108	Zervixkarzinoms	*[1]|*[2]	*[1]|Diagnosis or Pathology[2]	_[1]|_[2]	*|*	*[1]|*[2]	Specification[1]|Finding[2]	_	
+1-14	109-119	existieren	_	_	_	_	_	_	_	
+1-15	120-123	nur	_	_	_	_	_	_	_	
+1-16	124-130	wenige	_	_	_	_	_	_	_	
+1-17	131-136	Daten	_	_	_	_	_	_	_	
+1-18	136-137	.	_	_	_	_	_	_	_	
+
+#Text=Gegenwärtig gibt es zwei sich widersprechende Theorien:
+2-1	138-149	Gegenwärtig	_	_	_	_	_	_	_	
+2-2	150-154	gibt	_	_	_	_	_	_	_	
+2-3	155-157	es	_	_	_	_	_	_	_	
+2-4	158-162	zwei	_	_	_	_	_	_	_	
+2-5	163-167	sich	_	_	_	_	_	_	_	
+2-6	168-183	widersprechende	_	_	_	_	_	_	_	
+2-7	184-192	Theorien	_	_	_	_	_	_	_	
+2-8	192-193	:	_	_	_	_	_	_	_	
+
+#Text=- die Hoch-Dosis-Vitamintherapie-Variante soll die Wirksamkeit der Strahlentherapie auf maligne Zellen verstärken und die Toxizität auf gesunde Zellen abschwächen.
+3-1	194-195	-	_	_	_	_	_	_	_	
+3-2	196-199	die	_	_	_	_	_	_	_	
+3-3	200-235	Hoch-Dosis-Vitamintherapie-Variante	*	Therapeutic	_	*	*	Procedure	_	
+3-4	236-240	soll	_	_	_	_	_	_	_	
+3-5	241-244	die	_	_	_	_	_	_	_	
+3-6	245-256	Wirksamkeit	_	_	_	_	_	_	_	
+3-7	257-260	der	_	_	_	_	_	_	_	
+3-8	261-277	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	_	
+3-9	278-281	auf	_	_	_	_	_	_	_	
+3-10	282-289	maligne	*	*	_	*	*	Specification	_	
+3-11	290-296	Zellen	*	Diagnosis or Pathology	_	*	*	Finding	3-10	
+3-12	297-307	verstärken	_	_	_	_	_	_	_	
+3-13	308-311	und	_	_	_	_	_	_	_	
+3-14	312-315	die	_	_	_	_	_	_	_	
+3-15	316-325	Toxizität	*	Diagnosis or Pathology	_	*	*	Finding	3-16[3_0]	
+3-16	326-329	auf	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+3-17	330-337	gesunde	*[3]|*[4]	*[3]|*[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Specification[4]	_	
+3-18	338-344	Zellen	*[3]|*[5]	*[3]|Other Finding[5]	_[3]|_[5]	*|*	*[3]|*[5]	Specification[3]|Finding[5]	3-17[4_5]	
+3-19	345-356	abschwächen	_	_	_	_	_	_	_	
+3-20	356-357	.	_	_	_	_	_	_	_	
+
+#Text=Entsprechendes wurde für Vitamin E in Zervixkarzinom Zellinien gezeigt [REF] [REF].
+4-1	358-372	Entsprechendes	_	_	_	_	_	_	_	
+4-2	373-378	wurde	_	_	_	_	_	_	_	
+4-3	379-382	für	_	_	_	_	_	_	_	
+4-4	383-390	Vitamin	*[6]	Nutrient or Body Substance[6]	_[6]	*	*[6]	Substance[6]	_	
+4-5	391-392	E	*[6]	Nutrient or Body Substance[6]	_[6]	*	*[6]	Substance[6]	_	
+4-6	393-395	in	_	_	_	_	_	_	_	
+4-7	396-410	Zervixkarzinom	*[7]	Diagnosis or Pathology[7]	_[7]	*	*[7]	Finding[7]	_	
+4-8	411-420	Zellinien	*[7]	Diagnosis or Pathology[7]	_[7]	*	*[7]	Finding[7]	_	
+4-9	421-428	gezeigt	_	_	_	_	_	_	_	
+4-10	429-430	[	_	_	_	_	_	_	_	
+4-11	430-433	REF	_	_	_	_	_	_	_	
+4-12	433-434	]	_	_	_	_	_	_	_	
+4-13	435-436	[	_	_	_	_	_	_	_	
+4-14	436-439	REF	_	_	_	_	_	_	_	
+4-15	439-440	]	_	_	_	_	_	_	_	
+4-16	440-441	.	_	_	_	_	_	_	_	
+
+#Text=- Antioxidantien fangen die freien Radikale, die während der Strahlentherapie generiert werden, ab und schützen in vitro damit die Krebszellen vor der Strahlentherapie.
+5-1	442-443	-	_	_	_	_	_	_	_	
+5-2	444-458	Antioxidantien	*	Nutrient or Body Substance	_	*	*	Substance	_	
+5-3	459-465	fangen	_	_	_	_	_	_	_	
+5-4	466-469	die	_	_	_	_	_	_	_	
+5-5	470-476	freien	*	*	_	*	*	Specification	_	
+5-6	477-485	Radikale	*	Nutrient or Body Substance	_	*	*	Substance	5-5	
+5-7	485-486	,	_	_	_	_	_	_	_	
+5-8	487-490	die	_	_	_	_	_	_	_	
+5-9	491-498	während	_	_	_	_	_	_	_	
+5-10	499-502	der	_	_	_	_	_	_	_	
+5-11	503-519	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	_	
+5-12	520-529	generiert	_	_	_	_	_	_	_	
+5-13	530-536	werden	_	_	_	_	_	_	_	
+5-14	536-537	,	_	_	_	_	_	_	_	
+5-15	538-540	ab	_	_	_	_	_	_	_	
+5-16	541-544	und	_	_	_	_	_	_	_	
+5-17	545-553	schützen	_	_	_	_	_	_	_	
+5-18	554-556	in	_	_	_	_	_	_	_	
+5-19	557-562	vitro	_	_	_	_	_	_	_	
+5-20	563-568	damit	_	_	_	_	_	_	_	
+5-21	569-572	die	_	_	_	_	_	_	_	
+5-22	573-584	Krebszellen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-23	585-588	vor	_	_	_	_	_	_	_	
+5-24	589-592	der	_	_	_	_	_	_	_	
+5-25	593-609	Strahlentherapie	*	Therapeutic	_	*	*	Procedure	_	
+5-26	609-610	.	_	_	_	_	_	_	_	
+
+#Text=Beide Theorien basieren auf experimentellen in vitro Untersuchungen [REF].
+6-1	611-616	Beide	_	_	_	_	_	_	_	
+6-2	617-625	Theorien	_	_	_	_	_	_	_	
+6-3	626-634	basieren	_	_	_	_	_	_	_	
+6-4	635-638	auf	_	_	_	_	_	_	_	
+6-5	639-654	experimentellen	_	_	_	_	_	_	_	
+6-6	655-657	in	_	_	_	_	_	_	_	
+6-7	658-663	vitro	_	_	_	_	_	_	_	
+6-8	664-678	Untersuchungen	_	_	_	_	_	_	_	
+6-9	679-680	[	_	_	_	_	_	_	_	
+6-10	680-683	REF	_	_	_	_	_	_	_	
+6-11	683-684	]	_	_	_	_	_	_	_	
+6-12	684-685	.	_	_	_	_	_	_	_	
+
+#Text=Die Thematik und deren in vivo Übertragbarkeit ist bislang kaum und beim Zervixkarzinom nicht ausreichend erforscht.
+7-1	686-689	Die	_	_	_	_	_	_	_	
+7-2	690-698	Thematik	_	_	_	_	_	_	_	
+7-3	699-702	und	_	_	_	_	_	_	_	
+7-4	703-708	deren	_	_	_	_	_	_	_	
+7-5	709-711	in	_	_	_	_	_	_	_	
+7-6	712-716	vivo	_	_	_	_	_	_	_	
+7-7	717-732	Übertragbarkeit	_	_	_	_	_	_	_	
+7-8	733-736	ist	_	_	_	_	_	_	_	
+7-9	737-744	bislang	_	_	_	_	_	_	_	
+7-10	745-749	kaum	_	_	_	_	_	_	_	
+7-11	750-753	und	_	_	_	_	_	_	_	
+7-12	754-758	beim	_	_	_	_	_	_	_	
+7-13	759-773	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-14	774-779	nicht	_	_	_	_	_	_	_	
+7-15	780-791	ausreichend	_	_	_	_	_	_	_	
+7-16	792-801	erforscht	_	_	_	_	_	_	_	
+7-17	801-802	.	_	_	_	_	_	_	_	
+
+#Text=Eine Studie, bei der eine Gruppe Frauen mit Strahlentherapie wegen eines Zervixkarzinoms eine Kombination von Vitamin C (60 mg), Vitamin E (10 mg), Vitamin A (1000 IU) und Selenium (50 mg) erhielten, ergab Hinweise für geringere Apoptose in der Studiengruppe im Vergleich zur Kontrollgruppe ohne eine entsprechende Supplementation [REF].
+8-1	803-807	Eine	_	_	_	_	_	_	_	
+8-2	808-814	Studie	_	_	_	_	_	_	_	
+8-3	814-815	,	_	_	_	_	_	_	_	
+8-4	816-819	bei	_	_	_	_	_	_	_	
+8-5	820-823	der	_	_	_	_	_	_	_	
+8-6	824-828	eine	_	_	_	_	_	_	_	
+8-7	829-835	Gruppe	_	_	_	_	_	_	_	
+8-8	836-842	Frauen	*	Other Finding	_	*	*	Finding	8-9[8_0]	
+8-9	843-846	mit	*[8]	*[8]	_[8]	*	*[8]	Specification[8]	_	
+8-10	847-863	Strahlentherapie	*[8]|*[9]	*[8]|Therapeutic[9]	_[8]|_[9]	*|*	*[8]|*[9]	Specification[8]|Procedure[9]	8-11[10_9]	
+8-11	864-869	wegen	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+8-12	870-875	eines	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+8-13	876-891	Zervixkarzinoms	*[10]|*[11]	*[10]|Diagnosis or Pathology[11]	_[10]|_[11]	*|*	*[10]|*[11]	Specification[10]|Finding[11]	_	
+8-14	892-896	eine	_	_	_	_	_	_	_	
+8-15	897-908	Kombination	_	_	_	_	_	_	_	
+8-16	909-912	von	_	_	_	_	_	_	_	
+8-17	913-920	Vitamin	*[12]	Nutrient or Body Substance[12]	_[12]	*	*[12]	Substance[12]	8-20[13_12]	
+8-18	921-922	C	*[12]	Nutrient or Body Substance[12]	_[12]	*	*[12]	Substance[12]	_	
+8-19	923-924	(	_	_	_	_	_	_	_	
+8-20	924-926	60	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+8-21	927-929	mg	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+8-22	929-930	)	_	_	_	_	_	_	_	
+8-23	930-931	,	_	_	_	_	_	_	_	
+8-24	932-939	Vitamin	*[14]	Nutrient or Body Substance[14]	_[14]	*	*[14]	Substance[14]	8-27[15_14]	
+8-25	940-941	E	*[14]	Nutrient or Body Substance[14]	_[14]	*	*[14]	Substance[14]	_	
+8-26	942-943	(	_	_	_	_	_	_	_	
+8-27	943-945	10	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+8-28	946-948	mg	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+8-29	948-949	)	_	_	_	_	_	_	_	
+8-30	949-950	,	_	_	_	_	_	_	_	
+8-31	951-958	Vitamin	*[16]	Nutrient or Body Substance[16]	_[16]	*	*[16]	Substance[16]	8-34[17_16]	
+8-32	959-960	A	*[16]	Nutrient or Body Substance[16]	_[16]	*	*[16]	Substance[16]	_	
+8-33	961-962	(	_	_	_	_	_	_	_	
+8-34	962-966	1000	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+8-35	967-969	IU	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+8-36	969-970	)	_	_	_	_	_	_	_	
+8-37	971-974	und	_	_	_	_	_	_	_	
+8-38	975-983	Selenium	*	Nutrient or Body Substance	_	*	*	Substance	8-40[18_0]	
+8-39	984-985	(	_	_	_	_	_	_	_	
+8-40	985-987	50	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+8-41	988-990	mg	*[18]	*[18]	_[18]	*	*[18]	Specification[18]	_	
+8-42	990-991	)	_	_	_	_	_	_	_	
+8-43	992-1001	erhielten	_	_	_	_	_	_	_	
+8-44	1001-1002	,	_	_	_	_	_	_	_	
+8-45	1003-1008	ergab	_	_	_	_	_	_	_	
+8-46	1009-1017	Hinweise	_	_	_	_	_	_	_	
+8-47	1018-1021	für	_	_	_	_	_	_	_	
+8-48	1022-1031	geringere	*	*	_	*	*	Specification	_	
+8-49	1032-1040	Apoptose	*	Other Finding	_	*	*	Finding	8-48	
+8-50	1041-1043	in	_	_	_	_	_	_	_	
+8-51	1044-1047	der	_	_	_	_	_	_	_	
+8-52	1048-1061	Studiengruppe	_	_	_	_	_	_	_	
+8-53	1062-1064	im	_	_	_	_	_	_	_	
+8-54	1065-1074	Vergleich	_	_	_	_	_	_	_	
+8-55	1075-1078	zur	_	_	_	_	_	_	_	
+8-56	1079-1093	Kontrollgruppe	_	_	_	_	_	_	_	
+8-57	1094-1098	ohne	_	_	_	_	_	_	_	
+8-58	1099-1103	eine	_	_	_	_	_	_	_	
+8-59	1104-1117	entsprechende	_	_	_	_	_	_	_	
+8-60	1118-1133	Supplementation	*	Therapeutic	_	*	*	Procedure	_	
+8-61	1134-1135	[	_	_	_	_	_	_	_	
+8-62	1135-1138	REF	_	_	_	_	_	_	_	
+8-63	1138-1139	]	_	_	_	_	_	_	_	
+8-64	1139-1140	.	_	_	_	_	_	_	_	
+
+#Text=Patientenrelevante Endpunkte wie Gesamtüberleben und krankheitsfreies Überleben wurden nicht untersucht.
+9-1	1141-1159	Patientenrelevante	_	_	_	_	_	_	_	
+9-2	1160-1169	Endpunkte	_	_	_	_	_	_	_	
+9-3	1170-1173	wie	_	_	_	_	_	_	_	
+9-4	1174-1189	Gesamtüberleben	*	Other Finding	_	*	*	Finding	_	
+9-5	1190-1193	und	_	_	_	_	_	_	_	
+9-6	1194-1210	krankheitsfreies	*	*	_	*	*	Specification	_	
+9-7	1211-1220	Überleben	*	Other Finding	_	*	*	Finding	9-6	
+9-8	1221-1227	wurden	_	_	_	_	_	_	_	
+9-9	1228-1233	nicht	_	_	_	_	_	_	_	
+9-10	1234-1244	untersucht	_	_	_	_	_	_	_	
+9-11	1244-1245	.	_	_	_	_	_	_	_	
+
+#Text=Auch aus Studien bei anderen Tumorentitäten liegen keine entsprechenden Daten vor [REF].
+10-1	1246-1250	Auch	_	_	_	_	_	_	_	
+10-2	1251-1254	aus	_	_	_	_	_	_	_	
+10-3	1255-1262	Studien	_	_	_	_	_	_	_	
+10-4	1263-1266	bei	_	_	_	_	_	_	_	
+10-5	1267-1274	anderen	_	_	_	_	_	_	_	
+10-6	1275-1289	Tumorentitäten	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-7	1290-1296	liegen	_	_	_	_	_	_	_	
+10-8	1297-1302	keine	_	_	_	_	_	_	_	
+10-9	1303-1317	entsprechenden	_	_	_	_	_	_	_	
+10-10	1318-1323	Daten	_	_	_	_	_	_	_	
+10-11	1324-1327	vor	_	_	_	_	_	_	_	
+10-12	1328-1329	[	_	_	_	_	_	_	_	
+10-13	1329-1332	REF	_	_	_	_	_	_	_	
+10-14	1332-1333	]	_	_	_	_	_	_	_	
+10-15	1333-1334	.	_	_	_	_	_	_	_	
+
+#Text=Topisch appliziertes Vitamin C linderte nach den Daten von Halperin et al. eine Strahlendermatitis nicht [REF].
+11-1	1335-1342	Topisch	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+11-2	1343-1355	appliziertes	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+11-3	1356-1363	Vitamin	*[20]	Clinical Drug[20]	_[20]	*	*[20]	Substance[20]	11-1[19_20]	
+11-4	1364-1365	C	*[20]	Clinical Drug[20]	_[20]	*	*[20]	Substance[20]	_	
+11-5	1366-1374	linderte	_	_	_	_	_	_	_	
+11-6	1375-1379	nach	_	_	_	_	_	_	_	
+11-7	1380-1383	den	_	_	_	_	_	_	_	
+11-8	1384-1389	Daten	_	_	_	_	_	_	_	
+11-9	1390-1393	von	_	_	_	_	_	_	_	
+11-10	1394-1402	Halperin	_	_	_	_	_	_	_	
+11-11	1403-1405	et	_	_	_	_	_	_	_	
+11-12	1406-1408	al	_	_	_	_	_	_	_	
+11-13	1408-1409	.	_	_	_	_	_	_	_	
+11-14	1410-1414	eine	_	_	_	_	_	_	_	
+11-15	1415-1433	Strahlendermatitis	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-16	1434-1439	nicht	_	_	_	_	_	_	_	
+11-17	1440-1441	[	_	_	_	_	_	_	_	
+11-18	1441-1444	REF	_	_	_	_	_	_	_	
+11-19	1444-1445	]	_	_	_	_	_	_	_	
+11-20	1445-1446	.	_	_	_	_	_	_	_	
+
+#Text=Zu uterinen Karzinomen (Endometrium- und Zervixkarzinom) existiert eine multizentrische, randomisierte Phase-3-Studie, die die Auswirkungen einer Supplementation von Natriumselenit auf die unerwünschten Wirkungen der Strahlentherapie untersuchte.
+12-1	1447-1449	Zu	_	_	_	_	_	_	_	
+12-2	1450-1458	uterinen	*	*	_	*	*	Specification	_	
+12-3	1459-1469	Karzinomen	*	Diagnosis or Pathology	_	*	*	Finding	12-2	
+12-4	1470-1471	(	_	_	_	_	_	_	_	
+12-5	1471-1482	Endometrium	*	Diagnosis or Pathology		12-8	karzinom	Finding	_	
+12-6	1482-1483	-	_	_	_	_	_	_	_	
+12-7	1484-1487	und	_	_	_	_	_	_	_	
+12-8	1488-1502	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+12-9	1502-1503	)	_	_	_	_	_	_	_	
+12-10	1504-1513	existiert	_	_	_	_	_	_	_	
+12-11	1514-1518	eine	_	_	_	_	_	_	_	
+12-12	1519-1534	multizentrische	_	_	_	_	_	_	_	
+12-13	1534-1535	,	_	_	_	_	_	_	_	
+12-14	1536-1549	randomisierte	_	_	_	_	_	_	_	
+12-15	1550-1555	Phase	_	_	_	_	_	_	_	
+12-16	1555-1556	-	_	_	_	_	_	_	_	
+12-17	1556-1557	3	_	_	_	_	_	_	_	
+12-18	1557-1558	-	_	_	_	_	_	_	_	
+12-19	1558-1564	Studie	_	_	_	_	_	_	_	
+12-20	1564-1565	,	_	_	_	_	_	_	_	
+12-21	1566-1569	die	_	_	_	_	_	_	_	
+12-22	1570-1573	die	_	_	_	_	_	_	_	
+12-23	1574-1586	Auswirkungen	_	_	_	_	_	_	_	
+12-24	1587-1592	einer	_	_	_	_	_	_	_	
+12-25	1593-1608	Supplementation	*	Therapeutic	_	*	*	Procedure	12-26[21_0]	
+12-26	1609-1612	von	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+12-27	1613-1627	Natriumselenit	*[21]|*[22]	*[21]|Nutrient or Body Substance[22]	_[21]|_[22]	*|*	*[21]|*[22]	Specification[21]|Substance[22]	_	
+12-28	1628-1631	auf	_	_	_	_	_	_	_	
+12-29	1632-1635	die	_	_	_	_	_	_	_	
+12-30	1636-1649	unerwünschten	*	*	_	*	*	Specification	_	
+12-31	1650-1659	Wirkungen	*	Diagnosis or Pathology	_	*	*	Finding	12-30|12-32[23_0]	
+12-32	1660-1663	der	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+12-33	1664-1680	Strahlentherapie	*[23]|*[24]	*[23]|Therapeutic[24]	_[23]|_[24]	*|*	*[23]|*[24]	Specification[23]|Procedure[24]	_	
+12-34	1681-1692	untersuchte	_	_	_	_	_	_	_	
+12-35	1692-1693	.	_	_	_	_	_	_	_	
+
+#Text=Die Studie umfasste lediglich 81 Patientinnen mit uterinen Karzinomen (11 mit Zervixkarzinom) und nachgewiesenem Selenmangel.
+13-1	1694-1697	Die	_	_	_	_	_	_	_	
+13-2	1698-1704	Studie	_	_	_	_	_	_	_	
+13-3	1705-1713	umfasste	_	_	_	_	_	_	_	
+13-4	1714-1723	lediglich	_	_	_	_	_	_	_	
+13-5	1724-1726	81	_	_	_	_	_	_	_	
+13-6	1727-1739	Patientinnen	_	_	_	_	_	_	_	
+13-7	1740-1743	mit	_	_	_	_	_	_	_	
+13-8	1744-1752	uterinen	*	*	_	*	*	Specification	_	
+13-9	1753-1763	Karzinomen	*	Diagnosis or Pathology	_	*	*	Finding	13-8	
+13-10	1764-1765	(	_	_	_	_	_	_	_	
+13-11	1765-1767	11	_	_	_	_	_	_	_	
+13-12	1768-1771	mit	_	_	_	_	_	_	_	
+13-13	1772-1786	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+13-14	1786-1787	)	_	_	_	_	_	_	_	
+13-15	1788-1791	und	_	_	_	_	_	_	_	
+13-16	1792-1806	nachgewiesenem	*	*	_	*	*	Specification	_	
+13-17	1807-1818	Selenmangel	*	Diagnosis or Pathology	_	*	*	Finding	13-16	
+13-18	1818-1819	.	_	_	_	_	_	_	_	
+
+#Text=Sie ergab, dass durch eine Selensupplementation signifikant weniger häufig (20,5 % versus 44,5 %) Diarrhoen auftraten [REF].
+14-1	1820-1823	Sie	_	_	_	_	_	_	_	
+14-2	1824-1829	ergab	_	_	_	_	_	_	_	
+14-3	1829-1830	,	_	_	_	_	_	_	_	
+14-4	1831-1835	dass	_	_	_	_	_	_	_	
+14-5	1836-1841	durch	_	_	_	_	_	_	_	
+14-6	1842-1846	eine	_	_	_	_	_	_	_	
+14-7	1847-1867	Selensupplementation	*	Therapeutic	_	*	*	Procedure	_	
+14-8	1868-1879	signifikant	_	_	_	_	_	_	_	
+14-9	1880-1887	weniger	_	_	_	_	_	_	_	
+14-10	1888-1894	häufig	_	_	_	_	_	_	_	
+14-11	1895-1896	(	_	_	_	_	_	_	_	
+14-12	1896-1900	20,5	_	_	_	_	_	_	_	
+14-13	1901-1902	%	_	_	_	_	_	_	_	
+14-14	1903-1909	versus	_	_	_	_	_	_	_	
+14-15	1910-1914	44,5	_	_	_	_	_	_	_	
+14-16	1915-1916	%	_	_	_	_	_	_	_	
+14-17	1916-1917	)	_	_	_	_	_	_	_	
+14-18	1918-1927	Diarrhoen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+14-19	1928-1937	auftraten	_	_	_	_	_	_	_	
+14-20	1938-1939	[	_	_	_	_	_	_	_	
+14-21	1939-1942	REF	_	_	_	_	_	_	_	
+14-22	1942-1943	]	_	_	_	_	_	_	_	
+14-23	1943-1944	.	_	_	_	_	_	_	_	
+
+#Text=Hinweise für ein ungünstigeres rezidivfreies und Gesamtüberleben fanden sich nicht.
+15-1	1945-1953	Hinweise	_	_	_	_	_	_	_	
+15-2	1954-1957	für	_	_	_	_	_	_	_	
+15-3	1958-1961	ein	_	_	_	_	_	_	_	
+15-4	1962-1975	ungünstigeres	*	Other Finding		15-7	\_Überleben	Finding	_	
+15-5	1976-1989	rezidivfreies	*	Other Finding		15-7	\_Überleben	Finding	_	
+15-6	1990-1993	und	_	_	_	_	_	_	_	
+15-7	1994-2009	Gesamtüberleben	*	Other Finding	_	*	*	Finding	_	
+15-8	2010-2016	fanden	_	_	_	_	_	_	_	
+15-9	2017-2021	sich	_	_	_	_	_	_	_	
+15-10	2022-2027	nicht	_	_	_	_	_	_	_	
+15-11	2027-2028	.	_	_	_	_	_	_	_	
+
+#Text=Eine krebspräventive Wirkung der Selensupplementation konnte in einer aktuellen Cochrane-Analyse von 2011 nicht belegt werden [REF].
+16-1	2029-2033	Eine	_	_	_	_	_	_	_	
+16-2	2034-2049	krebspräventive	*	*	_	*	*	Specification	_	
+16-3	2050-2057	Wirkung	*	Other Finding	_	*	*	Finding	16-4[25_0]|16-2	
+16-4	2058-2061	der	*[25]	*[25]	_[25]	*	*[25]	Specification[25]	_	
+16-5	2062-2082	Selensupplementation	*[25]|*[26]	*[25]|Therapeutic[26]	_[25]|_[26]	*|*	*[25]|*[26]	Specification[25]|Procedure[26]	_	
+16-6	2083-2089	konnte	_	_	_	_	_	_	_	
+16-7	2090-2092	in	_	_	_	_	_	_	_	
+16-8	2093-2098	einer	_	_	_	_	_	_	_	
+16-9	2099-2108	aktuellen	_	_	_	_	_	_	_	
+16-10	2109-2125	Cochrane-Analyse	_	_	_	_	_	_	_	
+16-11	2126-2129	von	_	_	_	_	_	_	_	
+16-12	2130-2134	2011	_	_	_	_	_	_	_	
+16-13	2135-2140	nicht	_	_	_	_	_	_	_	
+16-14	2141-2147	belegt	_	_	_	_	_	_	_	
+16-15	2148-2154	werden	_	_	_	_	_	_	_	
+16-16	2155-2156	[	_	_	_	_	_	_	_	
+16-17	2156-2159	REF	_	_	_	_	_	_	_	
+16-18	2159-2160	]	_	_	_	_	_	_	_	
+16-19	2160-2161	.	_	_	_	_	_	_	_	
+
+#Text=Einige Studien haben Vitamin A bei Zervixkarzinom untersucht.
+17-1	2162-2168	Einige	_	_	_	_	_	_	_	
+17-2	2169-2176	Studien	_	_	_	_	_	_	_	
+17-3	2177-2182	haben	_	_	_	_	_	_	_	
+17-4	2183-2190	Vitamin	*[27]	Nutrient or Body Substance[27]	_[27]	*	*[27]	Substance[27]	_	
+17-5	2191-2192	A	*[27]	Nutrient or Body Substance[27]	_[27]	*	*[27]	Substance[27]	_	
+17-6	2193-2196	bei	_	_	_	_	_	_	_	
+17-7	2197-2211	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+17-8	2212-2222	untersucht	_	_	_	_	_	_	_	
+17-9	2222-2223	.	_	_	_	_	_	_	_	
+
+#Text=In einer kleinen randomisierten Studie (n=42) wurde eine verbesserte Immunreaktion und ein tendenziell geringere Rezidivrate bei Vitamin-A-Gabe festgestellt [REF] [REF].
+18-1	2224-2226	In	_	_	_	_	_	_	_	
+18-2	2227-2232	einer	_	_	_	_	_	_	_	
+18-3	2233-2240	kleinen	_	_	_	_	_	_	_	
+18-4	2241-2255	randomisierten	_	_	_	_	_	_	_	
+18-5	2256-2262	Studie	_	_	_	_	_	_	_	
+18-6	2263-2264	(	_	_	_	_	_	_	_	
+18-7	2264-2265	n	_	_	_	_	_	_	_	
+18-8	2265-2266	=	_	_	_	_	_	_	_	
+18-9	2266-2268	42	_	_	_	_	_	_	_	
+18-10	2268-2269	)	_	_	_	_	_	_	_	
+18-11	2270-2275	wurde	_	_	_	_	_	_	_	
+18-12	2276-2280	eine	_	_	_	_	_	_	_	
+18-13	2281-2292	verbesserte	*	*	_	*	*	Specification	_	
+18-14	2293-2306	Immunreaktion	*	Other Finding	_	*	*	Finding	18-13	
+18-15	2307-2310	und	_	_	_	_	_	_	_	
+18-16	2311-2314	ein	_	_	_	_	_	_	_	
+18-17	2315-2326	tendenziell	_	_	_	_	_	_	_	
+18-18	2327-2336	geringere	*	*	_	*	*	Specification	_	
+18-19	2337-2348	Rezidivrate	*	Other Finding	_	*	*	Finding	18-18	
+18-20	2349-2352	bei	_	_	_	_	_	_	_	
+18-21	2353-2367	Vitamin-A-Gabe	*	Therapeutic	_	*	*	Procedure	_	
+18-22	2368-2380	festgestellt	_	_	_	_	_	_	_	
+18-23	2381-2382	[	_	_	_	_	_	_	_	
+18-24	2382-2385	REF	_	_	_	_	_	_	_	
+18-25	2385-2386	]	_	_	_	_	_	_	_	
+18-26	2387-2388	[	_	_	_	_	_	_	_	
+18-27	2388-2391	REF	_	_	_	_	_	_	_	
+18-28	2391-2392	]	_	_	_	_	_	_	_	
+18-29	2392-2393	.	_	_	_	_	_	_	_	
+
+#Text=Eine unkontrollierte Studie stellte ein verstärktes Ansprechen der Strahlentherapie bei einer Kombination von Retinoiden und Interferonen fest [REF].
+19-1	2394-2398	Eine	_	_	_	_	_	_	_	
+19-2	2399-2414	unkontrollierte	_	_	_	_	_	_	_	
+19-3	2415-2421	Studie	_	_	_	_	_	_	_	
+19-4	2422-2429	stellte	_	_	_	_	_	_	_	
+19-5	2430-2433	ein	_	_	_	_	_	_	_	
+19-6	2434-2445	verstärktes	*	*	_	*	*	Specification	_	
+19-7	2446-2456	Ansprechen	*	Other Finding	_	*	*	Finding	19-6|19-8[28_0]	
+19-8	2457-2460	der	*[28]	*[28]	_[28]	*	*[28]	Specification[28]	_	
+19-9	2461-2477	Strahlentherapie	*[28]|*[29]	*[28]|Therapeutic[29]	_[28]|_[29]	*|*	*[28]|*[29]	Specification[28]|Procedure[29]	_	
+19-10	2478-2481	bei	_	_	_	_	_	_	_	
+19-11	2482-2487	einer	_	_	_	_	_	_	_	
+19-12	2488-2499	Kombination	_	_	_	_	_	_	_	
+19-13	2500-2503	von	_	_	_	_	_	_	_	
+19-14	2504-2514	Retinoiden	*	Clinical Drug	_	*	*	Substance	_	
+19-15	2515-2518	und	_	_	_	_	_	_	_	
+19-16	2519-2531	Interferonen	*	Clinical Drug	_	*	*	Substance	_	
+19-17	2532-2536	fest	_	_	_	_	_	_	_	
+19-18	2537-2538	[	_	_	_	_	_	_	_	
+19-19	2538-2541	REF	_	_	_	_	_	_	_	
+19-20	2541-2542	]	_	_	_	_	_	_	_	
+19-21	2542-2543	.	_	_	_	_	_	_	_	
+
+#Text=Es spricht einiges dafür, dass Vitamin A eine Bedeutung beim Zervixkarzinom haben könnte [REF].
+20-1	2544-2546	Es	_	_	_	_	_	_	_	
+20-2	2547-2554	spricht	_	_	_	_	_	_	_	
+20-3	2555-2562	einiges	_	_	_	_	_	_	_	
+20-4	2563-2568	dafür	_	_	_	_	_	_	_	
+20-5	2568-2569	,	_	_	_	_	_	_	_	
+20-6	2570-2574	dass	_	_	_	_	_	_	_	
+20-7	2575-2582	Vitamin	*[30]	Nutrient or Body Substance[30]	_[30]	*	*[30]	Substance[30]	_	
+20-8	2583-2584	A	*[30]	Nutrient or Body Substance[30]	_[30]	*	*[30]	Substance[30]	_	
+20-9	2585-2589	eine	_	_	_	_	_	_	_	
+20-10	2590-2599	Bedeutung	_	_	_	_	_	_	_	
+20-11	2600-2604	beim	_	_	_	_	_	_	_	
+20-12	2605-2619	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+20-13	2620-2625	haben	_	_	_	_	_	_	_	
+20-14	2626-2632	könnte	_	_	_	_	_	_	_	
+20-15	2633-2634	[	_	_	_	_	_	_	_	
+20-16	2634-2637	REF	_	_	_	_	_	_	_	
+20-17	2637-2638	]	_	_	_	_	_	_	_	
+20-18	2638-2639	.	_	_	_	_	_	_	_	
+
+#Text=Diese Hinweise aus Studien sind nicht ausreichend, um eine Empfehlung für einen vorbeugenden Einsatz von Vitaminpräparaten, Antioxidantien und/oder Selen zur Vermeidung unerwünschter Nebenwirkungen in der Therapie von Zervixkarzinompatientinnen abzuleiten.
+21-1	2640-2645	Diese	_	_	_	_	_	_	_	
+21-2	2646-2654	Hinweise	_	_	_	_	_	_	_	
+21-3	2655-2658	aus	_	_	_	_	_	_	_	
+21-4	2659-2666	Studien	_	_	_	_	_	_	_	
+21-5	2667-2671	sind	_	_	_	_	_	_	_	
+21-6	2672-2677	nicht	_	_	_	_	_	_	_	
+21-7	2678-2689	ausreichend	_	_	_	_	_	_	_	
+21-8	2689-2690	,	_	_	_	_	_	_	_	
+21-9	2691-2693	um	_	_	_	_	_	_	_	
+21-10	2694-2698	eine	_	_	_	_	_	_	_	
+21-11	2699-2709	Empfehlung	_	_	_	_	_	_	_	
+21-12	2710-2713	für	_	_	_	_	_	_	_	
+21-13	2714-2719	einen	_	_	_	_	_	_	_	
+21-14	2720-2732	vorbeugenden	*	*	_	*	*	Specification	_	
+21-15	2733-2740	Einsatz	*	Therapeutic	_	*	*	Procedure	21-14|21-16[31_0]|21-19[34_0]|21-23[36_0]	
+21-16	2741-2744	von	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+21-17	2745-2762	Vitaminpräparaten	*[31]|*[32]	*[31]|Nutrient or Body Substance[32]	_[31]|_[32]	*|*	*[31]|*[32]	Specification[31]|Substance[32]	_	
+21-18	2762-2763	,	_	_	_	_	_	_	_	
+21-19	2764-2778	Antioxidantien	*[33]|\_von\_[34]	Nutrient or Body Substance[33]|*[34]	_[33]|_[34]	*|*	*[33]|*[34]	Substance[33]|Specification[34]	_	
+21-20	2779-2782	und	_	_	_	_	_	_	_	
+21-21	2782-2783	/	_	_	_	_	_	_	_	
+21-22	2783-2787	oder	_	_	_	_	_	_	_	
+21-23	2788-2793	Selen	*[35]|\_von\_[36]	Nutrient or Body Substance[35]|*[36]	_[35]|_[36]	*|*	*[35]|*[36]	Substance[35]|Specification[36]	_	
+21-24	2794-2797	zur	_	_	_	_	_	_	_	
+21-25	2798-2808	Vermeidung	*	Therapeutic	_	*	*	Procedure	21-26[37_0]	
+21-26	2809-2822	unerwünschter	*[37]|*[38]	*[37]|*[38]	_[37]|_[38]	*|*	*[37]|*[38]	Specification[37]|Specification[38]	_	
+21-27	2823-2837	Nebenwirkungen	*[37]|*[39]	*[37]|Diagnosis or Pathology[39]	_[37]|_[39]	*|*	*[37]|*[39]	Specification[37]|Finding[39]	21-26[38_39]|21-28[40_39]	
+21-28	2838-2840	in	*[40]	*[40]	_[40]	*	*[40]	Specification[40]	_	
+21-29	2841-2844	der	*[40]	*[40]	_[40]	*	*[40]	Specification[40]	_	
+21-30	2845-2853	Therapie	*[40]|*[41]	*[40]|Therapeutic[41]	_[40]|_[41]	*|*	*[40]|*[41]	Specification[40]|Procedure[41]	21-31[42_41]	
+21-31	2854-2857	von	*[42]	*[42]	_[42]	*	*[42]	Specification[42]	_	
+21-32	2858-2884	Zervixkarzinompatientinnen	*[42]|*[43]	*[42]|Diagnosis or Pathology[43]	_[42]|_[43]	*|*	*[42]|*[43]	Specification[42]|Finding[43]	_	
+21-33	2885-2895	abzuleiten	_	_	_	_	_	_	_	
+21-34	2895-2896	.	_	_	_	_	_	_	_	

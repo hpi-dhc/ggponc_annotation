@@ -1,0 +1,230 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=Die Empfehlungen wurden anhand der auf einem Expertenkonsens basierenden Empfehlungen der S3-Leitlinie Palliativmedizin adaptiert.
+1-1	0-3	Die	_	_	_	_	_	_	_	
+1-2	4-16	Empfehlungen	_	_	_	_	_	_	_	
+1-3	17-23	wurden	_	_	_	_	_	_	_	
+1-4	24-30	anhand	_	_	_	_	_	_	_	
+1-5	31-34	der	_	_	_	_	_	_	_	
+1-6	35-38	auf	_	_	_	_	_	_	_	
+1-7	39-44	einem	_	_	_	_	_	_	_	
+1-8	45-60	Expertenkonsens	_	_	_	_	_	_	_	
+1-9	61-72	basierenden	_	_	_	_	_	_	_	
+1-10	73-85	Empfehlungen	_	_	_	_	_	_	_	
+1-11	86-89	der	_	_	_	_	_	_	_	
+1-12	90-92	S3	_	_	_	_	_	_	_	
+1-13	92-93	-	_	_	_	_	_	_	_	
+1-14	93-102	Leitlinie	_	_	_	_	_	_	_	
+1-15	103-119	Palliativmedizin	_	_	_	_	_	_	_	
+1-16	120-129	adaptiert	_	_	_	_	_	_	_	
+1-17	129-130	.	_	_	_	_	_	_	_	
+
+#Text=Folgende Modifikationen der ur-sprünglichen Empfehlungen wurden vorgenommen:
+2-1	131-139	Folgende	_	_	_	_	_	_	_	
+2-2	140-154	Modifikationen	_	_	_	_	_	_	_	
+2-3	155-158	der	_	_	_	_	_	_	_	
+2-4	159-174	ur-sprünglichen	_	_	_	_	_	_	_	
+2-5	175-187	Empfehlungen	_	_	_	_	_	_	_	
+2-6	188-194	wurden	_	_	_	_	_	_	_	
+2-7	195-206	vorgenommen	_	_	_	_	_	_	_	
+2-8	206-207	:	_	_	_	_	_	_	_	
+
+#Text=Die Empfehlungen der S3-Leitlinie Palliativmedizin sind für die Zielgruppe „Patienten mit einer nicht heilbaren Krebserkrankungen“ formuliert.
+3-1	208-211	Die	_	_	_	_	_	_	_	
+3-2	212-224	Empfehlungen	_	_	_	_	_	_	_	
+3-3	225-228	der	_	_	_	_	_	_	_	
+3-4	229-231	S3	_	_	_	_	_	_	_	
+3-5	231-232	-	_	_	_	_	_	_	_	
+3-6	232-241	Leitlinie	_	_	_	_	_	_	_	
+3-7	242-258	Palliativmedizin	_	_	_	_	_	_	_	
+3-8	259-263	sind	_	_	_	_	_	_	_	
+3-9	264-267	für	_	_	_	_	_	_	_	
+3-10	268-271	die	_	_	_	_	_	_	_	
+3-11	272-282	Zielgruppe	_	_	_	_	_	_	_	
+3-12	283-284	„	_	_	_	_	_	_	_	
+3-13	284-293	Patienten	_	_	_	_	_	_	_	
+3-14	294-297	mit	_	_	_	_	_	_	_	
+3-15	298-303	einer	_	_	_	_	_	_	_	
+3-16	304-309	nicht	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+3-17	310-319	heilbaren	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+3-18	320-337	Krebserkrankungen	*	Diagnosis or Pathology	_	*	*	Finding	3-16[1_0]	
+3-19	337-338	“	_	_	_	_	_	_	_	
+3-20	339-349	formuliert	_	_	_	_	_	_	_	
+3-21	349-350	.	_	_	_	_	_	_	_	
+
+#Text=In dem Adaptionsprozess für die S3-Leitlinie Lungenkarzinom wurde überprüft, welche Empfehlungen Auswirkungen auf die Zielgruppe „Patienten mit einer nicht-heilbaren Lungenkarzinomerkrankung“ (NSCLC IV bzw. SCLC extensive disease) haben.
+4-1	351-353	In	_	_	_	_	_	_	_	
+4-2	354-357	dem	_	_	_	_	_	_	_	
+4-3	358-374	Adaptionsprozess	_	_	_	_	_	_	_	
+4-4	375-378	für	_	_	_	_	_	_	_	
+4-5	379-382	die	_	_	_	_	_	_	_	
+4-6	383-385	S3	_	_	_	_	_	_	_	
+4-7	385-386	-	_	_	_	_	_	_	_	
+4-8	386-395	Leitlinie	_	_	_	_	_	_	_	
+4-9	396-410	Lungenkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+4-10	411-416	wurde	_	_	_	_	_	_	_	
+4-11	417-426	überprüft	_	_	_	_	_	_	_	
+4-12	426-427	,	_	_	_	_	_	_	_	
+4-13	428-434	welche	_	_	_	_	_	_	_	
+4-14	435-447	Empfehlungen	_	_	_	_	_	_	_	
+4-15	448-460	Auswirkungen	_	_	_	_	_	_	_	
+4-16	461-464	auf	_	_	_	_	_	_	_	
+4-17	465-468	die	_	_	_	_	_	_	_	
+4-18	469-479	Zielgruppe	_	_	_	_	_	_	_	
+4-19	480-481	„	_	_	_	_	_	_	_	
+4-20	481-490	Patienten	_	_	_	_	_	_	_	
+4-21	491-494	mit	_	_	_	_	_	_	_	
+4-22	495-500	einer	_	_	_	_	_	_	_	
+4-23	501-516	nicht-heilbaren	*	*	_	*	*	Specification	_	
+4-24	517-541	Lungenkarzinomerkrankung	*	Diagnosis or Pathology	_	*	*	Finding	4-23	
+4-25	541-542	“	_	_	_	_	_	_	_	
+4-26	543-544	(	_	_	_	_	_	_	_	
+4-27	544-549	NSCLC	*	Diagnosis or Pathology	_	*	*	Finding	4-28	
+4-28	550-552	IV	*	*	_	*	*	Specification	_	
+4-29	553-556	bzw	_	_	_	_	_	_	_	
+4-30	556-557	.	_	_	_	_	_	_	_	
+4-31	558-562	SCLC	*	Diagnosis or Pathology	_	*	*	Finding	4-32[2_0]	
+4-32	563-572	extensive	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+4-33	573-580	disease	*[2]	*[2]	_[2]	*	*[2]	Specification[2]	_	
+4-34	580-581	)	_	_	_	_	_	_	_	
+4-35	582-587	haben	_	_	_	_	_	_	_	
+4-36	587-588	.	_	_	_	_	_	_	_	
+
+#Text=Diese Zielgruppe wurde bei der Übertragung in die aktuelle Leitlinie benannt.
+5-1	589-594	Diese	_	_	_	_	_	_	_	
+5-2	595-605	Zielgruppe	_	_	_	_	_	_	_	
+5-3	606-611	wurde	_	_	_	_	_	_	_	
+5-4	612-615	bei	_	_	_	_	_	_	_	
+5-5	616-619	der	_	_	_	_	_	_	_	
+5-6	620-631	Übertragung	_	_	_	_	_	_	_	
+5-7	632-634	in	_	_	_	_	_	_	_	
+5-8	635-638	die	_	_	_	_	_	_	_	
+5-9	639-647	aktuelle	_	_	_	_	_	_	_	
+5-10	648-657	Leitlinie	_	_	_	_	_	_	_	
+5-11	658-665	benannt	_	_	_	_	_	_	_	
+5-12	665-666	.	_	_	_	_	_	_	_	
+
+#Text=„Objektive Messverfahren (z.B. Blutgasanalyse, Lungenfunktionstest) oder Parameter (z.B. erhöhte Atemfrequenz) korrelieren insbesondere in fortgeschrittenen Krankheitsstadien nur unzureichend mit dem subjektiven Erleben und sind daher nicht geeignet für die Erfassung von Atemnot [REF].
+6-1	667-668	„	_	_	_	_	_	_	_	
+6-2	668-677	Objektive	*	*	_	*	*	Specification	_	
+6-3	678-691	Messverfahren	*	Diagnostic	_	*	*	Procedure	6-2	
+6-4	692-693	(	_	_	_	_	_	_	_	
+6-5	693-696	z.B	_	_	_	_	_	_	_	
+6-6	696-697	.	_	_	_	_	_	_	_	
+6-7	698-712	Blutgasanalyse	*	Diagnostic	_	*	*	Procedure	_	
+6-8	712-713	,	_	_	_	_	_	_	_	
+6-9	714-733	Lungenfunktionstest	*	Diagnostic	_	*	*	Procedure	_	
+6-10	733-734	)	_	_	_	_	_	_	_	
+6-11	735-739	oder	_	_	_	_	_	_	_	
+6-12	740-749	Parameter	_	_	_	_	_	_	_	
+6-13	750-751	(	_	_	_	_	_	_	_	
+6-14	751-754	z.B	_	_	_	_	_	_	_	
+6-15	754-755	.	_	_	_	_	_	_	_	
+6-16	756-763	erhöhte	*	*	_	*	*	Specification	_	
+6-17	764-776	Atemfrequenz	*	Other Finding	_	*	*	Finding	6-16	
+6-18	776-777	)	_	_	_	_	_	_	_	
+6-19	778-789	korrelieren	_	_	_	_	_	_	_	
+6-20	790-802	insbesondere	_	_	_	_	_	_	_	
+6-21	803-805	in	_	_	_	_	_	_	_	
+6-22	806-823	fortgeschrittenen	*	*	_	*	*	Specification	_	
+6-23	824-841	Krankheitsstadien	*	Diagnosis or Pathology	_	*	*	Finding	6-22	
+6-24	842-845	nur	_	_	_	_	_	_	_	
+6-25	846-858	unzureichend	_	_	_	_	_	_	_	
+6-26	859-862	mit	_	_	_	_	_	_	_	
+6-27	863-866	dem	_	_	_	_	_	_	_	
+6-28	867-878	subjektiven	*	*	_	*	*	Specification	_	
+6-29	879-886	Erleben	*	Other Finding	_	*	*	Finding	6-28	
+6-30	887-890	und	_	_	_	_	_	_	_	
+6-31	891-895	sind	_	_	_	_	_	_	_	
+6-32	896-901	daher	_	_	_	_	_	_	_	
+6-33	902-907	nicht	_	_	_	_	_	_	_	
+6-34	908-916	geeignet	_	_	_	_	_	_	_	
+6-35	917-920	für	_	_	_	_	_	_	_	
+6-36	921-924	die	_	_	_	_	_	_	_	
+6-37	925-934	Erfassung	*	Diagnostic	_	*	*	Procedure	6-38[3_0]	
+6-38	935-938	von	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+6-39	939-946	Atemnot	*[3]|*[4]	*[3]|Diagnosis or Pathology[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Finding[4]	_	
+6-40	947-948	[	_	_	_	_	_	_	_	
+6-41	948-951	REF	_	_	_	_	_	_	_	
+6-42	951-952	]	_	_	_	_	_	_	_	
+6-43	952-953	.	_	_	_	_	_	_	_	
+
+#Text=“ [REF] „Da Atemnot ein mehrdimensionales und multifaktorielles Symptom ist, das durch physische (und funktionale), emotionale, kognitive, spirituelle und soziale Dimensionen des Menschen moduliert wird, kann Atemnot im Rahmen einer ausführlicheren Erfassung weiter differenziert werden [REF].
+7-1	954-955	“	_	_	_	_	_	_	_	
+7-2	956-957	[	_	_	_	_	_	_	_	
+7-3	957-960	REF	_	_	_	_	_	_	_	
+7-4	960-961	]	_	_	_	_	_	_	_	
+7-5	962-963	„	_	_	_	_	_	_	_	
+7-6	963-965	Da	_	_	_	_	_	_	_	
+7-7	966-973	Atemnot	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-8	974-977	ein	_	_	_	_	_	_	_	
+7-9	978-995	mehrdimensionales	*	*	_	*	*	Specification	_	
+7-10	996-999	und	_	_	_	_	_	_	_	
+7-11	1000-1017	multifaktorielles	*	*	_	*	*	Specification	_	
+7-12	1018-1025	Symptom	*	Diagnosis or Pathology	_	*	*	Finding	7-11|7-9	
+7-13	1026-1029	ist	_	_	_	_	_	_	_	
+7-14	1029-1030	,	_	_	_	_	_	_	_	
+7-15	1031-1034	das	_	_	_	_	_	_	_	
+7-16	1035-1040	durch	_	_	_	_	_	_	_	
+7-17	1041-1050	physische	_	_	_	_	_	_	_	
+7-18	1051-1052	(	_	_	_	_	_	_	_	
+7-19	1052-1055	und	_	_	_	_	_	_	_	
+7-20	1056-1067	funktionale	_	_	_	_	_	_	_	
+7-21	1067-1068	)	_	_	_	_	_	_	_	
+7-22	1068-1069	,	_	_	_	_	_	_	_	
+7-23	1070-1080	emotionale	_	_	_	_	_	_	_	
+7-24	1080-1081	,	_	_	_	_	_	_	_	
+7-25	1082-1091	kognitive	_	_	_	_	_	_	_	
+7-26	1091-1092	,	_	_	_	_	_	_	_	
+7-27	1093-1104	spirituelle	_	_	_	_	_	_	_	
+7-28	1105-1108	und	_	_	_	_	_	_	_	
+7-29	1109-1116	soziale	_	_	_	_	_	_	_	
+7-30	1117-1128	Dimensionen	_	_	_	_	_	_	_	
+7-31	1129-1132	des	_	_	_	_	_	_	_	
+7-32	1133-1141	Menschen	_	_	_	_	_	_	_	
+7-33	1142-1151	moduliert	_	_	_	_	_	_	_	
+7-34	1152-1156	wird	_	_	_	_	_	_	_	
+7-35	1156-1157	,	_	_	_	_	_	_	_	
+7-36	1158-1162	kann	_	_	_	_	_	_	_	
+7-37	1163-1170	Atemnot	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-38	1171-1173	im	_	_	_	_	_	_	_	
+7-39	1174-1180	Rahmen	_	_	_	_	_	_	_	
+7-40	1181-1186	einer	_	_	_	_	_	_	_	
+7-41	1187-1202	ausführlicheren	*	*	_	*	*	Specification	_	
+7-42	1203-1212	Erfassung	*	Diagnostic	_	*	*	Procedure	7-41	
+7-43	1213-1219	weiter	_	_	_	_	_	_	_	
+7-44	1220-1233	differenziert	_	_	_	_	_	_	_	
+7-45	1234-1240	werden	_	_	_	_	_	_	_	
+7-46	1241-1242	[	_	_	_	_	_	_	_	
+7-47	1242-1245	REF	_	_	_	_	_	_	_	
+7-48	1245-1246	]	_	_	_	_	_	_	_	
+7-49	1246-1247	.	_	_	_	_	_	_	_	
+
+#Text=Um diese Dimensionen angemessen zu erfassen, werden drei Bereiche für die Erfassung beschrieben (siehe Tabelle 31).“ [REF]
+8-1	1248-1250	Um	_	_	_	_	_	_	_	
+8-2	1251-1256	diese	_	_	_	_	_	_	_	
+8-3	1257-1268	Dimensionen	_	_	_	_	_	_	_	
+8-4	1269-1279	angemessen	_	_	_	_	_	_	_	
+8-5	1280-1282	zu	_	_	_	_	_	_	_	
+8-6	1283-1291	erfassen	_	_	_	_	_	_	_	
+8-7	1291-1292	,	_	_	_	_	_	_	_	
+8-8	1293-1299	werden	_	_	_	_	_	_	_	
+8-9	1300-1304	drei	_	_	_	_	_	_	_	
+8-10	1305-1313	Bereiche	_	_	_	_	_	_	_	
+8-11	1314-1317	für	_	_	_	_	_	_	_	
+8-12	1318-1321	die	_	_	_	_	_	_	_	
+8-13	1322-1331	Erfassung	*	Diagnostic	_	*	*	Procedure	_	
+8-14	1332-1343	beschrieben	_	_	_	_	_	_	_	
+8-15	1344-1345	(	_	_	_	_	_	_	_	
+8-16	1345-1350	siehe	_	_	_	_	_	_	_	
+8-17	1351-1358	Tabelle	_	_	_	_	_	_	_	
+8-18	1359-1361	31	_	_	_	_	_	_	_	
+8-19	1361-1362	)	_	_	_	_	_	_	_	
+8-20	1362-1363	.	_	_	_	_	_	_	_	
+8-21	1363-1364	“	_	_	_	_	_	_	_	
+8-22	1365-1366	[	_	_	_	_	_	_	_	
+8-23	1366-1369	REF	_	_	_	_	_	_	_	
+8-24	1369-1370	]	_	_	_	_	_	_	_	

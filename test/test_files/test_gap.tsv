@@ -1,0 +1,24 @@
+#Text=Vor und unter Immuntherapien mit anti-CTLA4 und anti-PD1 Antikörper sollte die CK regelmässig bestimmt werden, sowie immer bei Auftreten kardialer Symptome.
+21-1	2338-2341	Vor	_	_	_	_	_	_	_	
+21-2	2342-2345	und	_	_	_	_	_	_	_	
+21-3	2346-2351	unter	_	_	_	_	_	_	_	
+21-4	2352-2366	Immuntherapien	*	Therapeutic	_	*	*	Procedure	21-8[48_0]|21-5[45_0]	
+21-5	2367-2370	mit	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+21-6	2371-2381	anti-CTLA4	*[45]|*[46]	*[45]|Clinical Drug[46]	_[45]|[46]	*|21-8[47]	*[45]|\_Antikörper[46]	Specification[45]|Substance[46]	_	
+21-7	2382-2385	und	_	_	_	_	_	_	_	
+21-8	2386-2394	anti-PD1	*[47]|\_mit\_[48]	Clinical Drug[47]|*[48]	_[47]|_[48]	*|*	*[47]|*[48]	Substance[47]|Specification[48]	_	
+21-9	2395-2405	Antikörper	*[47]|\_mit\_[48]	Clinical Drug[47]|*[48]	_[47]|_[48]	*|*	*[47]|*[48]	Substance[47]|Specification[48]	_	
+21-10	2406-2412	sollte	_	_	_	_	_	_	_	
+21-11	2413-2416	die	_	_	_	_	_	_	_	
+21-12	2417-2419	CK	*	Nutrient or Body Substance	_	*	*	Substance	_	
+21-13	2420-2431	regelmässig	_	_	_	_	_	_	_	
+21-14	2432-2440	bestimmt	_	_	_	_	_	_	_	
+21-15	2441-2447	werden	_	_	_	_	_	_	_	
+21-16	2447-2448	,	_	_	_	_	_	_	_	
+21-17	2449-2454	sowie	_	_	_	_	_	_	_	
+21-18	2455-2460	immer	_	_	_	_	_	_	_	
+21-19	2461-2464	bei	_	_	_	_	_	_	_	
+21-20	2465-2474	Auftreten	*	Diagnosis or Pathology	_	*	*	Finding	21-21[49_0]	
+21-21	2475-2484	kardialer	*[49]|*[50]	*[49]|*[50]	_[49]|_[50]	*|*	*[49]|*[50]	Specification[49]|Specification[50]	_	
+21-22	2485-2493	Symptome	*[49]|*[51]	*[49]|Diagnosis or Pathology[51]	_[49]|_[51]	*|*	*[49]|*[51]	Specification[49]|Finding[51]	21-21[50_51]	
+21-23	2493-2494	.	_	_	_	_	_	_	_	

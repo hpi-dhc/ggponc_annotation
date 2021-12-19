@@ -1,0 +1,19 @@
+#Text=Vitamin E wurde prophylaktisch zum Schutz vor der Entwicklung der Neurotoxizität unter Cisplatin und Taxol eingesetzt.
+
+17-1	2174-2181	Vitamin	*[16]	Nutrient or Body Substance[16]	_[16]	*	*[16]	Substance[16]	_	
+17-2	2182-2183	E	*[16]	Nutrient or Body Substance[16]	_[16]	*	*[16]	Substance[16]	_	
+17-3	2184-2189	wurde	_	_	_	_	_	_	_	
+17-4	2190-2204	prophylaktisch	_	_	_	_	_	_	_	
+17-5	2205-2208	zum	_	_	_	_	_	_	_	
+17-6	2209-2215	Schutz	_	_	_	_	_	_	_	
+17-7	2216-2219	vor	_	_	_	_	_	_	_	
+17-8	2220-2223	der	_	_	_	_	_	_	_	
+17-9	2224-2235	Entwicklung	_	_	_	_	_	_	_	
+17-10	2236-2239	der	_	_	_	_	_	_	_	
+17-11	2240-2254	Neurotoxizität	*	Diagnosis or Pathology	_	*	*	Finding	17-12[17_0]|17-15[20_0]	
+17-12	2255-2260	unter	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+17-13	2261-2270	Cisplatin	*[17]|*[18]	*[17]|Clinical Drug[18]	_[17]|_[18]	*|*	*[17]|*[18]	Specification[17]|Substance[18]	_	
+17-14	2271-2274	und	_	_	_	_	_	_	_	
+17-15	2275-2280	Taxol	*[19]|\_unter\_[20]	Clinical Drug[19]|*[20]	_[19]|_[20]	*|*	*[19]|*[20]	Substance[19]|Specification[20]	_	
+17-16	2281-2291	eingesetzt	_	_	_	_	_	_	_	
+17-17	2291-2292	.	_	_	_	_	_	_	_	

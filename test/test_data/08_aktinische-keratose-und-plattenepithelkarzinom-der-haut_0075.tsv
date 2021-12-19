@@ -1,0 +1,584 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=K. Fritz, T. Steeb, C. Salavastru
+1-1	0-1	K	_	_	_	_	_	_	_	
+1-2	1-2	.	_	_	_	_	_	_	_	
+1-3	3-8	Fritz	_	_	_	_	_	_	_	
+1-4	8-9	,	_	_	_	_	_	_	_	
+1-5	10-11	T	_	_	_	_	_	_	_	
+1-6	11-12	.	_	_	_	_	_	_	_	
+1-7	13-18	Steeb	_	_	_	_	_	_	_	
+1-8	18-19	,	_	_	_	_	_	_	_	
+1-9	20-21	C	_	_	_	_	_	_	_	
+1-10	21-22	.	_	_	_	_	_	_	_	
+1-11	23-33	Salavastru	_	_	_	_	_	_	_	
+
+#Text=Das nicht-steroidale Antirheumatikum Diclofenac ist in Form eines dreiprozentigen Gels in Hyaluronsäure 2,5% zur topischen Behandlung von AK bei Erwachsenen seit 2011 zugelassen.
+2-1	34-37	Das	_	_	_	_	_	_	_	
+2-2	38-54	nicht-steroidale	*	*	_	*	*	Specification	_	
+2-3	55-70	Antirheumatikum	*	Clinical Drug	_	*	*	Substance	2-2	
+2-4	71-81	Diclofenac	*	Clinical Drug	_	*	*	Substance	_	
+2-5	82-85	ist	_	_	_	_	_	_	_	
+2-6	86-88	in	_	_	_	_	_	_	_	
+2-7	89-93	Form	_	_	_	_	_	_	_	
+2-8	94-99	eines	_	_	_	_	_	_	_	
+2-9	100-115	dreiprozentigen	_	_	_	_	_	_	_	
+2-10	116-120	Gels	_	_	_	_	_	_	_	
+2-11	121-123	in	_	_	_	_	_	_	_	
+2-12	124-137	Hyaluronsäure	*	Clinical Drug	_	*	*	Substance	2-13	
+2-13	138-142	2,5%	*	*	_	*	*	Specification	_	
+2-14	143-146	zur	_	_	_	_	_	_	_	
+2-15	147-156	topischen	*	*	_	*	*	Specification	_	
+2-16	157-167	Behandlung	*	Therapeutic	_	*	*	Procedure	2-15|2-17[1_0]	
+2-17	168-171	von	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+2-18	172-174	AK	*[1]|*[2]	*[1]|Diagnosis or Pathology[2]	_[1]|_[2]	*|*	*[1]|*[2]	Specification[1]|Finding[2]	2-19[3_2]	
+2-19	175-178	bei	*[3]	*[3]	_[3]	*	*[3]	Specification[3]	_	
+2-20	179-190	Erwachsenen	*[3]|*[4]	*[3]|Other Finding[4]	_[3]|_[4]	*|*	*[3]|*[4]	Specification[3]|Finding[4]	_	
+2-21	191-195	seit	_	_	_	_	_	_	_	
+2-22	196-200	2011	_	_	_	_	_	_	_	
+2-23	201-211	zugelassen	_	_	_	_	_	_	_	
+2-24	211-212	.	_	_	_	_	_	_	_	
+
+#Text=Die antitumoralen Effekte beruhen hauptsächlich auf der Hemmung der Cyclooxygenase-2 (COX-2).
+3-1	213-216	Die	_	_	_	_	_	_	_	
+3-2	217-230	antitumoralen	*	*	_	*	*	Specification	_	
+3-3	231-238	Effekte	*	Other Finding	_	*	*	Finding	3-2	
+3-4	239-246	beruhen	_	_	_	_	_	_	_	
+3-5	247-260	hauptsächlich	_	_	_	_	_	_	_	
+3-6	261-264	auf	_	_	_	_	_	_	_	
+3-7	265-268	der	_	_	_	_	_	_	_	
+3-8	269-276	Hemmung	_	_	_	_	_	_	_	
+3-9	277-280	der	_	_	_	_	_	_	_	
+3-10	281-295	Cyclooxygenase	*[5]	Nutrient or Body Substance[5]	_[5]	*	*[5]	Substance[5]	_	
+3-11	295-296	-	*[5]	Nutrient or Body Substance[5]	_[5]	*	*[5]	Substance[5]	_	
+3-12	296-297	2	*[5]	Nutrient or Body Substance[5]	_[5]	*	*[5]	Substance[5]	_	
+3-13	298-299	(	_	_	_	_	_	_	_	
+3-14	299-302	COX	*[6]	Nutrient or Body Substance[6]	_[6]	*	*[6]	Substance[6]	_	
+3-15	302-303	-	*[6]	Nutrient or Body Substance[6]	_[6]	*	*[6]	Substance[6]	_	
+3-16	303-304	2	*[6]	Nutrient or Body Substance[6]	_[6]	*	*[6]	Substance[6]	_	
+3-17	304-305	)	_	_	_	_	_	_	_	
+3-18	305-306	.	_	_	_	_	_	_	_	
+
+#Text=Es ist verfügbar als Gel, das zweimal täglich morgens und abends über maximal 12 Wochen (90 Tage) aufgetragen werden sollte.
+4-1	307-309	Es	_	_	_	_	_	_	_	
+4-2	310-313	ist	_	_	_	_	_	_	_	
+4-3	314-323	verfügbar	_	_	_	_	_	_	_	
+4-4	324-327	als	_	_	_	_	_	_	_	
+4-5	328-331	Gel	_	_	_	_	_	_	_	
+4-6	331-332	,	_	_	_	_	_	_	_	
+4-7	333-336	das	_	_	_	_	_	_	_	
+4-8	337-344	zweimal	_	_	_	_	_	_	_	
+4-9	345-352	täglich	_	_	_	_	_	_	_	
+4-10	353-360	morgens	_	_	_	_	_	_	_	
+4-11	361-364	und	_	_	_	_	_	_	_	
+4-12	365-371	abends	_	_	_	_	_	_	_	
+4-13	372-376	über	_	_	_	_	_	_	_	
+4-14	377-384	maximal	_	_	_	_	_	_	_	
+4-15	385-387	12	_	_	_	_	_	_	_	
+4-16	388-394	Wochen	_	_	_	_	_	_	_	
+4-17	395-396	(	_	_	_	_	_	_	_	
+4-18	396-398	90	_	_	_	_	_	_	_	
+4-19	399-403	Tage	_	_	_	_	_	_	_	
+4-20	403-404	)	_	_	_	_	_	_	_	
+4-21	405-416	aufgetragen	_	_	_	_	_	_	_	
+4-22	417-423	werden	_	_	_	_	_	_	_	
+4-23	424-430	sollte	_	_	_	_	_	_	_	
+4-24	430-431	.	_	_	_	_	_	_	_	
+
+#Text=Zu den häufigsten unerwünschten Wirkungen gehören lokale Hautreaktionen wie Kontaktdermatitis, Erythem, Ausschlag, Schmerzen oder Blasenbildung.
+5-1	432-434	Zu	_	_	_	_	_	_	_	
+5-2	435-438	den	_	_	_	_	_	_	_	
+5-3	439-449	häufigsten	_	_	_	_	_	_	_	
+5-4	450-463	unerwünschten	*	*	_	*	*	Specification	_	
+5-5	464-473	Wirkungen	*	Diagnosis or Pathology	_	*	*	Finding	5-4	
+5-6	474-481	gehören	_	_	_	_	_	_	_	
+5-7	482-488	lokale	*	*	_	*	*	Specification	_	
+5-8	489-503	Hautreaktionen	*	Diagnosis or Pathology	_	*	*	Finding	5-7	
+5-9	504-507	wie	_	_	_	_	_	_	_	
+5-10	508-525	Kontaktdermatitis	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-11	525-526	,	_	_	_	_	_	_	_	
+5-12	527-534	Erythem	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-13	534-535	,	_	_	_	_	_	_	_	
+5-14	536-545	Ausschlag	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-15	545-546	,	_	_	_	_	_	_	_	
+5-16	547-556	Schmerzen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-17	557-561	oder	_	_	_	_	_	_	_	
+5-18	562-575	Blasenbildung	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-19	575-576	.	_	_	_	_	_	_	_	
+
+#Text=Während der Behandlung ist auf eine Meidung von Sonnen- und UV-Strahlung zu achten.
+6-1	577-584	Während	_	_	_	_	_	_	_	
+6-2	585-588	der	_	_	_	_	_	_	_	
+6-3	589-599	Behandlung	*	Therapeutic	_	*	*	Procedure	_	
+6-4	600-603	ist	_	_	_	_	_	_	_	
+6-5	604-607	auf	_	_	_	_	_	_	_	
+6-6	608-612	eine	_	_	_	_	_	_	_	
+6-7	613-620	Meidung	*	Therapeutic	_	*	*	Procedure	6-8[7_0]	
+6-8	621-624	von	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-9	625-631	Sonnen	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-10	631-632	-	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-11	633-636	und	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-12	637-649	UV-Strahlung	*[7]	*[7]	_[7]	*	*[7]	Specification[7]	_	
+6-13	650-652	zu	_	_	_	_	_	_	_	
+6-14	653-659	achten	_	_	_	_	_	_	_	
+6-15	659-660	.	_	_	_	_	_	_	_	
+
+#Text=Eine verlängerte Behandlungsdauer über 6 Monate wurde in einer offenen, randomisierten Multizenterstudie in 418 Patienten mit milden bis moderaten AK untersucht [REF].
+7-1	661-665	Eine	_	_	_	_	_	_	_	
+7-2	666-677	verlängerte	*	*	_	*	*	Specification	_	
+7-3	678-694	Behandlungsdauer	*	Therapeutic	_	*	*	Procedure	7-2|7-4[8_0]	
+7-4	695-699	über	*[8]	*[8]	_[8]	*	*[8]	Specification[8]	_	
+7-5	700-701	6	*[8]	*[8]	_[8]	*	*[8]	Specification[8]	_	
+7-6	702-708	Monate	*[8]	*[8]	_[8]	*	*[8]	Specification[8]	_	
+7-7	709-714	wurde	_	_	_	_	_	_	_	
+7-8	715-717	in	_	_	_	_	_	_	_	
+7-9	718-723	einer	_	_	_	_	_	_	_	
+7-10	724-731	offenen	_	_	_	_	_	_	_	
+7-11	731-732	,	_	_	_	_	_	_	_	
+7-12	733-747	randomisierten	_	_	_	_	_	_	_	
+7-13	748-765	Multizenterstudie	_	_	_	_	_	_	_	
+7-14	766-768	in	_	_	_	_	_	_	_	
+7-15	769-772	418	_	_	_	_	_	_	_	
+7-16	773-782	Patienten	_	_	_	_	_	_	_	
+7-17	783-786	mit	_	_	_	_	_	_	_	
+7-18	787-793	milden	*[9]	*[9]	_[9]	*	*[9]	Specification[9]	_	
+7-19	794-797	bis	*[9]	*[9]	_[9]	*	*[9]	Specification[9]	_	
+7-20	798-807	moderaten	*[9]	*[9]	_[9]	*	*[9]	Specification[9]	_	
+7-21	808-810	AK	*	Diagnosis or Pathology	_	*	*	Finding	7-18[9_0]	
+7-22	811-821	untersucht	_	_	_	_	_	_	_	
+7-23	822-823	[	_	_	_	_	_	_	_	
+7-24	823-826	REF	_	_	_	_	_	_	_	
+7-25	826-827	]	_	_	_	_	_	_	_	
+7-26	827-828	.	_	_	_	_	_	_	_	
+
+#Text=Hierbei zeigte sich allerdings kein signifikanter Vorteil bezüglich des Anteils der Patienten mit einer kompletten Abheilung aller Läsionen bei einer verlängerten Anwendung (45% für 6 Monate gegenüber 40% für 3 Monate), so dass eine Behandlungsdauer von 60-90 Tagen empfohlen wird.
+8-1	829-836	Hierbei	_	_	_	_	_	_	_	
+8-2	837-843	zeigte	_	_	_	_	_	_	_	
+8-3	844-848	sich	_	_	_	_	_	_	_	
+8-4	849-859	allerdings	_	_	_	_	_	_	_	
+8-5	860-864	kein	_	_	_	_	_	_	_	
+8-6	865-878	signifikanter	_	_	_	_	_	_	_	
+8-7	879-886	Vorteil	_	_	_	_	_	_	_	
+8-8	887-896	bezüglich	_	_	_	_	_	_	_	
+8-9	897-900	des	_	_	_	_	_	_	_	
+8-10	901-908	Anteils	_	_	_	_	_	_	_	
+8-11	909-912	der	_	_	_	_	_	_	_	
+8-12	913-922	Patienten	_	_	_	_	_	_	_	
+8-13	923-926	mit	_	_	_	_	_	_	_	
+8-14	927-932	einer	_	_	_	_	_	_	_	
+8-15	933-943	kompletten	*	*	_	*	*	Specification	_	
+8-16	944-953	Abheilung	*	Other Finding	_	*	*	Finding	8-15|8-17[10_0]	
+8-17	954-959	aller	*[10]	*[10]	_[10]	*	*[10]	Specification[10]	_	
+8-18	960-968	Läsionen	*[10]|*[11]	*[10]|Diagnosis or Pathology[11]	_[10]|_[11]	*|*	*[10]|*[11]	Specification[10]|Finding[11]	_	
+8-19	969-972	bei	_	_	_	_	_	_	_	
+8-20	973-978	einer	_	_	_	_	_	_	_	
+8-21	979-991	verlängerten	*	*	_	*	*	Specification	_	
+8-22	992-1001	Anwendung	*	Therapeutic	_	*	*	Procedure	8-21	
+8-23	1002-1003	(	_	_	_	_	_	_	_	
+8-24	1003-1006	45%	_	_	_	_	_	_	_	
+8-25	1007-1010	für	_	_	_	_	_	_	_	
+8-26	1011-1012	6	_	_	_	_	_	_	_	
+8-27	1013-1019	Monate	_	_	_	_	_	_	_	
+8-28	1020-1029	gegenüber	_	_	_	_	_	_	_	
+8-29	1030-1033	40%	_	_	_	_	_	_	_	
+8-30	1034-1037	für	_	_	_	_	_	_	_	
+8-31	1038-1039	3	_	_	_	_	_	_	_	
+8-32	1040-1046	Monate	_	_	_	_	_	_	_	
+8-33	1046-1047	)	_	_	_	_	_	_	_	
+8-34	1047-1048	,	_	_	_	_	_	_	_	
+8-35	1049-1051	so	_	_	_	_	_	_	_	
+8-36	1052-1056	dass	_	_	_	_	_	_	_	
+8-37	1057-1061	eine	_	_	_	_	_	_	_	
+8-38	1062-1078	Behandlungsdauer	*	Therapeutic	_	*	*	Procedure	8-39[12_0]	
+8-39	1079-1082	von	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-40	1083-1085	60	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-41	1085-1086	-	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-42	1086-1088	90	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-43	1089-1094	Tagen	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-44	1095-1104	empfohlen	_	_	_	_	_	_	_	
+8-45	1105-1109	wird	_	_	_	_	_	_	_	
+8-46	1109-1110	.	_	_	_	_	_	_	_	
+
+#Text=Die systematische Literaturrecherche ergab 11 randomisierte Einzelstudien, die Diclofenac-Natrium 3% in Hyaluronsäure 2,5% Gel untersuchten.
+9-1	1111-1114	Die	_	_	_	_	_	_	_	
+9-2	1115-1128	systematische	_	_	_	_	_	_	_	
+9-3	1129-1147	Literaturrecherche	_	_	_	_	_	_	_	
+9-4	1148-1153	ergab	_	_	_	_	_	_	_	
+9-5	1154-1156	11	_	_	_	_	_	_	_	
+9-6	1157-1170	randomisierte	_	_	_	_	_	_	_	
+9-7	1171-1184	Einzelstudien	_	_	_	_	_	_	_	
+9-8	1184-1185	,	_	_	_	_	_	_	_	
+9-9	1186-1189	die	_	_	_	_	_	_	_	
+9-10	1190-1208	Diclofenac-Natrium	*	Clinical Drug	_	*	*	Substance	9-11|9-12[13_0]	
+9-11	1209-1211	3%	*	*	_	*	*	Specification	_	
+9-12	1212-1214	in	*[13]	*[13]	_[13]	*	*[13]	Specification[13]	_	
+9-13	1215-1228	Hyaluronsäure	*[13]|*[14]	*[13]|Clinical Drug[14]	_[13]|_[14]	*|*	*[13]|*[14]	Specification[13]|Substance[14]	9-14[15_14]	
+9-14	1229-1233	2,5%	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+9-15	1234-1237	Gel	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
+9-16	1238-1250	untersuchten	_	_	_	_	_	_	_	
+9-17	1250-1251	.	_	_	_	_	_	_	_	
+
+#Text=Zudem wurden 3 systematische Übersichtsarbeiten oder Metaanalysen identifiziert [REF] [REF] [REF].
+10-1	1252-1257	Zudem	_	_	_	_	_	_	_	
+10-2	1258-1264	wurden	_	_	_	_	_	_	_	
+10-3	1265-1266	3	_	_	_	_	_	_	_	
+10-4	1267-1280	systematische	_	_	_	_	_	_	_	
+10-5	1281-1299	Übersichtsarbeiten	_	_	_	_	_	_	_	
+10-6	1300-1304	oder	_	_	_	_	_	_	_	
+10-7	1305-1317	Metaanalysen	_	_	_	_	_	_	_	
+10-8	1318-1331	identifiziert	_	_	_	_	_	_	_	
+10-9	1332-1333	[	_	_	_	_	_	_	_	
+10-10	1333-1336	REF	_	_	_	_	_	_	_	
+10-11	1336-1337	]	_	_	_	_	_	_	_	
+10-12	1338-1339	[	_	_	_	_	_	_	_	
+10-13	1339-1342	REF	_	_	_	_	_	_	_	
+10-14	1342-1343	]	_	_	_	_	_	_	_	
+10-15	1344-1345	[	_	_	_	_	_	_	_	
+10-16	1345-1348	REF	_	_	_	_	_	_	_	
+10-17	1348-1349	]	_	_	_	_	_	_	_	
+10-18	1349-1350	.	_	_	_	_	_	_	_	
+
+#Text=Die Netzwerk-Metaanalyse von Vegter 2014 [REF] ermittelte aus insgesamt 5 Studien mit einer gepoolten Gesamtpopulation von 413 Patienten ein komplettes Ansprechen von 24,7% (95% CI 12,4-37,0%), das im Vergleich zu anderen untersuchten Interventionen als eher gering einzustufen ist.
+11-1	1351-1354	Die	_	_	_	_	_	_	_	
+11-2	1355-1375	Netzwerk-Metaanalyse	_	_	_	_	_	_	_	
+11-3	1376-1379	von	_	_	_	_	_	_	_	
+11-4	1380-1386	Vegter	_	_	_	_	_	_	_	
+11-5	1387-1391	2014	_	_	_	_	_	_	_	
+11-6	1392-1393	[	_	_	_	_	_	_	_	
+11-7	1393-1396	REF	_	_	_	_	_	_	_	
+11-8	1396-1397	]	_	_	_	_	_	_	_	
+11-9	1398-1408	ermittelte	_	_	_	_	_	_	_	
+11-10	1409-1412	aus	_	_	_	_	_	_	_	
+11-11	1413-1422	insgesamt	_	_	_	_	_	_	_	
+11-12	1423-1424	5	_	_	_	_	_	_	_	
+11-13	1425-1432	Studien	_	_	_	_	_	_	_	
+11-14	1433-1436	mit	_	_	_	_	_	_	_	
+11-15	1437-1442	einer	_	_	_	_	_	_	_	
+11-16	1443-1452	gepoolten	_	_	_	_	_	_	_	
+11-17	1453-1469	Gesamtpopulation	_	_	_	_	_	_	_	
+11-18	1470-1473	von	_	_	_	_	_	_	_	
+11-19	1474-1477	413	_	_	_	_	_	_	_	
+11-20	1478-1487	Patienten	_	_	_	_	_	_	_	
+11-21	1488-1491	ein	_	_	_	_	_	_	_	
+11-22	1492-1502	komplettes	*	*	_	*	*	Specification	_	
+11-23	1503-1513	Ansprechen	*	Other Finding	_	*	*	Finding	11-22	
+11-24	1514-1517	von	_	_	_	_	_	_	_	
+11-25	1518-1523	24,7%	_	_	_	_	_	_	_	
+11-26	1524-1525	(	_	_	_	_	_	_	_	
+11-27	1525-1528	95%	_	_	_	_	_	_	_	
+11-28	1529-1531	CI	_	_	_	_	_	_	_	
+11-29	1532-1536	12,4	_	_	_	_	_	_	_	
+11-30	1536-1537	-	_	_	_	_	_	_	_	
+11-31	1537-1542	37,0%	_	_	_	_	_	_	_	
+11-32	1542-1543	)	_	_	_	_	_	_	_	
+11-33	1543-1544	,	_	_	_	_	_	_	_	
+11-34	1545-1548	das	_	_	_	_	_	_	_	
+11-35	1549-1551	im	_	_	_	_	_	_	_	
+11-36	1552-1561	Vergleich	_	_	_	_	_	_	_	
+11-37	1562-1564	zu	_	_	_	_	_	_	_	
+11-38	1565-1572	anderen	_	_	_	_	_	_	_	
+11-39	1573-1585	untersuchten	_	_	_	_	_	_	_	
+11-40	1586-1600	Interventionen	*	Therapeutic	_	*	*	Procedure	_	
+11-41	1601-1604	als	_	_	_	_	_	_	_	
+11-42	1605-1609	eher	_	_	_	_	_	_	_	
+11-43	1610-1616	gering	_	_	_	_	_	_	_	
+11-44	1617-1628	einzustufen	_	_	_	_	_	_	_	
+11-45	1629-1632	ist	_	_	_	_	_	_	_	
+11-46	1632-1633	.	_	_	_	_	_	_	_	
+
+#Text=Allerdings wurde hier nur dieser Effektivitätsendpunkt (komplettes patientenbezogenes Ansprechen) berücksichtigt.
+12-1	1634-1644	Allerdings	_	_	_	_	_	_	_	
+12-2	1645-1650	wurde	_	_	_	_	_	_	_	
+12-3	1651-1655	hier	_	_	_	_	_	_	_	
+12-4	1656-1659	nur	_	_	_	_	_	_	_	
+12-5	1660-1666	dieser	_	_	_	_	_	_	_	
+12-6	1667-1688	Effektivitätsendpunkt	_	_	_	_	_	_	_	
+12-7	1689-1690	(	_	_	_	_	_	_	_	
+12-8	1690-1700	komplettes	*	*	_	*	*	Specification	_	
+12-9	1701-1719	patientenbezogenes	*	*	_	*	*	Specification	_	
+12-10	1720-1730	Ansprechen	*	Other Finding	_	*	*	Finding	12-9|12-8	
+12-11	1730-1731	)	_	_	_	_	_	_	_	
+12-12	1732-1746	berücksichtigt	_	_	_	_	_	_	_	
+12-13	1746-1747	.	_	_	_	_	_	_	_	
+
+#Text=Die umfangreiche Metaanalyse von Gupta aus dem Jahr 2012 [REF] favorisierte unter anderem die Behandlung mit Diclofenac-Natrium 3% in Hyaluronsäure 2,5% Gel und berechnete anhand von 3 Studien mit einer gepoolten Population von 420 Patienten, dass mit Diclofenac-Natrium 3% in Hyaluronsäure 2,5%
+13-1	1748-1751	Die	_	_	_	_	_	_	_	
+13-2	1752-1764	umfangreiche	_	_	_	_	_	_	_	
+13-3	1765-1776	Metaanalyse	_	_	_	_	_	_	_	
+13-4	1777-1780	von	_	_	_	_	_	_	_	
+13-5	1781-1786	Gupta	_	_	_	_	_	_	_	
+13-6	1787-1790	aus	_	_	_	_	_	_	_	
+13-7	1791-1794	dem	_	_	_	_	_	_	_	
+13-8	1795-1799	Jahr	_	_	_	_	_	_	_	
+13-9	1800-1804	2012	_	_	_	_	_	_	_	
+13-10	1805-1806	[	_	_	_	_	_	_	_	
+13-11	1806-1809	REF	_	_	_	_	_	_	_	
+13-12	1809-1810	]	_	_	_	_	_	_	_	
+13-13	1811-1823	favorisierte	_	_	_	_	_	_	_	
+13-14	1824-1829	unter	_	_	_	_	_	_	_	
+13-15	1830-1837	anderem	_	_	_	_	_	_	_	
+13-16	1838-1841	die	_	_	_	_	_	_	_	
+13-17	1842-1852	Behandlung	*	Therapeutic	_	*	*	Procedure	13-18[16_0]	
+13-18	1853-1856	mit	*[16]	*[16]	_[16]	*	*[16]	Specification[16]	_	
+13-19	1857-1875	Diclofenac-Natrium	*[16]|*[17]	*[16]|Clinical Drug[17]	_[16]|_[17]	*|*	*[16]|*[17]	Specification[16]|Substance[17]	13-20[18_17]|13-21[19_17]	
+13-20	1876-1878	3%	*[16]|*[18]	*[16]|*[18]	_[16]|_[18]	*|*	*[16]|*[18]	Specification[16]|Specification[18]	_	
+13-21	1879-1881	in	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+13-22	1882-1895	Hyaluronsäure	*[19]|*[20]	*[19]|Clinical Drug[20]	_[19]|_[20]	*|*	*[19]|*[20]	Specification[19]|Substance[20]	13-23[21_20]	
+13-23	1896-1900	2,5%	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+13-24	1901-1904	Gel	*[21]	*[21]	_[21]	*	*[21]	Specification[21]	_	
+13-25	1905-1908	und	_	_	_	_	_	_	_	
+13-26	1909-1919	berechnete	_	_	_	_	_	_	_	
+13-27	1920-1926	anhand	_	_	_	_	_	_	_	
+13-28	1927-1930	von	_	_	_	_	_	_	_	
+13-29	1931-1932	3	_	_	_	_	_	_	_	
+13-30	1933-1940	Studien	_	_	_	_	_	_	_	
+13-31	1941-1944	mit	_	_	_	_	_	_	_	
+13-32	1945-1950	einer	_	_	_	_	_	_	_	
+13-33	1951-1960	gepoolten	_	_	_	_	_	_	_	
+13-34	1961-1971	Population	_	_	_	_	_	_	_	
+13-35	1972-1975	von	_	_	_	_	_	_	_	
+13-36	1976-1979	420	_	_	_	_	_	_	_	
+13-37	1980-1989	Patienten	_	_	_	_	_	_	_	
+13-38	1989-1990	,	_	_	_	_	_	_	_	
+13-39	1991-1995	dass	_	_	_	_	_	_	_	
+13-40	1996-1999	mit	_	_	_	_	_	_	_	
+13-41	2000-2018	Diclofenac-Natrium	*	Clinical Drug	_	*	*	Substance	13-42|13-43[22_0]	
+13-42	2019-2021	3%	*	*	_	*	*	Specification	_	
+13-43	2022-2024	in	*[22]	*[22]	_[22]	*	*[22]	Specification[22]	_	
+13-44	2025-2038	Hyaluronsäure	*[22]|*[23]	*[22]|Clinical Drug[23]	_[22]|_[23]	*|*	*[22]|*[23]	Specification[22]|Substance[23]	13-45[0_23]	
+13-45	2039-2043	2,5%	*	*	_	*	*	Specification	_	
+
+#Text=Gel behandelte Teilnehmer im Vergleich zu Teilnehmern, die mit Vehikel-Creme behandelt wurden, eine 2,5-fach höhere Wahrscheinlichkeit auf eine komplette Abheilung der Läsionen haben.
+14-1	2044-2047	Gel	_	_	_	_	_	_	_	
+14-2	2048-2058	behandelte	*	Therapeutic	_	*	*	Procedure	_	
+14-3	2059-2069	Teilnehmer	_	_	_	_	_	_	_	
+14-4	2070-2072	im	_	_	_	_	_	_	_	
+14-5	2073-2082	Vergleich	_	_	_	_	_	_	_	
+14-6	2083-2085	zu	_	_	_	_	_	_	_	
+14-7	2086-2097	Teilnehmern	_	_	_	_	_	_	_	
+14-8	2097-2098	,	_	_	_	_	_	_	_	
+14-9	2099-2102	die	_	_	_	_	_	_	_	
+14-10	2103-2106	mit	_	_	_	_	_	_	_	
+14-11	2107-2120	Vehikel-Creme	_	_	_	_	_	_	_	
+14-12	2121-2130	behandelt	_	_	_	_	_	_	_	
+14-13	2131-2137	wurden	_	_	_	_	_	_	_	
+14-14	2137-2138	,	_	_	_	_	_	_	_	
+14-15	2139-2143	eine	_	_	_	_	_	_	_	
+14-16	2144-2147	2,5	_	_	_	_	_	_	_	
+14-17	2147-2148	-	_	_	_	_	_	_	_	
+14-18	2148-2152	fach	_	_	_	_	_	_	_	
+14-19	2153-2159	höhere	_	_	_	_	_	_	_	
+14-20	2160-2178	Wahrscheinlichkeit	_	_	_	_	_	_	_	
+14-21	2179-2182	auf	_	_	_	_	_	_	_	
+14-22	2183-2187	eine	_	_	_	_	_	_	_	
+14-23	2188-2197	komplette	*	*	_	*	*	Specification	_	
+14-24	2198-2207	Abheilung	*	Other Finding	_	*	*	Finding	14-25[24_0]|14-23	
+14-25	2208-2211	der	*[24]	*[24]	_[24]	*	*[24]	Specification[24]	_	
+14-26	2212-2220	Läsionen	*[24]|*[25]	*[24]|Diagnosis or Pathology[25]	_[24]|_[25]	*|*	*[24]|*[25]	Specification[24]|Finding[25]	_	
+14-27	2221-2226	haben	_	_	_	_	_	_	_	
+14-28	2226-2227	.	_	_	_	_	_	_	_	
+
+#Text=Hinsichtlich der Nebenwirkungen berichtet Gupta, dass die Nebenwirkungen in der Diclofenac-Gruppe im Vergleich zur Placebo-Gruppe jedoch deutlich überwiegen.
+15-1	2228-2240	Hinsichtlich	_	_	_	_	_	_	_	
+15-2	2241-2244	der	_	_	_	_	_	_	_	
+15-3	2245-2259	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+15-4	2260-2269	berichtet	_	_	_	_	_	_	_	
+15-5	2270-2275	Gupta	_	_	_	_	_	_	_	
+15-6	2275-2276	,	_	_	_	_	_	_	_	
+15-7	2277-2281	dass	_	_	_	_	_	_	_	
+15-8	2282-2285	die	_	_	_	_	_	_	_	
+15-9	2286-2300	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+15-10	2301-2303	in	_	_	_	_	_	_	_	
+15-11	2304-2307	der	_	_	_	_	_	_	_	
+15-12	2308-2325	Diclofenac-Gruppe	*	Clinical Drug	_	*	*	Substance	_	
+15-13	2326-2328	im	_	_	_	_	_	_	_	
+15-14	2329-2338	Vergleich	_	_	_	_	_	_	_	
+15-15	2339-2342	zur	_	_	_	_	_	_	_	
+15-16	2343-2357	Placebo-Gruppe	*	Clinical Drug	_	*	*	Substance	_	
+15-17	2358-2364	jedoch	_	_	_	_	_	_	_	
+15-18	2365-2373	deutlich	_	_	_	_	_	_	_	
+15-19	2374-2384	überwiegen	_	_	_	_	_	_	_	
+15-20	2384-2385	.	_	_	_	_	_	_	_	
+
+#Text=Insbesondere die Rate an Patienten mit therapievermittelten Behandlungsabbrüchen war hier höher (RR 3,59; 95% CI 1,92-6,70).
+16-1	2386-2398	Insbesondere	_	_	_	_	_	_	_	
+16-2	2399-2402	die	_	_	_	_	_	_	_	
+16-3	2403-2407	Rate	_	_	_	_	_	_	_	
+16-4	2408-2410	an	_	_	_	_	_	_	_	
+16-5	2411-2420	Patienten	_	_	_	_	_	_	_	
+16-6	2421-2424	mit	_	_	_	_	_	_	_	
+16-7	2425-2445	therapievermittelten	*	*	_	*	*	Specification	_	
+16-8	2446-2466	Behandlungsabbrüchen	*	Therapeutic	_	*	*	Procedure	16-7	
+16-9	2467-2470	war	_	_	_	_	_	_	_	
+16-10	2471-2475	hier	_	_	_	_	_	_	_	
+16-11	2476-2481	höher	_	_	_	_	_	_	_	
+16-12	2482-2483	(	_	_	_	_	_	_	_	
+16-13	2483-2485	RR	_	_	_	_	_	_	_	
+16-14	2486-2490	3,59	_	_	_	_	_	_	_	
+16-15	2490-2491	;	_	_	_	_	_	_	_	
+16-16	2492-2495	95%	_	_	_	_	_	_	_	
+16-17	2496-2498	CI	_	_	_	_	_	_	_	
+16-18	2499-2503	1,92	_	_	_	_	_	_	_	
+16-19	2503-2504	-	_	_	_	_	_	_	_	
+16-20	2504-2508	6,70	_	_	_	_	_	_	_	
+16-21	2508-2509	)	_	_	_	_	_	_	_	
+16-22	2509-2510	.	_	_	_	_	_	_	_	
+
+#Text=Die systematische Übersichtsarbeit von Askew 2009 [REF] berichtete über eine komplette läsionsbezogene Abheilungsrate von 89% mit Diclofenac-Natrium 3% in Hyaluronsäure 2,5% Gel.
+17-1	2511-2514	Die	_	_	_	_	_	_	_	
+17-2	2515-2528	systematische	_	_	_	_	_	_	_	
+17-3	2529-2545	Übersichtsarbeit	_	_	_	_	_	_	_	
+17-4	2546-2549	von	_	_	_	_	_	_	_	
+17-5	2550-2555	Askew	_	_	_	_	_	_	_	
+17-6	2556-2560	2009	_	_	_	_	_	_	_	
+17-7	2561-2562	[	_	_	_	_	_	_	_	
+17-8	2562-2565	REF	_	_	_	_	_	_	_	
+17-9	2565-2566	]	_	_	_	_	_	_	_	
+17-10	2567-2577	berichtete	_	_	_	_	_	_	_	
+17-11	2578-2582	über	_	_	_	_	_	_	_	
+17-12	2583-2587	eine	_	_	_	_	_	_	_	
+17-13	2588-2597	komplette	*	*	_	*	*	Specification	_	
+17-14	2598-2613	läsionsbezogene	*	*	_	*	*	Specification	_	
+17-15	2614-2628	Abheilungsrate	*	Other Finding	_	*	*	Finding	17-13|17-14	
+17-16	2629-2632	von	_	_	_	_	_	_	_	
+17-17	2633-2636	89%	_	_	_	_	_	_	_	
+17-18	2637-2640	mit	_	_	_	_	_	_	_	
+17-19	2641-2659	Diclofenac-Natrium	*	Clinical Drug	_	*	*	Substance	17-20|17-21[26_0]	
+17-20	2660-2662	3%	*	*	_	*	*	Specification	_	
+17-21	2663-2665	in	*[26]	*[26]	_[26]	*	*[26]	Specification[26]	_	
+17-22	2666-2679	Hyaluronsäure	*[26]|*[27]	*[26]|Clinical Drug[27]	_[26]|_[27]	*|*	*[26]|*[27]	Specification[26]|Substance[27]	17-23[28_27]	
+17-23	2680-2684	2,5%	*[28]	*[28]	_[28]	*	*[28]	Specification[28]	_	
+17-24	2685-2688	Gel	*[28]	*[28]	_[28]	*	*[28]	Specification[28]	_	
+17-25	2688-2689	.	_	_	_	_	_	_	_	
+
+#Text=Die Mehrheit der Studien untersuchte Diclofenac-Natrium 3% in Hyaluronsäure 2,5%
+18-1	2690-2693	Die	_	_	_	_	_	_	_	
+18-2	2694-2702	Mehrheit	_	_	_	_	_	_	_	
+18-3	2703-2706	der	_	_	_	_	_	_	_	
+18-4	2707-2714	Studien	_	_	_	_	_	_	_	
+18-5	2715-2726	untersuchte	_	_	_	_	_	_	_	
+18-6	2727-2745	Diclofenac-Natrium	*	Clinical Drug	_	*	*	Substance	18-7|18-8[29_0]	
+18-7	2746-2748	3%	*	*	_	*	*	Specification	_	
+18-8	2749-2751	in	*[29]	*[29]	_[29]	*	*[29]	Specification[29]	_	
+18-9	2752-2765	Hyaluronsäure	*[29]|*[30]	*[29]|Clinical Drug[30]	_[29]|_[30]	*|*	*[29]|*[30]	Specification[29]|Substance[30]	18-10[0_30]	
+18-10	2766-2770	2,5%	*	*	_	*	*	Specification	_	
+
+#Text=Gel dabei in immunkompetenten Patienten mit einzelnen oder multiplen AK.
+19-1	2771-2774	Gel	_	_	_	_	_	_	_	
+19-2	2775-2780	dabei	_	_	_	_	_	_	_	
+19-3	2781-2783	in	_	_	_	_	_	_	_	
+19-4	2784-2800	immunkompetenten	*	Other Finding	_	*	*	Finding	_	
+19-5	2801-2810	Patienten	_	_	_	_	_	_	_	
+19-6	2811-2814	mit	_	_	_	_	_	_	_	
+19-7	2815-2824	einzelnen	*	*	_	*	*	Specification	_	
+19-8	2825-2829	oder	_	_	_	_	_	_	_	
+19-9	2830-2839	multiplen	*	*	_	*	*	Specification	_	
+19-10	2840-2842	AK	*	Diagnosis or Pathology	_	*	*	Finding	19-7|19-9	
+19-11	2842-2843	.	_	_	_	_	_	_	_	
+
+#Text=Die Studienlage verdeutlicht hierbei, dass Evidenz für den Gebrauch bei einzelnen und multiplen AK vorliegt, und zwar vorwiegend bei milden bis moderaten Läsionen (Grad I-II nach Olsen).
+20-1	2844-2847	Die	_	_	_	_	_	_	_	
+20-2	2848-2859	Studienlage	_	_	_	_	_	_	_	
+20-3	2860-2872	verdeutlicht	_	_	_	_	_	_	_	
+20-4	2873-2880	hierbei	_	_	_	_	_	_	_	
+20-5	2880-2881	,	_	_	_	_	_	_	_	
+20-6	2882-2886	dass	_	_	_	_	_	_	_	
+20-7	2887-2894	Evidenz	_	_	_	_	_	_	_	
+20-8	2895-2898	für	_	_	_	_	_	_	_	
+20-9	2899-2902	den	_	_	_	_	_	_	_	
+20-10	2903-2911	Gebrauch	_	_	_	_	_	_	_	
+20-11	2912-2915	bei	_	_	_	_	_	_	_	
+20-12	2916-2925	einzelnen	*	*	_	*	*	Specification	_	
+20-13	2926-2929	und	_	_	_	_	_	_	_	
+20-14	2930-2939	multiplen	*	*	_	*	*	Specification	_	
+20-15	2940-2942	AK	*	Diagnosis or Pathology	_	*	*	Finding	20-12|20-14	
+20-16	2943-2951	vorliegt	_	_	_	_	_	_	_	
+20-17	2951-2952	,	_	_	_	_	_	_	_	
+20-18	2953-2956	und	_	_	_	_	_	_	_	
+20-19	2957-2961	zwar	_	_	_	_	_	_	_	
+20-20	2962-2972	vorwiegend	_	_	_	_	_	_	_	
+20-21	2973-2976	bei	_	_	_	_	_	_	_	
+20-22	2977-2983	milden	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+20-23	2984-2987	bis	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+20-24	2988-2997	moderaten	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+20-25	2998-3006	Läsionen	*	Diagnosis or Pathology	_	*	*	Finding	20-22[31_0]	
+20-26	3007-3008	(	_	_	_	_	_	_	_	
+20-27	3008-3012	Grad	*[32]	Diagnosis or Pathology[32]	_[32]	*	*[32]	Finding[32]	20-29[33_32]	
+20-28	3013-3017	I-II	*[32]	Diagnosis or Pathology[32]	_[32]	*	*[32]	Finding[32]	_	
+20-29	3018-3022	nach	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+20-30	3023-3028	Olsen	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+20-31	3028-3029	)	_	_	_	_	_	_	_	
+20-32	3029-3030	.	_	_	_	_	_	_	_	
+
+#Text=Gebauer et al. zeigten darüber hinaus die Wirksamkeit dieser Kombination auch in hyperkeratotischen Läsionen [REF].
+21-1	3031-3038	Gebauer	_	_	_	_	_	_	_	
+21-2	3039-3041	et	_	_	_	_	_	_	_	
+21-3	3042-3044	al	_	_	_	_	_	_	_	
+21-4	3044-3045	.	_	_	_	_	_	_	_	
+21-5	3046-3053	zeigten	_	_	_	_	_	_	_	
+21-6	3054-3061	darüber	_	_	_	_	_	_	_	
+21-7	3062-3068	hinaus	_	_	_	_	_	_	_	
+21-8	3069-3072	die	_	_	_	_	_	_	_	
+21-9	3073-3084	Wirksamkeit	_	_	_	_	_	_	_	
+21-10	3085-3091	dieser	_	_	_	_	_	_	_	
+21-11	3092-3103	Kombination	_	_	_	_	_	_	_	
+21-12	3104-3108	auch	_	_	_	_	_	_	_	
+21-13	3109-3111	in	_	_	_	_	_	_	_	
+21-14	3112-3130	hyperkeratotischen	*	*	_	*	*	Specification	_	
+21-15	3131-3139	Läsionen	*	Diagnosis or Pathology	_	*	*	Finding	21-14	
+21-16	3140-3141	[	_	_	_	_	_	_	_	
+21-17	3141-3144	REF	_	_	_	_	_	_	_	
+21-18	3144-3145	]	_	_	_	_	_	_	_	
+21-19	3145-3146	.	_	_	_	_	_	_	_	
+
+#Text=Mehrere Studien untersuchten Diclofenac-Natrium 3% in Hyaluronsäure 2,5% Gel als feldgerichtete Therapie bei Patienten mit Anzeichen von Feldkanzerisierung.
+22-1	3147-3154	Mehrere	_	_	_	_	_	_	_	
+22-2	3155-3162	Studien	_	_	_	_	_	_	_	
+22-3	3163-3175	untersuchten	_	_	_	_	_	_	_	
+22-4	3176-3194	Diclofenac-Natrium	*	Clinical Drug	_	*	*	Substance	22-5|22-6[34_0]	
+22-5	3195-3197	3%	*	*	_	*	*	Specification	_	
+22-6	3198-3200	in	*[34]	*[34]	_[34]	*	*[34]	Specification[34]	_	
+22-7	3201-3214	Hyaluronsäure	*[34]|*[35]	*[34]|Clinical Drug[35]	_[34]|_[35]	*|*	*[34]|*[35]	Specification[34]|Substance[35]	22-8[36_35]	
+22-8	3215-3219	2,5%	*[36]	*[36]	_[36]	*	*[36]	Specification[36]	_	
+22-9	3220-3223	Gel	*[36]	*[36]	_[36]	*	*[36]	Specification[36]	_	
+22-10	3224-3227	als	_	_	_	_	_	_	_	
+22-11	3228-3242	feldgerichtete	*	*	_	*	*	Specification	_	
+22-12	3243-3251	Therapie	*	Therapeutic	_	*	*	Procedure	22-11	
+22-13	3252-3255	bei	_	_	_	_	_	_	_	
+22-14	3256-3265	Patienten	_	_	_	_	_	_	_	
+22-15	3266-3269	mit	_	_	_	_	_	_	_	
+22-16	3270-3279	Anzeichen	*	Diagnosis or Pathology	_	*	*	Finding	22-17[37_0]	
+22-17	3280-3283	von	*[37]	*[37]	_[37]	*	*[37]	Specification[37]	_	
+22-18	3284-3302	Feldkanzerisierung	*[37]|*[38]	*[37]|Diagnosis or Pathology[38]	_[37]|_[38]	*|*	*[37]|*[38]	Specification[37]|Finding[38]	_	
+22-19	3302-3303	.	_	_	_	_	_	_	_	
+
+#Text=Darüber hinaus wurde eine weitere Studie bei organtransplantierten Patienten mit Immunsuppression identifiziert [REF] (siehe Kapitel Therapie bei Immunsuppression bzw. Organtransplantation).
+23-1	3304-3311	Darüber	_	_	_	_	_	_	_	
+23-2	3312-3318	hinaus	_	_	_	_	_	_	_	
+23-3	3319-3324	wurde	_	_	_	_	_	_	_	
+23-4	3325-3329	eine	_	_	_	_	_	_	_	
+23-5	3330-3337	weitere	_	_	_	_	_	_	_	
+23-6	3338-3344	Studie	_	_	_	_	_	_	_	
+23-7	3345-3348	bei	_	_	_	_	_	_	_	
+23-8	3349-3370	organtransplantierten	*	Other Finding	_	*	*	Finding	_	
+23-9	3371-3380	Patienten	_	_	_	_	_	_	_	
+23-10	3381-3384	mit	_	_	_	_	_	_	_	
+23-11	3385-3401	Immunsuppression	*	Diagnosis or Pathology	_	*	*	Finding	_	
+23-12	3402-3415	identifiziert	_	_	_	_	_	_	_	
+23-13	3416-3417	[	_	_	_	_	_	_	_	
+23-14	3417-3420	REF	_	_	_	_	_	_	_	
+23-15	3420-3421	]	_	_	_	_	_	_	_	
+23-16	3422-3423	(	_	_	_	_	_	_	_	
+23-17	3423-3428	siehe	_	_	_	_	_	_	_	
+23-18	3429-3436	Kapitel	_	_	_	_	_	_	_	
+23-19	3437-3445	Therapie	*	Therapeutic	_	*	*	Procedure	23-20[39_0]|23-24[42_0]	
+23-20	3446-3449	bei	*[39]	*[39]	_[39]	*	*[39]	Specification[39]	_	
+23-21	3450-3466	Immunsuppression	*[39]|*[40]	*[39]|Diagnosis or Pathology[40]	_[39]|_[40]	*|*	*[39]|*[40]	Specification[39]|Finding[40]	_	
+23-22	3467-3470	bzw	_	_	_	_	_	_	_	
+23-23	3470-3471	.	_	_	_	_	_	_	_	
+23-24	3472-3492	Organtransplantation	*[41]|\_bei\_[42]	Diagnosis or Pathology[41]|*[42]	_[41]|_[42]	*|*	*[41]|*[42]	Finding[41]|Specification[42]	_	
+23-25	3492-3493	)	_	_	_	_	_	_	_	
+23-26	3493-3494	.	_	_	_	_	_	_	_	

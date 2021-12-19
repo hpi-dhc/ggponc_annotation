@@ -1,0 +1,595 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+
+#Text=L. Heinzerling
+1-1	0-1	L	_	_	_	_	_	_	_	
+1-2	1-2	.	_	_	_	_	_	_	_	
+1-3	3-14	Heinzerling	_	_	_	_	_	_	_	
+
+#Text=Klinisches Erscheinungsbild
+2-1	15-25	Klinisches	*	*	_	*	*	Specification	_	
+2-2	26-42	Erscheinungsbild	*	Other Finding	_	*	*	Finding	2-1	
+
+#Text=Kardiale Nebenwirkungen sind ein seltenes, aber gravierendes Problem unter medikamentösen Tumortherapien.
+3-1	43-51	Kardiale	*	*	_	*	*	Specification	_	
+3-2	52-66	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	3-1	
+3-3	67-71	sind	_	_	_	_	_	_	_	
+3-4	72-75	ein	_	_	_	_	_	_	_	
+3-5	76-84	seltenes	*	*	_	*	*	Specification	_	
+3-6	84-85	,	_	_	_	_	_	_	_	
+3-7	86-90	aber	_	_	_	_	_	_	_	
+3-8	91-103	gravierendes	*	*	_	*	*	Specification	_	
+3-9	104-111	Problem	*	Diagnosis or Pathology	_	*	*	Finding	3-8|3-5|3-10[1_0]	
+3-10	112-117	unter	*[1]	*[1]	_[1]	*	*[1]	Specification[1]	_	
+3-11	118-132	medikamentösen	*[1]|*[2]	*[1]|*[2]	_[1]|_[2]	*|*	*[1]|*[2]	Specification[1]|Specification[2]	_	
+3-12	133-147	Tumortherapien	*[1]|*[3]	*[1]|Therapeutic[3]	_[1]|_[3]	*|*	*[1]|*[3]	Specification[1]|Procedure[3]	3-11[2_3]	
+3-13	147-148	.	_	_	_	_	_	_	_	
+
+#Text=Sie treten unter zielgerichteten und Immuntherapien auf und unterscheiden sich in Ihrem Spektrum und Ihrer Therapiebedürftigkeit.
+4-1	149-152	Sie	_	_	_	_	_	_	_	
+4-2	153-159	treten	_	_	_	_	_	_	_	
+4-3	160-165	unter	_	_	_	_	_	_	_	
+4-4	166-181	zielgerichteten	*	Therapeutic		4-6	\_Therapien	Procedure	_	
+4-5	182-185	und	_	_	_	_	_	_	_	
+4-6	186-200	Immuntherapien	*	Therapeutic	_	*	*	Procedure	_	
+4-7	201-204	auf	_	_	_	_	_	_	_	
+4-8	205-208	und	_	_	_	_	_	_	_	
+4-9	209-222	unterscheiden	_	_	_	_	_	_	_	
+4-10	223-227	sich	_	_	_	_	_	_	_	
+4-11	228-230	in	_	_	_	_	_	_	_	
+4-12	231-236	Ihrem	_	_	_	_	_	_	_	
+4-13	237-245	Spektrum	_	_	_	_	_	_	_	
+4-14	246-249	und	_	_	_	_	_	_	_	
+4-15	250-255	Ihrer	_	_	_	_	_	_	_	
+4-16	256-277	Therapiebedürftigkeit	*	Other Finding	_	*	*	Finding	_	
+4-17	277-278	.	_	_	_	_	_	_	_	
+
+#Text=Zielgerichtete Therapien wie die BRAF- und die MEK-Inhibitoren induzieren neben Reizüberleitungsstörungen eine Reduktion der Ejektionsfraktion [REF].
+5-1	279-293	Zielgerichtete	*	*	_	*	*	Specification	_	
+5-2	294-303	Therapien	*	Therapeutic	_	*	*	Procedure	5-1	
+5-3	304-307	wie	_	_	_	_	_	_	_	
+5-4	308-311	die	_	_	_	_	_	_	_	
+5-5	312-316	BRAF	*	Clinical Drug		5-9	-Inhibitoren	Substance	_	
+5-6	316-317	-	_	_	_	_	_	_	_	
+5-7	318-321	und	_	_	_	_	_	_	_	
+5-8	322-325	die	_	_	_	_	_	_	_	
+5-9	326-341	MEK-Inhibitoren	*	Clinical Drug	_	*	*	Substance	_	
+5-10	342-352	induzieren	_	_	_	_	_	_	_	
+5-11	353-358	neben	_	_	_	_	_	_	_	
+5-12	359-384	Reizüberleitungsstörungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+5-13	385-389	eine	_	_	_	_	_	_	_	
+5-14	390-399	Reduktion	*	Diagnosis or Pathology	_	*	*	Finding	5-15[4_0]	
+5-15	400-403	der	*[4]	*[4]	_[4]	*	*[4]	Specification[4]	_	
+5-16	404-421	Ejektionsfraktion	*[4]|*[5]	*[4]|Other Finding[5]	_[4]|_[5]	*|*	*[4]|*[5]	Specification[4]|Finding[5]	_	
+5-17	422-423	[	_	_	_	_	_	_	_	
+5-18	423-426	REF	_	_	_	_	_	_	_	
+5-19	426-427	]	_	_	_	_	_	_	_	
+5-20	427-428	.	_	_	_	_	_	_	_	
+
+#Text=Die Reizüberleitungsstörungen können sich im EKG als Verlängerung der QTc-Zeit bemerkbar machen.
+6-1	429-432	Die	_	_	_	_	_	_	_	
+6-2	433-458	Reizüberleitungsstörungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-3	459-465	können	_	_	_	_	_	_	_	
+6-4	466-470	sich	_	_	_	_	_	_	_	
+6-5	471-473	im	_	_	_	_	_	_	_	
+6-6	474-477	EKG	*	Diagnostic	_	*	*	Procedure	_	
+6-7	478-481	als	_	_	_	_	_	_	_	
+6-8	482-494	Verlängerung	*	Diagnosis or Pathology	_	*	*	Finding	6-9[6_0]	
+6-9	495-498	der	*[6]	*[6]	_[6]	*	*[6]	Specification[6]	_	
+6-10	499-507	QTc-Zeit	*[6]|*[7]	*[6]|Other Finding[7]	_[6]|_[7]	*|*	*[6]|*[7]	Specification[6]|Finding[7]	_	
+6-11	508-517	bemerkbar	_	_	_	_	_	_	_	
+6-12	518-524	machen	_	_	_	_	_	_	_	
+6-13	524-525	.	_	_	_	_	_	_	_	
+
+#Text=Eine QT-Verlängerung kann zu einem erhöhten Risiko ventrikulärer Arrhythmien, einschließlich Torsade de pointes, führen.
+7-1	526-530	Eine	_	_	_	_	_	_	_	
+7-2	531-546	QT-Verlängerung	*	Diagnosis or Pathology	_	*	*	Finding	_	
+7-3	547-551	kann	_	_	_	_	_	_	_	
+7-4	552-554	zu	_	_	_	_	_	_	_	
+7-5	555-560	einem	_	_	_	_	_	_	_	
+7-6	561-569	erhöhten	*	*	_	*	*	Specification	_	
+7-7	570-576	Risiko	*	Other Finding	_	*	*	Finding	7-6|7-8[8_0]	
+7-8	577-590	ventrikulärer	*[8]|*[9]	*[8]|*[9]	_[8]|_[9]	*|*	*[8]|*[9]	Specification[8]|Specification[9]	_	
+7-9	591-602	Arrhythmien	*[8]|*[10]	*[8]|Diagnosis or Pathology[10]	_[8]|_[10]	*|*	*[8]|*[10]	Specification[8]|Finding[10]	7-8[9_10]	
+7-10	602-603	,	_	_	_	_	_	_	_	
+7-11	604-618	einschließlich	_	_	_	_	_	_	_	
+7-12	619-626	Torsade	*[11]	Diagnosis or Pathology[11]	_[11]	*	*[11]	Finding[11]	_	
+7-13	627-629	de	*[11]	Diagnosis or Pathology[11]	_[11]	*	*[11]	Finding[11]	_	
+7-14	630-637	pointes	*[11]	Diagnosis or Pathology[11]	_[11]	*	*[11]	Finding[11]	_	
+7-15	637-638	,	_	_	_	_	_	_	_	
+7-16	639-645	führen	_	_	_	_	_	_	_	
+7-17	645-646	.	_	_	_	_	_	_	_	
+
+#Text=Die Reduktion der Ejektionsfraktion ist häufig asymptomatisch kann aber auch zu Zeichen kardialer Dekompensation führen.
+8-1	647-650	Die	_	_	_	_	_	_	_	
+8-2	651-660	Reduktion	*	Diagnosis or Pathology	_	*	*	Finding	8-3[12_0]	
+8-3	661-664	der	*[12]	*[12]	_[12]	*	*[12]	Specification[12]	_	
+8-4	665-682	Ejektionsfraktion	*[12]|*[13]	*[12]|Other Finding[13]	_[12]|_[13]	*|*	*[12]|*[13]	Specification[12]|Finding[13]	_	
+8-5	683-686	ist	_	_	_	_	_	_	_	
+8-6	687-693	häufig	_	_	_	_	_	_	_	
+8-7	694-708	asymptomatisch	*	Other Finding	_	*	*	Finding	_	
+8-8	709-713	kann	_	_	_	_	_	_	_	
+8-9	714-718	aber	_	_	_	_	_	_	_	
+8-10	719-723	auch	_	_	_	_	_	_	_	
+8-11	724-726	zu	_	_	_	_	_	_	_	
+8-12	727-734	Zeichen	*	Diagnosis or Pathology	_	*	*	Finding	8-13[14_0]	
+8-13	735-744	kardialer	*[14]|*[15]	*[14]|*[15]	_[14]|_[15]	*|*	*[14]|*[15]	Specification[14]|Specification[15]	_	
+8-14	745-759	Dekompensation	*[14]|*[16]	*[14]|Diagnosis or Pathology[16]	_[14]|_[16]	*|*	*[14]|*[16]	Specification[14]|Finding[16]	8-13[15_16]	
+8-15	760-766	führen	_	_	_	_	_	_	_	
+8-16	766-767	.	_	_	_	_	_	_	_	
+
+#Text=Einzelfälle einer Perikardtamponade unter Vemurafenib wurden ebenfalls beschrieben.
+9-1	768-779	Einzelfälle	_	_	_	_	_	_	_	
+9-2	780-785	einer	_	_	_	_	_	_	_	
+9-3	786-803	Perikardtamponade	*	Diagnosis or Pathology	_	*	*	Finding	9-4[17_0]	
+9-4	804-809	unter	*[17]	*[17]	_[17]	*	*[17]	Specification[17]	_	
+9-5	810-821	Vemurafenib	*[17]|*[18]	*[17]|Clinical Drug[18]	_[17]|_[18]	*|*	*[17]|*[18]	Specification[17]|Substance[18]	_	
+9-6	822-828	wurden	_	_	_	_	_	_	_	
+9-7	829-838	ebenfalls	_	_	_	_	_	_	_	
+9-8	839-850	beschrieben	_	_	_	_	_	_	_	
+9-9	850-851	.	_	_	_	_	_	_	_	
+
+#Text=Unter Immuntherapien mit anti-CTLA4 und anti-PD1 Antikörper zeigten sich Myokarditiden, Perikarditiden, Perikardtamponade, Kardiomyopathie, Herzversagen, Reizleitungsstörungen, Myokardinfarkt bzw. kardiale Ischämie und Myokardfibrose [REF].
+10-1	852-857	Unter	_	_	_	_	_	_	_	
+10-2	858-872	Immuntherapien	*	Therapeutic	_	*	*	Procedure	10-3[19_0]|10-6[22_0]	
+10-3	873-876	mit	*[19]	*[19]	_[19]	*	*[19]	Specification[19]	_	
+10-4	877-887	anti-CTLA4	*[19]|*[20]	*[19]|Clinical Drug[20]	_[19]|[20]	*|10-6[21]	*[19]|\_Antikörper[20]	Specification[19]|Substance[20]	_	
+10-5	888-891	und	_	_	_	_	_	_	_	
+10-6	892-900	anti-PD1	*[21]|\_mit\_[22]	Clinical Drug[21]|*[22]	_[21]|_[22]	*|*	*[21]|*[22]	Substance[21]|Specification[22]	_	
+10-7	901-911	Antikörper	*[21]|\_mit\_[22]	Clinical Drug[21]|*[22]	_[21]|_[22]	*|*	*[21]|*[22]	Substance[21]|Specification[22]	_	
+10-8	912-919	zeigten	_	_	_	_	_	_	_	
+10-9	920-924	sich	_	_	_	_	_	_	_	
+10-10	925-938	Myokarditiden	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-11	938-939	,	_	_	_	_	_	_	_	
+10-12	940-954	Perikarditiden	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-13	954-955	,	_	_	_	_	_	_	_	
+10-14	956-973	Perikardtamponade	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-15	973-974	,	_	_	_	_	_	_	_	
+10-16	975-990	Kardiomyopathie	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-17	990-991	,	_	_	_	_	_	_	_	
+10-18	992-1004	Herzversagen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-19	1004-1005	,	_	_	_	_	_	_	_	
+10-20	1006-1027	Reizleitungsstörungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-21	1027-1028	,	_	_	_	_	_	_	_	
+10-22	1029-1043	Myokardinfarkt	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-23	1044-1047	bzw	_	_	_	_	_	_	_	
+10-24	1047-1048	.	_	_	_	_	_	_	_	
+10-25	1049-1057	kardiale	*	*	_	*	*	Specification	_	
+10-26	1058-1066	Ischämie	*	Diagnosis or Pathology	_	*	*	Finding	10-25	
+10-27	1067-1070	und	_	_	_	_	_	_	_	
+10-28	1071-1085	Myokardfibrose	*	Diagnosis or Pathology	_	*	*	Finding	_	
+10-29	1086-1087	[	_	_	_	_	_	_	_	
+10-30	1087-1090	REF	_	_	_	_	_	_	_	
+10-31	1090-1091	]	_	_	_	_	_	_	_	
+10-32	1091-1092	.	_	_	_	_	_	_	_	
+
+#Text=In der Fachinformation findet sich der Hinweis, dass Kardiotoxizität in 5% der Patienten unter Therapie mit Nivolumab auftrat im Vergleich zu 0% in der Kontrollgruppe.
+11-1	1093-1095	In	_	_	_	_	_	_	_	
+11-2	1096-1099	der	_	_	_	_	_	_	_	
+11-3	1100-1115	Fachinformation	_	_	_	_	_	_	_	
+11-4	1116-1122	findet	_	_	_	_	_	_	_	
+11-5	1123-1127	sich	_	_	_	_	_	_	_	
+11-6	1128-1131	der	_	_	_	_	_	_	_	
+11-7	1132-1139	Hinweis	_	_	_	_	_	_	_	
+11-8	1139-1140	,	_	_	_	_	_	_	_	
+11-9	1141-1145	dass	_	_	_	_	_	_	_	
+11-10	1146-1161	Kardiotoxizität	*	Diagnosis or Pathology	_	*	*	Finding	_	
+11-11	1162-1164	in	_	_	_	_	_	_	_	
+11-12	1165-1167	5%	_	_	_	_	_	_	_	
+11-13	1168-1171	der	_	_	_	_	_	_	_	
+11-14	1172-1181	Patienten	_	_	_	_	_	_	_	
+11-15	1182-1187	unter	_	_	_	_	_	_	_	
+11-16	1188-1196	Therapie	*	Therapeutic	_	*	*	Procedure	11-17[23_0]	
+11-17	1197-1200	mit	*[23]	*[23]	_[23]	*	*[23]	Specification[23]	_	
+11-18	1201-1210	Nivolumab	*[23]|*[24]	*[23]|Clinical Drug[24]	_[23]|_[24]	*|*	*[23]|*[24]	Specification[23]|Substance[24]	_	
+11-19	1211-1218	auftrat	_	_	_	_	_	_	_	
+11-20	1219-1221	im	_	_	_	_	_	_	_	
+11-21	1222-1231	Vergleich	_	_	_	_	_	_	_	
+11-22	1232-1234	zu	_	_	_	_	_	_	_	
+11-23	1235-1237	0%	_	_	_	_	_	_	_	
+11-24	1238-1240	in	_	_	_	_	_	_	_	
+11-25	1241-1244	der	_	_	_	_	_	_	_	
+11-26	1245-1259	Kontrollgruppe	_	_	_	_	_	_	_	
+11-27	1259-1260	.	_	_	_	_	_	_	_	
+
+#Text=Das Paul-Ehrlich-Institut (PEI) rapportiert jeweils 1,5%, 2,2-3,4% und 2,3% kardiovaskuläre Nebenwirkungen für Ipilimumab, anti-PD1 Antikörpern und Ipilimumab in Kombination mit Nivolumab.
+12-1	1261-1264	Das	_	_	_	_	_	_	_	
+12-2	1265-1286	Paul-Ehrlich-Institut	_	_	_	_	_	_	_	
+12-3	1287-1288	(	_	_	_	_	_	_	_	
+12-4	1288-1291	PEI	_	_	_	_	_	_	_	
+12-5	1291-1292	)	_	_	_	_	_	_	_	
+12-6	1293-1304	rapportiert	_	_	_	_	_	_	_	
+12-7	1305-1312	jeweils	_	_	_	_	_	_	_	
+12-8	1313-1317	1,5%	_	_	_	_	_	_	_	
+12-9	1317-1318	,	_	_	_	_	_	_	_	
+12-10	1319-1322	2,2	_	_	_	_	_	_	_	
+12-11	1322-1323	-	_	_	_	_	_	_	_	
+12-12	1323-1327	3,4%	_	_	_	_	_	_	_	
+12-13	1328-1331	und	_	_	_	_	_	_	_	
+12-14	1332-1336	2,3%	_	_	_	_	_	_	_	
+12-15	1337-1352	kardiovaskuläre	*	*	_	*	*	Specification	_	
+12-16	1353-1367	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	12-15|12-17[25_0]|12-20[28_0]|12-23[30_0]	
+12-17	1368-1371	für	*[25]	*[25]	_[25]	*	*[25]	Specification[25]	_	
+12-18	1372-1382	Ipilimumab	*[25]|*[26]	*[25]|Clinical Drug[26]	_[25]|_[26]	*|*	*[25]|*[26]	Specification[25]|Substance[26]	_	
+12-19	1382-1383	,	_	_	_	_	_	_	_	
+12-20	1384-1392	anti-PD1	*[27]|für\_[28]	Clinical Drug[27]|*[28]	_[27]|_[28]	*|*	*[27]|*[28]	Substance[27]|Specification[28]	_	
+12-21	1393-1404	Antikörpern	*[27]|für\_[28]	Clinical Drug[27]|*[28]	_[27]|_[28]	*|*	*[27]|*[28]	Substance[27]|Specification[28]	_	
+12-22	1405-1408	und	_	_	_	_	_	_	_	
+12-23	1409-1419	Ipilimumab	*[29]|\_für\_[30]	Clinical Drug[29]|*[30]	_[29]|_[30]	*|*	*[29]|*[30]	Substance[29]|Specification[30]	12-24[31_29]	
+12-24	1420-1422	in	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+12-25	1423-1434	Kombination	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+12-26	1435-1438	mit	*[31]	*[31]	_[31]	*	*[31]	Specification[31]	_	
+12-27	1439-1448	Nivolumab	*[31]|*[32]	*[31]|Clinical Drug[32]	_[31]|_[32]	*|*	*[31]|*[32]	Specification[31]|Substance[32]	_	
+12-28	1448-1449	.	_	_	_	_	_	_	_	
+
+#Text=Tödliche kardiale Nebenwirkungen wurden weiterhin in der Studie zur Therapie mit Ipilimumab im adjuvanten Setting beschrieben [REF].
+13-1	1450-1458	Tödliche	*	*	_	*	*	Specification	_	
+13-2	1459-1467	kardiale	*	*	_	*	*	Specification	_	
+13-3	1468-1482	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	13-2|13-1	
+13-4	1483-1489	wurden	_	_	_	_	_	_	_	
+13-5	1490-1499	weiterhin	_	_	_	_	_	_	_	
+13-6	1500-1502	in	_	_	_	_	_	_	_	
+13-7	1503-1506	der	_	_	_	_	_	_	_	
+13-8	1507-1513	Studie	_	_	_	_	_	_	_	
+13-9	1514-1517	zur	_	_	_	_	_	_	_	
+13-10	1518-1526	Therapie	*	Therapeutic	_	*	*	Procedure	13-11[33_0]|13-13[35_0]	
+13-11	1527-1530	mit	*[33]	*[33]	_[33]	*	*[33]	Specification[33]	_	
+13-12	1531-1541	Ipilimumab	*[33]|*[34]	*[33]|Clinical Drug[34]	_[33]|_[34]	*|*	*[33]|*[34]	Specification[33]|Substance[34]	_	
+13-13	1542-1544	im	*[35]	*[35]	_[35]	*	*[35]	Specification[35]	_	
+13-14	1545-1555	adjuvanten	*[35]	*[35]	_[35]	*	*[35]	Specification[35]	_	
+13-15	1556-1563	Setting	*[35]	*[35]	_[35]	*	*[35]	Specification[35]	_	
+13-16	1564-1575	beschrieben	_	_	_	_	_	_	_	
+13-17	1576-1577	[	_	_	_	_	_	_	_	
+13-18	1577-1580	REF	_	_	_	_	_	_	_	
+13-19	1580-1581	]	_	_	_	_	_	_	_	
+13-20	1581-1582	.	_	_	_	_	_	_	_	
+
+#Text=Diagnostik
+14-1	1583-1593	Diagnostik	*	Diagnostic	_	*	*	Procedure	_	
+
+#Text=Bei Patienten unter BRAF/MEK-Inhibitortherapie müssen die Elektrolyte und das EKG vor und zunächst alle 4 Wochen nach Einleitung der Therapie bzw. nach Dosisänderungen untersucht werden.
+15-1	1594-1597	Bei	_	_	_	_	_	_	_	
+15-2	1598-1607	Patienten	_	_	_	_	_	_	_	
+15-3	1608-1613	unter	_	_	_	_	_	_	_	
+15-4	1614-1618	BRAF	*	Therapeutic		15-6	-Inhibitortherapie	Procedure	_	
+15-5	1618-1619	/	_	_	_	_	_	_	_	
+15-6	1619-1640	MEK-Inhibitortherapie	*	Therapeutic	_	*	*	Procedure	_	
+15-7	1641-1647	müssen	_	_	_	_	_	_	_	
+15-8	1648-1651	die	_	_	_	_	_	_	_	
+15-9	1652-1663	Elektrolyte	*	Nutrient or Body Substance	_	*	*	Substance	_	
+15-10	1664-1667	und	_	_	_	_	_	_	_	
+15-11	1668-1671	das	_	_	_	_	_	_	_	
+15-12	1672-1675	EKG	*	Diagnostic	_	*	*	Procedure	_	
+15-13	1676-1679	vor	_	_	_	_	_	_	_	
+15-14	1680-1683	und	_	_	_	_	_	_	_	
+15-15	1684-1692	zunächst	_	_	_	_	_	_	_	
+15-16	1693-1697	alle	_	_	_	_	_	_	_	
+15-17	1698-1699	4	_	_	_	_	_	_	_	
+15-18	1700-1706	Wochen	_	_	_	_	_	_	_	
+15-19	1707-1711	nach	_	_	_	_	_	_	_	
+15-20	1712-1722	Einleitung	*	Therapeutic	_	*	*	Procedure	15-21[36_0]	
+15-21	1723-1726	der	*[36]	*[36]	_[36]	*	*[36]	Specification[36]	_	
+15-22	1727-1735	Therapie	*[36]|*[37]	*[36]|Therapeutic[37]	_[36]|_[37]	*|*	*[36]|*[37]	Specification[36]|Procedure[37]	_	
+15-23	1736-1739	bzw	_	_	_	_	_	_	_	
+15-24	1739-1740	.	_	_	_	_	_	_	_	
+15-25	1741-1745	nach	_	_	_	_	_	_	_	
+15-26	1746-1761	Dosisänderungen	*	Therapeutic	_	*	*	Procedure	_	
+15-27	1762-1772	untersucht	_	_	_	_	_	_	_	
+15-28	1773-1779	werden	_	_	_	_	_	_	_	
+15-29	1779-1780	.	_	_	_	_	_	_	_	
+
+#Text=Elektrolytstörungen müssen ausgeglichen werden.
+16-1	1781-1800	Elektrolytstörungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+16-2	1801-1807	müssen	_	_	_	_	_	_	_	
+16-3	1808-1820	ausgeglichen	_	_	_	_	_	_	_	
+16-4	1821-1827	werden	_	_	_	_	_	_	_	
+16-5	1827-1828	.	_	_	_	_	_	_	_	
+
+#Text=Bei Patienten mit einer QTc >500 Millisekunden (ms; Long-QT-Syndrom) wird eine Behandlung mit BRAF-Inhibitoren nicht empfohlen.
+17-1	1829-1832	Bei	_	_	_	_	_	_	_	
+17-2	1833-1842	Patienten	_	_	_	_	_	_	_	
+17-3	1843-1846	mit	_	_	_	_	_	_	_	
+17-4	1847-1852	einer	_	_	_	_	_	_	_	
+17-5	1853-1856	QTc	*	Diagnosis or Pathology	_	*	*	Finding	17-6[38_0]	
+17-6	1857-1858	>	*[38]	*[38]	_[38]	*	*[38]	Specification[38]	_	
+17-7	1858-1861	500	*[38]	*[38]	_[38]	*	*[38]	Specification[38]	_	
+17-8	1862-1875	Millisekunden	*[38]	*[38]	_[38]	*	*[38]	Specification[38]	_	
+17-9	1876-1877	(	_	_	_	_	_	_	_	
+17-10	1877-1879	ms	_	_	_	_	_	_	_	
+17-11	1879-1880	;	_	_	_	_	_	_	_	
+17-12	1881-1896	Long-QT-Syndrom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+17-13	1896-1897	)	_	_	_	_	_	_	_	
+17-14	1898-1902	wird	_	_	_	_	_	_	_	
+17-15	1903-1907	eine	_	_	_	_	_	_	_	
+17-16	1908-1918	Behandlung	*	Therapeutic	_	*	*	Procedure	17-17[39_0]	
+17-17	1919-1922	mit	*[39]	*[39]	_[39]	*	*[39]	Specification[39]	_	
+17-18	1923-1939	BRAF-Inhibitoren	*[39]|*[40]	*[39]|Clinical Drug[40]	_[39]|_[40]	*|*	*[39]|*[40]	Specification[39]|Substance[40]	_	
+17-19	1940-1945	nicht	_	_	_	_	_	_	_	
+17-20	1946-1955	empfohlen	_	_	_	_	_	_	_	
+17-21	1955-1956	.	_	_	_	_	_	_	_	
+
+#Text=Medikamente, die die QT-Zeit verlängern, sollten nicht gleichzeitig appliziert werden.
+18-1	1957-1968	Medikamente	*	Clinical Drug	_	*	*	Substance	_	
+18-2	1968-1969	,	_	_	_	_	_	_	_	
+18-3	1970-1973	die	_	_	_	_	_	_	_	
+18-4	1974-1977	die	_	_	_	_	_	_	_	
+18-5	1978-1985	QT-Zeit	*	Other Finding	_	*	*	Finding	_	
+18-6	1986-1996	verlängern	_	_	_	_	_	_	_	
+18-7	1996-1997	,	_	_	_	_	_	_	_	
+18-8	1998-2005	sollten	_	_	_	_	_	_	_	
+18-9	2006-2011	nicht	_	_	_	_	_	_	_	
+18-10	2012-2024	gleichzeitig	_	_	_	_	_	_	_	
+18-11	2025-2035	appliziert	_	_	_	_	_	_	_	
+18-12	2036-2042	werden	_	_	_	_	_	_	_	
+18-13	2042-2043	.	_	_	_	_	_	_	_	
+
+#Text=Bei Patienten mit kardialer Dysfunktion sind MEK-Inhibitoren nur mit Vorsicht einzusetzen.
+19-1	2044-2047	Bei	_	_	_	_	_	_	_	
+19-2	2048-2057	Patienten	_	_	_	_	_	_	_	
+19-3	2058-2061	mit	_	_	_	_	_	_	_	
+19-4	2062-2071	kardialer	*	*	_	*	*	Specification	_	
+19-5	2072-2083	Dysfunktion	*	Diagnosis or Pathology	_	*	*	Finding	19-4	
+19-6	2084-2088	sind	_	_	_	_	_	_	_	
+19-7	2089-2104	MEK-Inhibitoren	*	Clinical Drug	_	*	*	Substance	_	
+19-8	2105-2108	nur	_	_	_	_	_	_	_	
+19-9	2109-2112	mit	_	_	_	_	_	_	_	
+19-10	2113-2121	Vorsicht	_	_	_	_	_	_	_	
+19-11	2122-2133	einzusetzen	_	_	_	_	_	_	_	
+19-12	2133-2134	.	_	_	_	_	_	_	_	
+
+#Text=Die linksventrikuläre Ejektionsfraktion (LVEF) sollte vor Einleitung der MEK-Inhibitor-Behandlung, einen Monat nach Einleitung der Therapie und danach in ungefähr 3-monatigen Abständen beurteilt werden.
+20-1	2135-2138	Die	_	_	_	_	_	_	_	
+20-2	2139-2156	linksventrikuläre	*	*	_	*	*	Specification	_	
+20-3	2157-2174	Ejektionsfraktion	*	Other Finding	_	*	*	Finding	20-2	
+20-4	2175-2176	(	_	_	_	_	_	_	_	
+20-5	2176-2180	LVEF	*	Other Finding	_	*	*	Finding	_	
+20-6	2180-2181	)	_	_	_	_	_	_	_	
+20-7	2182-2188	sollte	_	_	_	_	_	_	_	
+20-8	2189-2192	vor	_	_	_	_	_	_	_	
+20-9	2193-2203	Einleitung	*	Therapeutic	_	*	*	Procedure	20-10[41_0]	
+20-10	2204-2207	der	*[41]	*[41]	_[41]	*	*[41]	Specification[41]	_	
+20-11	2208-2232	MEK-Inhibitor-Behandlung	*[41]|*[42]	*[41]|Therapeutic[42]	_[41]|_[42]	*|*	*[41]|*[42]	Specification[41]|Procedure[42]	_	
+20-12	2232-2233	,	_	_	_	_	_	_	_	
+20-13	2234-2239	einen	_	_	_	_	_	_	_	
+20-14	2240-2245	Monat	_	_	_	_	_	_	_	
+20-15	2246-2250	nach	_	_	_	_	_	_	_	
+20-16	2251-2261	Einleitung	*	Therapeutic	_	*	*	Procedure	20-17[43_0]	
+20-17	2262-2265	der	*[43]	*[43]	_[43]	*	*[43]	Specification[43]	_	
+20-18	2266-2274	Therapie	*[43]|*[44]	*[43]|Therapeutic[44]	_[43]|_[44]	*|*	*[43]|*[44]	Specification[43]|Procedure[44]	_	
+20-19	2275-2278	und	_	_	_	_	_	_	_	
+20-20	2279-2285	danach	_	_	_	_	_	_	_	
+20-21	2286-2288	in	_	_	_	_	_	_	_	
+20-22	2289-2297	ungefähr	_	_	_	_	_	_	_	
+20-23	2298-2299	3	_	_	_	_	_	_	_	
+20-24	2299-2300	-	_	_	_	_	_	_	_	
+20-25	2300-2309	monatigen	_	_	_	_	_	_	_	
+20-26	2310-2319	Abständen	_	_	_	_	_	_	_	
+20-27	2320-2329	beurteilt	_	_	_	_	_	_	_	
+20-28	2330-2336	werden	_	_	_	_	_	_	_	
+20-29	2336-2337	.	_	_	_	_	_	_	_	
+
+#Text=Vor und unter Immuntherapien mit anti-CTLA4 und anti-PD1 Antikörper sollte die CK regelmässig bestimmt werden, sowie immer bei Auftreten kardialer Symptome.
+21-1	2338-2341	Vor	_	_	_	_	_	_	_	
+21-2	2342-2345	und	_	_	_	_	_	_	_	
+21-3	2346-2351	unter	_	_	_	_	_	_	_	
+21-4	2352-2366	Immuntherapien	*	Therapeutic	_	*	*	Procedure	21-8[48_0]|21-5[45_0]	
+21-5	2367-2370	mit	*[45]	*[45]	_[45]	*	*[45]	Specification[45]	_	
+21-6	2371-2381	anti-CTLA4	*[45]|*[46]	*[45]|Clinical Drug[46]	_[45]|[46]	*|21-8[47]	*[45]|\_Antikörper[46]	Specification[45]|Substance[46]	_	
+21-7	2382-2385	und	_	_	_	_	_	_	_	
+21-8	2386-2394	anti-PD1	*[47]|\_mit\_[48]	Clinical Drug[47]|*[48]	_[47]|_[48]	*|*	*[47]|*[48]	Substance[47]|Specification[48]	_	
+21-9	2395-2405	Antikörper	*[47]|\_mit\_[48]	Clinical Drug[47]|*[48]	_[47]|_[48]	*|*	*[47]|*[48]	Substance[47]|Specification[48]	_	
+21-10	2406-2412	sollte	_	_	_	_	_	_	_	
+21-11	2413-2416	die	_	_	_	_	_	_	_	
+21-12	2417-2419	CK	*	Nutrient or Body Substance	_	*	*	Substance	_	
+21-13	2420-2431	regelmässig	_	_	_	_	_	_	_	
+21-14	2432-2440	bestimmt	_	_	_	_	_	_	_	
+21-15	2441-2447	werden	_	_	_	_	_	_	_	
+21-16	2447-2448	,	_	_	_	_	_	_	_	
+21-17	2449-2454	sowie	_	_	_	_	_	_	_	
+21-18	2455-2460	immer	_	_	_	_	_	_	_	
+21-19	2461-2464	bei	_	_	_	_	_	_	_	
+21-20	2465-2474	Auftreten	*	Diagnosis or Pathology	_	*	*	Finding	21-21[49_0]	
+21-21	2475-2484	kardialer	*[49]|*[50]	*[49]|*[50]	_[49]|_[50]	*|*	*[49]|*[50]	Specification[49]|Specification[50]	_	
+21-22	2485-2493	Symptome	*[49]|*[51]	*[49]|Diagnosis or Pathology[51]	_[49]|_[51]	*|*	*[49]|*[51]	Specification[49]|Finding[51]	21-21[50_51]	
+21-23	2493-2494	.	_	_	_	_	_	_	_	
+
+#Text=Ist diese erhöht, sollte ein Echo durchgeführt werden.
+22-1	2495-2498	Ist	_	_	_	_	_	_	_	
+22-2	2499-2504	diese	_	_	_	_	_	_	_	
+22-3	2505-2511	erhöht	_	_	_	_	_	_	_	
+22-4	2511-2512	,	_	_	_	_	_	_	_	
+22-5	2513-2519	sollte	_	_	_	_	_	_	_	
+22-6	2520-2523	ein	_	_	_	_	_	_	_	
+22-7	2524-2528	Echo	*	Diagnostic	_	*	*	Procedure	_	
+22-8	2529-2541	durchgeführt	_	_	_	_	_	_	_	
+22-9	2542-2548	werden	_	_	_	_	_	_	_	
+22-10	2548-2549	.	_	_	_	_	_	_	_	
+
+#Text=Bei kardialer Symptomatik sollte zusätzlich ein EKG und ein Echo durchgeführt werden.
+23-1	2550-2553	Bei	_	_	_	_	_	_	_	
+23-2	2554-2563	kardialer	*	*	_	*	*	Specification	_	
+23-3	2564-2575	Symptomatik	*	Diagnosis or Pathology	_	*	*	Finding	23-2	
+23-4	2576-2582	sollte	_	_	_	_	_	_	_	
+23-5	2583-2593	zusätzlich	_	_	_	_	_	_	_	
+23-6	2594-2597	ein	_	_	_	_	_	_	_	
+23-7	2598-2601	EKG	*	Diagnostic	_	*	*	Procedure	_	
+23-8	2602-2605	und	_	_	_	_	_	_	_	
+23-9	2606-2609	ein	_	_	_	_	_	_	_	
+23-10	2610-2614	Echo	*	Diagnostic	_	*	*	Procedure	_	
+23-11	2615-2627	durchgeführt	_	_	_	_	_	_	_	
+23-12	2628-2634	werden	_	_	_	_	_	_	_	
+23-13	2634-2635	.	_	_	_	_	_	_	_	
+
+#Text=Bei V.a. autoimmuner Myokarditis kann eine Myokardbiopsie richtungsweisend sein.
+24-1	2636-2639	Bei	_	_	_	_	_	_	_	
+24-2	2640-2643	V.a	*[52]	Other Finding[52]	_[52]	*	*[52]	Finding[52]	24-4[53_52]	
+24-3	2643-2644	.	*[52]	Other Finding[52]	_[52]	*	*[52]	Finding[52]	_	
+24-4	2645-2656	autoimmuner	*[53]|*[54]	*[53]|*[54]	_[53]|_[54]	*|*	*[53]|*[54]	Specification[53]|Specification[54]	_	
+24-5	2657-2668	Myokarditis	*[53]|*[55]	*[53]|Diagnosis or Pathology[55]	_[53]|_[55]	*|*	*[53]|*[55]	Specification[53]|Finding[55]	24-4[54_55]	
+24-6	2669-2673	kann	_	_	_	_	_	_	_	
+24-7	2674-2678	eine	_	_	_	_	_	_	_	
+24-8	2679-2693	Myokardbiopsie	*	Diagnostic	_	*	*	Procedure	_	
+24-9	2694-2710	richtungsweisend	_	_	_	_	_	_	_	
+24-10	2711-2715	sein	_	_	_	_	_	_	_	
+24-11	2715-2716	.	_	_	_	_	_	_	_	
+
+#Text=Behandlung
+25-1	2717-2727	Behandlung	*	Therapeutic	_	*	*	Procedure	_	
+
+#Text=Prinzipiell sollte bei kardialen Symptomen unter der medikamentösen Systemtherapie stets an eine medikamentöse Nebenwirkung gedacht werden.
+26-1	2728-2739	Prinzipiell	_	_	_	_	_	_	_	
+26-2	2740-2746	sollte	_	_	_	_	_	_	_	
+26-3	2747-2750	bei	_	_	_	_	_	_	_	
+26-4	2751-2760	kardialen	*	*	_	*	*	Specification	_	
+26-5	2761-2770	Symptomen	*	Diagnosis or Pathology	_	*	*	Finding	26-4|26-6[56_0]	
+26-6	2771-2776	unter	*[56]	*[56]	_[56]	*	*[56]	Specification[56]	_	
+26-7	2777-2780	der	*[56]	*[56]	_[56]	*	*[56]	Specification[56]	_	
+26-8	2781-2795	medikamentösen	*[56]|*[57]	*[56]|*[57]	_[56]|_[57]	*|*	*[56]|*[57]	Specification[56]|Specification[57]	_	
+26-9	2796-2810	Systemtherapie	*[56]|*[58]	*[56]|Therapeutic[58]	_[56]|_[58]	*|*	*[56]|*[58]	Specification[56]|Procedure[58]	26-8[57_58]	
+26-10	2811-2816	stets	_	_	_	_	_	_	_	
+26-11	2817-2819	an	_	_	_	_	_	_	_	
+26-12	2820-2824	eine	_	_	_	_	_	_	_	
+26-13	2825-2838	medikamentöse	*	*	_	*	*	Specification	_	
+26-14	2839-2851	Nebenwirkung	*	Diagnosis or Pathology	_	*	*	Finding	26-13	
+26-15	2852-2859	gedacht	_	_	_	_	_	_	_	
+26-16	2860-2866	werden	_	_	_	_	_	_	_	
+26-17	2866-2867	.	_	_	_	_	_	_	_	
+
+#Text=Kommt es unter der BRAF/MEK-Inhibitortherapie zu einer QTc-Verlängerung im EKG, muss die Dosis reduziert, die Medikamentengabe ausgesetzt oder ganz abgebrochen werden.
+27-1	2868-2873	Kommt	_	_	_	_	_	_	_	
+27-2	2874-2876	es	_	_	_	_	_	_	_	
+27-3	2877-2882	unter	_	_	_	_	_	_	_	
+27-4	2883-2886	der	_	_	_	_	_	_	_	
+27-5	2887-2891	BRAF	*	Therapeutic		27-7	-Inhibitortherapie	Procedure	_	
+27-6	2891-2892	/	_	_	_	_	_	_	_	
+27-7	2892-2913	MEK-Inhibitortherapie	*	Therapeutic	_	*	*	Procedure	_	
+27-8	2914-2916	zu	_	_	_	_	_	_	_	
+27-9	2917-2922	einer	_	_	_	_	_	_	_	
+27-10	2923-2939	QTc-Verlängerung	*	Diagnosis or Pathology	_	*	*	Finding	27-11[59_0]	
+27-11	2940-2942	im	*[59]	*[59]	_[59]	*	*[59]	Specification[59]	_	
+27-12	2943-2946	EKG	*[59]|*[60]	*[59]|Diagnostic[60]	_[59]|_[60]	*|*	*[59]|*[60]	Specification[59]|Procedure[60]	_	
+27-13	2946-2947	,	_	_	_	_	_	_	_	
+27-14	2948-2952	muss	_	_	_	_	_	_	_	
+27-15	2953-2956	die	_	_	_	_	_	_	_	
+27-16	2957-2962	Dosis	_	_	_	_	_	_	_	
+27-17	2963-2972	reduziert	_	_	_	_	_	_	_	
+27-18	2972-2973	,	_	_	_	_	_	_	_	
+27-19	2974-2977	die	_	_	_	_	_	_	_	
+27-20	2978-2994	Medikamentengabe	*	Therapeutic	_	*	*	Procedure	_	
+27-21	2995-3005	ausgesetzt	_	_	_	_	_	_	_	
+27-22	3006-3010	oder	_	_	_	_	_	_	_	
+27-23	3011-3015	ganz	_	_	_	_	_	_	_	
+27-24	3016-3027	abgebrochen	_	_	_	_	_	_	_	
+27-25	3028-3034	werden	_	_	_	_	_	_	_	
+27-26	3034-3035	.	_	_	_	_	_	_	_	
+
+#Text=Insbesondere QTc-Zeiten über 500 ms oder eine Erhöhung um 60 ms erfordern ein konsequentes Management.
+28-1	3036-3048	Insbesondere	_	_	_	_	_	_	_	
+28-2	3049-3059	QTc-Zeiten	*	Diagnosis or Pathology	_	*	*	Finding	28-3[61_0]	
+28-3	3060-3064	über	*[61]	*[61]	_[61]	*	*[61]	Specification[61]	_	
+28-4	3065-3068	500	*[61]	*[61]	_[61]	*	*[61]	Specification[61]	_	
+28-5	3069-3071	ms	*[61]	*[61]	_[61]	*	*[61]	Specification[61]	_	
+28-6	3072-3076	oder	_	_	_	_	_	_	_	
+28-7	3077-3081	eine	_	_	_	_	_	_	_	
+28-8	3082-3090	Erhöhung	*	Diagnosis or Pathology	_	*	*	Finding	28-9[62_0]	
+28-9	3091-3093	um	*[62]	*[62]	_[62]	*	*[62]	Specification[62]	_	
+28-10	3094-3096	60	*[62]	*[62]	_[62]	*	*[62]	Specification[62]	_	
+28-11	3097-3099	ms	*[62]	*[62]	_[62]	*	*[62]	Specification[62]	_	
+28-12	3100-3109	erfordern	_	_	_	_	_	_	_	
+28-13	3110-3113	ein	_	_	_	_	_	_	_	
+28-14	3114-3126	konsequentes	*	*	_	*	*	Specification	_	
+28-15	3127-3137	Management	*	Therapeutic	_	*	*	Procedure	28-14	
+28-16	3137-3138	.	_	_	_	_	_	_	_	
+
+#Text=Elektrolytstörungen (einschließlich Magnesium) sollten korrigiert und kardiale Risikofaktoren für eine QT-Verlängerung (wie z.B. kongestive Herzinsuffizienz, Bradyarrhythmien) kontrolliert werden.
+29-1	3139-3158	Elektrolytstörungen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+29-2	3159-3160	(	_	_	_	_	_	_	_	
+29-3	3160-3174	einschließlich	_	_	_	_	_	_	_	
+29-4	3175-3184	Magnesium	*	Nutrient or Body Substance	_	*	*	Substance	_	
+29-5	3184-3185	)	_	_	_	_	_	_	_	
+29-6	3186-3193	sollten	_	_	_	_	_	_	_	
+29-7	3194-3204	korrigiert	_	_	_	_	_	_	_	
+29-8	3205-3208	und	_	_	_	_	_	_	_	
+29-9	3209-3217	kardiale	*	*	_	*	*	Specification	_	
+29-10	3218-3232	Risikofaktoren	*	Other Finding	_	*	*	Finding	29-9|29-11[63_0]	
+29-11	3233-3236	für	*[63]	*[63]	_[63]	*	*[63]	Specification[63]	_	
+29-12	3237-3241	eine	*[63]	*[63]	_[63]	*	*[63]	Specification[63]	_	
+29-13	3242-3257	QT-Verlängerung	*[63]|*[64]	*[63]|Diagnosis or Pathology[64]	_[63]|_[64]	*|*	*[63]|*[64]	Specification[63]|Finding[64]	_	
+29-14	3258-3259	(	_	_	_	_	_	_	_	
+29-15	3259-3262	wie	_	_	_	_	_	_	_	
+29-16	3263-3266	z.B	_	_	_	_	_	_	_	
+29-17	3266-3267	.	_	_	_	_	_	_	_	
+29-18	3268-3278	kongestive	*	*	_	*	*	Specification	_	
+29-19	3279-3295	Herzinsuffizienz	*	Diagnosis or Pathology	_	*	*	Finding	29-18	
+29-20	3295-3296	,	_	_	_	_	_	_	_	
+29-21	3297-3313	Bradyarrhythmien	*	Diagnosis or Pathology	_	*	*	Finding	_	
+29-22	3313-3314	)	_	_	_	_	_	_	_	
+29-23	3315-3327	kontrolliert	_	_	_	_	_	_	_	
+29-24	3328-3334	werden	_	_	_	_	_	_	_	
+29-25	3334-3335	.	_	_	_	_	_	_	_	
+
+#Text=Unter der Immuntherapie können lebensgefährliche kardiale Nebenwirkungen auftreten, die ein schnelles konsequentes Vorgehen inklusive symptomatischer medizinischer Intervention ggf. auf der Intensivstation erfordern können [REF].
+30-1	3336-3341	Unter	_	_	_	_	_	_	_	
+30-2	3342-3345	der	_	_	_	_	_	_	_	
+30-3	3346-3359	Immuntherapie	*	Therapeutic	_	*	*	Procedure	_	
+30-4	3360-3366	können	_	_	_	_	_	_	_	
+30-5	3367-3384	lebensgefährliche	*	*	_	*	*	Specification	_	
+30-6	3385-3393	kardiale	*	*	_	*	*	Specification	_	
+30-7	3394-3408	Nebenwirkungen	*	Diagnosis or Pathology	_	*	*	Finding	30-6|30-5	
+30-8	3409-3418	auftreten	_	_	_	_	_	_	_	
+30-9	3418-3419	,	_	_	_	_	_	_	_	
+30-10	3420-3423	die	_	_	_	_	_	_	_	
+30-11	3424-3427	ein	_	_	_	_	_	_	_	
+30-12	3428-3437	schnelles	*	*	_	*	*	Specification	_	
+30-13	3438-3450	konsequentes	*	*	_	*	*	Specification	_	
+30-14	3451-3459	Vorgehen	*	Therapeutic	_	*	*	Procedure	30-12|30-13	
+30-15	3460-3469	inklusive	_	_	_	_	_	_	_	
+30-16	3470-3485	symptomatischer	*	*	_	*	*	Specification	_	
+30-17	3486-3499	medizinischer	*	*	_	*	*	Specification	_	
+30-18	3500-3512	Intervention	*	Therapeutic	_	*	*	Procedure	30-16|30-17	
+30-19	3513-3516	ggf	_	_	_	_	_	_	_	
+30-20	3516-3517	.	_	_	_	_	_	_	_	
+30-21	3518-3521	auf	_	_	_	_	_	_	_	
+30-22	3522-3525	der	_	_	_	_	_	_	_	
+30-23	3526-3541	Intensivstation	_	_	_	_	_	_	_	
+30-24	3542-3551	erfordern	_	_	_	_	_	_	_	
+30-25	3552-3558	können	_	_	_	_	_	_	_	
+30-26	3559-3560	[	_	_	_	_	_	_	_	
+30-27	3560-3563	REF	_	_	_	_	_	_	_	
+30-28	3563-3564	]	_	_	_	_	_	_	_	
+30-29	3564-3565	.	_	_	_	_	_	_	_	
+
+#Text=Bei autoimmuner Myokarditis zeigte sich in den wenigen beschriebenen Fällen die Gabe von Kortikosteroide hilfreich [REF].
+31-1	3566-3569	Bei	_	_	_	_	_	_	_	
+31-2	3570-3581	autoimmuner	*	*	_	*	*	Specification	_	
+31-3	3582-3593	Myokarditis	*	Diagnosis or Pathology	_	*	*	Finding	31-2	
+31-4	3594-3600	zeigte	_	_	_	_	_	_	_	
+31-5	3601-3605	sich	_	_	_	_	_	_	_	
+31-6	3606-3608	in	_	_	_	_	_	_	_	
+31-7	3609-3612	den	_	_	_	_	_	_	_	
+31-8	3613-3620	wenigen	_	_	_	_	_	_	_	
+31-9	3621-3634	beschriebenen	_	_	_	_	_	_	_	
+31-10	3635-3641	Fällen	_	_	_	_	_	_	_	
+31-11	3642-3645	die	_	_	_	_	_	_	_	
+31-12	3646-3650	Gabe	*	Therapeutic	_	*	*	Procedure	31-13[65_0]	
+31-13	3651-3654	von	*[65]	*[65]	_[65]	*	*[65]	Specification[65]	_	
+31-14	3655-3670	Kortikosteroide	*[65]|*[66]	*[65]|Clinical Drug[66]	_[65]|_[66]	*|*	*[65]|*[66]	Specification[65]|Substance[66]	_	
+31-15	3671-3680	hilfreich	_	_	_	_	_	_	_	
+31-16	3681-3682	[	_	_	_	_	_	_	_	
+31-17	3682-3685	REF	_	_	_	_	_	_	_	
+31-18	3685-3686	]	_	_	_	_	_	_	_	
+31-19	3686-3687	.	_	_	_	_	_	_	_	
+
+#Text=Weiterhin sollte die Immun-Checkpoint-Therapie unterbrochen bzw. abgebrochen werden.
+32-1	3688-3697	Weiterhin	_	_	_	_	_	_	_	
+32-2	3698-3704	sollte	_	_	_	_	_	_	_	
+32-3	3705-3708	die	_	_	_	_	_	_	_	
+32-4	3709-3734	Immun-Checkpoint-Therapie	*	Therapeutic	_	*	*	Procedure	_	
+32-5	3735-3747	unterbrochen	_	_	_	_	_	_	_	
+32-6	3748-3751	bzw	_	_	_	_	_	_	_	
+32-7	3751-3752	.	_	_	_	_	_	_	_	
+32-8	3753-3764	abgebrochen	_	_	_	_	_	_	_	
+32-9	3765-3771	werden	_	_	_	_	_	_	_	
+32-10	3771-3772	.	_	_	_	_	_	_	_	

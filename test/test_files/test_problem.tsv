@@ -1,0 +1,24 @@
+6-1	633-646	Voraussetzung	_	_	_	_	_	_	_	
+6-2	647-650	für	_	_	_	_	_	_	_	
+6-3	651-654	die	_	_	_	_	_	_	_	
+6-4	655-661	lokale	*	*	_	*	*	Specification	_	
+6-5	662-686	Lebermetastasen-Therapie	*	Therapeutic	_	*	*	Procedure	6-4	
+6-6	687-690	ist	_	_	_	_	_	_	_	
+6-7	691-693	in	_	_	_	_	_	_	_	
+6-8	694-697	der	_	_	_	_	_	_	_	
+6-9	698-703	Regel	_	_	_	_	_	_	_	
+6-10	704-707	der	_	_	_	_	_	_	_	
+6-11	708-718	Ausschluss	*	Diagnostic	_	*	*	Procedure	6-12[1_0]	
+6-12	719-735	extrahepatischer	*[1]|*[2]	*[1]|*[2]	_[1]|_[2]	*|*	*[1]|*[2]	Specification[1]|Specification[2]	_	
+6-13	736-746	Metastasen	*[1]|*[3]	*[1]|Diagnosis or Pathology[3]	_[1]|_[3]	*|*	*[1]|*[3]	Specification[1]|Finding[3]	6-12[2_3]	
+6-14	747-752	sowie	_	_	_	_	_	_	_	
+6-15	753-758	eines	_	_	_	_	_	_	_	
+6-16	759-764	lokal	*	*		6-19	en	Specification	_	
+6-17	764-765	-	_	_	_	_	_	_	_	
+6-18	765-766	/	_	_	_	_	_	_	_	
+6-19	766-780	lokoregionalen	*	*	_	*	*	Specification	_	
+6-20	781-789	Rezidivs	*	Diagnosis or Pathology	_	*	*	Finding	6-19|6-16	
+6-21	790-793	und	_	_	_	_	_	_	_	
+6-22	794-797	von	_	_	_	_	_	_	_	
+6-23	798-813	Zweitkarzinomen	*	Diagnosis or Pathology	_	*	*	Finding	_	
+6-24	813-814	.	_	_	_	_	_	_	_	
