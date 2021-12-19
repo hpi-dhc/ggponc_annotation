@@ -12,7 +12,7 @@ This repository contains the code to reproduce results from the paper *Clinical 
 
 The prepocessed, e.g. sentence-splitted and tokenized text portions, are already included in the release (`data/raw_text`) 
 
-If you want to do the preprocessing yourself, build the jar file from [https://github.com/JULIELab/GGPOnc](https://github.com/JULIELab/GGPOnc) and use it with `data/xml/cpg-corpus-cms.xml`
+If you want to do the preprocessing yourself, build the jar file from [https://github.com/hpi-dhc/ggponc_preprocessing](https://github.com/hpi-dhc/ggponc_preprocessing) and use it with `data/xml/cpg-corpus-cms.xml`
 
 ## Notebooks
 
