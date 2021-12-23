@@ -10,7 +10,7 @@ This repository contains the code to reproduce results from the paper *Clinical 
 
 ## Preprocessing (optional)
 
-The prepocessed, e.g. sentence-splitted and tokenized text portions, are already included in the release (`data/raw_text`) 
+The prepocessed, e.g. sentence-splitted and tokenized text portions, are already included in the release (`data/plain_text`) 
 
 If you want to do the preprocessing yourself, build the jar file from [https://github.com/hpi-dhc/ggponc_preprocessing](https://github.com/hpi-dhc/ggponc_preprocessing) and use it with `data/xml/cpg-corpus-cms.xml`
 
@@ -45,4 +45,29 @@ Please refer to the [annotation guide](annotation_guide/anno_guide.pdf) for a de
 
 ## Citing GGPONC
 
-- TODO
+According to the [terms of use of GGPONC](https://www.leitlinienprogramm-onkologie.de/projekte/ggponc-english/), contributions which are based on the corpus must cite the following publication: 
+
+* Florian Borchert, Christina Lohr, Luise Modersohn, Thomas Langer, Markus Follmann, Jan Philipp Sachs, Udo Hahn, and Matthieu-P. Schapranow. **GGPONC: A Corpus of German Medical Text with Rich Metadata Based on Clinical Practice Guidelines**. In Proceedings of the 11th International Workshop on Health Text Mining and Information Analysis, 38–48. Online: Association for Computational Linguistics, 2020.
+
+BibTeX:
+```
+@inproceedings{borchert-etal-2020-ggponc,
+    title = "{GGPONC}: A Corpus of {G}erman Medical Text with Rich Metadata Based on Clinical Practice Guidelines",
+    author = "Borchert, Florian  and
+      Lohr, Christina  and
+      Modersohn, Luise  and
+      Langer, Thomas  and
+      Follmann, Markus  and
+      Sachs, Jan Philipp  and
+      Hahn, Udo  and
+      Schapranow, Matthieu-P.",
+    booktitle = "Proceedings of the 11th International Workshop on Health Text Mining and Information Analysis",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.louhi-1.5",
+    doi = "10.18653/v1/2020.louhi-1.5",
+    pages = "38--48",
+  }
+```
