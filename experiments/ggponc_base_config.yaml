@@ -60,14 +60,9 @@ hydra:
     timeout_min: 600
     name: ${name}
     gpus_per_task: 1
-    additional_parameters: {"mail-user": "florian.borchert@hpi.de", "mail-type": "END,FAIL"}
+    additional_parameters: {"mail-user": "email@domain.com", "mail-type": "END,FAIL"}
     _target_: hydra_plugins.hydra_submitit_launcher.submitit_launcher.SlurmLauncher
     partition: gpu
-    #comment: null
-    #constraint: null
-    #exclude: null
-    #max_num_timeout: 0
     array_parallelism: 2
-    #setup: null
 
 # @package hydra.launcher
