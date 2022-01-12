@@ -39,7 +39,7 @@ def read_webanno(tsv_files) -> pd.DataFrame:
             with open(tsv_file, 'r', encoding='utf-8') as f:
                 for line in f.readlines():
                     if line.startswith('#Text='):
-                        sentences.append(line[6:])
+                        sentences.append(line[6:].strip())
                         continue
                     if line.startswith('#') or not(line.strip()):
                         continue
@@ -84,6 +84,33 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
             log.error(message)
             if not collect_errors and not skip_errors:
                 raise e
+    if error and not skip_errors:
+        raise Exception("Errors during conversion, check error.log")
+    return pd.concat(out)
+
+def webanno_to_spans(webanno_df, sentences, level, debug=False, collect_errors=False, skip_errors=False):
+    error = False
+    out = []
+    for fs, sentence in tqdm(zip(webanno_df.index.unique(), sentences)):
+        file, sentence_id = fs
+        spans = []
+        for entity_type in entity_values['detail']:    
+            try:
+                d = webanno_df.loc[(file, sentence_id)]
+                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=True, debug=debug, all_columns=False, select_type=entity_type)
+                spans += _to_spans(sdf, sentence)    
+                assert success
+            except Exception as e:
+                error = True
+                message = f'{file}, {sentence_id}, {e.args}'
+                log.debug(message)
+                log.error(message)
+                if not collect_errors and not skip_errors:
+                    raise e
+        spans.sort(key = lambda t: t[0])
+        if not success:
+            log.error(f"Error processing: {file}, {sentence_id}, aborting.")
+            return spans
     if error and not skip_errors:
         raise Exception("Errors during conversion, check error.log")
     return pd.concat(out)
@@ -214,8 +241,8 @@ def _split_multi_annotations(v_string, level):
 def _expand_specs(sentence_df, level, select_type):
     """ Propagate token labels to the corresponding specification sections """
     sdf = sentence_df.copy()
-    #from IPython.display import display
-    #display(sdf)
+    from IPython.display import display
+    display(sdf)
     for i, row in sdf[(sdf.specified_by != '_') & (sdf[f'value_specification_id'].isna())].iterrows():
         specs = row.specified_by.split('|')
         for s in specs:
@@ -225,6 +252,9 @@ def _expand_specs(sentence_df, level, select_type):
                 spec_id = int(m.group(2)) 
                 idx = (sdf.ts_id == ts_id) | sdf[f'value_specification_id'].apply(
                     lambda sid: sid == spec_id or (type(sid) is tuple and spec_id in sid))
+                if (sdf.loc[idx, 'value_specification_id'] == spec_id).sum() == 0:
+                    assert sum(idx) == 1
+                    spec_id = sdf[idx].iloc[0].value_specification_id
             else: # Specification without number -> point to Token-ID
                 idx = (sdf.ts_id == s)
                 assert sum(idx) == 1
@@ -268,6 +298,47 @@ def _to_iob(sentence_df, all_columns):
             entity_counter = -1
             assert out == 'O', sentence_df
     return sdf[['token', 'output']] if not all_columns else sdf
+
+def _to_spans(sentence_df, sentence):
+    """ creates spans from resolved WebAnno entities"""
+    def get_span(span_str):
+        split = span_str.split('-')
+        return int(split[0]), int(split[1])
+    sdf = sentence_df.copy()
+    sentence_start = get_span(sdf.iloc[0].span)[0]
+    
+    def merge_entities(tokens):
+        s_start = get_span(tokens[0][0])[0] - sentence_start
+        s_end = get_span(tokens[-1][0])[1] - sentence_start
+        mention = sentence[s_start:s_end]
+        assert mention.startswith(tokens[0][1])
+        assert mention.endswith(tokens[-1][1])
+        return (s_start, s_end, mention, tokens[0][2])
+    
+    entity_counter = -1
+    out_col = sdf.columns.get_loc("output")
+    entities = []
+    cur_entity = None
+    for i, row_tuple in enumerate(sdf.iterrows()):
+        row = row_tuple[1]
+        out = row['output'].replace(' ', '_')
+        entity_id = row['entity_id']
+        if not(math.isnan(entity_id)) and entity_id != entity_counter and out != 'O': #new entity
+            if cur_entity:
+                entities.append(merge_entities(cur_entity))
+            entity_counter = entity_id
+            cur_entity = [(row.span, row.token, out)]
+        elif entity_id == entity_counter:
+            cur_entity += [(row.span, row.token, out)]
+        else:
+            entity_counter = -1
+            assert out == 'O', sentence_df
+            if cur_entity:
+                entities.append(merge_entities(cur_entity))
+                cur_entity = None
+    if cur_entity:
+        entities.append(merge_entities(cur_entity))
+    return entities
 
 def _close_gaps(sentence_df):
     sdf = sentence_df.copy()
@@ -331,6 +402,8 @@ def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_co
         for _, anno in sdf.iterrows():
             _check_annos(anno)
     return sdf, True
+
+
 
 def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=False):
     """ Turns a Webanno sentence DataFrame to a DataFrame with IOB tags """
