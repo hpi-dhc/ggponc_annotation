@@ -32,11 +32,15 @@ VALUE_REGEX = r'([^\[\[]+)(\[[\d_]+\])?$' # Any kind of non-empty field in WebAn
 def read_webanno(tsv_files) -> pd.DataFrame:
     """Turns a bunch of WebAnno 3.3 TSV files into a DataFrame"""    
     dfs = []
+    sentences = []
     for tsv_file in tsv_files:
         try:
             filtered_input = ""
             with open(tsv_file, 'r', encoding='utf-8') as f:
                 for line in f.readlines():
+                    if line.startswith('#Text='):
+                        sentences.append(line[6:])
+                        continue
                     if line.startswith('#') or not(line.strip()):
                         continue
                     filtered_input += line
@@ -60,7 +64,7 @@ def read_webanno(tsv_files) -> pd.DataFrame:
             log.error(filtered_input)
             log.error(tsv_file)
             raise e
-    return pd.concat(dfs).set_index(['file', 'sentence_id'])
+    return pd.concat(dfs).set_index(['file', 'sentence_id']), sentences
 
 def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors=False, skip_errors=False, all_columns=False):
     error = False
@@ -207,9 +211,11 @@ def _split_multi_annotations(v_string, level):
     else:
         raise Exception('Multi-stacking not implemented: ' + v_string)
 
-def _expand_specs(sentence_df, level):
+def _expand_specs(sentence_df, level, select_type):
     """ Propagate token labels to the corresponding specification sections """
     sdf = sentence_df.copy()
+    #from IPython.display import display
+    #display(sdf)
     for i, row in sdf[(sdf.specified_by != '_') & (sdf[f'value_specification_id'].isna())].iterrows():
         specs = row.specified_by.split('|')
         for s in specs:
@@ -221,9 +227,27 @@ def _expand_specs(sentence_df, level):
                     lambda sid: sid == spec_id or (type(sid) is tuple and spec_id in sid))
             else: # Specification without number -> point to Token-ID
                 idx = (sdf.ts_id == s)
-            sdf.loc[idx, f'{level}_entity_id'] = row[f'{level}_entity_id']
-            sdf.loc[idx, f'{level}_entity_class'] = row[f'{level}_entity_class']
-            sdf.loc[idx, f'value_specification_id'] = math.nan
+                assert sum(idx) == 1
+                spec_id = sdf[idx].iloc[0].value_specification_id
+            if select_type and row[f'{level}_entity_class'] != select_type: # Drop the specification
+                def get_spec_id(cur_spec_id): #Remove unused specs
+                    if not spec_id:
+                        return cur_spec_id
+                    if cur_spec_id == spec_id:
+                        return math.nan
+                    if type(cur_spec_id) == tuple:
+                        res = [t for t in cur_spec_id if t != spec_id]
+                        if len(res) == 1:
+                            return res[0]
+                        return math.nan if not res else tuple(res)
+                            
+                sdf.loc[idx & (sdf[f'{level}_entity_id'] != select_type), 'value_specification_id'] = sdf.loc[idx & (sdf[f'{level}_entity_id'] != select_type), 'value_specification_id'].map(get_spec_id)
+                sdf.loc[idx & (sdf.specified_by != '_'), 'value_specification_id'] = math.nan
+                sdf.loc[sdf.ts_id == row.ts_id, 'specified_by'] = '_'
+            else:                
+                sdf.loc[idx, f'{level}_entity_id'] = row[f'{level}_entity_id']
+                sdf.loc[idx, f'{level}_entity_class'] = row[f'{level}_entity_class']
+                sdf.loc[idx, f'value_specification_id'] = math.nan
     return sdf
 
 def _to_iob(sentence_df, all_columns):
@@ -263,8 +287,9 @@ def _close_gaps(sentence_df):
             sdf.iloc[e_min:e_max, sdf.columns.get_loc('entity_id')] = eid
     return sdf
 
-def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=False):
-    """ Turns a Webanno sentence DataFrame to a DataFrame with IOB tags """
+def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns, select_type=None):
+    """ Turns a Webanno sentence DataFrame to a DataFrame with token labels """
+    assert not select_type or select_type in entity_values[level]
     value_split_anno = pd.DataFrame(list(sentence_df['value'].apply(lambda r: _split_multi_annotations(r, 'value'))), 
             index=sentence_df.index, columns=['value_entity_id', 'value_entity_class', 'value_specification_id'])
     detail_split_anno = pd.DataFrame(list(sentence_df['detail'].apply(lambda r: _split_multi_annotations(r, 'detail'))), 
@@ -282,17 +307,20 @@ def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=
         sdf.loc[mask, 'output'] = 'O'
     else:
         j = 0
-        while ((~sdf['value_specification_id'].isna()).sum() > 0): # Get rid of all specifications
-            sdf = _expand_specs(sdf, level)
+        while (~(sdf['value_specification_id'].isna())).sum() > 0: # Get rid of all specifications
+            sdf = _expand_specs(sdf, level, select_type)
             j += 1
             if j > 10:
                 raise Exception("Stuck expanding sections")
         sdf['entity_id'] = sdf[f'{level}_entity_id']
-        sdf['output'] = pd.NA
-        mask = sdf[f'{level}_entity_class'].isin(entity_values[level])
+        sdf['output'] = pd.NA        
+        mask = sdf[f'{level}_entity_class'].isin(entity_values[level] if not select_type else {select_type})
         sdf.loc[mask, 'output'] = sdf.loc[mask, f'{level}_entity_class']
         sdf = _close_gaps(sdf)
-        mask = sdf['output'].isna() & ((sdf[level] == '_') | (sdf[level] == '*'))
+        if not select_type:
+            mask = sdf['output'].isna() & ((sdf[level] == '_') | (sdf[level] == '*'))
+        else:
+            mask = sdf['output'].isna()
         sdf.loc[mask, 'output'] = 'O'
         
     if sdf.output.isna().sum() != 0 and debug:
@@ -302,8 +330,12 @@ def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=
     if not long_spans:
         for _, anno in sdf.iterrows():
             _check_annos(anno)
+    return sdf, True
 
-    return _to_iob(sdf, all_columns), True
+def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=False):
+    """ Turns a Webanno sentence DataFrame to a DataFrame with IOB tags """
+    sdf, success = _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns)
+    return _to_iob(sdf, all_columns), success
 
 def _check_annos(anno):
     def is_empty(v):
@@ -340,7 +372,7 @@ def main():
     levels = ['detail', 'value']
     extend = ['short', 'long']
     
-    webanno_df = read_webanno(Path(args.input_folder).glob('*.tsv'))
+    webanno_df, sentences = read_webanno(Path(args.input_folder).glob('*.tsv'))
     
     output_folder.mkdir(exist_ok=True)
     
