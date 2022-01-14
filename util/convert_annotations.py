@@ -99,7 +99,6 @@ def webanno_to_spans(webanno_df, sentences, level, debug=False, collect_errors=F
     out = []
     for fs, sentence in zip(tqdm(webanno_df.index.unique()), sentences):
         file, sentence_id = fs
-        #print(fs)
         spans = []
         for entity_type in entity_values['value']:
             try:
@@ -248,8 +247,8 @@ def _split_multi_annotations(v_string, level):
 def _expand_specs(sentence_df, level, select_type, select_level):
     """ Propagate token labels to the corresponding specification sections """
     sdf = sentence_df.copy()
-    from IPython.display import display
-    display(sdf)
+    #from IPython.display import display
+    #display(sdf)
     for i, row in sdf[(sdf.specified_by != '_') & (sdf[f'value_specification_id'].isna())].iterrows():
         specs = row.specified_by.split('|')
         for s in specs:
@@ -469,20 +468,24 @@ def main():
     if args.skip_errors:
         log.warning("SKIPPING ERRORS, USE FOR DEVELOPMENT ONLY")
 
-    if not spacy:
+    if not args.spacy:
         log.info("Converting to HuggingFace and ConLL (IOB-encoded, one label per token)")
         for l in levels:
             granularity = 'coarse' if l == 'value' else 'fine'
             for e in extend:
-                iob_df = webanno_to_iob_df(webanno_df, l, e == 'long', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
+                if args.entity_type and (granularity == 'coarse' or e == 'short'):
+                    continue
+                iob_df = webanno_to_iob_df(webanno_df, l, e == 'long', 
+                    collect_errors=args.collect_errors, skip_errors=args.skip_errors, 
+                    select_type=args.entity_type, select_level='value' if args.entity_type else None)
                 for f in formats:
                     (output_folder / f / granularity / e).mkdir(exist_ok=True, parents=True)
                     if f == 'conll':
-                        out_file = f'{args.entity_type + "." if args.entity_type else ""}{args.file_prefix}_{granularity}_{e}.conll'
+                        out_file = f'{args.file_prefix}_{granularity}_{e}{"." + args.entity_type if args.entity_type else ""}.conll'
                         log.info(f'Writing {out_file}')
                         write_conll(iob_df, output_folder / f / granularity / e / out_file)
                     elif f == 'huggingface':
-                        out_file = f'{args.entity_type + "." if args.entity_type else ""}{args.file_prefix}_{granularity}_{e}.json'
+                        out_file = f'{args.file_prefix}_{granularity}_{e}{"." + args.entity_type if args.entity_type else ""}.json'
                         log.info(f'Writing {out_file}')
                         write_huggingface(iob_df, output_folder / f / granularity / e / out_file)
     else:
