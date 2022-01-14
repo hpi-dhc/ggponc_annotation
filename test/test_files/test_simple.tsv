@@ -6,7 +6,7 @@
 50-1	8044-8047	Die	_	_	_	_	_	_	_	
 50-2	8048-8056	Prognose	*	Other Finding	_	*	*	Finding	50-3[103_0]	
 50-3	8057-8074	retroperitonealer	*[103]|*[104]	*[103]|*[104]	_[103]|_[104]	*|*	*[103]|*[104]	Specification[103]|Specification[104]	_	
-50-4	8075-8080	EGKZT	*[103]|*[105]	*[103]|Diagnosis or Pathology[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Finding[105]	_	
+50-4	8075-8080	EGKZT	*[103]|*[105]	*[103]|Diagnosis or Pathology[105]	_[103]|_[105]	*|*	*[103]|*[105]	Specification[103]|Finding[105]	50-3[104_105]	
 50-5	8081-8084	ist	_	_	_	_	_	_	_	
 50-6	8085-8091	besser	_	_	_	_	_	_	_	
 50-7	8092-8095	und	_	_	_	_	_	_	_	

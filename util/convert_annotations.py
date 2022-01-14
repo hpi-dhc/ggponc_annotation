@@ -24,6 +24,12 @@ entity_values = {
     'detail' : ['Nutrient or Body Substance', 'External Substance', 'Clinical Drug', 'Other Finding', 'Diagnosis or Pathology', 'Therapeutic', 'Diagnostic']
 }
 
+entity_mapping = {
+    'Substance' : ['Nutrient or Body Substance', 'External Substance', 'Clinical Drug'],
+    'Finding' : ['Other Finding', 'Diagnosis or Pathology'],
+    'Procedure' : ['Therapeutic', 'Diagnostic']
+}
+
 SPEC = 'Specification'
 
 EMPTY_REGEX = r'([\*_](\[[\d_]+\])?\|?)+' # Any kind of empty field in WebAnno TSV
@@ -66,13 +72,13 @@ def read_webanno(tsv_files) -> pd.DataFrame:
             raise e
     return pd.concat(dfs).set_index(['file', 'sentence_id']), sentences
 
-def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors=False, skip_errors=False, all_columns=False):
+def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors=False, skip_errors=False, all_columns=False, select_type=None, select_level=None):
     error = False
     out = []
     for file, sentence_id in tqdm(webanno_df.index.unique()):
         try:
             d = webanno_df.loc[(file, sentence_id)]
-            iob_df, success = _webanno_sentence_to_iob(d, level, long_spans, debug, all_columns=all_columns)
+            iob_df, success = _webanno_sentence_to_iob(d, level, long_spans, debug, all_columns=all_columns, select_type=select_type, select_level=select_level)
             out.append(iob_df)
             if not success:
                 log.error(f"Error processing: {file}, {sentence_id}, aborting.")
@@ -91,29 +97,30 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
 def webanno_to_spans(webanno_df, sentences, level, debug=False, collect_errors=False, skip_errors=False):
     error = False
     out = []
-    for fs, sentence in tqdm(zip(webanno_df.index.unique(), sentences)):
+    for fs, sentence in zip(tqdm(webanno_df.index.unique()), sentences):
         file, sentence_id = fs
+        #print(fs)
         spans = []
-        for entity_type in entity_values['detail']:    
+        for entity_type in entity_values['value']:
             try:
                 d = webanno_df.loc[(file, sentence_id)]
-                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=True, debug=debug, all_columns=False, select_type=entity_type)
+                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=True, debug=debug, all_columns=False, select_type=entity_type, select_level='value')
                 spans += _to_spans(sdf, sentence)    
                 assert success
             except Exception as e:
                 error = True
                 message = f'{file}, {sentence_id}, {e.args}'
-                log.debug(message)
                 log.error(message)
                 if not collect_errors and not skip_errors:
                     raise e
         spans.sort(key = lambda t: t[0])
         if not success:
             log.error(f"Error processing: {file}, {sentence_id}, aborting.")
-            return spans
+            return out
+        out.append({'sentence' : sentence, 'file': file, 'sentence_id' : sentence_id, 'spans' : spans})
     if error and not skip_errors:
         raise Exception("Errors during conversion, check error.log")
-    return pd.concat(out)
+    return out
 
 def write_conll(conll_df, to_file):
     with open(to_file, 'w', encoding='utf-8') as out:
@@ -238,7 +245,7 @@ def _split_multi_annotations(v_string, level):
     else:
         raise Exception('Multi-stacking not implemented: ' + v_string)
 
-def _expand_specs(sentence_df, level, select_type):
+def _expand_specs(sentence_df, level, select_type, select_level):
     """ Propagate token labels to the corresponding specification sections """
     sdf = sentence_df.copy()
     from IPython.display import display
@@ -253,13 +260,13 @@ def _expand_specs(sentence_df, level, select_type):
                 idx = (sdf.ts_id == ts_id) | sdf[f'value_specification_id'].apply(
                     lambda sid: sid == spec_id or (type(sid) is tuple and spec_id in sid))
                 if (sdf.loc[idx, 'value_specification_id'] == spec_id).sum() == 0:
-                    assert sum(idx) == 1
+                    #assert sum(idx) == 1, sdf[idx]
                     spec_id = sdf[idx].iloc[0].value_specification_id
             else: # Specification without number -> point to Token-ID
                 idx = (sdf.ts_id == s)
-                assert sum(idx) == 1
+                assert sum(idx) == 1, s
                 spec_id = sdf[idx].iloc[0].value_specification_id
-            if select_type and row[f'{level}_entity_class'] != select_type: # Drop the specification
+            if select_type and row[f'{select_level}_entity_class'] != select_type: # Drop the specification
                 def get_spec_id(cur_spec_id): #Remove unused specs
                     if not spec_id:
                         return cur_spec_id
@@ -271,7 +278,7 @@ def _expand_specs(sentence_df, level, select_type):
                             return res[0]
                         return math.nan if not res else tuple(res)
                             
-                sdf.loc[idx & (sdf[f'{level}_entity_id'] != select_type), 'value_specification_id'] = sdf.loc[idx & (sdf[f'{level}_entity_id'] != select_type), 'value_specification_id'].map(get_spec_id)
+                sdf.loc[idx & (sdf[f'{select_level}_entity_id'] != select_type), 'value_specification_id'] = sdf.loc[idx & (sdf[f'{select_level}_entity_id'] != select_type), 'value_specification_id'].map(get_spec_id)
                 sdf.loc[idx & (sdf.specified_by != '_'), 'value_specification_id'] = math.nan
                 sdf.loc[sdf.ts_id == row.ts_id, 'specified_by'] = '_'
             else:                
@@ -289,10 +296,10 @@ def _to_iob(sentence_df, all_columns):
         row = row_tuple[1]
         out = row['output'].replace(' ', '_')
         entity_id = row['entity_id']
-        if not(math.isnan(entity_id)) and entity_id != entity_counter:
+        if out != 'O' and not(math.isnan(entity_id)) and entity_id != entity_counter:
             entity_counter = entity_id
             sdf.iloc[i, out_col] = 'B-' + out
-        elif entity_id == entity_counter:
+        elif out != 'O' and entity_id == entity_counter:
             sdf.iloc[i, out_col] = 'I-' + out
         else:
             entity_counter = -1
@@ -358,9 +365,10 @@ def _close_gaps(sentence_df):
             sdf.iloc[e_min:e_max, sdf.columns.get_loc('entity_id')] = eid
     return sdf
 
-def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns, select_type=None):
+def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns, select_type=None, select_level=None):
+    assert bool(select_type) == bool(select_level)
     """ Turns a Webanno sentence DataFrame to a DataFrame with token labels """
-    assert not select_type or select_type in entity_values[level]
+    assert not select_type or select_type in entity_values['value' if select_level != level else select_level]
     value_split_anno = pd.DataFrame(list(sentence_df['value'].apply(lambda r: _split_multi_annotations(r, 'value'))), 
             index=sentence_df.index, columns=['value_entity_id', 'value_entity_class', 'value_specification_id'])
     detail_split_anno = pd.DataFrame(list(sentence_df['detail'].apply(lambda r: _split_multi_annotations(r, 'detail'))), 
@@ -379,13 +387,20 @@ def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_co
     else:
         j = 0
         while (~(sdf['value_specification_id'].isna())).sum() > 0: # Get rid of all specifications
-            sdf = _expand_specs(sdf, level, select_type)
+            sdf = _expand_specs(sdf, level, select_type, select_level)
             j += 1
             if j > 10:
                 raise Exception("Stuck expanding sections")
         sdf['entity_id'] = sdf[f'{level}_entity_id']
-        sdf['output'] = pd.NA        
-        mask = sdf[f'{level}_entity_class'].isin(entity_values[level] if not select_type else {select_type})
+        sdf['output'] = pd.NA
+        if not select_type:
+            mask = sdf[f'{level}_entity_class'].isin(entity_values[level])
+        else:
+            if level == select_level:
+                mask = sdf[f'{level}_entity_class'] == select_type
+            else:
+                assert select_level == 'value' and level == 'detail', (select_level, level)
+                mask = sdf[f'{level}_entity_class'].isin(entity_mapping[select_type])
         sdf.loc[mask, 'output'] = sdf.loc[mask, f'{level}_entity_class']
         sdf = _close_gaps(sdf)
         if not select_type:
@@ -405,9 +420,9 @@ def _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_co
 
 
 
-def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=False):
+def _webanno_sentence_to_iob(sentence_df, level, long_spans, debug, all_columns=False, select_type=None, select_level=None):
     """ Turns a Webanno sentence DataFrame to a DataFrame with IOB tags """
-    sdf, success = _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns)
+    sdf, success = _webanno_sentence_to_dataframe(sentence_df, level, long_spans, debug, all_columns, select_type=select_type, select_level=select_level)
     return _to_iob(sdf, all_columns), success
 
 def _check_annos(anno):
@@ -436,6 +451,8 @@ def main():
     parser.add_argument('output_folder')
     parser.add_argument('--collect_errors', action="store_true")
     parser.add_argument('--skip_errors', action="store_true")
+    parser.add_argument('--spacy', action="store_true")
+    parser.add_argument('entity_type', nargs='?', default=None)
     
     args = parser.parse_args()
         
@@ -452,20 +469,25 @@ def main():
     if args.skip_errors:
         log.warning("SKIPPING ERRORS, USE FOR DEVELOPMENT ONLY")
 
-    for l in levels:
-        granularity = 'coarse' if l == 'value' else 'fine'
-        for e in extend:
-            iob_df = webanno_to_iob_df(webanno_df, l, e == 'long', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
-            for f in formats:
-                (output_folder / f / granularity / e).mkdir(exist_ok=True, parents=True)
-                if f == 'conll':
-                    out_file = f'{args.file_prefix}_{granularity}_{e}.conll'
-                    log.info(f'Writing {out_file}')
-                    write_conll(iob_df, output_folder / f / granularity / e / out_file)
-                elif f == 'huggingface':
-                    out_file = f'{args.file_prefix}_{granularity}_{e}.json'
-                    log.info(f'Writing {out_file}')
-                    write_huggingface(iob_df, output_folder / f / granularity / e / out_file)
+    if not spacy:
+        log.info("Converting to HuggingFace and ConLL (IOB-encoded, one label per token)")
+        for l in levels:
+            granularity = 'coarse' if l == 'value' else 'fine'
+            for e in extend:
+                iob_df = webanno_to_iob_df(webanno_df, l, e == 'long', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
+                for f in formats:
+                    (output_folder / f / granularity / e).mkdir(exist_ok=True, parents=True)
+                    if f == 'conll':
+                        out_file = f'{args.entity_type + "." if args.entity_type else ""}{args.file_prefix}_{granularity}_{e}.conll'
+                        log.info(f'Writing {out_file}')
+                        write_conll(iob_df, output_folder / f / granularity / e / out_file)
+                    elif f == 'huggingface':
+                        out_file = f'{args.entity_type + "." if args.entity_type else ""}{args.file_prefix}_{granularity}_{e}.json'
+                        log.info(f'Writing {out_file}')
+                        write_huggingface(iob_df, output_folder / f / granularity / e / out_file)
+    else:
+        log.info("Converting to spaCy spans (potentially overlapping spans)")
+        spans = webanno_to_spans(webanno_df, sentences, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
                     
 if __name__ == "__main__":
     main()
