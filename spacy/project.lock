@@ -1,0 +1,17 @@
+train:
+  cmd: python -m spacy run train
+  script:
+    - 'python -m spacy train configs/spancat.cfg -o training/ --gpu-id 0 --paths.train
+      ../data/annotations/spacy/ggponc_train.spacy --paths.dev ../data/annotations/spacy/ggponc_dev.spacy '
+  deps:
+    - path: ../data/annotations/spacy/ggponc_train.spacy
+      md5: bbb61d933b4d44a34f47c9f94363fdc4
+    - path: ../data/annotations/spacy/ggponc_dev.spacy
+      md5: e19c0c8b98edcc867b9d8d338552cadd
+    - path: configs/spancat.cfg
+      md5: 88f9181873449f1bdaad8219692590de
+  outs:
+    - path: training/model-best
+      md5: d95eb14c51d66a84ef9375cbfcc883dc
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
