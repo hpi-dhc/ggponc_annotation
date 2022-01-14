@@ -10,6 +10,8 @@ import json
 from pathlib import Path
 import argparse
 import csv
+import spacy
+from spacy.tokens import DocBin
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -140,6 +142,20 @@ def write_huggingface(conll_df, to_file):
                 'tags' : list(d.output)
             }
             out_json.write((json.dumps(huggingface_json, ensure_ascii=False) + '\n'))
+
+def write_spacy(spans, to_file):    
+    nlp = spacy.blank('de')
+    db = DocBin()
+    
+    for s in spans:
+        doc = nlp(s['sentence'])
+        spans = []
+        for start, end, _, label in s['spans']:
+            spans.append(doc.char_span(start, end, label=label))
+        doc.spans['snomed'] = spans
+        db.add(doc)
+    
+    db.to_disk(to_file)
 
 def join_and_resolve(span):
     """
@@ -490,8 +506,12 @@ def main():
                         write_huggingface(iob_df, output_folder / f / granularity / e / out_file)
     else:
         log.info("Converting to spaCy spans (potentially overlapping spans)")
+        (output_folder / 'spacy').mkdir(exist_ok=True, parents=True)
+        out_file = f'{args.file_prefix}.spacy'
         spans = webanno_to_spans(webanno_df, sentences, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
-                    
+        log.info(f'Writing {out_file}')
+        write_spacy(spans, output_folder / 'spacy' / out_file)
+
 if __name__ == "__main__":
     main()
     
