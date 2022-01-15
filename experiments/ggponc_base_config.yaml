@@ -8,6 +8,8 @@ checkpoint_path: checkpoints
 name: ???
 link: false
 
+wand_db_project: 'ggponc-ner-lrec'
+
 task: ???
 
 train_dataset: ???
@@ -27,6 +29,7 @@ num_train_epochs: 100
 fp16: true
 lr_scheduler_type: "linear"
 warmup_ratio: 0.0
+gradient_checkpointing: true
 
 weight_decay: ??? 
 learning_rate: ???

@@ -22,8 +22,6 @@ from omegaconf import DictConfig, OmegaConf, ListConfig
 log = logging.getLogger(__name__)
 
 cp_path = Path('checkpoints')
-
-WANDB_PROJECT = 'ggponc-ner-lrec'
         
 class LogHandler(transformers.TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
@@ -34,7 +32,7 @@ def get_path(path):
     return Path(hydra.utils.to_absolute_path(path))
 
 def get_train_args(
-    cp_path, run_name, report_to, batch_size, learning_rate, num_train_epochs, weight_decay, save_steps, lr_scheduler_type, fp16, warmup_ratio, keep_all_checkpoints, label_smoothing_factor, resume_from_checkpoint, **kwargs):
+    cp_path, run_name, report_to, batch_size, learning_rate, num_train_epochs, weight_decay, save_steps, lr_scheduler_type, fp16, warmup_ratio, keep_all_checkpoints, label_smoothing_factor, resume_from_checkpoint, gradient_checkpointing, **kwargs):
     log.info(run_name)
     args = TrainingArguments(
         str(cp_path),
@@ -54,7 +52,7 @@ def get_train_args(
         report_to=report_to,
         load_best_model_at_end=True,
         metric_for_best_model="eval_overall_f1",
-        gradient_checkpointing=True,
+        gradient_checkpointing=gradient_checkpointing,
         label_smoothing_factor=label_smoothing_factor,
         resume_from_checkpoint=resume_from_checkpoint,
     )
@@ -117,7 +115,7 @@ def run(config, run_name, sweep_name):
         link_src.unlink(missing_ok=True)
         os.symlink(os.getcwd(), link_src, target_is_directory=True)
         
-    with wandb.init(project=WANDB_PROJECT, 
+    with wandb.init(project=config.wand_db_project, 
            name=run_name,
            tags=[Path(config.train_dataset).name],
            group=config.name,
@@ -179,7 +177,7 @@ def main(config: DictConfig) -> None:
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = str(config.cuda)
     
-    os.environ["WANDB_PROJECT"] = WANDB_PROJECT
+    os.environ["WANDB_PROJECT"] = config.wand_db_project
     
     os.environ['TOKENIZERS_PARALLELISM'] = 'false'
     
