@@ -1,5 +1,5 @@
-defaults:  
-  - override hydra/launcher: submitit_slurm
+#defaults:  
+#  - override hydra/launcher: submitit_slurm
 
 upload_artifact: false
 checkpoint: ~
@@ -58,14 +58,14 @@ hydra:
   sweep:
     dir: ./multirun/${name}/${now:%Y-%m-%d_%H-%M-%S}
     subdir: ${hydra.job.num}_${hydra.job.override_dirname}
-  launcher:
-    submitit_folder: ${hydra.sweep.dir}/.submitit/
-    timeout_min: 600
-    name: ${name}
-    gpus_per_task: 1
-    additional_parameters: {"mail-user": "email@domain.com", "mail-type": "END,FAIL"}
-    _target_: hydra_plugins.hydra_submitit_launcher.submitit_launcher.SlurmLauncher
-    partition: gpu
-    array_parallelism: 2
+    #launcher:
+    #submitit_folder: ${hydra.sweep.dir}/.submitit/
+    #timeout_min: 600
+    #name: ${name}
+    #gpus_per_node: 1
+    #additional_parameters: {"mail-user": "email@domain.com", "mail-type": "END,FAIL"}
+    #_target_: hydra_plugins.hydra_submitit_launcher.submitit_launcher.LocalLauncher
+    #partition: gpu
+    #array_parallelism: 6  
 
 # @package hydra.launcher

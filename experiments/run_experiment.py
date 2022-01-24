@@ -123,6 +123,7 @@ def run(config, run_name, sweep_name):
     
         wandb.log(OmegaConf.to_container(config))
         wandb.log({'hydra_sweep' : sweep_name})
+        wandb.log({'experiment_dir': os.getcwd()})
  
         data_collator = DataCollatorForTokenClassification(tokenizer)
         tr = Trainer(
