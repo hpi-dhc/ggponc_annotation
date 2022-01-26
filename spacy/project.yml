@@ -8,6 +8,7 @@ vars:
   lang: "de"
   spans_key: "snomed"
   data_path: "../data/annotations/spacy"
+  run_name: "default"
 
 directories: ["training", "configs", "metrics"]
 
@@ -21,7 +22,7 @@ commands:
   - name: train
     help: "Train the pipeline"
     script:
-      - "python -m spacy train configs/${vars.config}.cfg -o training/ --gpu-id ${vars.gpu} --paths.train ${vars.data_path}/train.spacy --paths.dev ${vars.data_path}/dev.spacy "
+      - "python -m spacy train configs/${vars.config}.cfg -o training/${vars.run_name} --gpu-id ${vars.gpu} --training.logger.run_name ${vars.run_name} --paths.train ${vars.data_path}/train.spacy --paths.dev ${vars.data_path}/dev.spacy --code snomed_spans.py"
     deps:
       - "${vars.data_path}/train.spacy"
       - "${vars.data_path}/dev.spacy"

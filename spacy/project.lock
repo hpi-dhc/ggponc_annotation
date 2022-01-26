@@ -1,17 +1,36 @@
 train:
   cmd: python -m spacy run train
   script:
-    - 'python -m spacy train configs/spancat.cfg -o training/ --gpu-id 0 --paths.train
-      ../data/annotations/spacy/ggponc_train.spacy --paths.dev ../data/annotations/spacy/ggponc_dev.spacy '
+    - python -m spacy train configs/spancat.cfg -o training/2022-01-26_14-02-58-cuda-1
+      --gpu-id 1 --training.logger.run_name 2022-01-26_14-02-58-cuda-1 --paths.train
+      ../data/annotations/spacy/train.spacy --paths.dev ../data/annotations/spacy/dev.spacy
+      --code snomed_spans.py
   deps:
-    - path: ../data/annotations/spacy/ggponc_train.spacy
-      md5: bbb61d933b4d44a34f47c9f94363fdc4
-    - path: ../data/annotations/spacy/ggponc_dev.spacy
-      md5: e19c0c8b98edcc867b9d8d338552cadd
+    - path: ../data/annotations/spacy/train.spacy
+      md5: 275ed8d54832f3f55915717eb72babca
+    - path: ../data/annotations/spacy/dev.spacy
+      md5: 5e19cfba4f727e3f98e275726cbfd227
     - path: configs/spancat.cfg
-      md5: 88f9181873449f1bdaad8219692590de
+      md5: ea7f3d01277435cdbd33517f0bf92a52
   outs:
     - path: training/model-best
-      md5: d95eb14c51d66a84ef9375cbfcc883dc
+      md5: ab435573e11a895ca1c221e6d25ad4eb
+  spacy_version: 3.2.1
+  spacy_git_version: 800737b41
+evaluate:
+  cmd: python -m spacy run evaluate
+  script:
+    - python scripts/evaluate.py ./training/model-best ../data/annotations/spacy/dev.spacy
+      --output ./metrics/spancat.json --gpu-id 0 --spans-key snomed
+  deps:
+    - path: training/model-best
+      md5: f8fa2104a425fe67a70c78cc77fec030
+    - path: ../data/annotations/spacy/dev.spacy
+      md5: 5e19cfba4f727e3f98e275726cbfd227
+    - path: scripts/evaluate.py
+      md5: 77a4ad004f590f4d038ee50ac62b0d2f
+  outs:
+    - path: metrics/spancat.json
+      md5: 70f97c52d56cffb90a89270734016b65
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
