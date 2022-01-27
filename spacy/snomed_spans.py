@@ -31,18 +31,21 @@ def make_spancat_flatscorer():
 def build_chunk_and_ngram_suggester(sizes: List[int], max_depth: int) -> Suggester:
 
     def chunk_and_ngram_suggester(docs: Iterable[Doc], *, ops: Optional[Ops] = None) -> Ragged:
+        max_sizes = max(sizes)
+        
         if ops is None:
             ops = get_current_ops()
         spans = []
         lengths = []
         for i, doc in enumerate(docs):            
             length = 0
-            if doc.has_annotation("DEP"):
-                chunks = []
+            if doc.has_annotation("DEP") and max_depth >= 0:
+                chunks = set()
                 nc = list(doc.noun_chunks)
                 
                 for chunk in nc:
-                    chunks.append([chunk.start, chunk.end])                            
+                    if (chunk.end - chunk.start) > max_sizes:
+                        chunks.add((chunk.start, chunk.end))                            
 
                     def extend_chunk(head, the_chunk): 
                         for other_chunk in nc:
@@ -52,19 +55,33 @@ def build_chunk_and_ngram_suggester(sizes: List[int], max_depth: int) -> Suggest
                                 return other_chunk, doc[start:end]
                         return None, None
 
-                    extended = True
-                    extension_chunk = chunk
-                    
                     depth = 0
-                    
-                    while extended and depth < max_depth:
-                        depth += 1
-                        extension_chunk, extended = extend_chunk(extension_chunk.root.head.head, chunk)
 
-                        if extended:
-                            chunks.append([extended.start, extended.end])                            
+                    def add_extensions(extension_chunk, cur_depth):        
+                        extend1, chunk1 = extend_chunk(extension_chunk.root.head, chunk)
+
+                        if chunk1 and (((chunk1.end - chunk1.start) > max_sizes)):
+                            chunks.add((chunk1.start, chunk1.end))
+                            if cur_depth < max_depth:
+                                add_extensions(extend1, cur_depth + 1)
+
+                        extend2, chunk2 = extend_chunk(extension_chunk.root.head.head, chunk)
+
+                        if chunk2 and (((chunk2.end - chunk2.start) > max_sizes)):
+                            chunks.add((chunk2.start, chunk2.end))
+                            if cur_depth < max_depth:
+                                add_extensions(extend2, cur_depth + 1)
+
+                    add_extensions(chunk, 0)
+
+                chunks = [list(c) for c in chunks]
+                    
+                for c in chunks.copy():
+                    if (c[1] - c[0]) > 1:
+                        chunks.append([c[0] + 1, c[1]])      
                             
                 chunks = ops.asarray(chunks, dtype="i")
+                
                 if chunks.shape[0] > 0:
                     spans.append(chunks)
                     length += chunks.shape[0]

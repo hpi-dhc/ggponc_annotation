@@ -1,8 +1,8 @@
 train:
   cmd: python -m spacy run train
   script:
-    - python -m spacy train configs/spancat.cfg -o training/2022-01-26_14-02-58-cuda-1
-      --gpu-id 1 --training.logger.run_name 2022-01-26_14-02-58-cuda-1 --paths.train
+    - python -m spacy train configs/spancat.cfg -o training/2022-01-27_15-48-36-cuda-0
+      --gpu-id 0 --training.logger.run_name 2022-01-27_15-48-36-cuda-0 --paths.train
       ../data/annotations/spacy/train.spacy --paths.dev ../data/annotations/spacy/dev.spacy
       --code snomed_spans.py
   deps:
@@ -11,10 +11,10 @@ train:
     - path: ../data/annotations/spacy/dev.spacy
       md5: 5e19cfba4f727e3f98e275726cbfd227
     - path: configs/spancat.cfg
-      md5: ea7f3d01277435cdbd33517f0bf92a52
+      md5: be613fb1b02579c5359223e9341b762d
   outs:
     - path: training/model-best
-      md5: ab435573e11a895ca1c221e6d25ad4eb
+      md5: null
   spacy_version: 3.2.1
   spacy_git_version: 800737b41
 evaluate:
