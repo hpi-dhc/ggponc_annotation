@@ -9,6 +9,9 @@ from thinc.types import Ragged, Ints2d, Floats2d, Ints1d
 from spacy.tokens import Doc
 
 def flat_score(examples: Iterable[Example], **kwargs) -> Dict[str, Any]:
+    """ 
+    A scorer that unwraps the nested dict returned by the default spancat scorer, so we can display it during training. 
+    """
     scores = spancat.spancat_score(examples=examples, **kwargs)
     res = {}
     for k,v in scores.items():
@@ -29,7 +32,16 @@ def make_spancat_flatscorer():
 
 @spacy.registry.misc("phlobo.chunk_and_ngram_suggester")
 def build_chunk_and_ngram_suggester(sizes: List[int], max_depth: int) -> Suggester:
-
+    """A suggester that extends the basic n-gram suggester by adding noun chunks.
+    
+    :param sizes: for item i in the list, add all the token i-grams in each token
+    :param max_depth: follow the dependency graph for this many steps. 
+    
+    If max_depth = 0, only basic noun chunks are considered. 
+    If max_depth > 0, the dependency graph is followed recursively for this many steps to connect noun_chunks through their head.
+    If max_depth < 0, no noun chunks are considered and only n-grams returned
+    
+    """
     def chunk_and_ngram_suggester(docs: Iterable[Doc], *, ops: Optional[Ops] = None) -> Ragged:
         max_sizes = max(sizes)
         
