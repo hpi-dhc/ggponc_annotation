@@ -1,6 +1,6 @@
 # GGPONC 2.0
 
-This repository contains the code to reproduce results from the paper *Clinical Entity Extraction and Coordination Ellipses in GGPONC 2.0*
+This repository contains the code to reproduce results for GGPONC 2.0
 
 ## Preparation
 
