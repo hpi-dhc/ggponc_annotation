@@ -142,3 +142,5 @@ ner_logs
 models
 **/.nfs*
 notebooks/error_analysis.csv
+
+.vscode
