@@ -11,7 +11,7 @@ from pathlib import Path
 import argparse
 import csv
 import spacy
-from spacy.tokens import DocBin
+from spacy.tokens import DocBin, Doc, Span
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -96,17 +96,16 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
         raise Exception("Errors during conversion, check error.log")
     return pd.concat(out)
 
-def webanno_to_spans(webanno_df, sentences, level, debug=False, collect_errors=False, skip_errors=False):
+def webanno_to_spans(webanno_df, level, debug=False, collect_errors=False, skip_errors=False):
     error = False
     out = []
-    for fs, sentence in zip(tqdm(webanno_df.index.unique()), sentences):
-        file, sentence_id = fs
+    for file, sentence_id in tqdm(webanno_df.index.unique()):
         spans = []
         for entity_type in entity_values['value']:
             try:
                 d = webanno_df.loc[(file, sentence_id)]
                 sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=True, debug=debug, all_columns=False, select_type=entity_type, select_level='value')
-                spans += _to_spans(sdf, sentence)    
+                spans += _to_spans(sdf)    
                 assert success
             except Exception as e:
                 error = True
@@ -118,6 +117,7 @@ def webanno_to_spans(webanno_df, sentences, level, debug=False, collect_errors=F
         if not success:
             log.error(f"Error processing: {file}, {sentence_id}, aborting.")
             return out
+        sentence = list(sdf.token)
         out.append({'sentence' : sentence, 'file': file, 'sentence_id' : sentence_id, 'spans' : spans})
     if error and not skip_errors:
         raise Exception("Errors during conversion, check error.log")
@@ -148,10 +148,10 @@ def write_spacy(spans, to_file):
     db = DocBin()
     
     for s in spans:
-        doc = nlp(s['sentence'])
+        doc = Doc(nlp.vocab, s['sentence'])
         spans = []
         for start, end, _, label in s['spans']:
-            spans.append(doc.char_span(start, end, label=label))
+            spans.append(Span(doc, start, end + 1, label=label))
         doc.spans['snomed'] = spans
         db.add(doc)
     
@@ -321,24 +321,16 @@ def _to_iob(sentence_df, all_columns):
             assert out == 'O', sentence_df
     return sdf[['token', 'output']] if not all_columns else sdf
 
-def _to_spans(sentence_df, sentence):
+def _to_spans(sentence_df):
     """ creates spans from resolved WebAnno entities"""
-    def get_span(span_str):
-        split = span_str.split('-')
-        return int(split[0]), int(split[1])
     sdf = sentence_df.copy()
-    sentence_start = get_span(sdf.iloc[0].span)[0]
     
     def merge_entities(tokens):
-        s_start = get_span(tokens[0][0])[0] - sentence_start
-        s_end = get_span(tokens[-1][0])[1] - sentence_start
-        mention = sentence[s_start:s_end]
-        assert mention.startswith(tokens[0][1])
-        assert mention.endswith(tokens[-1][1])
-        return (s_start, s_end, mention, tokens[0][2])
+        s_start = tokens[0][0]
+        s_end = tokens[-1][0]
+        return (s_start, s_end, [t[1] for t in tokens], tokens[0][2])
     
     entity_counter = -1
-    out_col = sdf.columns.get_loc("output")
     entities = []
     cur_entity = None
     for i, row_tuple in enumerate(sdf.iterrows()):
@@ -349,9 +341,9 @@ def _to_spans(sentence_df, sentence):
             if cur_entity:
                 entities.append(merge_entities(cur_entity))
             entity_counter = entity_id
-            cur_entity = [(row.span, row.token, out)]
+            cur_entity = [(i, row.token, out)]
         elif entity_id == entity_counter:
-            cur_entity += [(row.span, row.token, out)]
+            cur_entity += [(i, row.token, out)]
         else:
             entity_counter = -1
             assert out == 'O', sentence_df
@@ -477,7 +469,7 @@ def main():
     levels = ['detail', 'value']
     extend = ['short', 'long']
     
-    webanno_df, sentences = read_webanno(Path(args.input_folder).glob('*.tsv'))
+    webanno_df, _ = read_webanno(Path(args.input_folder).glob('*.tsv'))
     
     output_folder.mkdir(exist_ok=True)
     
@@ -508,7 +500,7 @@ def main():
         log.info("Converting to spaCy spans (potentially overlapping spans)")
         (output_folder / 'spacy').mkdir(exist_ok=True, parents=True)
         out_file = f'{args.file_prefix}.spacy'
-        spans = webanno_to_spans(webanno_df, sentences, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
+        spans = webanno_to_spans(webanno_df, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
         log.info(f'Writing {out_file}')
         write_spacy(spans, output_folder / 'spacy' / out_file)
 

@@ -1,5 +1,7 @@
-from util.convert_annotations import read_webanno, webanno_to_iob_df
+from util.convert_annotations import read_webanno, webanno_to_iob_df, webanno_to_spans, write_spacy
 from pathlib import Path
+import spacy
+from spacy.tokens import DocBin
 
 base_path = Path('test') / 'test_files'
 
@@ -1496,6 +1498,33 @@ def test_null():
     webanno_df, _ = read_webanno([base_path / 'test_null.tsv'])
     assert webanno_df.iloc[29]['token'] == 'null'
 
+def test_fragment_spacy(tmp_path):
+    webanno_df, _ = read_webanno([base_path / 'test_fragment_spacy.tsv'])
+    spans = webanno_to_spans(webanno_df, 'detail')
+    write_spacy(spans, tmp_path/ 'temp.spacy')
+
+    nlp = spacy.blank('de')
+
+    db = DocBin().from_disk(tmp_path/ 'temp.spacy')
+    docs = list(db.get_docs(nlp.vocab))
+
+    assert len(docs) == 1
+    spans = docs[0].spans['snomed']
+    assert len(spans) == 3
+    assert spans[0].start == 1
+    assert spans[0].end == 3
+    assert spans[0].text == 'uterinen Karzinomen'
+    assert spans[0].label_ == 'Diagnosis_or_Pathology'
+
+    assert spans[1].start == 4
+    assert spans[1].end == 5
+    assert spans[1].text == 'Endometrium'
+    assert spans[1].label_ == 'Diagnosis_or_Pathology'
+
+    assert spans[2].start == 7 
+    assert spans[2].end == 8
+    assert spans[2].text == 'Zervixkarzinom'
+    assert spans[2].label_ == 'Diagnosis_or_Pathology'
 
 #   B-Procedure
 #   B-Finding
