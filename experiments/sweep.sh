@@ -7,4 +7,4 @@ if [[ $# -ne 2 ]] ; then
 fi
 
 
-python run_experiment.py -cn="$config" link=false base_model_checkpoint="deepset/gelectra-large" cuda="$cuda" learning_rate=5e-6,1e-5,5e-5 label_smoothing_factor=0.0,0.05,0.1 weight_decay=0.0,0.05 -m
+python run_experiment.py -cn="$config" link=false cuda="$cuda" learning_rate=5e-6,1e-5,5e-5 label_smoothing_factor=0.0,0.05,0.1,0.2 weight_decay=0.0,0.05,0.1 -m
