@@ -1,0 +1,23 @@
+#FORMAT=WebAnno TSV 3.3
+#T_SP=webanno.custom.SNOMEDEntity|completion|detail|ROLE_webanno.custom.SNOMEDEntity:fragment_webanno.custom.SNOMEDEntityFragmentLink|webanno.custom.SNOMEDEntity|suffix|value
+#T_RL=webanno.custom.GGPONCSpecification|BT_webanno.custom.SNOMEDEntity
+
+#Text=Zu uterinen Karzinomen (Endometrium- und Zervixkarzinom) existiert eine multizentrische, randomisierte Phase-3-Studie, die die Auswirkungen einer Supplementation von Natriumselenit auf die unerwünschten Wirkungen der Strahlentherapie untersuchte.
+12-1	1447-1449	Zu	_	_	_	_	_	_	_	
+12-2	1450-1458	uterinen	*	*	_	*	*	Specification	_	
+12-3	1459-1469	Karzinomen	*	Diagnosis or Pathology	_	*	*	Finding	12-2	
+12-4	1470-1471	(	_	_	_	_	_	_	_	
+12-5	1471-1482	Endometrium	*	Diagnosis or Pathology		12-8	karzinom	Finding	_	
+12-6	1482-1483	-	_	_	_	_	_	_	_	
+12-7	1484-1487	und	_	_	_	_	_	_	_	
+12-8	1488-1502	Zervixkarzinom	*	Diagnosis or Pathology	_	*	*	Finding	_	
+12-9	1502-1503	)	_	_	_	_	_	_	_	
+12-10	1504-1513	existiert	_	_	_	_	_	_	_	
+12-11	1514-1518	eine	_	_	_	_	_	_	_	
+12-12	1519-1534	multizentrische	_	_	_	_	_	_	_	
+12-13	1534-1535	,	_	_	_	_	_	_	_	
+12-14	1536-1549	randomisierte	_	_	_	_	_	_	_	
+12-15	1550-1555	Phase	_	_	_	_	_	_	_	
+12-16	1555-1556	-	_	_	_	_	_	_	_	
+12-17	1556-1557	3	_	_	_	_	_	_	_	
+12-18	1557-1558	-	_	_	_	_	_	_	_	

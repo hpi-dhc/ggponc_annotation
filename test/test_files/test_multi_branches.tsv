@@ -26,7 +26,7 @@
 6-25	921-924	IIA	Stadium\_	Diagnosis or Pathology		6-22[14]	*	Finding	6-26[15_0]	
 6-26	925-930	eines	*[15]	*[15]	_[15]	*	*[15]	Specification[15]	_	
 6-27	931-942	klassischen	*[15]|*[16]	*[15]|*[16]	_[15]|_[16]	*|*	*[15]|*[16]	Specification[15]|Specification[16]	_	
-6-28	943-950	Hodgkin	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
+6-28	943-950	Hodgkin	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	6-27[16_17]	
 6-29	951-959	Lymphoms	*[15]|*[17]	*[15]|Diagnosis or Pathology[17]	_[15]|_[17]	*|*	*[15]|*[17]	Specification[15]|Finding[17]	_	
 6-30	960-961	(	_	_	_	_	_	_	_	
 6-31	961-964	bei	_	_	_	_	_	_	_	

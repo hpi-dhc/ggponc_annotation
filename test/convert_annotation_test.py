@@ -1,12 +1,14 @@
-from util.convert_annotations import read_webanno, webanno_to_iob_df
+from util.convert_annotations import read_webanno, webanno_to_iob_df, webanno_to_spans, write_spacy
 from pathlib import Path
+import spacy
+from spacy.tokens import DocBin
 
 base_path = Path('test') / 'test_files'
 
 #Text=Die Prognose retroperitonealer EGKZT ist besser und ähnelt der der metastasierten gonadalen KZT.
 
 def test_simple_value_short():
-    webanno_df = read_webanno([base_path / 'test_simple.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
 
     assert conll[0]  == 'O'
@@ -25,7 +27,7 @@ def test_simple_value_short():
     assert conll[13] == 'O'
 
 def test_simple_value_long():
-    webanno_df = read_webanno([base_path / 'test_simple.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
 
     assert conll[0]  == 'O'
@@ -44,7 +46,7 @@ def test_simple_value_long():
     assert conll[13] == 'O'
 
 def test_simple_detail_short():
-    webanno_df = read_webanno([base_path / 'test_simple.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
 
     assert conll[0]  == 'O'
@@ -63,7 +65,7 @@ def test_simple_detail_short():
     assert conll[13] == 'O'
 
 def test_simple_detail_long():
-    webanno_df = read_webanno([base_path / 'test_simple.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
 
     assert conll[0]  == 'O'
@@ -81,10 +83,67 @@ def test_simple_detail_long():
     assert conll[12] == 'I-Diagnosis_or_Pathology'
     assert conll[13] == 'O'
 
+def test_simple_detail_long_Finding():
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Finding', select_level='value').output
+
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'B-Other_Finding'
+    assert conll[2]  == 'I-Other_Finding'
+    assert conll[3]  == 'I-Other_Finding'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'B-Diagnosis_or_Pathology'
+    assert conll[11] == 'I-Diagnosis_or_Pathology'
+    assert conll[12] == 'I-Diagnosis_or_Pathology'
+    assert conll[13] == 'O'
+    
+def test_simple_detail_long_Substance():
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Substance', select_level='value').output
+
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    
+def test_simple_detail_long_Procedure():
+    webanno_df, _ = read_webanno([base_path / 'test_simple.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Procedure', select_level='value').output
+
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    
 #Text=Vor und unter Immuntherapien mit anti-CTLA4 und anti-PD1 Antikörper sollte die CK regelmässig bestimmt werden, sowie immer bei Auftreten kardialer Symptome.
 
 def test_gap_value_short():
-    webanno_df = read_webanno([base_path / 'test_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
 
     assert conll[0]  == 'O'
@@ -112,7 +171,7 @@ def test_gap_value_short():
     assert conll[22] == 'O'
 
 def test_gap_detail_short():
-    webanno_df = read_webanno([base_path / 'test_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
 
     assert conll[0]  == 'O'
@@ -140,7 +199,7 @@ def test_gap_detail_short():
     assert conll[22] == 'O'
 
 def test_gap_value_long():
-    webanno_df = read_webanno([base_path / 'test_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
 
     assert conll[0]  == 'O'
@@ -168,7 +227,7 @@ def test_gap_value_long():
     assert conll[22] == 'O'
 
 def test_gap_detail_long():
-    webanno_df = read_webanno([base_path / 'test_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
 
     assert conll[0]  == 'O'
@@ -194,12 +253,95 @@ def test_gap_detail_long():
     assert conll[20] == 'I-Diagnosis_or_Pathology'
     assert conll[21] == 'I-Diagnosis_or_Pathology'
     assert conll[22] == 'O'
+    
+def test_gap_detail_long_Finding():
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Finding', select_level='value').output
 
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'B-Diagnosis_or_Pathology'
+    assert conll[20] == 'I-Diagnosis_or_Pathology'
+    assert conll[21] == 'I-Diagnosis_or_Pathology'
+    assert conll[22] == 'O'
 
+def test_gap_detail_long_Substance():
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Substance', select_level='value').output
+
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'B-Clinical_Drug'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'B-Clinical_Drug'
+    assert conll[8]  == 'I-Clinical_Drug'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'B-Nutrient_or_Body_Substance'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+    
+def test_gap_detail_long_Procedure():
+    webanno_df, _ = read_webanno([base_path / 'test_gap.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Procedure', select_level='value').output
+
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'B-Therapeutic'
+    assert conll[4]  == 'I-Therapeutic'
+    assert conll[5]  == 'I-Therapeutic'
+    assert conll[6]  == 'I-Therapeutic'
+    assert conll[7]  == 'I-Therapeutic'
+    assert conll[8]  == 'I-Therapeutic'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+    
 #Text=Bei oraler und enteraler Ernährung gelten für die Zufuhr von Mikronährstoffen die DACH-Empfehlungen [REF].
 
 def test_multispec_value_short():
-    webanno_df = read_webanno([base_path / 'test_multi_spec.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -220,7 +362,7 @@ def test_multispec_value_short():
     assert conll[16] == 'O'
 
 def test_multispec_value_long():
-    webanno_df = read_webanno([base_path / 'test_multi_spec.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Procedure'
@@ -241,7 +383,7 @@ def test_multispec_value_long():
     assert conll[16] == 'O'
 
 def test_multispec_detail_short():
-    webanno_df = read_webanno([base_path / 'test_multi_spec.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -262,7 +404,7 @@ def test_multispec_detail_short():
     assert conll[16] == 'O'
 
 def test_multispec_detail_long():
-    webanno_df = read_webanno([base_path / 'test_multi_spec.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Therapeutic'
@@ -285,7 +427,7 @@ def test_multispec_detail_long():
 #Text=Insbesondere Antioxidantien können die Wirkung von Chemo- und Strahlentherapie abschwächen.
 
 def test_fragment_value_short():
-    webanno_df = read_webanno([base_path / 'test_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Substance'
@@ -301,7 +443,7 @@ def test_fragment_value_short():
     assert conll[11] == 'O'
 
 def test_fragment_value_long():
-    webanno_df = read_webanno([base_path / 'test_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Substance'
@@ -317,7 +459,7 @@ def test_fragment_value_long():
     assert conll[11] == 'O'
 
 def test_fragment_detail_short():
-    webanno_df = read_webanno([base_path / 'test_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Nutrient_or_Body_Substance'
@@ -333,7 +475,7 @@ def test_fragment_detail_short():
     assert conll[11] == 'O'
 
 def test_fragment_detail_long():
-    webanno_df = read_webanno([base_path / 'test_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Nutrient_or_Body_Substance'
@@ -351,7 +493,7 @@ def test_fragment_detail_long():
 #Text=Vitamin E wurde prophylaktisch zum Schutz vor der Entwicklung der Neurotoxizität unter Cisplatin und Taxol eingesetzt.
 
 def test_multi_spec_gap_value_short():
-    webanno_df = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'B-Substance'
     assert conll[1]  == 'I-Substance'
@@ -372,7 +514,7 @@ def test_multi_spec_gap_value_short():
     assert conll[16] == 'O'
 
 def test_multi_spec_gap_value_long():
-    webanno_df = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     assert conll[0]  == 'B-Substance'
     assert conll[1]  == 'I-Substance'
@@ -393,7 +535,7 @@ def test_multi_spec_gap_value_long():
     assert conll[16] == 'O'
 
 def test_multi_spec_gap_detail_short():
-    webanno_df = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'B-Nutrient_or_Body_Substance'
     assert conll[1]  == 'I-Nutrient_or_Body_Substance'
@@ -414,7 +556,7 @@ def test_multi_spec_gap_detail_short():
     assert conll[16] == 'O'
 
 def test_multi_spec_gap_detail_long():
-    webanno_df = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_spec_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
     assert conll[0]  == 'B-Nutrient_or_Body_Substance'
     assert conll[1]  == 'I-Nutrient_or_Body_Substance'
@@ -437,7 +579,7 @@ def test_multi_spec_gap_detail_long():
 #Text=Bei einer durch kolposkopisch gezielte Biopsie gesicherten CIN 1 beträgt das Risiko der Entwicklung einer CIN 2/3 innerhalb den nächsten 2 Jahren nur 13% [REF].
 
 def test_specification_fragment_value_short():
-    webanno_df = read_webanno([base_path / 'test_specification_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_specification_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -471,7 +613,7 @@ def test_specification_fragment_value_short():
     assert conll[29] == 'O'
 
 def test_specification_fragment_value_long():
-    webanno_df = read_webanno([base_path / 'test_specification_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_specification_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -505,7 +647,7 @@ def test_specification_fragment_value_long():
     assert conll[29] == 'O'    
 
 def test_specification_fragment_detail_short():
-    webanno_df = read_webanno([base_path / 'test_specification_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_specification_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -539,7 +681,7 @@ def test_specification_fragment_detail_short():
     assert conll[29] == 'O'
 
 def test_specification_fragment_detail_long():
-    webanno_df = read_webanno([base_path / 'test_specification_fragment.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_specification_fragment.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -575,7 +717,7 @@ def test_specification_fragment_detail_long():
 #Text=In die „RAPID“-Studie des britischen „National Cancer Research Institute“(NCRI) wurden Patienten im Stadium IA/IIA eines klassischen Hodgkin Lymphoms (bei Diagnosestellung lag bei ca. 70% der Patienten nach der GHSG-Risikostratifizierung ein frühes Stadium vor) bei Vorliegen eines negativen PET/CTs nach drei Zyklen ABVD entweder in einen Nachbeobachtungsarm oder in einen Therapiearm mit konsolidierender Strahlentherapie mit 30 Gy IF-RT randomisiert.
 
 def test_multi_branches_value_short():
-    webanno_df = read_webanno([base_path / 'test_multi_branches.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -654,7 +796,7 @@ def test_multi_branches_value_short():
     assert conll[74] == 'O'
 
 def test_multi_branches_value_long():
-    webanno_df = read_webanno([base_path / 'test_multi_branches.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -733,7 +875,7 @@ def test_multi_branches_value_long():
     assert conll[74] == 'O'
 
 def test_multi_branches_detail_short():
-    webanno_df = read_webanno([base_path / 'test_multi_branches.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -812,7 +954,7 @@ def test_multi_branches_detail_short():
     assert conll[74] == 'O'
 
 def test_multi_branches_detail_long():
-    webanno_df = read_webanno([base_path / 'test_multi_branches.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -890,10 +1032,247 @@ def test_multi_branches_detail_long():
     assert conll[73] == 'O'
     assert conll[74] == 'O'
 
+def test_multi_branches_detail_long_Finding():
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Finding', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'B-Diagnosis_or_Pathology'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'B-Diagnosis_or_Pathology'
+    assert conll[22] == 'I-Diagnosis_or_Pathology'
+    assert conll[23] == 'I-Diagnosis_or_Pathology'
+    assert conll[24] == 'I-Diagnosis_or_Pathology'
+    assert conll[25] == 'I-Diagnosis_or_Pathology'
+    assert conll[26] == 'I-Diagnosis_or_Pathology'
+    assert conll[27] == 'I-Diagnosis_or_Pathology'
+    assert conll[28] == 'I-Diagnosis_or_Pathology'
+    assert conll[29] == 'O'
+    assert conll[30] == 'O'
+    assert conll[31] == 'O'
+    assert conll[32] == 'O'
+    assert conll[33] == 'O'
+    assert conll[34] == 'O'
+    assert conll[35] == 'O'
+    assert conll[36] == 'O'
+    assert conll[37] == 'O'
+    assert conll[38] == 'O'
+    assert conll[39] == 'O'
+    assert conll[40] == 'O'
+    assert conll[41] == 'O'
+    assert conll[42] == 'O'
+    assert conll[43] == 'B-Diagnosis_or_Pathology'
+    assert conll[44] == 'I-Diagnosis_or_Pathology'
+    assert conll[45] == 'O'
+    assert conll[46] == 'O'
+    assert conll[47] == 'O'
+    assert conll[48] == 'B-Other_Finding'
+    assert conll[49] == 'I-Other_Finding'
+    assert conll[50] == 'I-Other_Finding'
+    assert conll[51] == 'I-Other_Finding'
+    assert conll[52] == 'I-Other_Finding'
+    assert conll[53] == 'I-Other_Finding'
+    assert conll[54] == 'I-Other_Finding'
+    assert conll[55] == 'I-Other_Finding'
+    assert conll[56] == 'I-Other_Finding'
+    assert conll[57] == 'I-Other_Finding'
+    assert conll[58] == 'O'
+    assert conll[59] == 'O'
+    assert conll[60] == 'O'
+    assert conll[61] == 'O'
+    assert conll[62] == 'O'
+    assert conll[63] == 'O'
+    assert conll[64] == 'O'
+    assert conll[65] == 'O'
+    assert conll[66] == 'O'
+    assert conll[67] == 'O'
+    assert conll[68] == 'O'
+    assert conll[69] == 'O'
+    assert conll[70] == 'O'
+    assert conll[71] == 'O'
+    assert conll[72] == 'O'
+    assert conll[73] == 'O'
+    assert conll[74] == 'O'
+
+def test_multi_branches_detail_long_Substance():
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Substance', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+    assert conll[23] == 'O'
+    assert conll[24] == 'O'
+    assert conll[25] == 'O'
+    assert conll[26] == 'O'
+    assert conll[27] == 'O'
+    assert conll[28] == 'O'
+    assert conll[29] == 'O'
+    assert conll[30] == 'O'
+    assert conll[31] == 'O'
+    assert conll[32] == 'O'
+    assert conll[33] == 'O'
+    assert conll[34] == 'O'
+    assert conll[35] == 'O'
+    assert conll[36] == 'O'
+    assert conll[37] == 'O'
+    assert conll[38] == 'O'
+    assert conll[39] == 'O'
+    assert conll[40] == 'O'
+    assert conll[41] == 'O'
+    assert conll[42] == 'O'
+    assert conll[43] == 'O'
+    assert conll[44] == 'O'
+    assert conll[45] == 'O'
+    assert conll[46] == 'O'
+    assert conll[47] == 'O'
+    assert conll[48] == 'O'
+    assert conll[49] == 'O'
+    assert conll[50] == 'O'
+    assert conll[51] == 'O'
+    assert conll[52] == 'O'
+    assert conll[53] == 'O'
+    assert conll[54] == 'O'
+    assert conll[55] == 'O'
+    assert conll[56] == 'O'
+    assert conll[57] == 'O'
+    assert conll[58] == 'O'
+    assert conll[59] == 'O'
+    assert conll[60] == 'O'
+    assert conll[61] == 'O'
+    assert conll[62] == 'O'
+    assert conll[63] == 'O'
+    assert conll[64] == 'O'
+    assert conll[65] == 'O'
+    assert conll[66] == 'O'
+    assert conll[67] == 'O'
+    assert conll[68] == 'O'
+    assert conll[69] == 'O'
+    assert conll[70] == 'O'
+    assert conll[71] == 'O'
+    assert conll[72] == 'O'
+    assert conll[73] == 'O'
+    assert conll[74] == 'O'
+
+def test_multi_branches_detail_long_Procedure():
+    webanno_df, _ = read_webanno([base_path / 'test_multi_branches.tsv'])
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Procedure', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+    assert conll[23] == 'O'
+    assert conll[24] == 'O'
+    assert conll[25] == 'O'
+    assert conll[26] == 'O'
+    assert conll[27] == 'O'
+    assert conll[28] == 'O'
+    assert conll[29] == 'O'
+    assert conll[30] == 'O'
+    assert conll[31] == 'B-Diagnostic'
+    assert conll[32] == 'O'
+    assert conll[33] == 'O'
+    assert conll[34] == 'O'
+    assert conll[35] == 'O'
+    assert conll[36] == 'O'
+    assert conll[37] == 'O'
+    assert conll[38] == 'O'
+    assert conll[39] == 'O'
+    assert conll[40] == 'O'
+    assert conll[41] == 'B-Diagnostic'
+    assert conll[42] == 'O'
+    assert conll[43] == 'O'
+    assert conll[44] == 'O'
+    assert conll[45] == 'O'
+    assert conll[46] == 'O'
+    assert conll[47] == 'O'
+    assert conll[48] == 'O'
+    assert conll[49] == 'O'
+    assert conll[50] == 'O'
+    assert conll[51] == 'O'
+    assert conll[52] == 'O'
+    assert conll[53] == 'O'
+    assert conll[54] == 'O'
+    assert conll[55] == 'B-Therapeutic'
+    assert conll[56] == 'I-Therapeutic'
+    assert conll[57] == 'I-Therapeutic'
+    assert conll[58] == 'O'
+    assert conll[59] == 'O'
+    assert conll[60] == 'O'
+    assert conll[61] == 'O'
+    assert conll[62] == 'O'
+    assert conll[63] == 'O'
+    assert conll[64] == 'O'
+    assert conll[65] == 'B-Therapeutic'
+    assert conll[66] == 'O'
+    assert conll[67] == 'B-Therapeutic'
+    assert conll[68] == 'I-Therapeutic'
+    assert conll[69] == 'I-Therapeutic'
+    assert conll[70] == 'I-Therapeutic'
+    assert conll[71] == 'I-Therapeutic'
+    assert conll[72] == 'I-Therapeutic'
+    assert conll[73] == 'O'
+    assert conll[74] == 'O'
+
 #Text=eine Chemotherapie mit drei Zyklen PEB (Cispatin, Etoposid, Bleomycin) oder vier Zyklen PE (Ciplatin, Etoposid).
 
 def test_unclosable_gap_value_short():
-    webanno_df = read_webanno([base_path / 'test_unclosable_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Procedure'
@@ -920,7 +1299,7 @@ def test_unclosable_gap_value_short():
     assert conll[22] == 'O'
 
 def test_unclosable_gap_value_long():
-    webanno_df = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=True).output
     #print(conll)
     assert conll[0]  == 'O'
@@ -948,7 +1327,7 @@ def test_unclosable_gap_value_long():
     assert conll[22] == 'O'
 
 def test_unclosable_gap_detail_short():
-    webanno_df = read_webanno([base_path / 'test_unclosable_gap.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Therapeutic'
@@ -975,9 +1354,8 @@ def test_unclosable_gap_detail_short():
     assert conll[22] == 'O'
 
 def test_unclosable_gap_detail_long():
-    webanno_df = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
     conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True).output
-    #print(conll)
     assert conll[0]  == 'O'
     assert conll[1]  == 'B-Therapeutic'
     assert conll[2]  == 'I-Therapeutic'
@@ -1002,8 +1380,89 @@ def test_unclosable_gap_detail_long():
     assert conll[21] == 'O'
     assert conll[22] == 'O'
 
+def test_unclosable_gap_detail_long_Finding():
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Finding', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'O'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'O'
+    assert conll[10] == 'O'
+    assert conll[11] == 'O'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+
+def test_unclosable_gap_detail_long_Substance():
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Substance', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'O'
+    assert conll[2]  == 'O'
+    assert conll[3]  == 'O'
+    assert conll[4]  == 'O'
+    assert conll[5]  == 'O'
+    assert conll[6]  == 'O'
+    assert conll[7]  == 'B-Clinical_Drug'
+    assert conll[8]  == 'O'
+    assert conll[9]  == 'B-Clinical_Drug'
+    assert conll[10] == 'O'
+    assert conll[11] == 'B-Clinical_Drug'
+    assert conll[12] == 'O'
+    assert conll[13] == 'O'
+    assert conll[14] == 'O'
+    assert conll[15] == 'O'
+    assert conll[16] == 'O'
+    assert conll[17] == 'O'
+    assert conll[18] == 'B-Clinical_Drug'
+    assert conll[19] == 'O'
+    assert conll[20] == 'B-Clinical_Drug'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+
+def test_unclosable_gap_detail_long_Procedure():
+    webanno_df, _ = read_webanno([base_path / 'test_unclosable_gap.tsv'])   
+    conll = webanno_to_iob_df(webanno_df, level='detail', long_spans=True, select_type='Procedure', select_level='value').output
+    assert conll[0]  == 'O'
+    assert conll[1]  == 'B-Therapeutic'
+    assert conll[2]  == 'I-Therapeutic'
+    assert conll[3]  == 'I-Therapeutic'
+    assert conll[4]  == 'I-Therapeutic'
+    assert conll[5]  == 'I-Therapeutic'
+    assert conll[6]  == 'I-Therapeutic'
+    assert conll[7]  == 'I-Therapeutic'
+    assert conll[8]  == 'I-Therapeutic'
+    assert conll[9]  == 'I-Therapeutic'
+    assert conll[10] == 'I-Therapeutic'
+    assert conll[11] == 'I-Therapeutic'
+    assert conll[12] == 'I-Therapeutic'
+    assert conll[13] == 'I-Therapeutic'
+    assert conll[14] == 'I-Therapeutic'
+    assert conll[15] == 'I-Therapeutic'
+    assert conll[16] == 'I-Therapeutic'
+    assert conll[17] == 'O'
+    assert conll[18] == 'O'
+    assert conll[19] == 'O'
+    assert conll[20] == 'O'
+    assert conll[21] == 'O'
+    assert conll[22] == 'O'
+
 def test_empty_file():
-    webanno_df = read_webanno([base_path / 'test_empty_file.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_empty_file.tsv'])
     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
     assert conll[0]  == 'O'
     assert conll[1]  == 'O'
@@ -1036,9 +1495,36 @@ def test_empty_file():
     assert conll[28] == 'O'
 
 def test_null():
-    webanno_df = read_webanno([base_path / 'test_null.tsv'])
+    webanno_df, _ = read_webanno([base_path / 'test_null.tsv'])
     assert webanno_df.iloc[29]['token'] == 'null'
 
+def test_fragment_spacy(tmp_path):
+    webanno_df, _ = read_webanno([base_path / 'test_fragment_spacy.tsv'])
+    spans = webanno_to_spans(webanno_df, 'detail')
+    write_spacy(spans, tmp_path/ 'temp.spacy')
+
+    nlp = spacy.blank('de')
+
+    db = DocBin().from_disk(tmp_path/ 'temp.spacy')
+    docs = list(db.get_docs(nlp.vocab))
+
+    assert len(docs) == 1
+    spans = docs[0].spans['snomed']
+    assert len(spans) == 3
+    assert spans[0].start == 1
+    assert spans[0].end == 3
+    assert spans[0].text == 'uterinen Karzinomen'
+    assert spans[0].label_ == 'Diagnosis_or_Pathology'
+
+    assert spans[1].start == 4
+    assert spans[1].end == 5
+    assert spans[1].text == 'Endometrium'
+    assert spans[1].label_ == 'Diagnosis_or_Pathology'
+
+    assert spans[2].start == 7 
+    assert spans[2].end == 8
+    assert spans[2].text == 'Zervixkarzinom'
+    assert spans[2].label_ == 'Diagnosis_or_Pathology'
 
 #   B-Procedure
 #   B-Finding
@@ -1054,7 +1540,7 @@ def test_null():
 # Template
 
 # def test_():
-#     webanno_df = read_webanno([base_path / 'template.tsv'])
+#     webanno_df, _ = read_webanno([base_path / 'template.tsv'])
 #     conll = webanno_to_iob_df(webanno_df, level='value', long_spans=False).output
 #     assert conll[0]  == 'O'
 #     assert conll[1]  == 'O'

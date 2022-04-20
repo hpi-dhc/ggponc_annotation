@@ -10,7 +10,6 @@ test_dataset : ../data/annotations/huggingface/fine/long/test_fine_long.json
 
 task: ['Other_Finding', 'Diagnosis_or_Pathology', 'Therapeutic', 'Diagnostic', 'Nutrient_or_Body_Substance', 'External_Substance', 'Clinical_Drug' ] 
 
-
 weight_decay: 0.0 
 learning_rate: 0.00005
-label_smoothing_factor: 0.0
+label_smoothing_factor: 0.1

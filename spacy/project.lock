@@ -1,0 +1,19 @@
+train:
+  cmd: python -m spacy run train
+  script:
+    - python -m spacy train configs/spancat.cfg -o training/2022-03-24_19-13-34-cuda-5
+      --gpu-id 5 --training.logger.run_name 2022-03-24_19-13-34-cuda-5 --paths.train
+      ../data/annotations/spacy/train.spacy --paths.dev ../data/annotations/spacy/dev.spacy
+      --code snomed_spans.py
+  deps:
+    - path: ../data/annotations/spacy/train.spacy
+      md5: 1be7137b36cf9d5a214ed475c6645729
+    - path: ../data/annotations/spacy/dev.spacy
+      md5: ebe8bf852bfee4ab0f10d81ed2e4d426
+    - path: configs/spancat.cfg
+      md5: b2f6d62007710c619e5a055d2bd66103
+  outs:
+    - path: training/model-best
+      md5: null
+  spacy_version: 3.2.3
+  spacy_git_version: 99425de36
