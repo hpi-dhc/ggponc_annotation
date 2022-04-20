@@ -12,3 +12,4 @@ rich[jupyter]
 wandb
 spacy[transformers,cuda113,lookups]>=3.2.0,<4.0.0
 seqeval
+inceptalytics
