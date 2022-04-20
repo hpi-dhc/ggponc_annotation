@@ -1,9 +1,8 @@
 import sys
-sys.path.insert(0, 'inception-analytics')
 
 import pandas as pd
-from utils import construct_feature_path
-from analytics import Project
+from inceptalytics.utils import construct_feature_path
+from inceptalytics import Project
 from time import time
 from datetime import datetime
 import argparse
