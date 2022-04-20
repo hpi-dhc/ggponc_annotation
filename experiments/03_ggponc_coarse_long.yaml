@@ -12,4 +12,4 @@ task: ['Finding', 'Substance', 'Procedure']
 
 weight_decay: 0.0 
 learning_rate: 0.00005
-label_smoothing_factor: 0.05
+label_smoothing_factor: 0.1
