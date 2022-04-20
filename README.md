@@ -11,7 +11,7 @@ This repository contains the code to reproduce results from the paper:
 ## Preparation
 
 1. Get access to GGPONC following the instructions on the [project homepage](https://www.leitlinienprogramm-onkologie.de/projekte/ggponc-english/) and place the the contents of the 2.0 release (v2.0_2022_03_24) in the `data` folder
-2. Initialize [INCEpTION Analytics](https://github.com/zesch/inception-analytics) `git submodule init; git submodule update`
+2. Install [INCEpTALYTICS](https://github.com/ltl-ude/inceptalytics) `pip install inceptalytics`
 3. Install Python dependencies `pip install -r requirements.txt -r inception-analytics/requirements.txt` 
 
 ## Preprocessing (optional)
@@ -25,7 +25,7 @@ If you want to do the preprocessing yourself, build the jar file from [https://g
 In `notebooks`, we provide the following Jupyter Notebooks to reproduce the results from the paper:
 
 - [01_Statistics.ipynb](notebooks/01_Statistics.ipynb)
-    - Corpus Statistics and IAA Calculcation with INCEpTION Analytics
+    - Corpus Statistics and IAA Calculcation with INCEpTALYTICS
 - [02_NER_Baselines.ipynb](notebooks/02_NER_Baselines.ipynb)
     - NER Baselines using BERT / HuggingFace Transformers
 - [03_NER_Analysis.ipynb](notebooks/03_NER_Analysis.ipynb)
