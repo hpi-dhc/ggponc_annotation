@@ -16,7 +16,7 @@ This repository contains the code to reproduce results from the paper:
 
 ## Preprocessing (optional)
 
-The prepocessed, e.g. sentence-splitted and tokenized text portions, are already included in the release (`data/plain_text`) 
+The prepocessed, i.e., sentence-splitted and tokenized text portions, are already included in the release (`data/plain_text`) 
 
 If you want to do the preprocessing yourself, build the jar file from [https://github.com/hpi-dhc/ggponc_preprocessing](https://github.com/hpi-dhc/ggponc_preprocessing) and use it with `data/xml/cpg-corpus-cms.xml`
 
