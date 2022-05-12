@@ -157,6 +157,46 @@ def write_spacy(spans, to_file):
     
     db.to_disk(to_file)
 
+def resolve_ellipses(ellipses, iob_df):    
+    results = []
+    for _, r in ellipses.id.reset_index().drop_duplicates().iterrows():
+        has_fragment = False
+        idx = r.file, r.sentence_id
+        _id = r.id
+        sentence = ellipses.loc[idx]
+        span = sentence[sentence.id == _id]
+        full_sentence = iob_df.loc[idx]
+        full_span = full_sentence[full_sentence.id == _id]
+        for fragment in span.fragment: # Expand span to fragments
+            if fragment and not re.match(EMPTY_REGEX, fragment):
+                has_fragment = True
+                fragment = re.split('[|;]', fragment)[0]
+                m = re.match(VALUE_REGEX, fragment)
+                if not m:
+                    print(span.fragment)
+                fragment_index = int(m.group(1).split('-')[1])
+                fragment_start = min(fragment_index, full_span.token_id.min())
+                fragment_end = max(fragment_index, full_span.token_id.max())
+                full_span = full_sentence[(full_sentence.token_id >= fragment_start) & (full_sentence.token_id <= fragment_end)]
+                expanded_context = full_sentence[full_sentence.id.isin(full_span.id.dropna().unique())].token_id
+                fragment_start = min(fragment_start, expanded_context.min())
+                fragment_end = max(fragment_end, expanded_context.max())
+                full_span = full_sentence[(full_sentence.token_id >= fragment_start) & (full_sentence.token_id <= fragment_end)]
+        fragment, resolution, missing_prefix, missing_suffix = join_and_resolve(full_span)
+        results.append({
+            'file' : idx[0],
+            'sentence_id' : idx[1],
+            'full_sentence' : list(full_sentence.token),
+            'span_index_start': full_span.token_id.min() - 1,
+            'span_index_end' : full_span.token_id.max() - 1,
+            'full_span' : fragment,
+            'resolution' : resolution,
+            'fragment' : has_fragment,
+            'missing_prefix' : missing_prefix,
+            'missing_suffix' : missing_suffix,
+        })
+    return pd.DataFrame(results)
+    
 def join_and_resolve(span):
     """
     Expands prefix / suffix / fragment annotations in a span
@@ -168,7 +208,12 @@ def join_and_resolve(span):
     prefix_id = None
     has_prefix = False
     has_suffix = False
+    cur_prefix = None
+    cur_suffix = None 
     for _, i in span.iterrows():
+        token = i.token
+        if cur_suffix and i.token == '-':
+            token == ''
         cur_prefix = None
         cur_suffix = None 
         if i.prefix:
@@ -197,14 +242,17 @@ def join_and_resolve(span):
                     cur_suffix = suffix
                 suffix = m.group(1).replace(r'\_', ' ')
             suffix_id = new_suffix_id
-        
-        raw.append(i.token)
+        raw.append(token)
         if cur_suffix:
             solution[-1] = solution[-1] + cur_suffix.rstrip()
-        solution.append((f'{cur_prefix.lstrip() if cur_prefix else ""}{i.token}'))
-                
+        if cur_suffix and token == '-':
+            solution.append('')
+            continue
+        if cur_prefix and len(solution) > 0 and solution[-1] == '-':
+            solution[-1] = ''
+        solution.append((f'{cur_prefix.lstrip() if cur_prefix else ""}{token}'))
     if suffix:
-        solution[-1] += solution[-1] + suffix.rstrip()
+        solution[-1] += suffix.rstrip()
     return raw, solution, has_prefix, has_suffix
             
 def _resolve_conflict(p1 : Dict, p2 : Dict, level : str):
