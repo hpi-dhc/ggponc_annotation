@@ -183,6 +183,7 @@ def resolve_ellipses(ellipses, iob_df):
                 fragment_end = max(fragment_end, expanded_context.max())
                 full_span = full_sentence[(full_sentence.token_id >= fragment_start) & (full_sentence.token_id <= fragment_end)]
         fragment, resolution, missing_prefix, missing_suffix = join_and_resolve(full_span)
+        sentence_start_offset = int(full_sentence.span.values[0].split('-')[0])
         results.append({
             'file' : idx[0],
             'sentence_id' : idx[1],
@@ -190,6 +191,7 @@ def resolve_ellipses(ellipses, iob_df):
             'span_index_start': full_span.token_id.min() - 1,
             'span_index_end' : full_span.token_id.max() - 1,
             'full_span' : fragment,
+            'offsets' : [[int(t) - sentence_start_offset for t in tuple(v.split('-'))] for v in full_span.span.values],
             'resolution' : resolution,
             'fragment' : has_fragment,
             'missing_prefix' : missing_prefix,
