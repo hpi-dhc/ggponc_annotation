@@ -221,7 +221,7 @@ def join_and_resolve(span):
     for _, i in span.iterrows():
         token = i.token
         if cur_suffix and i.token == '-':
-            token == ''
+            token = ''
         cur_prefix = None
         cur_suffix = None 
         if i.prefix:
@@ -253,10 +253,10 @@ def join_and_resolve(span):
         raw.append(token)
         if cur_suffix:
             solution[-1] = solution[-1] + cur_suffix.rstrip()
-        if cur_suffix and token == '-':
+        if cur_suffix and token in ['-', '–']:
             solution.append('')
             continue
-        if cur_prefix and len(solution) > 0 and solution[-1] == '-':
+        if cur_prefix and len(solution) > 0 and solution[-1] in ['-', '–']:
             solution[-1] = ''
         solution.append((f'{cur_prefix.lstrip() if cur_prefix else ""}{token}'))
     if suffix:
