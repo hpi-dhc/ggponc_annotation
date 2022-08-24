@@ -12,6 +12,7 @@ import argparse
 import csv
 import spacy
 from spacy.tokens import DocBin, Doc, Span
+import itertools
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -96,15 +97,15 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
         raise Exception("Errors during conversion, check error.log")
     return pd.concat(out)
 
-def webanno_to_spans(webanno_df, level, debug=False, collect_errors=False, skip_errors=False):
+def webanno_to_spans(webanno_df, level, long_spans=True, debug=False, collect_errors=False, skip_errors=False):
     error = False
     out = []
     for file, sentence_id in tqdm(webanno_df.index.unique()):
         spans = []
-        for entity_type in entity_values['value']:
+        for entity_type in (entity_values['value'] if long_spans else [None]):
             try:
                 d = webanno_df.loc[(file, sentence_id)]
-                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=True, debug=debug, all_columns=False, select_type=entity_type, select_level='value')
+                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=long_spans, debug=debug, all_columns=False, select_type=entity_type, select_level=('value' if entity_type else None))
                 spans += _to_spans(sdf)    
                 assert success
             except Exception as e:
@@ -156,6 +157,11 @@ def write_spacy(spans, to_file):
         db.add(doc)
     
     db.to_disk(to_file)
+
+def write_json(spans, to_file):
+    res = {}
+    for s in spans:
+        print(s)
 
 def resolve_ellipses(ellipses, iob_df):    
     results = []
@@ -508,7 +514,10 @@ def main():
     parser.add_argument('output_folder')
     parser.add_argument('--collect_errors', action="store_true")
     parser.add_argument('--skip_errors', action="store_true")
-    parser.add_argument('--spacy', action="store_true")
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument('--iob', action="store_true")
+    group.add_argument('--spacy', action="store_true")
+    group.add_argument('--bigbio', action="store_true")
     parser.add_argument('entity_type', nargs='?', default=None)
     
     args = parser.parse_args()
@@ -526,7 +535,7 @@ def main():
     if args.skip_errors:
         log.warning("SKIPPING ERRORS, USE FOR DEVELOPMENT ONLY")
 
-    if not args.spacy:
+    if args.iob:
         log.info("Converting to HuggingFace and ConLL (IOB-encoded, one label per token)")
         for l in levels:
             granularity = 'coarse' if l == 'value' else 'fine'
@@ -546,13 +555,24 @@ def main():
                         out_file = f'{args.file_prefix}_{granularity}_{e}{"." + args.entity_type if args.entity_type else ""}.json'
                         log.info(f'Writing {out_file}')
                         write_huggingface(iob_df, output_folder / f / granularity / e / out_file)
-    else:
+    elif args.spacy:
         log.info("Converting to spaCy spans (potentially overlapping spans)")
         (output_folder / 'spacy').mkdir(exist_ok=True, parents=True)
         out_file = f'{args.file_prefix}.spacy'
         spans = webanno_to_spans(webanno_df, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
         log.info(f'Writing {out_file}')
         write_spacy(spans, output_folder / 'spacy' / out_file)
+    elif args.bigbio:
+        log.info("BigBIO")
+        out_file = f'{args.file_prefix}.json'
+        for l in levels:
+            granularity = 'coarse' if l == 'value' else 'fine'
+            for e in extend:
+                (output_folder / 'json' / granularity / e).mkdir(exist_ok=True, parents=True)
+                log.info(f"{l}, {e}")
+                spans = webanno_to_spans(webanno_df, l, long_spans=(e == 'long'), collect_errors=args.collect_errors, skip_errors=args.skip_errors)
+                write_json(spans, output_folder / 'json' / granularity / e / out_file)
+        log.info(f'Writing {out_file}')
 
 if __name__ == "__main__":
     main()
