@@ -1,7 +1,7 @@
 from io import StringIO
 import pandas as pd
 import re
-from typing import Dict
+from typing import Dict, Tuple, List
 import math
 import logging
 from tqdm import tqdm
@@ -38,7 +38,7 @@ SPEC = 'Specification'
 EMPTY_REGEX = r'([\*_](\[[\d_]+\])?\|?)+' # Any kind of empty field in WebAnno TSV
 VALUE_REGEX = r'([^\[\[]+)(\[[\d_]+\])?$' # Any kind of non-empty field in WebAnno TSV
 
-def read_webanno(tsv_files) -> pd.DataFrame:
+def read_webanno(tsv_files) -> Tuple[pd.DataFrame, List]:
     """Turns a bunch of WebAnno 3.3 TSV files into a DataFrame"""    
     dfs = []
     sentences = []
@@ -48,7 +48,7 @@ def read_webanno(tsv_files) -> pd.DataFrame:
             with open(tsv_file, 'r', encoding='utf-8') as f:
                 for line in f.readlines():
                     if line.startswith('#Text='):
-                        sentences.append(line[6:].strip())
+                        sentences.append(line[6:].strip().replace('\\\\', '\\'))
                         continue
                     if line.startswith('#') or not(line.strip()):
                         continue
@@ -97,16 +97,19 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
         raise Exception("Errors during conversion, check error.log")
     return pd.concat(out)
 
-def webanno_to_spans(webanno_df, level, long_spans=True, debug=False, collect_errors=False, skip_errors=False):
+def webanno_to_spans(webanno_df, sentences, level, long_spans=True, character_offsets=False, debug=False, collect_errors=False, skip_errors=False):
     error = False
     out = []
-    for file, sentence_id in tqdm(webanno_df.index.unique()):
+    for s, sentence in tqdm(zip(webanno_df.index.unique(), sentences)):
+        file, sentence_id = s
         spans = []
         for entity_type in (entity_values['value'] if long_spans else [None]):
             try:
                 d = webanno_df.loc[(file, sentence_id)]
-                sdf, success = _webanno_sentence_to_dataframe(d, level, long_spans=long_spans, debug=debug, all_columns=False, select_type=entity_type, select_level=('value' if entity_type else None))
-                spans += _to_spans(sdf)    
+                sdf, success = _webanno_sentence_to_dataframe(
+                    d, level, long_spans=long_spans, debug=debug, all_columns=False, select_type=entity_type, select_level=('value' if entity_type else None)
+                )
+                spans += _to_spans(sdf, character_offsets)    
                 assert success
             except Exception as e:
                 error = True
@@ -118,8 +121,11 @@ def webanno_to_spans(webanno_df, level, long_spans=True, debug=False, collect_er
         if not success:
             log.error(f"Error processing: {file}, {sentence_id}, aborting.")
             return out
-        sentence = list(sdf.token)
-        out.append({'sentence' : sentence, 'file': file, 'sentence_id' : sentence_id, 'spans' : spans})
+        if not character_offsets:
+            sentence = list(sdf.token)
+        s_start = int(sdf.iloc[0].span.split('-')[0])
+        s_end = int(sdf.iloc[-1].span.split('-')[1])
+        out.append({'sentence' : sentence, 's_start' : s_start, 's_end' : s_end, 'file': file, 'sentence_id' : sentence_id, 'spans' : spans})
     if error and not skip_errors:
         raise Exception("Errors during conversion, check error.log")
     return out
@@ -159,9 +165,41 @@ def write_spacy(spans, to_file):
     db.to_disk(to_file)
 
 def write_json(spans, to_file):
-    res = {}
-    for s in spans:
-        print(s)
+    res = []
+    for f, s in itertools.groupby(spans, key=lambda s: s['file']):
+        passages = []
+        entities = []
+        for sentence in sorted(list(s), key=lambda s: int(s['sentence_id'])):            
+            sentence_text = sentence['sentence'].replace('\\t', ' ')
+            s_start = sentence['s_start']
+            s_end = sentence['s_end']
+            passages.append({
+                'id' : int(sentence['sentence_id']),
+                'type' : 'sentence',
+                'text' : sentence_text,
+                'offsets': [[s_start, s_end]]
+            })
+            for start, end, tokens, label in sentence['spans']:
+                text = sentence_text[start - s_start:end - s_start]
+                for t in tokens:
+                    if not t in text:
+                        print(f"{t}, {text}, {f}, {sentence['sentence_id']}")
+                        print(sentence)
+                        assert False
+                entities.append({
+                    'text' : [text],
+                    'type' : label,                    
+                    'offsets' : [[start, end]]
+                })
+        res.append(
+            {
+                'document_id' : f,
+                'passages' : passages,
+                'entities' : entities
+            }
+        )
+    with open(to_file, 'w', encoding='utf-8') as fh:
+        json.dump(res, fh, ensure_ascii=False)
 
 def resolve_ellipses(ellipses, iob_df):    
     results = []
@@ -377,14 +415,19 @@ def _to_iob(sentence_df, all_columns):
             assert out == 'O', sentence_df
     return sdf[['token', 'output']] if not all_columns else sdf
 
-def _to_spans(sentence_df):
+def _to_spans(sentence_df, character_offsets : bool):
     """ creates spans from resolved WebAnno entities"""
     sdf = sentence_df.copy()
     
     def merge_entities(tokens):
         s_start = tokens[0][0]
         s_end = tokens[-1][0]
-        return (s_start, s_end, [t[1] for t in tokens], tokens[0][2])
+        span_start = int(tokens[0][2].split('-')[0])
+        span_end = int(tokens[-1][2].split('-')[1])
+        if character_offsets:
+            return (span_start, span_end, [t[1] for t in tokens], tokens[0][3])
+        else:
+            return (s_start, s_end, [t[1] for t in tokens], tokens[0][3])
     
     entity_counter = -1
     entities = []
@@ -397,9 +440,9 @@ def _to_spans(sentence_df):
             if cur_entity:
                 entities.append(merge_entities(cur_entity))
             entity_counter = entity_id
-            cur_entity = [(i, row.token, out)]
+            cur_entity = [(i, row.token, row.span, out)]
         elif entity_id == entity_counter:
-            cur_entity += [(i, row.token, out)]
+            cur_entity += [(i, row.token, row.span, out)]
         else:
             entity_counter = -1
             assert out == 'O', sentence_df
@@ -528,7 +571,7 @@ def main():
     levels = ['detail', 'value']
     extend = ['short', 'long']
     
-    webanno_df, _ = read_webanno(Path(args.input_folder).glob('*.tsv'))
+    webanno_df, sentences = read_webanno(Path(args.input_folder).glob('*.tsv'))
     
     output_folder.mkdir(exist_ok=True)
     
@@ -559,20 +602,20 @@ def main():
         log.info("Converting to spaCy spans (potentially overlapping spans)")
         (output_folder / 'spacy').mkdir(exist_ok=True, parents=True)
         out_file = f'{args.file_prefix}.spacy'
-        spans = webanno_to_spans(webanno_df, 'detail', collect_errors=args.collect_errors, skip_errors=args.skip_errors)
+        spans = webanno_to_spans(webanno_df, sentences, 'detail', character_offsets=False, collect_errors=args.collect_errors, skip_errors=args.skip_errors)
         log.info(f'Writing {out_file}')
         write_spacy(spans, output_folder / 'spacy' / out_file)
     elif args.bigbio:
         log.info("BigBIO")
-        out_file = f'{args.file_prefix}.json'
         for l in levels:
             granularity = 'coarse' if l == 'value' else 'fine'
             for e in extend:
                 (output_folder / 'json' / granularity / e).mkdir(exist_ok=True, parents=True)
                 log.info(f"{l}, {e}")
-                spans = webanno_to_spans(webanno_df, l, long_spans=(e == 'long'), collect_errors=args.collect_errors, skip_errors=args.skip_errors)
-                write_json(spans, output_folder / 'json' / granularity / e / out_file)
-        log.info(f'Writing {out_file}')
+                spans = webanno_to_spans(webanno_df, sentences, l, long_spans=(e == 'long'), character_offsets=True, collect_errors=args.collect_errors, skip_errors=args.skip_errors)                
+                out_file = output_folder / 'json' / granularity / e / f'{args.file_prefix}.json'
+                log.info(f'Writing {out_file}')
+                write_json(spans, out_file)
 
 if __name__ == "__main__":
     main()
