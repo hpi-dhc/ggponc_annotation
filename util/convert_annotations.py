@@ -163,9 +163,9 @@ def resolve_ellipses(ellipses, iob_df):
         has_fragment = False
         idx = r.file, r.sentence_id
         _id = r.id
-        sentence = ellipses.loc[idx]
+        sentence = ellipses.loc[[idx]]
         span = sentence[sentence.id == _id]
-        full_sentence = iob_df.loc[idx]
+        full_sentence = iob_df.loc[[idx]]
         full_span = full_sentence[full_sentence.id == _id]
         for fragment in span.fragment: # Expand span to fragments
             if fragment and not re.match(EMPTY_REGEX, fragment):
