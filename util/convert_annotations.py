@@ -584,7 +584,7 @@ def main():
     levels = ['detail', 'value']
     extend = ['short', 'long']
     
-    webanno_df, sentences = read_webanno(Path(args.input_folder).glob('*.tsv'))
+    webanno_df, sentences = read_webanno(sorted(list(Path(args.input_folder).glob('*.tsv'))))
     
     output_folder.mkdir(exist_ok=True)
     
