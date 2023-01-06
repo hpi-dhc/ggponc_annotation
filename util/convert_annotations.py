@@ -13,6 +13,9 @@ import csv
 import spacy
 from spacy.tokens import DocBin, Doc, Span
 import itertools
+import warnings
+
+warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -100,6 +103,7 @@ def webanno_to_iob_df(webanno_df, level, long_spans, debug=False, collect_errors
 def webanno_to_spans(webanno_df, sentences, level, long_spans=True, character_offsets=False, debug=False, collect_errors=False, skip_errors=False):
     error = False
     out = []
+    prev_end = 0
     for s, sentence in tqdm(zip(webanno_df.index.unique(), sentences)):
         file, sentence_id = s
         spans = []
@@ -122,10 +126,14 @@ def webanno_to_spans(webanno_df, sentences, level, long_spans=True, character_of
             log.error(f"Error processing: {file}, {sentence_id}, aborting.")
             return out
         if not character_offsets:
-            sentence = list(sdf.token)
+            sentence = list(sdf.token)        
         s_start = int(sdf.iloc[0].span.split('-')[0])
-        s_end = int(sdf.iloc[-1].span.split('-')[1])
+        diff = s_start - prev_end - 1
+        s_start -= diff
+        s_end = int(sdf.iloc[-1].span.split('-')[1]) - diff
+        spans = [(s[0] - diff, s[1] - diff, s[2], s[3]) for s in spans]
         out.append({'sentence' : sentence, 's_start' : s_start, 's_end' : s_end, 'file': file, 'sentence_id' : sentence_id, 'spans' : spans})
+        prev_end = s_end
     if error and not skip_errors:
         raise Exception("Errors during conversion, check error.log")
     return out
@@ -169,10 +177,13 @@ def write_json(spans, to_file):
     for f, s in itertools.groupby(spans, key=lambda s: s['file']):
         passages = []
         entities = []
+        file_start = -1
         for sentence in sorted(list(s), key=lambda s: int(s['sentence_id'])):            
+            if file_start == -1:
+                file_start = sentence['s_start']
             sentence_text = sentence['sentence'].replace('\\t', ' ')
-            s_start = sentence['s_start']
-            s_end = sentence['s_end']
+            s_start = sentence['s_start'] - file_start
+            s_end = sentence['s_end'] - file_start
             passages.append({
                 'id' : int(sentence['sentence_id']),
                 'type' : 'sentence',
@@ -180,6 +191,8 @@ def write_json(spans, to_file):
                 'offsets': [[s_start, s_end]]
             })
             for start, end, tokens, label in sentence['spans']:
+                start -= file_start
+                end -= file_start
                 text = sentence_text[start - s_start:end - s_start]
                 for t in tokens:
                     if not t in text:
