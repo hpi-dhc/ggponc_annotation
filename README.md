@@ -5,8 +5,7 @@
 
 This repository contains the code to reproduce results from the paper:
 
-*GGPONC 2.0 — The German Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline NER Taggers*
-(To appear at LREC '22)
+Florian Borchert, Christina Lohr, Luise Modersohn, Jonas Witt, Thomas Langer, Markus Follmann, Matthias Gietzelt, Bert Arnrich, Udo Hahn and Matthieu-P. Schapranow. [GGPONC 2.0 - The German Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline NER Taggers](https://aclanthology.org/2022.lrec-1.389/). LREC 2022 — Proceedings of the Language Resources and Evaluation Conference, pp. 3650‑3660. Marseille, France, European Language Resources Association, 2022 
 
 ## Preparation
 
