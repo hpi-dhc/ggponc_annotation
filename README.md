@@ -3,9 +3,9 @@
 
 # GGPONC 2.0 — The German Clinical Guideline Corpus for Oncology
 
-This repository contains the code to reproduce results from the paper:
+This repository contains the code to reproduce the results from the paper:
 
-Florian Borchert, Christina Lohr, Luise Modersohn, Jonas Witt, Thomas Langer, Markus Follmann, Matthias Gietzelt, Bert Arnrich, Udo Hahn and Matthieu-P. Schapranow. [GGPONC 2.0 - The German Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline NER Taggers](https://aclanthology.org/2022.lrec-1.389/). LREC 2022 — Proceedings of the Language Resources and Evaluation Conference, pp. 3650‑3660. Marseille, France, European Language Resources Association, 2022 
+Florian Borchert, Christina Lohr, Luise Modersohn, Jonas Witt, Thomas Langer, Markus Follmann, Matthias Gietzelt, Bert Arnrich, Udo Hahn, and Matthieu-P. Schapranow. 2022. [GGPONC 2.0 - The German Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline NER Taggers](https://aclanthology.org/2022.lrec-1.389/). In Proceedings of the Thirteenth Language Resources and Evaluation Conference, pages 3650–3660, Marseille, France. European Language Resources Association.
 
 ## Preparation
 
@@ -28,8 +28,10 @@ In `notebooks`, we provide the following Jupyter Notebooks to reproduce the resu
     - NER Baselines using BERT / HuggingFace Transformers
 - [03_NER_Analysis.ipynb](notebooks/03_NER_Analysis.ipynb)
     - Analysis of NER errors and coordination ellipses
-- **new**: [04_spaCy_Spancat.ipynb](notebooks/04_spaCy_Spancat.ipynb) 
+- [04_spaCy_Spancat.ipynb](notebooks/04_spaCy_Spancat.ipynb) 
     - Alternative NER implementation using spaCy's [SpanCategorizer](https://spacy.io/api/spancategorizer) feature, which can handle overlapping and nested mentions
+- [05_Ellipses.ipynb](notebooks/05_Ellipses.ipynb)
+    - Extraction of elliptical coordinated compound noun phrases from GGPONC 2.0 annotations
 
 ## Running NER Experiments with HuggingFace and Hydra
 
@@ -52,28 +54,30 @@ Please refer to the [annotation guide](annotation_guide/anno_guide.pdf) for a de
 
 According to the [terms of use of GGPONC](https://www.leitlinienprogramm-onkologie.de/projekte/ggponc-english/), contributions which are based on the corpus must cite the following publication: 
 
-* Florian Borchert, Christina Lohr, Luise Modersohn, Thomas Langer, Markus Follmann, Jan Philipp Sachs, Udo Hahn, and Matthieu-P. Schapranow. **GGPONC: A Corpus of German Medical Text with Rich Metadata Based on Clinical Practice Guidelines**. In Proceedings of the 11th International Workshop on Health Text Mining and Information Analysis, 38–48. Online: Association for Computational Linguistics, 2020.
+Florian Borchert, Christina Lohr, Luise Modersohn, Jonas Witt, Thomas Langer, Markus Follmann, Matthias Gietzelt, Bert Arnrich, Udo Hahn, and Matthieu-P. Schapranow. 2022. **GGPONC 2.0 - The German Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline NER Taggers**. In Proceedings of the Thirteenth Language Resources and Evaluation Conference, pages 3650–3660, Marseille, France. European Language Resources Association.
 
 BibTeX:
+
 ```
-@inproceedings{borchert-etal-2020-ggponc,
-    title = "{GGPONC}: A Corpus of {G}erman Medical Text with Rich Metadata Based on Clinical Practice Guidelines",
+@inproceedings{borchert-etal-2022-ggponc,
+    title = "{GGPONC} 2.0 - The {G}erman Clinical Guideline Corpus for Oncology: Curation Workflow, Annotation Policy, Baseline {NER} Taggers",
     author = "Borchert, Florian  and
       Lohr, Christina  and
       Modersohn, Luise  and
+      Witt, Jonas  and
       Langer, Thomas  and
       Follmann, Markus  and
-      Sachs, Jan Philipp  and
+      Gietzelt, Matthias  and
+      Arnrich, Bert  and
       Hahn, Udo  and
       Schapranow, Matthieu-P.",
-    booktitle = "Proceedings of the 11th International Workshop on Health Text Mining and Information Analysis",
-    month = nov,
-    year = "2020",
-    address = "Online",
-    publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.louhi-1.5",
-    doi = "10.18653/v1/2020.louhi-1.5",
-    pages = "38--48",
-  }
+    booktitle = "Proceedings of the Thirteenth Language Resources and Evaluation Conference",
+    month = jun,
+    year = "2022",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    pages = "3650--3660"
+}
+
 ```
 
