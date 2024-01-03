@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/411603699.svg)](https://zenodo.org/badge/latestdoi/411603699)
 
 
-# GGPONC 2.0 — The German Clinical Guideline Corpus for Oncology
+# GGPONC 2.0 — Annotation and Experiments
 
 This repository contains the code to reproduce the results from the paper:
 
