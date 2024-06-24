@@ -1,5 +1,11 @@
 [![DOI](https://zenodo.org/badge/411603699.svg)](https://zenodo.org/badge/latestdoi/411603699)
 
+# Important
+
+**⚠️ This repository is contains the code to reproduce results of the original GGPONC 2.0 paper.**
+
+
+**➡️ More recent tooling for data loading, NER model training and entity linking is now available here: [https://github.com/hpi-dhc/ggponc](https://github.com/hpi-dhc/ggponc).**
 
 # GGPONC 2.0 — Annotation and Experiments
 
